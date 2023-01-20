@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\amalikov\Dropbox\QA_Engineer\_GitHub\_ForTraining\api_b2c_multi
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\amalikov\dropbox\qa_engineer\_github\_fortraining\api_b2c_multi\\logfile.log
+c:\users\amalikov\dropbox\qa_engineer\_github\_fortraining\api_b2c_multi\\combined_api_b2c_multi.c
+c:\users\amalikov\dropbox\qa_engineer\_github\_fortraining\api_b2c_multi\\pre_cci.c

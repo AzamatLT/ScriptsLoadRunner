@@ -1,0 +1,174 @@
+Record Trace from C:\Windows\Microsoft.NET\Framework\v4.0.30319\cvtres.exe2016-05-26 11:49:21
+--------------------------------------------
+
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000000       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000000       .\bbhook.cpp (1412): TrapLoadLibraryExW: Entered
+415704/414668 00000000       .\bbhook.cpp (1370): TrapLoadLibraryExA: Entered
+415704/414668 00000000       .\bbhook.cpp (1371): TrapLoadLibraryExA: library name is CRYPTSP.dll
+415704/411504 00000015    15 .\bbhook.cpp (1444): TrapLoadLibraryExW: Exited
+415704/411504 00000015       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000015       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000015       .\bbhook.cpp (1412): TrapLoadLibraryExW: Entered
+415704/414668 00000015       .\bbhook.cpp (1404): TrapLoadLibraryExA: Exited
+415704/414668 00000015       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000015       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000031    16 .\bbhook.cpp (1370): TrapLoadLibraryExA: Entered
+415704/414668 00000031       .\bbhook.cpp (1371): TrapLoadLibraryExA: library name is C:\Windows\system32\rsaenh.dll
+415704/411504 00000031       .\bbhook.cpp (1444): TrapLoadLibraryExW: Exited
+415704/411504 00000031       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000031       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000031       .\bbhook.cpp (2122): TrapFreeLibrary: Entered
+415704/411504 00000031       .\bbhook.cpp (2123): TrapFreeLibrary: library name is C:\Windows\system32\uxtheme.dll
+415704/411504 00000031       .\bbhook.cpp (2186): TrapFreeLibrary: Exited
+415704/411504 00000047    16 .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000047       .\bbhook.cpp (1412): TrapLoadLibraryExW: Entered
+415704/414668 00000047       .\bbhook.cpp (1404): TrapLoadLibraryExA: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000047       .\bbhook.cpp (1370): TrapLoadLibraryExA: Entered
+415704/414668 00000047       .\bbhook.cpp (1371): TrapLoadLibraryExA: library name is ADVAPI32.dll
+415704/411504 00000047       .\bbhook.cpp (1444): TrapLoadLibraryExW: Exited
+415704/411504 00000047       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000047       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000047       .\bbhook.cpp (2122): TrapFreeLibrary: Entered
+415704/411504 00000047       .\bbhook.cpp (2123): TrapFreeLibrary: library name is C:\Windows\system32\uxtheme.dll
+415704/411504 00000047       .\bbhook.cpp (2186): TrapFreeLibrary: Exited
+415704/411504 00000047       .\bbhook.cpp (1412): TrapLoadLibraryExW: Entered
+415704/411504 00000062    15 .\bbhook.cpp (1444): TrapLoadLibraryExW: Exited
+415704/411504 00000062       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/411504 00000062       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/411504 00000062       .\bbhook.cpp (2122): TrapFreeLibrary: Entered
+415704/411504 00000062       .\bbhook.cpp (2123): TrapFreeLibrary: library name is C:\Windows\system32\uxtheme.dll
+415704/411504 00000062       .\bbhook.cpp (2186): TrapFreeLibrary: Exited
+415704/414668 00000078    16 .\bbhook.cpp (1404): TrapLoadLibraryExA: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1370): TrapLoadLibraryExA: Entered
+415704/414668 00000078       .\bbhook.cpp (1371): TrapLoadLibraryExA: library name is CRYPTBASE.dll
+415704/411504 00000078       .\bbhook.cpp (1412): TrapLoadLibraryExW: Entered
+415704/414668 00000078       .\bbhook.cpp (1404): TrapLoadLibraryExA: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000078       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000078       .\bbhook.cpp (2122): TrapFreeLibrary: Entered
+415704/414668 00000078       .\bbhook.cpp (2123): TrapFreeLibrary: library name is C:\Windows\Microsoft.NET\Framework\v4.0.30319\cvtres.exe
+415704/414668 00000093    15 .\bbhook.cpp (2186): TrapFreeLibrary: Exited
+415704/414668 00000093       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000093       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000093       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000093       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000093       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000093       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000093       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000093       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000093       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000093       .\bbhook.cpp (1092): TrapGetProcAddress: Exited
+415704/414668 00000093       .\bbhook.cpp (1077): TrapGetProcAddress: Entered
+415704/414668 00000093       .\bbhook.cpp (1092): TrapGetProcAddress: Exited

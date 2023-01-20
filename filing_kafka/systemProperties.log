@@ -1,0 +1,76 @@
+SYSTEM PROPERTIES: 
+sun.desktop = windows
+awt.toolkit = sun.awt.windows.WToolkit
+java.specification.version = 11
+sun.cpu.isalist = amd64
+sun.jnu.encoding = Cp1251
+java.class.path = C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\;C:\Program Files (x86)\Micro Focus\LoadRunner/classes;C:\Program Files (x86)\Micro Focus\LoadRunner/classes/srv;C:\Program Files (x86)\Micro Focus\LoadRunner/classes/srv/additional_classes;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\kafka-clients-2.8.0.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\kafka_2.13-2.6.0.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\log4j-1.2.17.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\nio.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\scala-library-2.13.6.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\slf4j-api-1.7.25.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\slf4j-log4j12-1.7.25.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\streams-quickstart-java-3.1.0.jar;;C:\Program Files (x86)\Micro Focus\LoadRunner/lib/xstream-1.4.11.1.jar;C:\Program Files (x86)\Micro Focus\LoadRunner/lib/xpp3-1.1.4c.jar;C:\Program Files (x86)\Micro Focus\LoadRunner/lib/common-java-rr.jar;;;C:\Program Files (x86)\Micro Focus\LoadRunner\lib\FlatBuf-1.0-SNAPSHOT.jar;C:\Program Files (x86)\Micro Focus\LoadRunner\lib\MFJavaServer-1.0-SNAPSHOT.jar;;
+java.vm.vendor = Oracle Corporation
+sun.arch.data.model = 64
+user.variant = 
+java.vendor.url = https://openjdk.java.net/
+user.timezone = 
+os.name = Windows 10
+java.vm.specification.version = 11
+sun.java.launcher = SUN_STANDARD
+user.country = RU
+sun.boot.library.path = C:\Program Files\Java\jdk-11.0.13\bin
+com.hpe.lr.java2.record.scriptDir = C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka
+sun.java.command = mf.server.Main 55600 JavaRR vugen
+jdk.debug = release
+sun.cpu.endian = little
+user.home = C:\Users\TEST
+user.language = ru
+java.specification.vendor = Oracle Corporation
+script.useDedicatedCl = false
+java.version.date = 2021-10-19
+java.home = C:\Program Files\Java\jdk-11.0.13
+script.properties = cfgpp=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka\\default.cfg
+lr_bin_dir=C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\bin
+lr_dat_dir=C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\dat
+lr_root_dir=C:\\Program Files (x86)\\Micro Focus\\LoadRunner
+lr_usr_dir=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka
+mode_debug=
+out=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka\\
+product_name=vugen
+temp_dir=
+usr=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka\\filing_kafka.usr
+
+file.separator = \
+java.vm.compressedOopsMode = 32-bit
+line.separator = 
+
+java.specification.name = Java Platform API Specification
+java.vm.specification.vendor = Oracle Corporation
+java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+user.script = 
+sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+java.runtime.version = 11.0.13+10-LTS-370
+user.name = TEST
+path.separator = ;
+os.version = 10.0
+java.security.policy = C:\Program Files (x86)\Micro Focus\LoadRunner/classes/security/recorder.policy
+java.runtime.name = Java(TM) SE Runtime Environment
+file.encoding = Cp1251
+mdrv.launcher = 1
+java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+java.vendor.version = 18.9
+java.vendor.url.bug = https://bugreport.java.com/bugreport/
+java.io.tmpdir = C:\Users\TEST\AppData\Local\Temp\
+java.version = 11.0.13
+user.dir = C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka
+mf.server.portIdPath = C:\Users\TEST\AppData\Local\Temp\JavaReplay
+os.arch = amd64
+java.vm.specification.name = Java Virtual Machine Specification
+java.awt.printerjob = sun.awt.windows.WPrinterJob
+sun.os.patch.level = 
+java.library.path = C:\Program Files\Java\jdk-11.0.13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Micro Focus\LoadRunner\Bin;C:\Program Files (x86)\Micro Focus\LoadRunner\Bin\tulip\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Micro Focus\LoadRunner\bin\Silk\Silk Performer 21.0;C:\Program Files\Git\cmd;C:\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk-11.0.13\bin;C:\Users\TEST\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\TEST\AppData\Local\Programs\Python\Python311\;C:\Users\TEST\AppData\Local\Microsoft\WindowsApps;C:\Users\TEST\AppData\Local\GitHubDesktop\bin;C:\Users\TEST\AppData\Local\Programs\Microsoft VS Code\bin;.
+java.vendor = Oracle Corporation
+java.vm.info = mixed mode
+java.vm.version = 11.0.13+10-LTS-370
+sun.io.unicode.encoding = UnicodeLittle
+java.class.version = 55.0
+END OF SYSTEM PROPERTIES
+
+
+

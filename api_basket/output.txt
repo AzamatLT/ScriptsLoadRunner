@@ -1,0 +1,203 @@
+Virtual User Script started at : 01.04.2021 16:28:25
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (апр 01 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_basket\\default.cfg"  	[MsgId: MMSG-27141]
+Vuser directory: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_basket"  	[MsgId: MMSG-27052]
+Vuser output directory: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_basket"  	[MsgId: MMSG-27050]
+Operating system's current working directory: "c:\beework\automatedtesting\usss\_scripts\__pl\api\api_basket"  	[MsgId: MMSG-27048]
+UTC (GMT) start date/time   : 2021-04-01 13:28:25  	[MsgId: MMSG-26992]
+LOCAL start date/time       : 2021-04-01 16:28:25  	[MsgId: MMSG-26991]
+Local daylight-Savings-Time : No  	[MsgId: MMSG-26990]
+Some of the Run-Time Settings:  	[MsgId: MMSG-27142]
+    Download non-HTML resources: Yes  	[MsgId: MMSG-27018]
+    Verification checks: No  	[MsgId: MMSG-27017]
+    Convert from/to UTF-8: No  	[MsgId: MMSG-27016]
+    Simulate a new user each iteration: Yes  	[MsgId: MMSG-27009]
+    Non-critical item errors as warnings: Yes  	[MsgId: MMSG-27008]
+    HTTP errors as warnings: No  	[MsgId: MMSG-27007]
+    WinInet replay instead of Sockets: No  	[MsgId: MMSG-27006]
+    HTTP version: 1.1  	[MsgId: MMSG-27005]
+    Keep-Alive HTTP connections: Yes  	[MsgId: MMSG-27004]
+    Max self Meta refresh updates: 2  	[MsgId: MMSG-27003]
+    No proxy is used (direct connection to the Internet)  	[MsgId: MMSG-27171]
+    DNS caching: Yes  	[MsgId: MMSG-27035]
+    Simulate browser cache: Yes  	[MsgId: MMSG-27034]
+        Cache URLs requiring content (e.g., HTMLs): Yes  	[MsgId: MMSG-27033]
+            Additional URLs requiring content: None  	[MsgId: MMSG-27032]
+        Check for newer versions every visit to the page: No  	[MsgId: MMSG-27031]
+    Page download timeout (sec): 120  	[MsgId: MMSG-27030]
+    Resource Page Timeout is a Warning: No  	[MsgId: MMSG-27029]
+    ContentCheck enabled: Yes  	[MsgId: MMSG-27028]
+    ContentCheck script-level file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_basket\LrwiAedScript.xml"  	[MsgId: MMSG-27027]
+    Enable Web Page Breakdown: Yes  	[MsgId: MMSG-27026]
+    Enable connection data points: Yes  	[MsgId: MMSG-27023]
+    Process socket after reschedule: Yes  	[MsgId: MMSG-27022]
+    Snapshot on error: No  	[MsgId: MMSG-27021]
+    Define each step as a transaction: No  	[MsgId: MMSG-27020]
+    Read beyond Content-Length: No  	[MsgId: MMSG-26994]
+    Parse HTML Content-Type: TEXT  	[MsgId: MMSG-26999]
+    Graph hits per second and HTTP status codes: Yes  	[MsgId: MMSG-26998]
+    Graph response bytes per second: Yes  	[MsgId: MMSG-26997]
+    Graph pages per second: No  	[MsgId: MMSG-26996]
+    Web recorder version ID: 8  	[MsgId: MMSG-26995]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Parameter Substitution: parameter "var_Random1000" =  "728"
+Action.c(23): Notify: Parameter Substitution: parameter "ctn2delMn" =  "9052088835"
+Action.c(23): Notify: Saving Parameter "login = 9052088835".
+api_request_basket.c(5): Notify: Parameter Substitution: parameter "var_Random1000" =  "728"
+api_request_basket.c(6): Notify: Parameter Substitution: parameter "var_random2" =  "2"
+api_request_basket.c(8): Notify: Transaction "api_request_basket" started.
+api_request_basket.c(10): Notify: Parameter Substitution: parameter "priceplan_lego" =  "CNT7VSE4F"
+api_request_basket.c(10): Notify: Saving Parameter "priceplan = CNT7VSE4F".
+api_request_basket.c(15): Notify: Parameter Substitution: parameter "login" =  "9052088835"
+api_request_basket.c(15): Notify: Parameter Substitution: parameter "priceplan" =  "CNT7VSE4F"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 9052088835CNT7VSE4F".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "concat" =  "9052088835CNT7VSE4F"
+pool_get_hash.c(12): t=2133ms: Connecting [0] to host 10.50.255.155:7001  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): t=2134ms: Connected socket [0] from 10.50.255.155:36671 to 10.50.255.155:7001 in 1 ms  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): t=2134ms: 300-byte request headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     POST /HashGen/HashGenService HTTP/1.1\r\n
+pool_get_hash.c(12):     Content-Type: text/xml; charset=UTF-8\r\n
+pool_get_hash.c(12):     Cache-Control: no-cache\r\n
+pool_get_hash.c(12):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+pool_get_hash.c(12):     Accept-Encoding: gzip, deflate\r\n
+pool_get_hash.c(12):     Accept: */*\r\n
+pool_get_hash.c(12):     Connection: Keep-Alive\r\n
+pool_get_hash.c(12):     Host: ms-loadrtst045:7001\r\n
+pool_get_hash.c(12):     Content-Length: 317\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2140ms: 317-byte request body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmls
+pool_get_hash.c(12):     oap.org/soap/envelope/" xmlns:ws="http://ws.hashgen.bellintegrator.ru/"><soapenv:Header/><
+pool_get_hash.c(12):     soapenv:Body>   <ws:getHashByConcat>       <concat>9052088835CNT7VSE4F</concat>   </ws:get
+pool_get_hash.c(12):     HashByConcat></soapenv:Body></soapenv:Envelope>
+pool_get_hash.c(12): t=2146ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(12):     Date: Thu, 01 Apr 2021 13:28:25 GMT\r\n
+pool_get_hash.c(12):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(12):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2155ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     018b\r\n
+pool_get_hash.c(12): t=2156ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12):     0000\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2157ms: 395-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(12):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(12):     or.ru/"><return><concat>9052088835CNT7VSE4F</concat><hmacSha1>H7wIwV8G/67GUUrFq4hom4G4eLE=
+pool_get_hash.c(12):     </hmacSha1><urlQuote>H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D</urlQuote></return></ns0:getHashByCo
+pool_get_hash.c(12):     ncatResponse></S:Body></S:Envelope>
+pool_get_hash.c(12): Notify: Saving Parameter "hash_qouted = H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D".
+pool_get_hash.c(12): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(12): t=2159ms: Request done "http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") was successful, 395 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(29): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,1892 Wasted Time: 0,1658).
+pool_get_hash.c(31): Notify: Parameter Substitution: parameter "hash_qouted" =  "H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D"
+pool_get_hash.c(31): H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D
+api_request_basket.c(17): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_request_basket.c(17): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_request_basket.c(18): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_request_basket.c(18): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_request_basket.c(19): web_add_cookie started  	[MsgId: MMSG-26355]
+api_request_basket.c(19): Notify: Parameter Substitution: parameter "sysTokenPL" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_request_basket.c(19): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+api_request_basket.c(19): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_request_basket.c(20): web_add_header("Content-Type") started  	[MsgId: MMSG-26355]
+api_request_basket.c(20): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+api_request_basket.c(20): "Content-Type: application/json" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+api_request_basket.c(20): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
+api_request_basket.c(21): web_add_header("Client-Type") started  	[MsgId: MMSG-26355]
+api_request_basket.c(21): An unrecognized header ("Client-Type") is being added  	[MsgId: MMSG-26595]
+api_request_basket.c(21): "Client-Type: API-UAT_TEST" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+api_request_basket.c(21): web_add_header("Client-Type") was successful  	[MsgId: MMSG-26392]
+api_request_basket.c(22): web_add_header("X-API-Version") started  	[MsgId: MMSG-26355]
+api_request_basket.c(22): An unrecognized header ("X-API-Version") is being added  	[MsgId: MMSG-26595]
+api_request_basket.c(22): "X-API-Version: 1" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+api_request_basket.c(22): web_add_header("X-API-Version") was successful  	[MsgId: MMSG-26392]
+api_request_basket.c(36): web_custom_request("api_request_basket") started  	[MsgId: MMSG-26355]
+api_request_basket.c(36): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_request_basket.c(36): Notify: Parameter Substitution: parameter "login" =  "9052088835"
+api_request_basket.c(36): Notify: Parameter Substitution: parameter "priceplan" =  "CNT7VSE4F"
+api_request_basket.c(36): Notify: Parameter Substitution: parameter "hash_qouted" =  "H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D"
+api_request_basket.c(36): Warning: The string '"socsOff":[],"socsOn":["03PCB"]' with parameter delimiters is not a parameter.
+api_request_basket.c(36): t=2279ms: Closed connection [0] to ms-loadrtst045:7001 after completing 1 request(s)  	[MsgId: MMSG-26000]
+api_request_basket.c(36): t=2279ms: Connecting [0] to host 172.21.225.48:21001  	[MsgId: MMSG-26000]
+api_request_basket.c(36): t=2291ms: Connected socket [0] from 10.50.255.155:36673 to 172.21.225.48:21001 in 12 ms  	[MsgId: MMSG-26000]
+api_request_basket.c(36): t=2292ms: 443-byte request headers for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     PUT /api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV
+api_request_basket.c(36):     8G%2F67GUUrFq4hom4G4eLE%3D HTTP/1.1\r\n
+api_request_basket.c(36):     Content-Type: application/json\r\n
+api_request_basket.c(36):     Client-Type: API-UAT_TEST\r\n
+api_request_basket.c(36):     X-API-Version: 1\r\n
+api_request_basket.c(36):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+api_request_basket.c(36):     Accept-Encoding: gzip, deflate\r\n
+api_request_basket.c(36):     Accept: */*\r\n
+api_request_basket.c(36):     Connection: Keep-Alive\r\n
+api_request_basket.c(36):     Host: dr-web01:21001\r\n
+api_request_basket.c(36):     Cookie: token=16A7665A159997FCE95B9D5F9B026EEF\r\n
+api_request_basket.c(36):     Content-Length: 33\r\n
+api_request_basket.c(36):     \r\n
+api_request_basket.c(36): t=2293ms: 33-byte request body for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     {"socsOff":[],"socsOn":["03PCB"]}
+api_request_basket.c(36): t=2730ms: 140-byte response headers for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     HTTP/1.1 200 OK\r\n
+api_request_basket.c(36):     Date: Thu, 01 Apr 2021 13:28:25 GMT\r\n
+api_request_basket.c(36):     Transfer-Encoding: chunked\r\n
+api_request_basket.c(36):     Content-Type: application/json\r\n
+api_request_basket.c(36):     Content-Encoding: gzip\r\n
+api_request_basket.c(36):     \r\n
+api_request_basket.c(36): t=2731ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     000a\r\n
+api_request_basket.c(36): t=2732ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     \r\n
+api_request_basket.c(36): t=2732ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36): t=2732ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     00f8\r\n
+api_request_basket.c(36): t=2732ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     \r\n
+api_request_basket.c(36):     0000\r\n
+api_request_basket.c(36):     \r\n
+api_request_basket.c(36): t=2733ms: 248-byte ENCODED response body received for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36): t=2734ms: 1001-byte DECODED response body for "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D" (RelFrameId=1, Internal ID=2)
+api_request_basket.c(36):     {"meta":{"status":"OK","code":20000,"message":null},"conflicts":[{"conflictType":6,"soc":"
+api_request_basket.c(36):     03PCB","conflictingSoc":null},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ECCB2
+api_request_basket.c(36):     BSZR"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAM_I50"},{"conflictType":1
+api_request_basket.c(36):     2,"soc":"CNT7VSE4F","conflictingSoc":"SZR1FG5O"},{"conflictType":12,"soc":"CNT7VSE4F","con
+api_request_basket.c(36):     flictingSoc":"R05CUG_0"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"UNL_BL1"},
+api_request_basket.c(36):     {"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"GPRSNOT_C"},{"conflictType":12,"soc
+api_request_basket.c(36):     ":"CNT7VSE4F","conflictingSoc":"RFZ_NW2"},{"conflictType":12,"soc":"CNT7VSE4F","conflictin
+api_request_basket.c(36):     gSoc":"NOTIFY"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAMRLTB"},{"confli
+api_request_basket.c(36):     ctType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAM_I100"},{"conflictType":12,"soc":"CNT7V
+api_request_basket.c(36):     SE4F","conflictingSoc":"SMSC_NW"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"U
+api_request_basket.c(36):     NL_MOB1"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"LTE_INETP"}],"requestId":
+api_request_basket.c(36):     3696600384}
+api_request_basket.c(36): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_request_basket.c(36): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 13:28:25 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"conflicts":[{"conflictType":6,"soc":"03PCB","conflictingSoc":null},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ECCB2BSZR"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAM_I50"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"SZR1FG5O"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"R05CUG_0"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"UNL_BL1"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"GPRSNOT_C"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"RFZ_NW2"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"NOTIFY"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAMRLTB"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAM_I100"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"SMSC_NW"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"UNL_MOB1"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"LTE_INETP"}],"requestId":3696600384}".
+api_request_basket.c(36): t=2736ms: Request done "http://dr-web01:21001/api/request/basket?ctn=9052088835&pricePlanName=CNT7VSE4F&freeChange=true&hash=H7wIwV8G%2F67GUUrFq4hom4G4eLE%3D"  	[MsgId: MMSG-26000]
+api_request_basket.c(36): web_custom_request("api_request_basket") was successful, 258 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_request_basket.c(47): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_request_basket.c(47): Notify: Parameter Substitution: parameter "sysTokenPL" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_request_basket.c(47): Notify: Parameter Substitution: parameter "login" =  "9052088835"
+api_request_basket.c(47): Notify: Parameter Substitution: parameter "priceplan" =  "CNT7VSE4F"
+api_request_basket.c(47): Notify: Parameter Substitution: parameter "fullresponse" =  "HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 13:28:25 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"conflicts":[{"conflictType":6,"soc":"03PCB","conflictingSoc":null},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ECCB2BSZR"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAM_I50"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"SZR1FG5O"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"R05CUG_0"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"UNL_BL1"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"GPRSNOT_C"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"RFZ_NW2"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"NOTIFY"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAMRLTB"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"ROAM_I100"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"SMSC_NW"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"UNL_MOB1"},{"conflictType":12,"soc":"CNT7VSE4F","conflictingSoc":"LTE_INETP"}],"requestId":3696600384}"
+api_request_basket.c(54): Notify: Transaction "api_request_basket" ended with a "Pass" status (Duration: 0,7006 Wasted Time: 0,1783).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+t=2796ms: Closed connection [0] to dr-web01:21001 after completing 1 request(s)  	[MsgId: MMSG-26000]

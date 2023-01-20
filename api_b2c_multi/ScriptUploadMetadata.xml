@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>api_b2c_multi</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="api_2_0_info_rests.c" Filter="2" />
+    <FileEntry Name="pool_get_hash.c" Filter="2" />
+    <FileEntry Name="api_2_0_info_tveSubscriptions.c" Filter="2" />
+    <FileEntry Name="api_1_0_GET_setting_notifications.c" Filter="2" />
+    <FileEntry Name="api_info_trialSvod.c" Filter="2" />
+    <FileEntry Name="api_info_1_onlineBillDetail.c" Filter="2" />
+    <FileEntry Name="api_info_1_loginInfo.c" Filter="2" />
+    <FileEntry Name="auth_one.c" Filter="2" />
+    <FileEntry Name="auth_sys.c" Filter="2" />
+    <FileEntry Name="checkResult.c" Filter="2" />
+    <FileEntry Name="api_2_0_info_accumulators.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_prepaidAddBalance.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_prepaidBalance.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_postpaidDebt.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_postpaidBalance.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_rests.c" Filter="2" />
+    <FileEntry Name="auth.c" Filter="2" />
+    <FileEntry Name="auth_xbr.c" Filter="2" />
+    <FileEntry Name="api_1_0_localization.c" Filter="2" />
+    <FileEntry Name="api_2_0_info_serviceList.c" Filter="2" />
+    <FileEntry Name="api_1_0_offer_check.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_serviceAvailableList.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_userType.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_userNotifications.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_mcBalance.c" Filter="2" />
+    <FileEntry Name="api_2_0_offer_check.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_pricePlan.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_subscriptions.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_serviceList.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_status.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_accumulators.c" Filter="2" />
+    <FileEntry Name="api_2_0_info_pricePlan.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="api_b2c_multi.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="api_b2c_multi.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="23_b2c_postpaid_3000.dat" Filter="2" />
+    <FileEntry Name="23_host_api.dat" Filter="2" />
+    <FileEntry Name="login_sys.dat" Filter="2" />
+    <FileEntry Name="login_lego_child.dat" Filter="2" />
+    <FileEntry Name="HashGen_ServerPath.dat" Filter="2" />
+    <FileEntry Name="23_host_xbr.dat" Filter="2" />
+    <FileEntry Name="accCode.dat" Filter="2" />
+    <FileEntry Name="23_b2c_postpaid_1_ctn_on_ban_1010.dat" Filter="2" />
+    <FileEntry Name="post_autoprodli.dat" Filter="2" />
+    <FileEntry Name="23_password.dat" Filter="2" />
+    <FileEntry Name="23_b2c_prepaid_10000.dat" Filter="2" />
+    <FileEntry Name="skipEligibilityRulesCheck.dat" Filter="2" />
+    <FileEntry Name="post_unlimit.dat" Filter="2" />
+    <FileEntry Name="emailType.dat" Filter="2" />
+    <FileEntry Name="actionType.dat" Filter="2" />
+    <FileEntry Name="login_lego.dat" Filter="2" />
+    <FileEntry Name="system_token.dat" Filter="2" />
+    <FileEntry Name="Action34.c" Filter="2" />
+    <FileEntry Name="combined_api_b2c_multi.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="api_b2c_multi.bak" Filter="1" />
+    <FileEntry Name="api_b2c_multi.c.pickle" Filter="1" />
+    <FileEntry Name="api_b2c_multi.ci" Filter="1" />
+    <FileEntry Name="api_b2c_multi.prm.bak" Filter="1" />
+    <FileEntry Name="api_b2c_multi.sdf" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

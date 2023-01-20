@@ -1,0 +1,173 @@
+Virtual User Script started at : 01.04.2021 12:08:47
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (апр 01 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_invite\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(11): Notify: Parameter Substitution: parameter "system_token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+Action.c(11): Notify: Saving Parameter "token = 16A7665A159997FCE95B9D5F9B026EEF".
+Action.c(13): Notify: Transaction "TMP_api_b2c_invite" started.
+api_1_0_invite_create_and_accept.c(3): Notify: Parameter Substitution: parameter "create_mainCTN" =  "9055671925"
+api_1_0_invite_create_and_accept.c(3): Notify: Saving Parameter "login = 9055671925".
+api_1_0_invite_create_and_accept.c(4): Notify: Next row for parameter create_mainCTN_hash = 1 [table  = create_mainCTN_hash].
+api_1_0_invite_create_and_accept.c(4): Notify: Parameter Substitution: parameter "create_mainCTN_hash" =  "1OrTadKeEHejmIpGJ7BmgOdAcGc%3D"
+api_1_0_invite_create_and_accept.c(4): Notify: Saving Parameter "hash = 1OrTadKeEHejmIpGJ7BmgOdAcGc%3D".
+api_1_0_invite_create_and_accept.c(5): Notify: Next row for parameter create_extraCTN = 1 [table  = create_extraCTN].
+api_1_0_invite_create_and_accept.c(5): Notify: Parameter Substitution: parameter "create_extraCTN" =  "9030160017"
+api_1_0_invite_create_and_accept.c(5): Notify: Saving Parameter "login_extra = 9030160017".
+api_1_0_invite_create_and_accept.c(7): Notify: Parameter Substitution: parameter "login" =  "9055671925"
+api_1_0_invite_create_and_accept.c(7): Notify: Parameter Substitution: parameter "login_extra" =  "9030160017"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 90556719259030160017SEB_SHARE".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "concat" =  "90556719259030160017SEB_SHARE"
+pool_get_hash.c(12): t=25676ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(12):     Date: Thu, 01 Apr 2021 09:08:48 GMT\r\n
+pool_get_hash.c(12):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(12):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=25691ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     0197\r\n
+pool_get_hash.c(12): t=25692ms: 2-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=25694ms: 407-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(12):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(12):     or.ru/"><return><concat>90556719259030160017SEB_SHARE</concat><hmacSha1>cM5NlOSGN4xqm/y/9O
+pool_get_hash.c(12):     et5sfDKfA=</hmacSha1><urlQuote>cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D</urlQuote></return></ns0
+pool_get_hash.c(12):     :getHashByConcatResponse></S:Body></S:Envelope>
+pool_get_hash.c(12): Notify: Saving Parameter "hash_qouted = cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D".
+pool_get_hash.c(12): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(12): t=25914ms: 8-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     0000\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") was successful, 407 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(29): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 6,1318 Wasted Time: 0,2444).
+pool_get_hash.c(31): Notify: Parameter Substitution: parameter "hash_qouted" =  "cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D"
+pool_get_hash.c(31): cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D
+api_1_0_invite_create_and_accept.c(9): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(9): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_invite_create_and_accept.c(10): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(10): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_invite_create_and_accept.c(11): web_add_cookie started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(11): Notify: Parameter Substitution: parameter "token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_invite_create_and_accept.c(11): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+api_1_0_invite_create_and_accept.c(11): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_1_0_invite_create_and_accept.c(12): web_add_header("Content-Type") started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(12): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+api_1_0_invite_create_and_accept.c(12): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
+api_1_0_invite_create_and_accept.c(14): Notify: Transaction "api_1_0_invite_create_GET" started.
+api_1_0_invite_create_and_accept.c(15): web_custom_request("invite_create") started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(15): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_invite_create_and_accept.c(15): Notify: Parameter Substitution: parameter "login" =  "9055671925"
+api_1_0_invite_create_and_accept.c(15): Notify: Parameter Substitution: parameter "login_extra" =  "9030160017"
+api_1_0_invite_create_and_accept.c(15): Notify: Parameter Substitution: parameter "hash_qouted" =  "cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D"
+api_1_0_invite_create_and_accept.c(15): t=34585ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/invite/create?ctnMain=9055671925&type=SEB_SHARE&ctnExtra=9030160017&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_invite_create_and_accept.c(15):     HTTP/1.1 200 OK\r\n
+api_1_0_invite_create_and_accept.c(15):     Date: Thu, 01 Apr 2021 09:08:53 GMT\r\n
+api_1_0_invite_create_and_accept.c(15):     Transfer-Encoding: chunked\r\n
+api_1_0_invite_create_and_accept.c(15):     Content-Type: application/json\r\n
+api_1_0_invite_create_and_accept.c(15):     Content-Encoding: gzip\r\n
+api_1_0_invite_create_and_accept.c(15):     \r\n
+api_1_0_invite_create_and_accept.c(15): t=34587ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/invite/create?ctnMain=9055671925&type=SEB_SHARE&ctnExtra=9030160017&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_invite_create_and_accept.c(15):     000a\r\n
+api_1_0_invite_create_and_accept.c(15): t=34587ms: 8-byte chunked response overhead for "http://dr-web01:21001/api/1.0/invite/create?ctnMain=9055671925&type=SEB_SHARE&ctnExtra=9030160017&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_invite_create_and_accept.c(15):     \r\n
+api_1_0_invite_create_and_accept.c(15):     003a\r\n
+api_1_0_invite_create_and_accept.c(15): t=34588ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/invite/create?ctnMain=9055671925&type=SEB_SHARE&ctnExtra=9030160017&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_invite_create_and_accept.c(15):     \r\n
+api_1_0_invite_create_and_accept.c(15):     0000\r\n
+api_1_0_invite_create_and_accept.c(15):     \r\n
+api_1_0_invite_create_and_accept.c(15): t=34589ms: 68-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/invite/create?ctnMain=9055671925&type=SEB_SHARE&ctnExtra=9030160017&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_invite_create_and_accept.c(15): t=34590ms: 52-byte DECODED response body for "http://dr-web01:21001/api/1.0/invite/create?ctnMain=9055671925&type=SEB_SHARE&ctnExtra=9030160017&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_invite_create_and_accept.c(15):     {"meta":{"status":"OK","code":20000,"message":null}}
+api_1_0_invite_create_and_accept.c(15): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_1_0_invite_create_and_accept.c(15): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://dr-web01:21001/api/1.0/invite/create?ctnMain=9055671925&type=SEB_SHARE&ctnExtra=9030160017&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D"  	[MsgId: MMSG-26548]
+api_1_0_invite_create_and_accept.c(15): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 09:08:53 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null}}".
+api_1_0_invite_create_and_accept.c(15): web_custom_request("invite_create") was successful, 68 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_invite_create_and_accept.c(23): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_1_0_invite_create_and_accept.c(23): Notify: Parameter Substitution: parameter "token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_invite_create_and_accept.c(23): Notify: Parameter Substitution: parameter "login" =  "9055671925"
+api_1_0_invite_create_and_accept.c(23): Notify: Parameter Substitution: parameter "fullresponse" =  "HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 09:08:53 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null}}"
+api_1_0_invite_create_and_accept.c(24): Notify: Transaction "api_1_0_invite_create_GET" ended with a "Pass" status (Duration: 8,5179 Wasted Time: 0,0119).
+api_1_0_invite_create_and_accept.c(27): Notify: Next row for parameter accept_mainCTN_hash = 1 [table  = accept_mainCTN_hash].
+api_1_0_invite_create_and_accept.c(27): Notify: Parameter Substitution: parameter "accept_mainCTN_hash" =  "cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D"
+api_1_0_invite_create_and_accept.c(27): Notify: Saving Parameter "hash = cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D".
+api_1_0_invite_create_and_accept.c(29): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(29): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_invite_create_and_accept.c(30): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(30): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_invite_create_and_accept.c(31): web_add_cookie started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(31): Notify: Parameter Substitution: parameter "token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_invite_create_and_accept.c(31): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_invite_create_and_accept.c(31): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_1_0_invite_create_and_accept.c(33): Notify: Transaction "api_1_0_invite_accept" started.
+api_1_0_invite_create_and_accept.c(34): web_url("invite_accept") started  	[MsgId: MMSG-26355]
+api_1_0_invite_create_and_accept.c(34): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_invite_create_and_accept.c(34): Notify: Parameter Substitution: parameter "login" =  "9055671925"
+api_1_0_invite_create_and_accept.c(34): Notify: Parameter Substitution: parameter "login_extra" =  "9030160017"
+api_1_0_invite_create_and_accept.c(34): Notify: Parameter Substitution: parameter "hash" =  "cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D"
+api_1_0_invite_create_and_accept.c(34): t=34844ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/invite/accept?ctnMain=9055671925&ctnExtra=9030160017&type=SEB_SHARE&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_invite_create_and_accept.c(34):     HTTP/1.1 200 OK\r\n
+api_1_0_invite_create_and_accept.c(34):     Date: Thu, 01 Apr 2021 09:09:02 GMT\r\n
+api_1_0_invite_create_and_accept.c(34):     Transfer-Encoding: chunked\r\n
+api_1_0_invite_create_and_accept.c(34):     Content-Type: application/json\r\n
+api_1_0_invite_create_and_accept.c(34):     Content-Encoding: gzip\r\n
+api_1_0_invite_create_and_accept.c(34):     \r\n
+api_1_0_invite_create_and_accept.c(34): t=34845ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/invite/accept?ctnMain=9055671925&ctnExtra=9030160017&type=SEB_SHARE&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_invite_create_and_accept.c(34):     000a\r\n
+api_1_0_invite_create_and_accept.c(34): t=34845ms: 8-byte chunked response overhead for "http://dr-web01:21001/api/1.0/invite/accept?ctnMain=9055671925&ctnExtra=9030160017&type=SEB_SHARE&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_invite_create_and_accept.c(34):     \r\n
+api_1_0_invite_create_and_accept.c(34):     004b\r\n
+api_1_0_invite_create_and_accept.c(34): t=34846ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/invite/accept?ctnMain=9055671925&ctnExtra=9030160017&type=SEB_SHARE&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_invite_create_and_accept.c(34):     \r\n
+api_1_0_invite_create_and_accept.c(34):     0000\r\n
+api_1_0_invite_create_and_accept.c(34):     \r\n
+api_1_0_invite_create_and_accept.c(34): t=34846ms: 85-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/invite/accept?ctnMain=9055671925&ctnExtra=9030160017&type=SEB_SHARE&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_invite_create_and_accept.c(34): t=34846ms: 68-byte DECODED response body for "http://dr-web01:21001/api/1.0/invite/accept?ctnMain=9055671925&ctnExtra=9030160017&type=SEB_SHARE&hash=cM5NlOSGN4xqm%2Fy%2F9Oet5sfDKfA%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_invite_create_and_accept.c(34):     {"meta":{"status":"ERROR","code":20038,"message":"NEED_MODIFY_SOC"}}
+api_1_0_invite_create_and_accept.c(34): Notify: Saving Parameter "response = "status":"ERROR","code":20038,"message":"NEED_MODIFY_SOC"".
+api_1_0_invite_create_and_accept.c(34): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 09:09:02 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"ERROR","code":20038,"message":"NEED_MODIFY_SOC"}}".
+api_1_0_invite_create_and_accept.c(34): web_url("invite_accept") was successful, 85 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_invite_create_and_accept.c(41): Notify: Parameter Substitution: parameter "response" =  ""status":"ERROR","code":20038,"message":"NEED_MODIFY_SOC""
+api_1_0_invite_create_and_accept.c(41): Notify: Parameter Substitution: parameter "token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_invite_create_and_accept.c(41): Notify: Parameter Substitution: parameter "login" =  "9055671925"
+api_1_0_invite_create_and_accept.c(41): Notify: Parameter Substitution: parameter "fullresponse" =  "HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 09:09:02 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"ERROR","code":20038,"message":"NEED_MODIFY_SOC"}}"
+checkResult.c(5): Notify: Parameter Substitution: parameter "Date" =  "2021-04-01 12:09:02"
+checkResult.c(5): Error: 
+Date = 2021-04-01 12:09:02 Transaction "api_1_0_invite_accept" Login = 9055671925 Token = 16A7665A159997FCE95B9D5F9B026EEF Response was - HTTP/1.1 200 OK
+Date: Thu, 01 Apr 2021 09:09:02 GMT
+Transfer-Encoding: chunked
+Content-Type: application/json
+Content-Encoding: gzip
+
+{"meta":{"status":"ERROR","code":20038,"message":"NEED_MODIFY_SOC"}}
+api_1_0_invite_create_and_accept.c(42): Notify: Transaction "api_1_0_invite_accept" ended with a "Fail" status (Duration: 0,2369 Wasted Time: 0,0024).
+api_1_0_invite_create_and_accept.c(42): Notify: Transaction "api_1_0_invite_accept" has 1 error message(s).
+api_1_0_invite_create_and_accept.c(42): Notify: The 1st error message associated with transaction "api_1_0_invite_accept" is "Error 0: 
+Date = 2021-04-01 12:09:02 Transaction "api_1_0_invite_accept" Login = 9055671925 Token = 16A7665A159997FCE95B9D5F9B026EEF Response was - HTTP/1.1 200 OK
+Date: Thu, 01 Apr 2021 09:09:02 GMT
+Transfer-Encoding: chunked
+Content-Type: application/json
+Content-Encoding: gzip
+
+{"meta":{"status":"ERROR","code":20038,"message":"NEED_MODIFY_SOC"}}"
+api_1_0_invite_create_and_accept.c(44): Notify: Freeing Parameter 'login'.
+api_1_0_invite_create_and_accept.c(45): Notify: Freeing Parameter 'hash'.
+api_1_0_invite_create_and_accept.c(46): Notify: Freeing Parameter 'login_extra'.
+Action.c(26): Notify: Transaction "TMP_api_b2c_invite" ended with a "Pass" status (Duration: 15,0638 Wasted Time: 0,2594).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

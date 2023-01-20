@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\beework\AutomatedTesting\USSS\_scripts\__PL\api\39_api_invite_additionalNumberCheck
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ec:\beework\automatedtesting\usss\_scripts\__pl\api\39_api_invite_additionalnumbercheck\\logfile.log
+c:\beework\automatedtesting\usss\_scripts\__pl\api\39_api_invite_additionalnumbercheck\\combined_39_api_invite_additionalNumberCheck.c
+c:\beework\automatedtesting\usss\_scripts\__pl\api\39_api_invite_additionalnumbercheck\\pre_cci.c

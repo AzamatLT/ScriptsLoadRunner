@@ -1,0 +1,99 @@
+Virtual User Script started at : 01.04.2021 16:56:17
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (апр 01 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_info_conflict\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+api_1_0_info_conflict.c(4): Notify: Parameter Substitution: parameter "tarif_Random100" =  "54"
+api_1_0_info_conflict.c(9): Notify: Next row for parameter ctn = 10 [table  = ctn].
+api_1_0_info_conflict.c(9): Notify: Parameter Substitution: parameter "ctn" =  "9672216179"
+api_1_0_info_conflict.c(9): Notify: Next row for parameter SocToAdd = 10 [table  = SocToAdd].
+api_1_0_info_conflict.c(9): Notify: Parameter Substitution: parameter "SocToAdd" =  "AB_T_VIP"
+pool_get_hash.c(4): Notify: Saving Parameter "concat = 9672216179AB_T_VIP".
+pool_get_hash.c(6): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(8): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(8): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "concat" =  "9672216179AB_T_VIP"
+pool_get_hash.c(13): t=2111ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(13):     Date: Thu, 01 Apr 2021 13:56:17 GMT\r\n
+pool_get_hash.c(13):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(13):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2120ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     018a\r\n
+pool_get_hash.c(13): t=2120ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13):     0000\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2127ms: 394-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(13):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(13):     or.ru/"><return><concat>9672216179AB_T_VIP</concat><hmacSha1>AoCfVsL8JvurN/nAp46twUilykc=<
+pool_get_hash.c(13):     /hmacSha1><urlQuote>AoCfVsL8JvurN%2FnAp46twUilykc%3D</urlQuote></return></ns0:getHashByCon
+pool_get_hash.c(13):     catResponse></S:Body></S:Envelope>
+pool_get_hash.c(13): Notify: Saving Parameter "hash_qouted = AoCfVsL8JvurN%2FnAp46twUilykc%3D".
+pool_get_hash.c(13): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") was successful, 394 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(30): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,1975 Wasted Time: 0,1696).
+api_1_0_info_conflict.c(12): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(12): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_info_conflict.c(13): web_add_cookie started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(13): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_info_conflict.c(13): Notify: Parameter Substitution: parameter "endpoint" =  "my.beelinetst.ru"
+api_1_0_info_conflict.c(13): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_1_0_info_conflict.c(14): web_add_header("Usss-Language") started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(14): web_add_header("Usss-Language") was successful  	[MsgId: MMSG-26392]
+api_1_0_info_conflict.c(17): Notify: Transaction "api_1_0_info_conflict" started.
+api_1_0_info_conflict.c(19): web_url("api_1_0_info_conflict") started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(19): Notify: Parameter Substitution: parameter "endpoint" =  "my.beelinetst.ru"
+api_1_0_info_conflict.c(19): Notify: Next row for parameter ctn = 10 [table  = ctn].
+api_1_0_info_conflict.c(19): Notify: Parameter Substitution: parameter "ctn" =  "9672216179"
+api_1_0_info_conflict.c(19): Notify: Next row for parameter SocToAdd = 10 [table  = SocToAdd].
+api_1_0_info_conflict.c(19): Notify: Parameter Substitution: parameter "SocToAdd" =  "AB_T_VIP"
+api_1_0_info_conflict.c(19): Notify: Parameter Substitution: parameter "hash_qouted" =  "AoCfVsL8JvurN%2FnAp46twUilykc%3D"
+api_1_0_info_conflict.c(19): t=3770ms: 297-byte response headers for "http://my.beelinetst.ru/api/99.0/info/conflict?ctn=9672216179&soc=AB_T_VIP&hash=AoCfVsL8JvurN%2FnAp46twUilykc%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_conflict.c(19):     HTTP/1.1 200 OK\r\n
+api_1_0_info_conflict.c(19):     Server: nginx/1.10.1\r\n
+api_1_0_info_conflict.c(19):     Date: Thu, 01 Apr 2021 13:56:18 GMT\r\n
+api_1_0_info_conflict.c(19):     Content-Type: application/json\r\n
+api_1_0_info_conflict.c(19):     Transfer-Encoding: chunked\r\n
+api_1_0_info_conflict.c(19):     Connection: keep-alive\r\n
+api_1_0_info_conflict.c(19):     Content-Encoding: gzip\r\n
+api_1_0_info_conflict.c(19):     Set-Cookie: API_SRV=plApi46; path=/\r\n
+api_1_0_info_conflict.c(19):     Access-Control-Allow-Origin: *\r\n
+api_1_0_info_conflict.c(19):     Access-Control-Allow-Headers: usss-token\r\n
+api_1_0_info_conflict.c(19):     \r\n
+api_1_0_info_conflict.c(19): t=3772ms: 5-byte chunked response overhead for "http://my.beelinetst.ru/api/99.0/info/conflict?ctn=9672216179&soc=AB_T_VIP&hash=AoCfVsL8JvurN%2FnAp46twUilykc%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_conflict.c(19):     113\r\n
+api_1_0_info_conflict.c(19): t=3772ms: 7-byte chunked response overhead for "http://my.beelinetst.ru/api/99.0/info/conflict?ctn=9672216179&soc=AB_T_VIP&hash=AoCfVsL8JvurN%2FnAp46twUilykc%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_conflict.c(19):     \r\n
+api_1_0_info_conflict.c(19):     0\r\n
+api_1_0_info_conflict.c(19):     \r\n
+api_1_0_info_conflict.c(19): t=3772ms: 275-byte ENCODED response body received for "http://my.beelinetst.ru/api/99.0/info/conflict?ctn=9672216179&soc=AB_T_VIP&hash=AoCfVsL8JvurN%2FnAp46twUilykc%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_conflict.c(19): t=3773ms: 348-byte DECODED response body for "http://my.beelinetst.ru/api/99.0/info/conflict?ctn=9672216179&soc=AB_T_VIP&hash=AoCfVsL8JvurN%2FnAp46twUilykc%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_conflict.c(19):     {"meta":{"status":"OK","code":20000,"message":null},"conflictList":[{"conflictType":"99","
+api_1_0_info_conflict.c(19):     name":"AB_T_VIP","entityName":"\xD0\x91\xD0\xB0\xD0\xBB\xD0\xB0\xD0\xBD\xD1\x81 \xD0\xBD\xD0
+api_1_0_info_conflict.c(19):     \xB0 \xD1\x8D\xD0\xBA\xD1\x80\xD0\xB0\xD0\xBD\xD0\xB5 - \xD0\xBF\xD1\x80\xD0\xBE\xD0\xB2\xD0
+api_1_0_info_conflict.c(19):     \xB5\xD1\x80\xD0\xBA\xD0\xB0 \xD0\xB4\xD0\xBE\xD1\x81\xD1\x82\xD1\x83\xD0\xBF\xD0\xBD\xD0\xBE
+api_1_0_info_conflict.c(19):     \xD1\x81\xD1\x82\xD0\xB8","template":"transaction.error.validation.rule.transaction.offer.
+api_1_0_info_conflict.c(19):     compatibility.service.available.no","templateText":"\xD0\xA3\xD1\x81\xD0\xBB\xD1\x83\xD0\xB3
+api_1_0_info_conflict.c(19):     \xD0\xB0 \xD0\xBD\xD0\xB5\xD0\xB4\xD0\xBE\xD1\x81\xD1\x82\xD1\x83\xD0\xBF\xD0\xBD\xD0\xB0"
+api_1_0_info_conflict.c(19):     }]}
+api_1_0_info_conflict.c(19): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_1_0_info_conflict.c(19): web_url("api_1_0_info_conflict") was successful, 275 body bytes, 297 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_info_conflict.c(27): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_1_0_info_conflict.c(38): Notify: Transaction "api_1_0_info_conflict" ended with a "Pass" status (Duration: 1,5647 Wasted Time: 0,0120).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

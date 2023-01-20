@@ -1,0 +1,11 @@
+[t2]
+SnapshotXmlFile=snapshot_2.xml
+ContentType=DummyContentType
+StepName=Url: accumulators
+Total=0
+RequestHeaderFile=t2_RequestHeader.txt
+ResponseHeaderFile=t2_ResponseHeader.txt
+RawStepEndTime=1617614906002
+RawStepName=accumulators
+RequestBodyFile=t2_RequestBody.txt
+RawStepStartTime=1617614905374

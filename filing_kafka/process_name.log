@@ -1,0 +1,11 @@
+"C:/Program Files/Java/jdk-11.0.13/bin/javaw.exe" -Dmdrv.launcher=1 -Xverify:none -Djava.security.policy="C:\Program Files (x86)\Micro Focus\LoadRunner/classes/security/recorder.policy" -Djava.class.path="C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\;C:\Program Files (x86)\Micro Focus\LoadRunner/classes;C:\Program Files (x86)\Micro Focus\LoadRunner/classes/srv;C:\Program Files (x86)\Micro Focus\LoadRunner/classes/srv/additional_classes;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\kafka-clients-2.8.0.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\kafka_2.13-2.6.0.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\log4j-1.2.17.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\nio.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\scala-library-2.13.6.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\slf4j-api-1.7.25.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\slf4j-log4j12-1.7.25.jar;C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka\streams-quickstart-java-3.1.0.jar;;C:\Program Files (x86)\Micro Focus\LoadRunner/lib/xstream-1.4.11.1.jar;C:\Program Files (x86)\Micro Focus\LoadRunner/lib/xpp3-1.1.4c.jar;C:\Program Files (x86)\Micro Focus\LoadRunner/lib/common-java-rr.jar;;;C:\Program Files (x86)\Micro Focus\LoadRunner\lib\FlatBuf-1.0-SNAPSHOT.jar;C:\Program Files (x86)\Micro Focus\LoadRunner\lib\MFJavaServer-1.0-SNAPSHOT.jar;;" -Dcom.hpe.lr.java2.record.scriptDir="C:\Git\ScriptsPaternLoadRunner\kafka\filing_kafka" -Dscript.useDedicatedCl="false" -Dscript.properties="cfgpp=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka\\default.cfg
+lr_bin_dir=C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\bin
+lr_dat_dir=C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\dat
+lr_root_dir=C:\\Program Files (x86)\\Micro Focus\\LoadRunner
+lr_usr_dir=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka
+mode_debug=
+out=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka\\
+product_name=vugen
+temp_dir=
+usr=C:\\Git\\ScriptsPaternLoadRunner\\kafka\\filing_kafka\\filing_kafka.usr
+" -Dmf.server.portIdPath="C:\Users\TEST\AppData\Local\Temp\JavaReplay" mf.server.Main 55600 JavaRR vugen

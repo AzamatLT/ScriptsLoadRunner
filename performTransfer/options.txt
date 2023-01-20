@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Load_tests\UMCS\_script\performTransfer
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ec:\load_tests\umcs\_script\performtransfer\\logfile.log
+c:\load_tests\umcs\_script\performtransfer\\combined_performTransfer.c
+c:\load_tests\umcs\_script\performtransfer\\pre_cci.c

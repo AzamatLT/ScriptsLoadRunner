@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\AIMalikov\Documents\USSS\rp\rp_apitype_60
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ec:\users\aimalikov\documents\usss\rp\rp_apitype_60\\logfile.log
+c:\users\aimalikov\documents\usss\rp\rp_apitype_60\\combined_rp_apitype_60.c
+c:\users\aimalikov\documents\usss\rp\rp_apitype_60\\pre_cci.c

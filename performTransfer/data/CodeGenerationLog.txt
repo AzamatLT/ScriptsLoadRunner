@@ -1,0 +1,1148 @@
+lrd.c/fjInitDB: Using the "30" entry in section [ODBC_WINNT] in the "lrd.ini" file ("C:\Program Files\Hp\LoadRunner\bin\lrdb32.dll")
+
+
+Module 'vugen.exe' has '11.0.9409.0' version
+
+
+Module 'ntdll.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'kernel32.dll' has '6.1.7601.17965 (win7sp1_gdr.121004-0333)' version
+
+
+Module 'KERNELBASE.dll' has '6.1.7601.17965 (win7sp1_gdr.121004-0333)' version
+
+
+Module 'ProtocolInfoLib.dll' has '11.0.0.8859' version
+
+
+Module 'inifile.dll' has '11.0.9409.0' version
+
+
+Module 'mosifs32.dll' has '11.0.1426.0' version
+
+
+Module 'thrdutil.dll' has '11.0.0.1002' version
+
+
+Module 'mmalloc_logic.dll' has '11.0.0.1002' version
+
+
+Module 'ADVAPI32.dll' has '6.1.7601.23392 (win7sp1_ldr.160317-0600)' version
+
+
+Module 'msvcrt.dll' has '7.0.7601.17744 (win7sp1_gdr.111215-1535)' version
+
+
+Module 'sechost.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'RPCRT4.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'USER32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'GDI32.dll' has '6.1.7601.19091 (win7sp1_gdr.151208-0600)' version
+
+
+Module 'LPK.dll' has '6.1.7601.19146 (win7sp1_gdr.160205-0600)' version
+
+
+Module 'USP10.dll' has '1.0626.7601.19054 (win7sp1_gdr.151103-0600)' version
+
+
+Module 'MSVCR80.dll' has '8.00.50727.6229' version
+
+
+Module 'CrtInitiator.dll' has '11.0.0.1002' version
+
+
+Module 'CrtLoader_VS6.dll' has '9.20.0.0' version
+
+
+Module 'CrtLoader_VS8_0_50727_1433.dll' has '9.20.0.0' version
+
+
+Module 'CrtLoader_VS9_0_21022_8.dll' has '9.20.0.0' version
+
+
+Module 'MSVCR90.dll' has '9.00.30729.4148' version
+
+
+Module 'SHELL32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'SHLWAPI.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'config.dll' has '11.0.0.1002' version
+
+
+Module 'MLIB_DS.dll' has '11.0.0.1002' version
+
+
+Module 'MFC80.DLL' has '8.00.50727.6229' version
+
+
+Module 'OLEAUT32.dll' has '6.1.7601.19144' version
+
+
+Module 'ole32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'imagehlp.dll' has '6.1.7601.18288 (win7sp1_gdr.131018-1533)' version
+
+
+Module 'crlquery.dll' has '11.0.0.8859' version
+
+
+Module 'vug_grid.dll' has '11.0.0.8859' version
+
+
+Module 'XmlParserInterface.dll' has '11.0.0.1002' version
+
+
+Module 'xerces-c_2_7.dll' has '2, 7, 0' version
+
+
+Module 'WS2_32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'NSI.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'Xalan-C_1_10Mic.dll' has '1, 10, 0, 0' version
+
+
+Unable to obtain version information for 'XalanMessages_1_10.dll' module, last error: 1813
+
+
+Module 'icuin36.dll' has '3, 6, 0, 0' version
+
+
+Module 'icuuc36.dll' has '3, 6, 0, 0' version
+
+
+Module 'icudt36.dll' has '3, 6, 0, 0' version
+
+
+Module 'MSVCP80.dll' has '8.00.50727.6229' version
+
+
+Unable to obtain version information for 'std-vc-mt.dll' module, last error: 1813
+
+
+Module 'mic_regex.dll' has '11.0.0.1002' version
+
+
+Module 'DBIR32.dll' has '11.0.0.8859' version
+
+
+Module 'RecordEJB.dll' has '11.0.0.8859' version
+
+
+Module 'FuncView.dll' has '11.0.0.8859' version
+
+
+Module 'lr_vug32.dll' has '11.0.9409.0' version
+
+
+Module 'runlogic.dll' has '11.0.0.1002' version
+
+
+Module 'msg_handler.dll' has '11.0.0.1002' version
+
+
+Module 'comm_util.dll' has '11.0.0.1002' version
+
+
+Module 'xdr.dll' has '11.0.0.1002' version
+
+
+Module 'libxdrutil.dll' has '11.0.0.1002' version
+
+
+Unable to obtain version information for 'run_time_context.dll' module, last error: 1813
+
+
+Unable to obtain version information for 'rtc_protocol.dll' module, last error: 1813
+
+
+Module 'vusercfg.dll' has '11.0.9409.0' version
+
+
+Module 'DynamicTree.dll' has '11.0.9409.0' version
+
+
+Module 'COMCTL32.dll' has '5.82 (win7_rtm.090713-1255)' version
+
+
+Module 'MultiVuser.dll' has '11.0.0.8859' version
+
+
+Module 'parameng.dll' has '11.0.0.1002' version
+
+
+Module 'dtable32.dll' has '11.0.0.1002' version
+
+
+Module 'PickProtocol.dll' has '11.0.0.8859' version
+
+
+Module 'script_creator_helper.dll' has '11.0.0.8859' version
+
+
+Module 'vugencfg.dll' has '11.0.0.8859' version
+
+
+Module 'PathResolver.dll' has '11.0.0.1002' version
+
+
+Module 'slick_edit.dll' has '11.0.0.8859' version
+
+
+Unable to obtain version information for 'vsapi.dll' module, last error: 1813
+
+
+Module 'vsxmlutl.dll' has '2, 7, 0' version
+
+
+Module 'WINSPOOL.DRV' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'IMM32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'MSCTF.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'WSOCK32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'WININET.dll' has '11.00.9600.16428 (winblue_gdr.131013-1700)' version
+
+
+Module 'api-ms-win-downlevel-user32-l1-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'api-ms-win-downlevel-shlwapi-l1-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'api-ms-win-downlevel-version-l1-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'version.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'api-ms-win-downlevel-normaliz-l1-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'normaliz.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'iertutil.dll' has '11.00.9600.18283 (winblue_ltsb_escrow.160330-1405)' version
+
+
+Module 'api-ms-win-downlevel-advapi32-l1-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'USERENV.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'profapi.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'MicEouComponents.dll' has '11.0.0.8859' version
+
+
+Module 'BCGCBPRO93080.dll' has '9, 30, 0, 0' version
+
+
+Module 'comdlg32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'ODBC32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'WINMM.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'MicXmlViewHelper.dll' has '11.0.0.8859' version
+
+
+Module 'ReplayBinaryUtils32.dll' has '11.0.0.8859' version
+
+
+Module 'optn_dlg.dll' has '11.0.0.8859' version
+
+
+Module 'pefile.dll' has '11.0.0.8859' version
+
+
+Module 'sqlgrid.dll' has '11.0.0.8859' version
+
+
+Module 'MPR.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'odbcint.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'UxTheme.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'msimg32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'CRYPTBASE.dll' has '6.1.7601.23392 (win7sp1_ldr.160317-0600)' version
+
+
+Module 'ssohook.dll' has '4.8.6410.0' version
+
+
+Unable to obtain version information for 'MSVCP90.dll' module, last error: 2
+
+
+Module 'CLBCatQ.DLL' has '2001.12.8530.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'TDExtendedIntegration.dll' has '11.0.0.8859' version
+
+
+Module 'ATL80.DLL' has '8.00.50727.6229' version
+
+
+Module 'SOALicenseManager.dll' has '11.0.0.8859' version
+
+
+Module 'LSAPIW32.DLL' has '8, 0, 2, 0' version
+
+
+Module 'NETAPI32.dll' has '6.1.7601.17887 (win7sp1_gdr.120704-0720)' version
+
+
+Module 'netutils.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'srvcli.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'wkscli.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'msi.dll' has '5.0.7601.23342' version
+
+
+Module 'MFC80U.DLL' has '8.00.50727.6229' version
+
+
+Module 'LRCrashHandler.dll' has '11.0.0.1002' version
+
+
+Module 'BugslayerUtil.dll' has '4.50.000' version
+
+
+Module 'dbghelp.dll' has '6.1.0017.2 (DbgBuild.030121-2003)' version
+
+
+Module 'TDExtendedAPI.dll' has '11,0,0,4876' version
+
+
+Module 'MFC42.DLL' has '6.06.8063.0' version
+
+
+Module 'OLEPRO32.DLL' has '6.1.7601.19144' version
+
+
+Module 'urlmon.dll' has '11.00.9600.18283 (winblue_ltsb_escrow.160330-1405)' version
+
+
+Module 'api-ms-win-downlevel-ole32-l1-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'ATL.DLL' has '3.05.2284' version
+
+
+Module 'MSVCP60.dll' has '7.0.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'mscoree.dll' has '4.0.40305.0 (Main.040305-0000)' version
+
+
+Module 'mscoreei.dll' has '4.0.30319.34209 built by: FX452RTMGDR' version
+
+
+Module 'sxs.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'mscorwks.dll' has '2.0.50727.5485 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'mscorlib.ni.dll' has '2.0.50727.5485 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'CRYPTSP.dll' has '6.1.7601.18741 (win7sp1_gdr.150202-1526)' version
+
+
+Module 'rsaenh.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'RpcRtRemote.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'mscorsec.dll' has '2.0.50727.5483 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'WINTRUST.dll' has '6.1.7601.18839 (win7sp1_gdr.150427-0707)' version
+
+
+Module 'CRYPT32.dll' has '6.1.7601.18839 (win7sp1_gdr.150427-0707)' version
+
+
+Module 'MSASN1.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'ncrypt.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'bcrypt.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'bcryptprimitives.dll' has '6.1.7601.23217 (win7sp1_ldr.150921-1559)' version
+
+
+Module 'GPAPI.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'cryptnet.dll' has '6.1.7601.18839 (win7sp1_gdr.150427-0707)' version
+
+
+Module 'WLDAP32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'SensApi.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'BPTManagerImpl.dll' has '11.0.0.8859' version
+
+
+Module 'BPTManager.dll' has '1.0.0.0' version
+
+
+Module 'mscorjit.dll' has '2.0.50727.5467 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'Interop.TDExtendedAPI.dll' has '9.52.0.0' version
+
+
+Module 'Interop.SOAMaf.dll' has '9.52.0.0' version
+
+
+Module 'dwmapi.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'Comctl32.dll' has '5.82 (win7_rtm.090713-1255)' version
+
+
+Unable to obtain version information for 'vsRTE.dll' module, last error: 1813
+
+
+Module 'vugen_replay_api.dll' has '11.0.9409.0' version
+
+
+Module 'coparamui.dll' has '11.0.0.8859' version
+
+
+Module 'paramui.dll' has '11.0.0.8859' version
+
+
+Module 'is32.dll' has '11.0.0.8859' version
+
+
+Module 'paramlr.dll' has '11.0.0.1002' version
+
+
+Module 'paramtbl.dll' has '11.0.0.1002' version
+
+
+Module 'mmdtable.dll' has '11.0.0.1002' version
+
+
+Module 'libmemmap.dll' has '11.0.0.1002' version
+
+
+Module 'mmdbigtable.dll' has '11.0.0.1002' version
+
+
+Module 'paramcst.dll' has '11.0.0.1002' version
+
+
+Module 'paramunq.dll' has '11.0.0.1002' version
+
+
+Module 'paramfnc.dll' has '11.0.0.1002' version
+
+
+Module 'paramss.dll' has '11.0.0.1002' version
+
+
+Module 'paramdte.dll' has '11.0.0.1002' version
+
+
+Module 'paramvar.dll' has '11.0.0.1002' version
+
+
+Module 'paramrnd.dll' has '11.0.0.1002' version
+
+
+Module 'RecentScripts.dll' has '11.0.0.1093' version
+
+
+Module 'PSAPI.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'SOAProtocol.dll' has '11.0.0.8859' version
+
+
+Module 'ServiceManagementLight.dll' has '11.0.0.8859' version
+
+
+Module 'ServiceManagement.dll' has '11.0.0.8859' version
+
+
+Module 'WSDLSDK.dll' has '11.0.0.8859' version
+
+
+Unable to obtain version information for 'SoapRecordFilter.dll' module, last error: 1813
+
+
+Module 'WebServicesSDK.dll' has '11.0.0.8859' version
+
+
+Module 'LrJni.dll' has '11.0.0.8859' version
+
+
+Unable to obtain version information for 'ConfigurationUtil.dll' module, last error: 1813
+
+
+Module 'msvcm80.dll' has '8.00.50727.6229' version
+
+
+Module 'HttpUtils.dll' has '11.0.0.8859' version
+
+
+Module 'WSDLParser.dll' has '11.0.0.8859' version
+
+
+Module 'MicXMLDiffTool.dll' has '11.0.0.8859' version
+
+
+Module 'WSDLToolkits.dll' has '11.0.0.8859' version
+
+
+Module 'WsCommonLogger.dll' has '11.0.0.8859' version
+
+
+Module 'ServiceManagementUILib.dll' has '11.0.0.8859' version
+
+
+Module 'MicDynScriptHandler.dll' has '11.0.0.8859' version
+
+
+Module 'icuuc20.dll' has '2, 0, 0, 0' version
+
+
+Module 'icudt20.dll' has '2, 0, 0, 0' version
+
+
+Module 'base_scripthandler.dll' has '11.0.9409.0' version
+
+
+Module 'RICHED32.DLL' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'RICHED20.dll' has '5.31.23.1230' version
+
+
+Module 'TulipAppInfo.dll' has '10.0.2093.0' version
+
+
+Module 'ThreadSafeFileOperator.dll' has '11.0.0.8859' version
+
+
+Module 'xpcom.dll' has '1.9.2' version
+
+
+Module 'xul.dll' has '1.9.2' version
+
+
+Module 'sqlite3.dll' has '3.6.16.1' version
+
+
+Module 'MOZCRT19.dll' has '8.00.0000' version
+
+
+Unable to obtain version information for 'js3250.dll' module, last error: 1813
+
+
+Module 'nspr4.dll' has '4.8.3' version
+
+
+Module 'smime3.dll' has '3.12.4.5 Basic ECC' version
+
+
+Module 'nss3.dll' has '3.12.4.5 Basic ECC' version
+
+
+Module 'nssutil3.dll' has '3.12.4.5' version
+
+
+Module 'plc4.dll' has '4.8.3' version
+
+
+Module 'plds4.dll' has '4.8.3' version
+
+
+Module 'ssl3.dll' has '3.12.4.5 Basic ECC' version
+
+
+Module 'FwcWsp.dll' has '7.0' version
+
+
+Module 'DSROLE.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'mswsock.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'security.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'SECUR32.DLL' has '6.1.7601.23392 (win7sp1_ldr.160317-0600)' version
+
+
+Module 'SSPICLI.DLL' has '6.1.7601.23392 (win7sp1_ldr.160317-0600)' version
+
+
+Module 'credssp.dll' has '6.1.7601.23392 (win7sp1_ldr.160317-0600)' version
+
+
+Module 'msv1_0.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'cryptdll.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'wshtcpip.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'iphlpapi.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'WINNSI.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'VugenIntegration.dll' has '11.0.0.8859' version
+
+
+Module 'System.ni.dll' has '2.0.50727.5485 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'System.Drawing.ni.dll' has '2.0.50727.5492 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'System.Windows.Forms.ni.dll' has '2.0.50727.5491 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'gdiplus.dll' has '6.1.7601.23407 (win7sp1_ldr.160329-0600)' version
+
+
+Module 'mscorlib.resources.dll' has '2.0.50727.5420 (Win7SP1.050727-5400)' version
+
+
+Module 'interop.OTAClient.dll' has '11.9.9.9999' version
+
+
+Module 'ieframe.dll' has '11.00.9600.18283 (winblue_ltsb_escrow.160330-1405)' version
+
+
+Module 'api-ms-win-downlevel-shell32-l1-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'api-ms-win-downlevel-shlwapi-l2-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'PROPSYS.dll' has '7.00.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'SETUPAPI.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'CFGMGR32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'DEVOBJ.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'ntmarta.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'apphelp.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'api-ms-win-downlevel-advapi32-l2-1-0.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'mshtml.dll' has '11.00.9600.18283 (winblue_ltsb_escrow.160330-1405)' version
+
+
+Module 'mlang.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'wship6.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'windowscodecs.dll' has '6.2.9200.17251 (win8_gdr.150128-1514)' version
+
+
+Module 'VuGenFileDialog.dll' has '11.0.0.8859' version
+
+
+Module 'QTFileDialogLib.dll' has '11.0.700.0' version
+
+
+Module 'OTAWrapperLib.dll' has '11.0.721.0' version
+
+
+Module 'FileDialogServices.dll' has '11.0.0.8859' version
+
+
+Module 'QTFileDialogs.dll' has '11.0.0.8859' version
+
+
+Module 'QTFileDialogIfsLib.dll' has '11.0.700.0' version
+
+
+Module 'QTOTAWrapper.dll' has '11.0.0.8859' version
+
+
+Module 'System.Xml.ni.dll' has '2.0.50727.5485 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'Log4netWrap.dll' has '11.0.700.0' version
+
+
+Module 'MicLogFile.dll' has '11.0.2168.0' version
+
+
+Module 'System.Configuration.ni.dll' has '2.0.50727.5483 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'QTOTAWrapper.XmlSerializers.dll' has '11.0.1465.0' version
+
+
+Module 'shfolder.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'Infragistics2.Win.Misc.v7.3.dll' has '7.3.20073.1053' version
+
+
+Module 'Infragistics2.Win.v7.3.dll' has '7.3.20073.1053' version
+
+
+Module 'msimtf.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'jscript9.dll' has '11.00.9600.18283 (winblue_ltsb_escrow.160330-1405)' version
+
+
+Module 'Infragistics2.Shared.v7.3.dll' has '7.3.20073.1053' version
+
+
+Module 'uiautomationcore.dll' has '7.0.0.0 (win7_rtm.090713-1255)' version
+
+
+Module 'OLEACC.dll' has '7.0.0.0 (win7sp1_gdr.110826-1504)' version
+
+
+Module 'd2d1.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'DWrite.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'dxgi.dll' has '6.2.9200.16492 (win8_gdr_oobssr.130113-0015)' version
+
+
+Module 'd3d11.dll' has '6.2.9200.16570 (win8_gdr.130327-1526)' version
+
+
+Module 'D3D10Warp.dll' has '6.2.9200.17033 (win8_gdr.140615-1509)' version
+
+
+Module 'msls31.dll' has '3.10.349.0' version
+
+
+Module 'Infragistics2.Win.UltraWinEditors.v7.3.dll' has '7.3.20073.1053' version
+
+
+Module 'Accessibility.ni.dll' has '2.0.50727.5483 (Win7SP1GDR.050727-5400)' version
+
+
+Module 'Infragistics2.Win.UltraWinExplorerBar.v7.3.dll' has '7.3.20073.1053' version
+
+
+Module 'LogicNP.FileView.dll' has '10.0.0.0' version
+
+
+Module 'LogicNP.ShComboBox.dll' has '10.0.0.0' version
+
+
+Module 'TortoiseOverlays.dll' has '1, 1, 4, 26626' version
+
+
+Module 'api-ms-win-core-synch-l1-2-0.DLL' has '10.0.10240.16390 (th1_st1.150714-1601)' version
+
+
+Module 'TortoiseStub32.dll' has '1.9.3.27038' version
+
+
+Module 'TortoiseSVN32.dll' has '1.9.3.27038' version
+
+
+Module 'libsvn_tsvn32.dll' has '1.9.3' version
+
+
+Module 'libapr_tsvn32.dll' has '1.5.2' version
+
+
+Module 'VCRUNTIME140.dll' has '14.00.23026.0 built by: WCSETUP' version
+
+
+Module 'api-ms-win-crt-runtime-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'ucrtbase.DLL' has '10.0.10240.16390 (th1_st1.150714-1601)' version
+
+
+Module 'api-ms-win-core-timezone-l1-1-0.dll' has '10.0.10240.16390 (th1_st1.150714-1601)' version
+
+
+Module 'api-ms-win-core-file-l2-1-0.dll' has '10.0.10240.16390 (th1_st1.150714-1601)' version
+
+
+Module 'api-ms-win-core-localization-l1-2-0.dll' has '10.0.10240.16390 (th1_st1.150714-1601)' version
+
+
+Module 'api-ms-win-core-processthreads-l1-1-1.dll' has '10.0.10240.16390 (th1_st1.150714-1601)' version
+
+
+Module 'api-ms-win-core-file-l1-2-0.dll' has '10.0.10240.16390 (th1_st1.150714-1601)' version
+
+
+Module 'api-ms-win-crt-string-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-heap-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-stdio-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-convert-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-conio-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-utility-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-math-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-environment-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'api-ms-win-crt-time-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'libaprutil_tsvn32.dll' has '1.5.4' version
+
+
+Module 'intl3_tsvn32.dll' has '0.14.6' version
+
+
+Module 'api-ms-win-crt-filesystem-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'libsasl32.dll' has '2.1.24' version
+
+
+Module 'api-ms-win-crt-locale-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'MSVCP140.dll' has '14.00.23026.0 built by: WCSETUP' version
+
+
+Module 'api-ms-win-crt-multibyte-l1-1-0.dll' has '10.0.10586.15 (th2_release.151119-1817)' version
+
+
+Module 'crshhndl.dll' has '1.0.15.0' version
+
+
+Module 'GROOVEEX.DLL' has '15.0.4815.1000' version
+
+
+Module 'MSVCR100.dll' has '10.00.40219.1' version
+
+
+Module 'MSVCP100.dll' has '10.00.40219.1' version
+
+
+Module 'ATL100.DLL' has '10.00.40219.01' version
+
+
+Module 'GrooveIntlResource.dll' has '15.0.4763.1000' version
+
+
+Module 'EhStorShell.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'cscui.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'CSCDLL.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'CSCAPI.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+
+
+Module 'MMDevAPI.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'wdmaud.drv' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'ksuser.dll' has '6.1.7601.19091 (win7sp1_gdr.151208-0600)' version
+
+
+Module 'AVRT.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'AUDIOSES.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'msacm32.drv' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'MSACM32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'midimap.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+
+
+Module 'DocumentObject.dll' has '11.0.0.8859' version
+
+
+Module 'ScriptView.ocx' has '11.0.0.8859' version
+
+
+Module 'ScriptAnalyzer.dll' has '11.0.9409.0' version
+
+
+Module 'runlogicview.ocx' has '11.0.0.8859' version
+
+
+Module 'WebStudioDocuments.dll' has '11.0.0.8859' version
+
+
+Module 'LrwiWebInfra.dll' has '11.0.9409.0' version
+
+
+Module 'VnpUtils.dll' has '11.0.0.8859' version
+
+
+Module 'http_auth.dll' has '11.0.0.1002' version
+
+
+Unable to obtain version information for 'LIBEAY32_MIC.dll' module, last error: 1813
+
+
+Module 'LRUN50.dll' has '11.0.0.1002' version
+
+
+Module 'trans.dll' has '11.0.1426.0' version
+
+
+Module 'lr_exp.dll' has '11.0.0.1002' version
+
+
+Module 'trans_server.dll' has '11.0.1426.0' version
+
+
+Module 'timediff_ext.dll' has '11.0.0.1002' version
+
+
+Module 'wrapzlib.dll' has '11.0.0.1002' version
+
+
+Module 'libdatatypes.dll' has '11.0.0.1002' version
+
+
+Module 'data_types_ifs.dll' has '11.0.0.1002' version
+
+
+Module 'jrequestor_srv.dll' has '11.0.0.1002' version
+
+
+Module 'dc_requests.dll' has '11.0.0.1002' version
+
+
+Module 'merc_uuid.dll' has '11.0.0.1002' version
+
+
+Module 'faserver.dll' has '11.0.0.1002' version
+
+
+Module 'wrapicu.dll' has '11.0.0.1002' version
+
+
+Module 'LrXml.dll' has '11.0.0.8859' version
+
+
+Module 'VnpReport.dll' has '11.0.0.8859' version
+
+
+Unable to obtain version information for 'pcre-8.10.dll' module, last error: 1813
+
+
+Module 'CoScriptParser.dll' has '11.0.0.8859' version
+
+
+Module 'WebScriptHandler.dll' has '11.0.9409.0' version
+
+
+Module 'WebStepClsShared.dll' has '11.0.0.8859' version
+
+
+Module 'mshtmtr.dll' has '11.0.0.8859' version
+
+
+Module 'DynWininet.dll' has '11.0.0.8859' version
+
+
+Module 'WebStepClsDesign.dll' has '11.0.9409.0' version
+
+
+Module 'ArchiveManager.dll' has '11.0.0.8859' version
+
+
+Module 'WSViewManager.dll' has '11.0.0.8859' version
+
+
+Module 'msxml3.dll' has '8.110.7601.23373' version
+
+
+Module 'comrec_tab.dll' has '11.0.0.8859' version
+
+
+Module 'api_scrinfo.dll' has '11.0.0.8859' version
+
+
+Module 'script_language_helper.dll' has '11.0.0.8859' version
+
+
+Module 'tlb_query.dll' has '11.0.0.8859' version
+
+
+Module 'lrscripthandler.dll' has '11.0.0.8859' version
+
+
+Module 'unparsedhandler.dll' has '11.0.0.8859' version
+
+
+Unable to obtain version information for 'vshlp.dll' module, last error: 1813
+
+
+Unable to obtain version information for 'tagsdb.dll' module, last error: 1813
+
+
+Unable to obtain version information for 'dragdrop.dll' module, last error: 1813
+
+
+Unable to obtain version information for 'cparse.dll' module, last error: 1813
+
+
+Module 'insp_gen.dll' has '11.0.0.8859' version
+
+
+Module 'inspdll.dll' has '11.0.0.8859' version
+
+
+Module 'VBA6.DLL' has '6.0.8964' version
+
+
+Module 'CodeGenerationAPI.dll' has '11.0.0.8859' version
+
+
+Module 'InternalSDKUtils.dll' has '11.0.0.8859' version
+
+
+Module 'System.Windows.Forms.resources.dll' has '2.0.50727.5420 (Win7SP1.050727-5400)' version
+
+
+Unable to obtain version information for 'vsvcs.dll' module, last error: 1813
+
+
+Module 'TextContainer.dll' has '11.0.0.8859' version
+
+
+Module 'vugen_record_api.dll' has '11.0.9409.0' version
+
+
+Module 'api_inspector.dll' has '11.0.0.8859' version
+
+
+Unable to obtain version information for 'trpfnc32.dll' module, last error: 1813
+
+
+Module 'HTTPSnapshotsWrapper.dll' has '11.0.0.8859' version
+
+
+Module 'Api_Filter_Helper.dll' has '11.0.0.8859' version
+
+
+Module 'type_info_pool.dll' has '11.0.0.8859' version
+
+
+Module 'lrc_basic_filters.dll' has '11.0.0.8859' version
+
+
+Module 'api_event_parser.dll' has '11.0.0.8859' version
+
+
+Module 'lrd_codegen.dll' has '11.0.0.8859' version
+
+
+Module 'lrd32.dll' has '11.0.9409.0' version
+
+
+Module 'inifil32.dll' has '11.0.0.1002' version
+
+
+Unable to obtain version information for 'vm.dll' module, last error: 1813
+
+
+Module 'lrc_com_filters.dll' has '11.0.0.8859' version
+
+
+Module 'lrc_code_gen_filter.dll' has '11.0.0.8859' version
+
+
+Module 'lrdb32.dll' has '11.0.0.8859' version
+
+
+Placeholder (position=1) for Csr1499 not found.  Using "[Pos1]" in GRID title
+

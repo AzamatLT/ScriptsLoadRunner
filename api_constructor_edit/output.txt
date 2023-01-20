@@ -1,0 +1,2266 @@
+Virtual User Script started at : 19.03.2021 14:25:17
+Starting action vuser_init.
+Starting to download the proxy automatic configuration script, URL="http://isaweb.vimpelcom.ru/wpad.dat"  	[MsgId: MMSG-27097]
+t=2193ms: Connecting [0] to host 172.21.231.244:80  	[MsgId: MMSG-26000]
+t=2194ms: Connected socket [0] from 10.50.255.155:27007 to 172.21.231.244:80 in 1 ms  	[MsgId: MMSG-26000]
+t=2194ms: 225-byte request headers for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    GET /wpad.dat HTTP/1.1\r\n
+    Cache-Control: no-cache\r\n
+    User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept: */*\r\n
+    Connection: Keep-Alive\r\n
+    Host: isaweb.vimpelcom.ru\r\n
+    \r\n
+t=2205ms: 312-byte response headers for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    HTTP/1.1 200 OK\r\n
+    Content-Length: 64375\r\n
+    Content-Type: application/octet-stream\r\n
+    Last-Modified: Wed, 17 Mar 2021 14:00:17 GMT\r\n
+    Accept-Ranges: bytes\r\n
+    ETag: "3125a2dc351bd71:0"\r\n
+    Server: Microsoft-IIS/7.5\r\n
+    X-Powered-By: ASP.NET\r\n
+    X-Powered-By: ASP.NET\r\n
+    x-proxy: ms-intraweb003\r\n
+    Date: Fri, 19 Mar 2021 11:25:18 GMT\r\n
+    \r\n
+t=2215ms: 1148-byte response body for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    // Vimpelcom proxy auto config file \r\n
+    \r\n
+    function FindProxyForURL(url, host) {\r\n
+    \r\n
+    // No proxy for sites like "intarnet"\r\n
+    if (isPlainHostName(host)) return "DIRECT";\r\n
+    \r\n
+    // No proxy for unresolvable hosts\r\n
+    //if (!(isResolvable(host))) return "DIRECT"; \r\n
+    \r\n
+    // No proxy for sites with private or local address\r\n
+    var hostIP = dnsResolve(host);\r\n
+    if (\r\n
+    isInNet(hostIP, "127.0.0.0",  "255.0.0.0"  ) \t\t||  \r\n
+    isInNet(hostIP, "10.0.0.0",   "255.0.0.0"  ) \t\t||\r\n
+    isInNet(hostIP, "100.88.88.0",   "255.255.255.0"  )\t||\r\n
+    isInNet(hostIP, "172.16.0.0", "255.240.0.0") \t\t||\r\n
+    isInNet(hostIP, "192.168.0.0","255.255.0.0") \t\t||\r\n
+    isInNet(hostIP, "192.0.2.0","255.255.255.0") \t\t||  \r\n
+    isInNet(hostIP, "198.18.0.0","255.254.0.0") \t\t||  \r\n
+    isInNet(hostIP, "198.51.100.0","255.255.255.0") \t||  \r\n
+    isInNet(hostIP, "203.0.113.0","255.255.255.0") \t\t||\r\n
+    //\r\n
+    // IPTV Monitoring RFC \xB9323819/14\r\n
+    isInNet(hostIP, "172.20.38.0","255.255.255.0") \t\t||\r\n
+    isInNet(hostIP, "172.20.39.0","255.255.255.0") \t\t||\r\n
+    // \r\n
+    // Google Tools(Drive)\r\n
+    //isInNet(hostIP, "173.194.71.0","255.255.255.0") \t||   \r\n
+    //isInNet(hostIP, "173.194.32.0","255.255.255.0") \t||   \r\n
+    //isInNet(hostIP, "74.125.143.0","255.2
+t=2217ms: 8688-byte response body for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    55.255.0") \t||   \r\n
+    //\r\n
+    // ITunes\r\n
+    //isInNet(hostIP, "79.140.94.0","255.255.255.0")   \t||\r\n
+    //isInNet(hostIP, "79.140.95.0","255.255.255.0")   \t||\r\n
+    //isInNet(hostIP, "23.32.0.0","255.224.0.0") \t \t||\r\n
+    //isInNet(hostIP, "23.64.0.0","255.252.0.0") \t\t||\r\n
+    //isInNet(hostIP, "17.0.0.0","255.0.0.0")\t\t||\r\n
+    //isInNet(hostIP, "62.115.0.0","255.255.0.0")\t \t||\r\n
+    //isInNet(hostIP, "217.212.224.0","255.255.224.0") \t||\r\n
+    //isInNet(hostIP, "173.245.48.0","255.255.240.0")\t||\r\n
+    //isInNet(hostIP, "173.245.48.0","255.255.240.0")\t||\r\n
+    //isInNet(hostIP, "95.100.0.0","255.255.240.0")\t \t||\r\n
+    //isInNet(hostIP, "199.0.0.0","255.192.0.0")\t\t||\r\n
+    //\r\n
+    isInNet(hostIP, "169.254.0.0","255.255.0.0")) return "DIRECT";\r\n
+    \r\n
+    // Detect nearest proxy for client by IP address\r\n
+    var clientIP = myIpAddress();\r\n
+    \r\n
+    // Automatically created from TMG Server Enterprise configuration\r\n
+    \r\n
+    // Russia Dalnevostochnyy Khabarovsk\r\n
+    if (\r\n
+    isInNet(clientIP, "172.27.104.0", "255.255.255.0") || // Anadyr 0\r\n
+    isInNet(clientIP, "172.27.105.0", "255.255.255.0") || // Anadyr 1\r\n
+    isInNet(clientIP, "172.27.24.0", "255.255.255.0") || // Birobidzhan 0\r\n
+    isInNet(clientIP, "172.27.26.0", "255.255.255.0") || // Birobidzhan 1\r\n
+    isInNet(clientIP, "172.27.16.0", "255.255.255.0") || // Blagoveshchensk_16\r\n
+    isInNet(clientIP, "172.27.17.0", "255.255.255.0") || // Blagoveshchensk_17\r\n
+    isInNet(clientIP, "172.27.18.0", "255.255.255.0") || // Blagoveshchensk_18\r\n
+    isInNet(clientIP, "172.27.19.0", "255.255.255.0") || // Blagoveshchensk_19\r\n
+    isInNet(clientIP, "172.27.20.0", "255.255.255.0") || // Blagoveshchensk_20\r\n
+    isInNet(clientIP, "172.27.88.0", "255.255.255.0") || // Chita 0\r\n
+    isInNet(clientIP, "172.27.90.0", "255.255.255.0") || // Chita 1\r\n
+    isInNet(clientIP, "172.27.89.0", "255.255.255.0") || // Chita 2\r\n
+    isInNet(clientIP, "172.27.69.0", "255.255.255.0") || // Irkutsk 1\r\n
+    isInNet(clientIP, "172.27.67.0", "255.255.255.0") || // Irkutsk 2\r\n
+    isInNet(clientIP, "172.27.66.0", "255.255.255.0") || // Irkutsk 3\r\n
+    isInNet(clientIP, "172.27.64.0", "255.255.255.0") || // Irkutsk 4\r\n
+    isInNet(clientIP, "172.27.128.0", "255.255.255.0") || // Irkutsk 5\r\n
+    isInNet(clientIP, "172.27.129.0", "255.255.255.0") || // Irkutsk 6\r\n
+    isInNet(clientIP, "172.27.65.0", "255.255.255.0") || // Irkutsk 7\r\n
+    isInNet(clientIP, "172.27.68.0", "255.255.255.0") || // Irkutsk 8\r\n
+    isInNet(clientIP, "172.27.48.0", "255.255.255.0") || // Kamchatka 1\r\n
+    isInNet(clientIP, "172.27.49.0", "255.255.255.0") || // Kamchatka 2\r\n
+    isInNet(clientIP, "172.27.50.0", "255.255.255.0") || // Kamchatka 3\r\n
+    isInNet(clientIP, "172.27.0.0", "255.255.255.0") || // Khabarovsk 0\r\n
+    isInNet(clientIP, "172.27.1.0", "255.255.255.0") || // Khabarovsk 1\r\n
+    isInNet(clientIP, "172.27.10.0", "255.255.255.0") || // Khabarovsk 10\r\n
+    isInNet(clientIP, "172.27.2.0", "255.255.255.0") || // Khabarovsk 2\r\n
+    isInNet(clientIP, "172.27.3.0", "255.255.255.0") || // Khabarovsk 3\r\n
+    isInNet(clientIP, "172.27.4.0", "255.255.255.0") || // Khabarovsk 4\r\n
+    isInNet(clientIP, "172.27.5.0", "255.255.255.0") || // Khabarovsk 5\r\n
+    isInNet(clientIP, "172.27.7.0", "255.255.255.0") || // Khabarovsk 7\r\n
+    isInNet(clientIP, "10.51.80.0", "255.255.240.0") || // Khabarovsk Evroset'\r\n
+    isInNet(clientIP, "10.25.0.0", "255.255.255.0") || // Khabarovsk scope 10.25.0\r\n
+    isInNet(clientIP, "172.27.134.0", "255.255.255.0") || // Khabarovsk_VDI_1\r\n
+    isInNet(clientIP, "172.27.135.0", "255.255.255.0") || // Khabarovsk_VDI_2\r\n
+    isInNet(clientIP, "172.27.132.0", "255.255.255.0") || // Khabarovsk_VDI_mgmt+vsan+dmz\r\n
+    isInNet(clientIP, "172.27.35.0", "255.255.255.0") || // Komsomolsk_Communication\r\n
+    isInNet(clientIP, "172.27.33.0", "255.255.255.0") || // Komsomolsk_Pendrie 1\r\n
+    isInNet(clientIP, "172.27.32.0", "255.255.255.0") || // Komsomolsk_Servers\r\n
+    isInNet(clientIP, "172.27.34.0", "255.255.255.0") || // Komsomolsk_Switch\r\n
+    isInNet(clientIP, "172.27.36.0", "255.255.255.0") || // Komsomolsk_Users\r\n
+    isInNet(clientIP, "172.27.80.0", "255.255.255.0") || // Magadan_1\r\n
+    isInNet(clientIP, "172.27.81.0", "255.255.255.0") || // Magadan_2\r\n
+    isInNet(clientIP, "172.27.82.0", "255.255.255.0") || // Magadan_3\r\n
+    isInNet(clientIP, "172.27.72.0", "255.255.255.0") || // Vladivostok 1\r\n
+    isInNet(clientIP, "172.27.76.0", "255.255.255.0") || // Vladivostok 10\r\n
+    isInNet(clientIP, "172.27.43.0", "255.255.255.0") || // Vladivostok 11\r\n
+    isInNet(clientIP, "172.27.45.0", "255.255.255.0") || // Vladivostok 12\r\n
+    isInNet(clientIP, "172.27.44.0", "255.255.255.0") || // Vladivostok 13\r\n
+    isInNet(clientIP, "172.27.41.0", "255.255.255.0") || // Vladivostok 14\r\n
+    isInNet(clientIP, "172.27.78.0", "255.255.255.0") || // Vladivostok 15\r\n
+    isInNet(clientIP, "172.27.40.0", "255.255.255.0") || // Vladivostok 16\r\n
+    isInNet(clientIP, "172.27.73.0", "255.255.255.0") || // Vladivostok 2\r\n
+    isInNet(clientIP, "172.27.42.0", "255.255.255.0") || // Vladivostok 3\r\n
+    isInNet(clientIP, "172.27.122.0", "255.255.254.0") || // Vladivostok 4\r\n
+    isInNet(clientIP, "172.27.123.0", "255.255.255.0") || // Vladivostok 5\r\n
+    isInNet(clientIP, "172.27.123.16", "255.255.255.240") || // Vladivostok 6\r\n
+    isInNet(clientIP, "172.27.45.32", "255.255.255.224") || // Vladivostok 7\r\n
+    isInNet(clientIP, "172.27.74.0", "255.255.255.0") || // Vladivostok 8\r\n
+    isInNet(clientIP, "172.27.75.0", "255.255.255.0") || // Vladivostok 9\r\n
+    false) return "PROXY kh-tmg002.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Dalnevostochnyy Ulan-Ude\r\n
+    if (\r\n
+    isInNet(clientIP, "172.27.114.0", "255.255.255.0") || // Gagarina 16\r\n
+    isInNet(clientIP, "172.27.113.224", "255.255.255.240") || // PiplsPark\r\n
+    isInNet(clientIP, "172.27.113.192", "255.255.255.240") || // Tereshkovoy 20B\r\n
+    isInNet(clientIP, "172.27.112.0", "255.255.255.0") || // Ulan-Ude 1\r\n
+    isInNet(clientIP, "172.27.113.128", "255.255.255.224") || // Ulan-Ude 2 OpenOffice\r\n
+    isInNet(clientIP, "172.27.113.177", "255.255.255.248") || // Ulan-Ude 3 Sklad\r\n
+    false) return "PROXY uu-tmg001.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Dalnevostochnyy Yakutsk\r\n
+    if (\r\n
+    isInNet(clientIP, "10.25.12.0", "255.255.255.0") || // Yakutsk 10...\r\n
+    isInNet(clientIP, "172.27.96.0", "255.255.248.0") || // Yakutsk 172...\r\n
+    false) return "PROXY yk-tmg001.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Dalnevostochnyy Yuzhno-Sakhalinsk\r\n
+    if (\r\n
+    isInNet(clientIP, "172.27.120.0", "255.255.255.0") || // 172.27.120.0/24\r\n
+    isInNet(clientIP, "172.27.56.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 56\r\n
+    isInNet(clientIP, "172.27.57.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 57\r\n
+    isInNet(clientIP, "172.27.58.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 58\r\n
+    isInNet(clientIP, "172.27.61.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 61\r\n
+    isInNet(clientIP, "172.27.62.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 62\r\n
+    isInNet(clientIP, "172.27.63.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 63\r\n
+    false) return "PROXY us-tmg001.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Moscow\r\n
+    if (\r\n
+    isInNet(clientIP, "10.245.245.0", "255.255.255.0") || // 1\r\n
+    isInNet(clientIP, "172.21.0.0", "255.255.0.0") || // 10\r\n
+    isInNet(clientIP, "10.50.219.0", "255.255.255.0") || // 10.50.219.0\r\n
+    isInNet(clientIP, "10.50.223.0", "255.255.255.0") || // 10.50.223.0\r\n
+    isInNet(clientIP, "10.50.225.0", "255.255.255.0") || // 10.50.225-Hyper-V\r\n
+    isInNet(clientIP, "10.50.226.0", "255.255.255.0") || // 10.50.226-Hyper-V\r\n
+    isInNet(clientIP, "10.50.227.0", "255.255.255.0") || // 10.50.227-Hyper-V\r\n
+    isInNet(clientIP, "10.51.169.0", "255.255.255.0") || // 10.51.169.0\r\n
+    isInNet(clientIP, "10.51.177.0", "255.255.255.0") || // 10.51.177.0\r\n
+    isInNet(clientIP, "10.51.178.0", "255.255.255.0") || // 10.51.178.0/24\r\n
+    isInNet(clientIP, "10.51.180.0", "255.255.255.0") || // 10.51.180.0\r\n
+    isInNet(clientIP, "10.51.183.0", "255.255.255.0") || // 10.51.183.0/24\r\n
+    isInNet(clientIP, "10.51.184.0", "255.255.255.0") || // 10.51.184.0/24\r\n
+    isInNet(clientIP, "10.31.218.0", "255.255.254.0") || // 100 YS\r\n
+    isInNet(clientIP, "10.31.220.0", "255.255.254.0") || // 101 YS\r\n
+    isInNet(clientIP, "10.127.201.0", "255.255.255.0") || // 102 TV\r\n
+    isInNet(clientIP, "10.31.132.0", "255.255.255.0") || // 103 YS\r\n
+    isInNet(clientIP, "10.31.136.0", "255.255.255.0") || // 104 YD VM\r\n
+    isInNet(clientIP, "10.22.228.0", "255.255.255.0") || // 104 YS\r\n
+    isInNet(clientIP, "10.51.23.0", "255.255.255.0") || // 105 TV\r\n
+    isInNet(clientIP, "192.168.0.0", "255.255.0.0") || // 11\r\n
+    isInNet(clientIP, "10.112.0.0", "255.248.0.0") || // 12\r\n
+    isInNet(clientIP, "10.120.0.0", "255.252.0.0") || // 13\r\n
+    isInNet(clientIP, "10.124.0.0", "255.254.0.0") || // 14\r\n
+    isInNet(clientIP, "10.126.0.0", "255.255.0.0") || // 15\r\n
+    isInNet(clientIP, "10.127.218.0", "255.255.255.0") || // 16 YS\r\n
+    isInNet(clientIP, "10.127.223.0", "255.255.255.0") || // 17 YS\r\n
+    isInNet(clientIP, "10.127.222.0", "255.255.255.0") || // 18 YS\r\n
+    isInNet(clientIP, "10.31.160.0", "255.255.255.0") || // 19\r\n
+    isInNet(clientIP, "10.22.144.0", "255.255.255.0") || // 19 YS\r\n
+    isInNet(clientIP, "1
+t=2223ms: 12287-byte response body for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    0.64.0.0", "255.224.0.0") || // 2\r\n
+    isInNet(clientIP, "10.22.138.0", "255.255.255.0") || // 20 YS\r\n
+    isInNet(clientIP, "10.22.136.0", "255.255.255.0") || // 21 YS\r\n
+    isInNet(clientIP, "10.22.140.0", "255.255.255.0") || // 22 YS\r\n
+    isInNet(clientIP, "10.22.142.0", "255.255.255.0") || // 23 YS\r\n
+    isInNet(clientIP, "172.26.13.0", "255.255.255.0") || // 24 YS\r\n
+    isInNet(clientIP, "10.127.219.0", "255.255.255.0") || // 25 YS\r\n
+    isInNet(clientIP, "172.25.14.0", "255.255.255.0") || // 26 YS\r\n
+    isInNet(clientIP, "10.127.220.0", "255.255.255.0") || // 27 YS\r\n
+    isInNet(clientIP, "172.25.13.0", "255.255.255.0") || // 28 YS\r\n
+    isInNet(clientIP, "10.96.0.0", "255.240.0.0") || // 3\r\n
+    isInNet(clientIP, "10.127.208.0", "255.255.255.0") || // 30 Vladimir\r\n
+    isInNet(clientIP, "172.25.0.0", "255.255.255.0") || // 31 Vladimir\r\n
+    isInNet(clientIP, "172.25.1.0", "255.255.255.0") || // 32 Vladimir\r\n
+    isInNet(clientIP, "172.25.2.0", "255.255.255.0") || // 33 Vladimir\r\n
+    isInNet(clientIP, "172.26.5.0", "255.255.255.0") || // 34 Vladimir\r\n
+    isInNet(clientIP, "172.19.128.0", "255.255.224.0") || // 35\r\n
+    isInNet(clientIP, "172.19.160.0", "255.255.240.0") || // 36\r\n
+    isInNet(clientIP, "172.24.192.0", "255.255.255.0") || // 37 TV\r\n
+    isInNet(clientIP, "172.24.195.0", "255.255.255.0") || // 38 TV\r\n
+    isInNet(clientIP, "172.25.9.0", "255.255.255.0") || // 39 TV\r\n
+    isInNet(clientIP, "192.0.2.0", "255.255.255.0") || // 4\r\n
+    isInNet(clientIP, "172.25.10.0", "255.255.255.0") || // 40 TV\r\n
+    isInNet(clientIP, "172.25.53.0", "255.255.255.0") || // 41 TV\r\n
+    isInNet(clientIP, "172.26.74.0", "255.255.255.0") || // 42 TV\r\n
+    isInNet(clientIP, "10.127.200.0", "255.255.255.0") || // 43 TV\r\n
+    isInNet(clientIP, "10.127.201.0", "255.255.255.0") || // 44 TV\r\n
+    isInNet(clientIP, "172.24.202.0", "255.255.255.0") || // 45 TV\r\n
+    isInNet(clientIP, "172.24.203.0", "255.255.255.0") || // 46 TV\r\n
+    isInNet(clientIP, "172.24.204.0", "255.255.255.0") || // 47 TV\r\n
+    isInNet(clientIP, "172.24.205.0", "255.255.255.0") || // 48 TV\r\n
+    isInNet(clientIP, "172.24.206.0", "255.255.255.0") || // 49 TV\r\n
+    isInNet(clientIP, "198.18.0.0", "255.254.0.0") || // 5\r\n
+    isInNet(clientIP, "172.24.207.0", "255.255.255.0") || // 50 TV\r\n
+    isInNet(clientIP, "172.24.208.0", "255.255.255.0") || // 51 TV\r\n
+    isInNet(clientIP, "172.24.209.0", "255.255.255.0") || // 52 TV\r\n
+    isInNet(clientIP, "172.19.172.0", "255.255.255.0") || // 53\r\n
+    isInNet(clientIP, "172.19.173.0", "255.255.255.0") || // 54\r\n
+    isInNet(clientIP, "10.22.150.0", "255.255.255.0") || // 55 YS\r\n
+    isInNet(clientIP, "10.22.151.0", "255.255.255.0") || // 56 YS\r\n
+    isInNet(clientIP, "10.22.152.0", "255.255.255.224") || // 57 YS\r\n
+    isInNet(clientIP, "10.101.0.0", "255.255.0.0") || // 58 Sovintel\r\n
+    isInNet(clientIP, "10.24.0.0", "255.255.0.0") || // 59 Sovintel\r\n
+    isInNet(clientIP, "198.51.100.0", "255.255.255.0") || // 6\r\n
+    isInNet(clientIP, "10.103.0.0", "255.255.0.0") || // 60 Sovintel\r\n
+    isInNet(clientIP, "10.104.0.0", "255.255.0.0") || // 61 Sovintel\r\n
+    isInNet(clientIP, "10.107.0.0", "255.255.0.0") || // 62 Sovintel\r\n
+    isInNet(clientIP, "10.20.0.0", "255.255.0.0") || // 63 Sovintel\r\n
+    isInNet(clientIP, "10.8.0.0", "255.255.0.0") || // 64 Sovintel\r\n
+    isInNet(clientIP, "10.105.0.0", "255.255.0.0") || // 65 Sovintel\r\n
+    isInNet(clientIP, "10.106.0.0", "255.255.0.0") || // 66 Sovintel\r\n
+    isInNet(clientIP, "10.111.0.0", "255.255.0.0") || // 67 Sovintel\r\n
+    isInNet(clientIP, "10.4.0.0", "255.255.0.0") || // 68 Sovintel\r\n
+    isInNet(clientIP, "172.19.146.0", "255.255.255.224") || // 69\r\n
+    isInNet(clientIP, "203.0.113.0", "255.255.255.0") || // 7\r\n
+    isInNet(clientIP, "172.19.177.0", "255.255.255.128") || // 70\r\n
+    isInNet(clientIP, "10.31.249.0", "255.255.255.0") || // 71 YS\r\n
+    isInNet(clientIP, "10.31.248.0", "255.255.255.0") || // 72 YS\r\n
+    isInNet(clientIP, "10.22.153.0", "255.255.255.0") || // 73 YS\r\n
+    isInNet(clientIP, "10.22.154.0", "255.255.255.0") || // 74 YS\r\n
+    isInNet(clientIP, "10.31.224.0", "255.255.255.0") || // 75 YS\r\n
+    isInNet(clientIP, "10.31.232.0", "255.255.255.0") || // 76 YS\r\n
+    isInNet(clientIP, "172.19.176.128", "255.255.255.240") || // 77\r\n
+    isInNet(clientIP, "10.31.225.0", "255.255.255.0") || // 78\r\n
+    isInNet(clientIP, "10.31.233.0", "255.255.255.0") || // 79\r\n
+    isInNet(clientIP, "172.19.1.0", "255.255.255.0") || // 8\r\n
+    isInNet(clientIP, "10.22.155.0", "255.255.255.0") || // 80 YS\r\n
+    isInNet(clientIP, "10.22.156.0", "255.255.255.0") || // 81 YS\r\n
+    isInNet(clientIP, "10.22.251.0", "255.255.255.0") || // 82 YS\r\n
+    isInNet(clientIP, "10.22.249.0", "255.255.255.0") || // 83 YS\r\n
+    isInNet(clientIP, "10.22.232.0", "255.255.255.0") || // 84 YS\r\n
+    isInNet(clientIP, "10.22.233.0", "255.255.255.0") || // 85 YS\r\n
+    isInNet(clientIP, "10.22.225.0", "255.255.255.0") || // 86 YS\r\n
+    isInNet(clientIP, "10.22.224.0", "255.255.255.0") || // 87 YS\r\n
+    isInNet(clientIP, "10.22.152.32", "255.255.255.224") || // 88 YS\r\n
+    isInNet(clientIP, "172.20.0.0", "255.255.0.0") || // 9\r\n
+    isInNet(clientIP, "10.50.0.0", "255.255.255.0") || // 90\r\n
+    isInNet(clientIP, "10.50.1.0", "255.255.255.0") || // 91\r\n
+    isInNet(clientIP, "10.50.238.0", "255.255.255.0") || // 92\r\n
+    isInNet(clientIP, "10.127.133.0", "255.255.255.0") || // 93\r\n
+    isInNet(clientIP, "10.22.226.0", "255.255.255.0") || // 93 YS\r\n
+    isInNet(clientIP, "10.22.227.0", "255.255.255.0") || // 94 YS\r\n
+    isInNet(clientIP, "10.22.231.0", "255.255.255.0") || // 95 YS\r\n
+    isInNet(clientIP, "10.22.234.0", "255.255.255.0") || // 96 YS\r\n
+    isInNet(clientIP, "10.22.152.0", "255.255.255.0") || // 97 YS\r\n
+    isInNet(clientIP, "10.50.65.0", "255.255.255.0") || // 98 YS\r\n
+    isInNet(clientIP, "10.50.66.0", "255.255.255.0") || // 99 YS\r\n
+    isInNet(clientIP, "10.22.176.0", "255.255.255.0") || // BN 01\r\n
+    isInNet(clientIP, "10.127.214.0", "255.255.255.0") || // BN 02\r\n
+    isInNet(clientIP, "10.127.64.0", "255.255.255.0") || // BN 03\r\n
+    isInNet(clientIP, "10.127.226.0", "255.255.255.0") || // BN 04\r\n
+    isInNet(clientIP, "172.25.236.0", "255.255.255.0") || // BN 05\r\n
+    isInNet(clientIP, "172.25.239.0", "255.255.255.0") || // BN 06\r\n
+    isInNet(clientIP, "10.51.24.64", "255.255.255.240") || // BN 07\r\n
+    isInNet(clientIP, "192.168.209.0", "255.255.255.0") || // Cisco ASA Net\r\n
+    isInNet(clientIP, "10.127.198.0", "255.255.255.0") || // IV 01\r\n
+    isInNet(clientIP, "172.25.55.0", "255.255.255.0") || // IV 02\r\n
+    isInNet(clientIP, "172.25.56.0", "255.255.255.0") || // IV 03\r\n
+    isInNet(clientIP, "172.25.57.0", "255.255.255.0") || // IV 04\r\n
+    isInNet(clientIP, "172.25.58.0", "255.255.255.0") || // IV 05\r\n
+    isInNet(clientIP, "172.25.231.0", "255.255.255.0") || // KS 01\r\n
+    isInNet(clientIP, "172.25.233.0", "255.255.255.0") || // KS 02\r\n
+    isInNet(clientIP, "10.127.216.0", "255.255.255.0") || // KS 03\r\n
+    isInNet(clientIP, "10.127.217.0", "255.255.255.0") || // KS 04\r\n
+    isInNet(clientIP, "10.21.251.0", "255.255.255.0") || // MacOS Catalina\r\n
+    isInNet(clientIP, "172.21.231.0", "255.255.255.0") || // MS Balance231\r\n
+    isInNet(clientIP, "172.19.148.0", "255.255.255.0") || // MS MonoBrend1\r\n
+    isInNet(clientIP, "172.21.149.0", "255.255.255.0") || // MS MonoBrend2\r\n
+    isInNet(clientIP, "172.19.150.0", "255.255.255.0") || // MS Monobrend3\r\n
+    isInNet(clientIP, "172.19.234.0", "255.255.255.0") || // MS Monobrend4\r\n
+    isInNet(clientIP, "172.19.235.0", "255.255.255.0") || // MS Monobrend5\r\n
+    isInNet(clientIP, "172.19.236.0", "255.255.255.0") || // MS Monobrend6\r\n
+    isInNet(clientIP, "172.19.237.0", "255.255.255.0") || // MS Monobrend7\r\n
+    isInNet(clientIP, "10.51.168.0", "255.255.255.0") || // MS Monobrend8\r\n
+    isInNet(clientIP, "10.128.0.0", "255.252.0.0") || // MS_SRV_subnet\r\n
+    isInNet(clientIP, "10.128.10.0", "255.255.254.0") || // MS_VPN1\r\n
+    isInNet(clientIP, "10.188.14.0", "255.255.254.0") || // MS_VPN2\r\n
+    isInNet(clientIP, "10.31.150.0", "255.255.255.0") || // MSK BigData\r\n
+    isInNet(clientIP, "10.21.224.0", "255.255.248.0") || // MSK VPN1\r\n
+    isInNet(clientIP, "10.21.232.0", "255.255.248.0") || // MSK VPN2\r\n
+    isInNet(clientIP, "172.19.0.0", "255.255.0.0") || // MSK_MONOBREND\r\n
+    isInNet(clientIP, "10.51.22.0", "255.255.255.0") || // MSK_SM1\r\n
+    isInNet(clientIP, "10.51.29.0", "255.255.255.0") || // MSK_Subnet\r\n
+    isInNet(clientIP, "10.51.26.0", "255.255.255.0") || // MSK_Yar_obl_Ribinsk\r\n
+    isInNet(clientIP, "10.51.28.0", "255.255.255.0") || // MSK1\r\n
+    isInNet(clientIP, "10.51.25.0", "255.255.255.0") || // MSK2\r\n
+    isInNet(clientIP, "10.51.30.0", "255.255.255.0") || // MSK3\r\n
+    isInNet(clientIP, "10.50.98.0", "255.255.254.0") || // MSK4\r\n
+    isInNet(clientIP, "10.21.194.0", "255.255.255.0") || // MSK5\r\n
+    isInNet(clientIP, "10.21.195.0", "255.255.255.0") || // MSK6\r\n
+    isInNet(clientIP, "10.21.196.0", "255.255.255.0") || // MSK7\r\n
+    isInNet(clientIP, "10.21.197.0", "255.255.255.0") || // MSK8\r\n
+    isInNet(clientIP, "10.50.76.0", "255.255.255.0") || // MSK9\r\n
+    isInNet(clientIP, "172.19.225.0", "255.255.255.0") || // MS-Ramenskoe\r\n
+    isInNet(clientIP, "10.50.67.0", "255.255.255.0") || // NOTFOUND\r\n
+    isInNet(clientIP, "10.127.199.0", "255.255.255.0") || // RZ 0 (SO_M5Moll)\r\n
+    isInNet(clientIP, "172.25.5.0", "255.255.255.0") || // RZ 1 (Adm_Office)\r\n
+    isInNet(clientIP, "172.25.6.0", "255.255.255.0") || // RZ 2 (Commutator)\r\n
+    isInNet(clientIP, "172.25.250.0", "255.255.255.0") || // RZ 3 (Tech_Office)\r\n
+    isInNet(clientIP, "172.26.73.0", "255.255.255.0") || // RZ 4\r\n
+    isInNet(clientIP, "172.25.8.0", "255.255.255.0") || // SL 01\r\n
+    isInNet(clientIP, "172.25.7.0", "255.255.255.0") || // SL 02\r\n
+    isInNet(clientIP, "10.127.196.0", "255.255.255.0") || // SL 03\r\n
+    isInNet(clientIP, "10.127.197.0", "255.255.255.0") || // SL 04\r\n
+    isInNet(clientIP, "10.51.22.0", "255.255.255.0") || // SL 05\r\n
+    isInNet(clientIP, "10.51.19.0", "255.255.255.0") || // TB1\r\n
+    isInNet(clientIP, "10.127.192.0", "255.255.255.0") || // TL 01\r\n
+    isInNet(clientIP, "10.127.194.0", "255.255.255.0") || // TL 02\r\n
+    isInNet(clientIP, "10.127.195.0", "255.255.255.0") || // TL 03\r\n
+    isInNet(clientIP, "172.25.11.0", "255.255.255.0") || // TL 04\r\n
+    isInNet(clientIP, "172.25.12.0", "255.255.255.0") || // TL 05\r\n
+    isInNet(clientIP, "172.26.12.0", "255.255.255.0") || // TL 06\r\n
+    isInNet(clientIP, "172.26.72.0", "255.255.255.0") || // TL 07\r\n
+    isInNet(clientIP, "10.51.27.0", "255.255.255.0") || // TL 08\r\n
+    isInNet(clientIP, "10.31.151.0", "255.255.255.0") || // UserSubnet 579424_20\r\n
+    isInNet(clientIP, "10.50.88.0", "255.255.255.0") || // USSS 1\r\n
+    isInNet(clientIP, "192.168.163.0", "255.255.255.0") || // USSS 2\r\n
+    isInNet(clientIP, "172.21.228.0", "255.255.255.0") || // VC_Global_net1\r\n
+    isInNet(clientIP, "10.50.23.0", "255.255.255.0") || // VDI 10.50.23.0\r\n
+    isInNet(clientIP, "10.50.24.0", "255.255.255.0") || // VDI 10.50.24.0\r\n
+    isInNet(clientIP, "10.50.25.0", "255.255.255.0") || // VDI 10.50.25.0\r\n
+    isInNet(clientIP, "10.50.26.0", "255.255.255.0") || // VDI 10.50.26.0\r\n
+    isInNet(clientIP, "10.50.8.0", "255.255.255.0") || // VDI MS 1\r\n
+    isInNet(clientIP, "10.50.44.0", "255.255.252.0") || // VDI MS 10\r\n
+    isInNet(clientIP, "10.50.10.0", "255.255.255.0") || // VDI MS 10 (vlan 1315)\r\n
+    isInNet(clientIP, "10.50.11.0", "255.255.255.0") || // VDI MS 11 (vlan 1316)\r\n
+    isInNet(clientIP, "10.50.12.0", "255.255.255.0") || // VDI MS 12 (vlan 1317)\r\n
+    isInNet(clientIP, "10.50.13.0", "255.255.255.0") || // VDI MS 13 (vlan 1318)\r\n
+    isInNet(clientIP, "10.50.14.0", "255.255.255.0") || // VDI MS 14 (vlan 1319)\r\n
+    isInNet(clientIP, "10.50.16.0", "255.255.255.0") || // VDI MS 16 (vlan 1321)\r\n
+    isInNet(clientIP, "10.50.17.0", "255.255.255.0") || // VDI MS 17 (vlan 1322)\r\n
+    isInNet(clientIP, "10.50.18.0", "255.255.255.0") || // VDI MS 18 (vlan 1323)\r\n
+    isInNet(clientIP, "10.50.19.0", "255.255.255.0") || // VDI MS 19 (vlan 1324)\r\n
+    isInNet(clientIP, "10.50.9.0", "255.255.255.0") || // VDI MS 2\r\n
+    isInNet(clientIP, "10.50.20.0", "255.255.255.0") || // VDI MS 20 (vlan 1325)\r\n
+    isInNet(clientIP, "10.50.21.0", "255.255.255.0") || // VDI MS 21 (vlan 1326)\r\n
+    isInNet(clientIP, "10.50.28.0", "255.255.255.0") || // VDI MS 21 (vlan 1333)\r\n
+    isInNet(clientIP, "10.50.22.0", "255.255.255.0") || // VDI MS 22 (vlan 1327)\r\n
+    isInNet(clientIP, "10.50.33.0", "255.255.255.0") || // VDI MS 23 (VLAN1337)\r\n
+    isInNet(clientIP, "10.50.63.0", "255.255.255.0") || // VDI MS 3\r\n
+    isInNet(clientIP, "10.50.2.0", "255.255.255.0") || // VDI MS 4\r\n
+    isInNet(clientIP, "10.50.4.0", "255.255.255.0") || // VDI MS 5\r\n
+    isInNet(clientIP, "10.50.19.0", "255.255.255.0") || // VDI MS 6\r\n
+    isInNet(clientIP, "10.50.20.0", "255.255.255.0") || // VDI MS 7\r\n
+    isInNet(clientIP, "10.50.36.0", "255.255.252.0") || // VDI MS 8\r\n
+    isInNet(clientIP, "10.50.40.0", "255.255.252.0") || // VDI MS 9\r\n
+    isInNet(clientIP, "10.31.137.0", "255.255.255.0") || // VDI YD1 (VLAN3129)\r\n
+    isInNet(clientIP, "10.31.138.0", "255
+t=2229ms: 12287-byte response body for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    .255.255.0") || // VDI YD2  (VLAN3130)\r\n
+    isInNet(clientIP, "10.31.139.0", "255.255.255.0") || // VDI YD3 (VLAN3131)\r\n
+    isInNet(clientIP, "10.31.147.0", "255.255.255.0") || // VDI YD4 (VLAN3132)\r\n
+    isInNet(clientIP, "10.31.148.0", "255.255.255.0") || // VDI YD5 (VLAN3133)\r\n
+    isInNet(clientIP, "10.31.149.0", "255.255.255.0") || // VDI YD6 (VLAN3134)\r\n
+    isInNet(clientIP, "10.31.151.0", "255.255.255.0") || // Virtual Machines\r\n
+    isInNet(clientIP, "10.127.209.0", "255.255.255.0") || // VLADIMIR.BeeFree\r\n
+    isInNet(clientIP, "10.50.254.0", "255.255.255.0") || // VM1\r\n
+    isInNet(clientIP, "10.50.255.0", "255.255.255.0") || // VM2\r\n
+    isInNet(clientIP, "10.51.24.0", "255.255.255.0") || // VR24\r\n
+    isInNet(clientIP, "10.51.31.0", "255.255.255.0") || // VR31\r\n
+    isInNet(clientIP, "10.22.157.0", "255.255.255.0") || // YS_1\r\n
+    isInNet(clientIP, "10.22.158.0", "255.255.255.0") || // YS_2\r\n
+    isInNet(clientIP, "10.31.152.0", "255.255.255.0") || // YTC Unix\r\n
+    false) return "PROXY ms-proxy.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Moscow Exchange\r\n
+    if (\r\n
+    false) return "PROXY owa.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Moscow MAC\r\n
+    if (\r\n
+    false) return "PROXY ms-proxy-m.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Povolzhskiy Nizhniy Novgorod\r\n
+    if (\r\n
+    isInNet(clientIP, "10.22.25.0", "255.255.255.0") || // 1\r\n
+    isInNet(clientIP, "172.24.244.0", "255.255.255.0") || // 1 \xFD\xF2\xE0\xE6 \xD0\xD3\r\n
+    isInNet(clientIP, "172.24.253.0", "255.255.255.0") || // 2 \xFD\xF2\xE0\xE6\r\n
+    isInNet(clientIP, "172.24.245.0", "255.255.255.0") || // 2 \xFD\xF2\xE0\xE6 \xD0\xD3\r\n
+    isInNet(clientIP, "172.24.251.0", "255.255.255.0") || // 3 \xFD\xF2\xE0\xE6\r\n
+    isInNet(clientIP, "172.24.246.0", "255.255.255.0") || // 3 \xFD\xF2\xE0\xE6 \xD0\xD3\r\n
+    isInNet(clientIP, "172.24.250.0", "255.255.255.0") || // 4 \xFD\xF2\xE0\xE6\r\n
+    isInNet(clientIP, "10.22.19.0", "255.255.255.0") || // Cheboksary 451983/16 \r\n
+    isInNet(clientIP, "172.24.52.0", "255.255.255.0") || // Cheboksary-01\r\n
+    isInNet(clientIP, "172.24.53.0", "255.255.255.0") || // Cheboksary-02\r\n
+    isInNet(clientIP, "172.25.136.0", "255.255.255.0") || // Cheboksary-03\r\n
+    isInNet(clientIP, "172.25.137.0", "255.255.255.0") || // Cheboksary-04\r\n
+    isInNet(clientIP, "172.25.139.0", "255.255.255.0") || // Cheboksary-05\r\n
+    isInNet(clientIP, "172.25.140.0", "255.255.255.0") || // Cheboksary-06\r\n
+    isInNet(clientIP, "10.22.0.0", "255.255.255.0") || // Kazan-01\r\n
+    isInNet(clientIP, "10.22.1.0", "255.255.255.0") || // Kazan-02\r\n
+    isInNet(clientIP, "10.22.2.0", "255.255.255.0") || // Kazan-03\r\n
+    isInNet(clientIP, "10.22.14.0", "255.255.255.0") || // Kazan-04\r\n
+    isInNet(clientIP, "10.22.15.0", "255.255.255.0") || // Kazan-05\r\n
+    isInNet(clientIP, "10.22.20.0", "255.255.255.0") || // Kazan-06\r\n
+    isInNet(clientIP, "10.22.21.0", "255.255.255.0") || // Kazan-07\r\n
+    isInNet(clientIP, "10.22.22.0", "255.255.255.0") || // Kazan-08\r\n
+    isInNet(clientIP, "172.25.130.0", "255.255.255.0") || // Kazan-09\r\n
+    isInNet(clientIP, "172.25.131.0", "255.255.255.0") || // Kazan-10\r\n
+    isInNet(clientIP, "172.25.132.0", "255.255.255.0") || // Kazan-11\r\n
+    isInNet(clientIP, "172.25.133.0", "255.255.255.0") || // Kazan-12\r\n
+    isInNet(clientIP, "172.25.134.0", "255.255.255.0") || // Kazan-13\r\n
+    isInNet(clientIP, "172.26.112.0", "255.255.255.0") || // Kazan-14\r\n
+    isInNet(clientIP, "172.26.113.0", "255.255.255.0") || // Kazan-15\r\n
+    isInNet(clientIP, "172.26.114.0", "255.255.255.0") || // Kazan-16\r\n
+    isInNet(clientIP, "172.26.115.0", "255.255.255.0") || // Kazan-17\r\n
+    isInNet(clientIP, "172.26.120.0", "255.255.255.0") || // Kazan-18\r\n
+    isInNet(clientIP, "172.26.121.0", "255.255.255.0") || // Kazan-19\r\n
+    isInNet(clientIP, "10.22.21.64", "255.255.255.240") || // Kazan-20\r\n
+    isInNet(clientIP, "10.22.3.204", "255.255.255.252") || // Kazan-21\r\n
+    isInNet(clientIP, "172.25.128.0", "255.255.255.0") || // MSC1 Tech Net\r\n
+    isInNet(clientIP, "10.22.4.0", "255.255.255.0") || // Open offices\r\n
+    isInNet(clientIP, "10.22.5.0", "255.255.255.0") || // Op\xE5n offices 2\r\n
+    isInNet(clientIP, "10.22.10.0", "255.255.255.0") || // Yoshkar-Ola-1\r\n
+    isInNet(clientIP, "10.22.11.0", "255.255.255.0") || // Yoshkar-Ola-2\r\n
+    isInNet(clientIP, "172.25.141.0", "255.255.255.0") || // Yoshkar-Ola-3\r\n
+    isInNet(clientIP, "172.25.142.0", "255.255.255.0") || // Yoshkar-Ola-4\r\n
+    isInNet(clientIP, "10.22.10.192", "255.255.255.240") || // Yoshkar-Ola-5\r\n
+    isInNet(clientIP, "172.25.124.0", "255.255.255.0") || // \xC0\xE2\xF0\xEE\xF0\xE0-1\r\n
+    isInNet(clientIP, "172.25.120.0", "255.255.255.0") || // \xC0\xC4\xD1, 1-2 \xFD\xF2\xE0\xE6
+    \r\n
+    isInNet(clientIP, "172.24.62.0", "255.255.255.0") || // \xC0\xC4\xD1, 3-4-5 \xFD\xF2\xE0\xE6
+    \r\n
+    isInNet(clientIP, "172.24.63.0", "255.255.255.0") || // \xC0\xC4\xD1, \xF2\xE5\xEB\xE5\xF4
+    \xEE\xED\xE8\xFF\r\n
+    isInNet(clientIP, "172.25.121.0", "255.255.255.0") || // \xCE\xCE \xCE\xEA\xF2\xFF\xE1\xF0
+    \xFC\xF1\xEA\xE0\xFF, 9\xE0\r\n
+    isInNet(clientIP, "172.25.122.0", "255.255.255.0") || // \xD1\xE0\xF0\xEE\xE2\r\n
+    isInNet(clientIP, "172.24.249.0", "255.255.255.0") || // \xD1\xE5\xF0\xE2\xE5\xF0\xED\xE0\xFF
+     \xF1\xE5\xF2\xFC\r\n
+    isInNet(clientIP, "172.24.247.0", "255.255.255.0") || // \xD1\xE5\xF2\xFC \xF2\xE5\xEB\xE5
+    \xF4\xEE\xED\xE8\xE8\r\n
+    isInNet(clientIP, "172.24.242.0", "255.255.255.0") || // \xD1\xEA\xEB\xE0\xE4 \xC2\xD2\xD1
+     (\xE4\xE8\xEB\xE5\xF0\xFB)\r\n
+    isInNet(clientIP, "172.24.254.0", "255.255.255.0") || // \xD2\xE5\xEB\xE5\xF4\xEE\xED\xE8\xFF
+     + \xEF\xEE\xEB\xFC\xE7\xEE\xE2\xE0\xF2\xE5\xEB\xE8 1 \xFD\xF2\xE0\xE6\r\n
+    isInNet(clientIP, "172.24.252.0", "255.255.255.0") || // \xD2\xE5\xEB\xE5\xF4\xEE\xED\xE8\xFF
+     2 \xFD\xF2\xE0\xE6\r\n
+    isInNet(clientIP, "172.24.243.0", "255.255.255.0") || // \xD2\xE5\xEB\xE5\xF4\xEE\xED\xE8\xFF
+     \xD0\xD3\r\n
+    isInNet(clientIP, "172.24.248.0", "255.255.255.0") || // \xD2\xE5\xF5\xED\xE8\xF7\xE5\xF1\xEA
+    \xE0\xFF  \xF1\xE5\xF2\xFC\r\n
+    isInNet(clientIP, "172.25.123.0", "255.255.255.0") || // \xD2\xD6 "\xD0\xE5\xF1\xEF\xF3\xE1
+    \xEB\xE8\xEA\xE0"\r\n
+    isInNet(clientIP, "10.22.27.1", "255.255.255.128") || // \xD6\xCC\xD2, 7 \xFD\xF2\xE0\xE6,
+     WI-FI\r\n
+    isInNet(clientIP, "10.22.24.0", "255.255.255.0") || // \xD6\xCC\xD2, 7 \xFD\xF2\xE0\xE6, \xEA
+    \xEE\xEC\xEF\xFC\xFE\xF2\xE5\xF0\xFB\r\n
+    isInNet(clientIP, "10.22.7.0", "255.255.255.0") || // \xD6\xCC\xD2, 7 \xFD\xF2\xE0\xE6, \xF2
+    \xE5\xEB\xE5\xF4\xEE\xED\xE8\xFF\r\n
+    false) return "PROXY nn-proxy.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Povolzhskiy Saratov\r\n
+    if (\r\n
+    isInNet(clientIP, "10.22.28.0", "255.255.255.0") || // 10.22.28.1\r\n
+    isInNet(clientIP, "10.22.29.0", "255.255.255.0") || // 10.22.29.1\r\n
+    isInNet(clientIP, "10.22.31.0", "255.255.255.0") || // 10.22.31.0\r\n
+    isInNet(clientIP, "10.22.33.0", "255.255.255.0") || // 10.22.33.0\r\n
+    isInNet(clientIP, "10.22.36.0", "255.255.255.0") || // 10.22.36.0\r\n
+    isInNet(clientIP, "10.22.40.0", "255.255.255.0") || // 10.22.40.0\r\n
+    isInNet(clientIP, "10.22.48.0", "255.255.255.0") || // 10.22.48.0\r\n
+    isInNet(clientIP, "10.22.49.0", "255.255.255.0") || // 10.22.49.0\r\n
+    isInNet(clientIP, "10.22.50.0", "255.255.255.0") || // 10.22.50.0\r\n
+    isInNet(clientIP, "10.22.51.0", "255.255.255.0") || // 10.22.51.0\r\n
+    isInNet(clientIP, "10.22.52.0", "255.255.255.0") || // 10.22.52.0\r\n
+    isInNet(clientIP, "10.22.53.0", "255.255.255.0") || // 10.22.53.0\r\n
+    isInNet(clientIP, "10.22.54.0", "255.255.255.0") || // 10.22.54.0\r\n
+    isInNet(clientIP, "10.22.55.0", "255.255.255.0") || // 10.22.55.0\r\n
+    isInNet(clientIP, "10.22.56.0", "255.255.255.0") || // 10.22.56.0\r\n
+    isInNet(clientIP, "10.22.57.0", "255.255.255.0") || // 10.22.57.0\r\n
+    isInNet(clientIP, "10.22.58.0", "255.255.255.0") || // 10.22.58.0\r\n
+    isInNet(clientIP, "10.22.59.0", "255.255.255.0") || // 10.22.59.0\r\n
+    isInNet(clientIP, "10.22.60.0", "255.255.255.0") || // 10.22.60.0\r\n
+    isInNet(clientIP, "10.22.61.0", "255.255.255.0") || // 10.22.61.0\r\n
+    isInNet(clientIP, "10.22.62.0", "255.255.255.0") || // 10.22.62.0\r\n
+    isInNet(clientIP, "10.22.63.0", "255.255.255.0") || // 10.22.63.0\r\n
+    isInNet(clientIP, "10.51.123.0", "255.255.255.0") || // 10.51.123.0/24\r\n
+    isInNet(clientIP, "10.51.124.0", "255.255.255.0") || // 10.51.124.0/24\r\n
+    isInNet(clientIP, "172.24.58.0", "255.255.255.0") || // 172.24.58.1\r\n
+    isInNet(clientIP, "172.25.151.0", "255.255.255.0") || // 172.25.151.1\r\n
+    isInNet(clientIP, "172.25.153.0", "255.255.255.0") || // 172.25.153.1\r\n
+    isInNet(clientIP, "172.25.154.0", "255.255.255.0") || // 172.25.154.1\r\n
+    isInNet(clientIP, "172.25.155.0", "255.255.255.0") || // 172.25.155.0\r\n
+    isInNet(clientIP, "172.25.180.0", "255.255.255.0") || // 172.25.180.1\r\n
+    isInNet(clientIP, "172.25.181.0", "255.255.255.0") || // 172.25.181.1\r\n
+    isInNet(clientIP, "172.25.182.0", "255.255.255.0") || // 172.25.182.1\r\n
+    isInNet(clientIP, "172.25.183.0", "255.255.255.0") || // 172.25.183.1\r\n
+    isInNet(clientIP, "172.25.184.0", "255.255.255.0") || // 172.25.184.1\r\n
+    isInNet(clientIP, "172.25.185.0", "255.255.255.0") || // 172.25.185.1\r\n
+    isInNet(clientIP, "172.25.188.0", "255.255.255.0") || // 172.25.188.1\r\n
+    isInNet(clientIP, "172.26.117.0", "255.255.255.0") || // 172.26.117.1\r\n
+    isInNet(clientIP, "172.25.158.0", "255.255.255.0") || // Balakovo Sales Office\r\n
+    isInNet(clientIP, "172.25.152.0", "255.255.255.0") || // Balashov\r\n
+    isInNet(clientIP, "172.24.64.0", "255.255.255.0") || // Orenburg-1\r\n
+    isInNet(clientIP, "172.24.76.0", "255.255.255.0") || // Orenburg-10\r\n
+    isInNet(clientIP, "172.24.77.0", "255.255.255.0") || // Orenburg-11\r\n
+    isInNet(clientIP, "172.24.123.0", "255.255.255.0") || // Orenburg-12\r\n
+    isInNet(clientIP, "172.24.124.0", "255.255.255.0") || // Orenburg-13\r\n
+    isInNet(clientIP, "172.24.126.0", "255.255.255.0") || // Orenburg-14\r\n
+    isInNet(clientIP, "172.24.65.0", "255.255.255.0") || // Orenburg-2\r\n
+    isInNet(clientIP, "172.24.66.0", "255.255.255.0") || // Orenburg-3\r\n
+    isInNet(clientIP, "172.24.68.0", "255.255.255.0") || // Orenburg-5\r\n
+    isInNet(clientIP, "172.24.69.0", "255.255.255.0") || // Orenburg-6\r\n
+    isInNet(clientIP, "172.24.70.0", "255.255.255.0") || // Orenburg-7\r\n
+    isInNet(clientIP, "172.24.74.0", "255.255.255.0") || // Orenburg-8\r\n
+    isInNet(clientIP, "172.24.75.0", "255.255.255.0") || // Orenburg-9\r\n
+    isInNet(clientIP, "10.22.8.0", "255.255.255.0") || // Penza-1\r\n
+    isInNet(clientIP, "172.25.170.0", "255.255.255.0") || // Penza-2\r\n
+    isInNet(clientIP, "172.25.171.0", "255.255.255.0") || // Penza-3\r\n
+    isInNet(clientIP, "172.25.172.0", "255.255.255.0") || // Penza-4\r\n
+    isInNet(clientIP, "172.25.173.0", "255.255.255.0") || // Penza-5\r\n
+    isInNet(clientIP, "172.24.32.0", "255.255.255.0") || // Samara-01\r\n
+    isInNet(clientIP, "172.24.35.0", "255.255.255.0") || // Samara-02\r\n
+    isInNet(clientIP, "172.24.36.0", "255.255.255.0") || // Samara-03\r\n
+    isInNet(clientIP, "172.24.38.0", "255.255.255.0") || // Samara-04\r\n
+    isInNet(clientIP, "172.24.42.0", "255.255.255.0") || // Samara-05\r\n
+    isInNet(clientIP, "172.24.49.0", "255.255.255.0") || // Samara-06\r\n
+    isInNet(clientIP, "172.24.50.0", "255.255.255.0") || // Samara-07\r\n
+    isInNet(clientIP, "172.24.51.0", "255.255.255.0") || // Samara-08\r\n
+    isInNet(clientIP, "10.22.12.0", "255.255.255.0") || // Saransk-1\r\n
+    isInNet(clientIP, "172.25.165.0", "255.255.255.0") || // Saransk-2\r\n
+    isInNet(clientIP, "172.25.166.0", "255.255.255.0") || // Saransk-3\r\n
+    isInNet(clientIP, "172.25.167.0", "255.255.255.0") || // Saransk-4\r\n
+    isInNet(clientIP, "172.24.15.0", "255.255.255.0") || // Tolyatti-1\r\n
+    isInNet(clientIP, "172.24.16.0", "255.255.255.0") || // Tolyatti--2\r\n
+    isInNet(clientIP, "172.24.17.0", "255.255.255.0") || // Tolyatti-3\r\n
+    isInNet(clientIP, "172.24.20.0", "255.255.255.0") || // Tolyatti-4\r\n
+    isInNet(clientIP, "172.24.11.0", "255.255.255.0") || // Tolyatti-5\r\n
+    isInNet(clientIP, "172.24.6.0", "255.255.255.0") || // Tolyatti-6\r\n
+    isInNet(clientIP, "172.24.56.0", "255.255.255.0") || // Ufa-01\r\n
+    isInNet(clientIP, "172.24.57.0", "255.255.255.0") || // Ufa-02\r\n
+    isInNet(clientIP, "172.24.60.0", "255.255.255.0") || // Ufa-03\r\n
+    isInNet(clientIP, "172.24.61.0", "255.255.255.0") || // Ufa-04\r\n
+    isInNet(clientIP, "172.25.138.0", "255.255.255.0") || // Ufa-05\r\n
+    isInNet(clientIP, "172.25.146.0", "255.255.255.0") || // Ufa-06\r\n
+    isInNet(clientIP, "172.25.147.0", "255.255.255.0") || // Ufa-07\r\n
+    isInNet(clientIP, "172.25.148.0", "255.255.255.0") || // Ufa-08\r\n
+    isInNet(clientIP, "172.25.149.0", "255.255.255.0") || // Ufa-09\r\n
+    isInNet(clientIP, "172.26.61.0", "255.255.255.0") || // Ufa-10\r\n
+    isInNet(clientIP, "172.26.62.0", "255.255.255.0") || // Ufa-11\r\n
+    isInNet(clientIP, "172.26.63.0", "255.255.255.0") || // Ufa-12\r\n
+    isInNet(clientIP, "10.22.16.0", "255.255.255.0") || // Ulyanovsk-1\r\n
+    isInNet(clientIP, "172.24.54.0", "255.255.255.0") || // Ulyanovsk-2\r\n
+    isInNet(clientIP, "172.24.55.0", "255.255.255.0") || // Ulyanovsk-3\r\n
+    isInNet(clientIP, "172.25.160.0", "255.255.255.0") || // Ulyanovsk-4\r\n
+    isInNet(clientIP, "172.25.161.0", "255.255.255.0") || // Ulyanovsk-5\r\n
+    isInNet(clientIP, "172.25.162.0", "255.255.255.0") || // Ulyanovsk-6\r\n
+    isInNet(clientIP, "172.25.163.0", "255.255.255.0") || // Ulyanovsk-7\r\n
+    isInNet(clientIP, "172.25.164.0", "255.255.255.0") || // Ulyanovsk-8\r\n
+    false) return "PROXY sr-proxy.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Sibirskiy Norilsk\r\n
+    if (\r\n
+    isInNet(clientIP, "172.25.84.0", "255.255.255.0") || // 172.25.84.0\r\n
+    isInNet(clientIP, "172.25.85.0", "255.255.255.0") || // 172.25.85.0\r\n
+    isInNet(clientIP, "172.25.86.0", "255.255.255.0") || // 172.25.86.0\r\n
+    isInNet(clientIP, "172.25.87.0", "255.255.255.0") || // 172.25.8
+t=2235ms: 12287-byte response body for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    7.0\r\n
+    false) return "PROXY NI-TMG001.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Sibirskiy Novosibirsk\r\n
+    if (\r\n
+    isInNet(clientIP, "10.18.232.0", "255.255.248.0") || // 10.18.232.0/21\r\n
+    isInNet(clientIP, "10.18.233.0", "255.255.255.0") || // 10.18.233.0\r\n
+    isInNet(clientIP, "10.18.241.0", "255.255.255.0") || // 10.18.241.0/24\r\n
+    isInNet(clientIP, "10.18.242.0", "255.255.255.0") || // 10.18.242.0/24\r\n
+    isInNet(clientIP, "10.18.243.0", "255.255.255.0") || // 10.18.243.0/24\r\n
+    isInNet(clientIP, "10.18.244.0", "255.255.255.0") || // 10.18.244.0/24\r\n
+    isInNet(clientIP, "10.18.245.0", "255.255.255.0") || // 10.18.245.0/24\r\n
+    isInNet(clientIP, "10.18.246.0", "255.255.255.0") || // 10.18.246.0/24\r\n
+    isInNet(clientIP, "10.18.248.0", "255.255.248.0") || // 10.18.248.0/21\r\n
+    isInNet(clientIP, "172.25.108.0", "255.255.255.0") || // 172.25.108.0/24\r\n
+    isInNet(clientIP, "172.25.111.0", "255.255.255.0") || // 172.25.111.0/24\r\n
+    isInNet(clientIP, "172.25.112.0", "255.255.255.0") || // 172.25.112.0/24\r\n
+    isInNet(clientIP, "172.25.113.0", "255.255.255.0") || // 172.25.113.0/24\r\n
+    isInNet(clientIP, "172.25.116.0", "255.255.255.0") || // 172.25.116.0/24\r\n
+    isInNet(clientIP, "172.25.118.0", "255.255.255.0") || // 172.25.118.0/24\r\n
+    isInNet(clientIP, "172.25.27.0", "255.255.255.0") || // 172.25.2.0/24\r\n
+    isInNet(clientIP, "172.25.20.0", "255.255.255.0") || // 172.25.20.0/24\r\n
+    isInNet(clientIP, "172.25.21.0", "255.255.255.0") || // 172.25.21.0/24\r\n
+    isInNet(clientIP, "172.25.22.0", "255.255.255.0") || // 172.25.22.0/24\r\n
+    isInNet(clientIP, "172.25.23.0", "255.255.255.0") || // 172.25.23.0/24\r\n
+    isInNet(clientIP, "172.25.24.0", "255.255.255.0") || // 172.25.24.0/24\r\n
+    isInNet(clientIP, "172.25.28.0", "255.255.255.0") || // 172.25.28.0/24\r\n
+    isInNet(clientIP, "172.25.29.0", "255.255.255.0") || // 172.25.29.0/24\r\n
+    isInNet(clientIP, "172.27.195.0", "255.255.255.0") || // 172.27.195.0/24\r\n
+    isInNet(clientIP, "172.27.196.0", "255.255.255.0") || // 172.27.196.0/24\r\n
+    isInNet(clientIP, "172.27.203.0", "255.255.255.0") || // 172.27.203.0/24\r\n
+    isInNet(clientIP, "172.27.212.0", "255.255.255.0") || // 172.27.212.0/24\r\n
+    isInNet(clientIP, "172.27.213.0", "255.255.255.0") || // 172.27.213.0/24\r\n
+    isInNet(clientIP, "172.27.223.0", "255.255.255.0") || // 172.27.223.0/24\r\n
+    isInNet(clientIP, "172.27.228.0", "255.255.255.0") || // 172.27.228.0/24\r\n
+    isInNet(clientIP, "172.27.229.0", "255.255.255.0") || // 172.27.229.0/24\r\n
+    isInNet(clientIP, "172.27.230.0", "255.255.255.0") || // 172.27.230.0/24\r\n
+    isInNet(clientIP, "172.27.231.0", "255.255.255.0") || // 172.27.231.0/24\r\n
+    isInNet(clientIP, "172.27.242.0", "255.255.255.0") || // 172.27.242.0\r\n
+    isInNet(clientIP, "172.27.243.0", "255.255.255.0") || // 172.27.243.0\r\n
+    isInNet(clientIP, "172.27.245.0", "255.255.255.0") || // 172.27.245.0/24\r\n
+    isInNet(clientIP, "172.27.246.0", "255.255.255.0") || // 172.27.246.0/24\r\n
+    isInNet(clientIP, "172.27.252.0", "255.255.252.0") || // 172.27.252.0/22\r\n
+    isInNet(clientIP, "172.25.88.0", "255.255.255.0") || // AB_172.25.88.0/24\r\n
+    isInNet(clientIP, "172.25.89.0", "255.255.255.0") || // AB_172.25.89.0/24\r\n
+    isInNet(clientIP, "172.25.91.0", "255.255.255.0") || // AB_172.25.91.0/24\r\n
+    isInNet(clientIP, "172.27.240.0", "255.255.255.0") || // AB_172.27.240.0/24\r\n
+    isInNet(clientIP, "172.27.241.0", "255.255.255.0") || // AB_172.27.241.0/24\r\n
+    isInNet(clientIP, "172.27.217.0", "255.255.255.0") || // Barnaul. Office\r\n
+    isInNet(clientIP, "172.27.216.0", "255.255.255.0") || // Barnaul_172.27.216.0/24\r\n
+    isInNet(clientIP, "172.27.218.0", "255.255.255.0") || // Barnaul_172.27.218.0/24\r\n
+    isInNet(clientIP, "172.27.238.0", "255.255.255.0") || // Barnaul_172.27.238.0/24\r\n
+    isInNet(clientIP, "172.27.239.0", "255.255.255.0") || // Barnaul_172.27.239.0/24\r\n
+    isInNet(clientIP, "172.25.74.0", "255.255.255.0") || // BarnaulCommuTator_Net\r\n
+    isInNet(clientIP, "172.25.75.0", "255.255.255.0") || // BarnaulLogisticAndRubcovsk_Net\r\n
+    isInNet(clientIP, "172.25.72.0", "255.255.255.0") || // BarnaulMainOffice_Net\r\n
+    isInNet(clientIP, "172.25.73.0", "255.255.255.0") || // BarnaulTechnicalOffice_Net\r\n
+    isInNet(clientIP, "172.27.219.0", "255.255.255.0") || // BarnaulTechnicalOfficeG3_Net\r\n
+    isInNet(clientIP, "172.25.95.0", "255.255.255.0") || // Biysk_172.25.95.0/24\r\n
+    isInNet(clientIP, "172.25.92.0", "255.255.255.0") || // Biysk_Net\r\n
+    isInNet(clientIP, "172.25.93.0", "255.255.255.0") || // Biysk_Net2\r\n
+    isInNet(clientIP, "172.25.99.64", "255.255.255.224") || // Gorno-Altaysk_172.25.99.64/27\r
+    \n
+    isInNet(clientIP, "172.25.98.0", "255.255.255.0") || // Gorno-Altaysk_MSC\r\n
+    isInNet(clientIP, "172.25.96.0", "255.255.255.0") || // Gorno-Altaysk_Net\r\n
+    isInNet(clientIP, "172.25.97.0", "255.255.255.0") || // Gorno-Altaysk_Net2\r\n
+    isInNet(clientIP, "172.27.209.0", "255.255.255.0") || // KM DopOffice\r\n
+    isInNet(clientIP, "172.25.62.0", "255.255.255.0") || // KM Kemerovo_Net\r\n
+    isInNet(clientIP, "172.27.193.0", "255.255.255.0") || // KM \xC8\xE3\xE0\xF0\xF1\xEA\xE0\xFF
+     2\r\n
+    isInNet(clientIP, "172.25.60.0", "255.255.255.0") || // KM \xCD\xEE\xE3\xF0\xE0\xE4\xF1\xEA
+    \xE0\xFF 5\r\n
+    isInNet(clientIP, "172.25.61.0", "255.255.255.0") || // KM \xCD\xEE\xE3\xF0\xE0\xE4\xF1\xEA
+    \xE0\xFF 5 2\xFD\xF2\xE0\xE6\r\n
+    isInNet(clientIP, "172.27.197.0", "255.255.255.0") || // KM \xCD\xEE\xE3\xF0\xE0\xE4\xF1\xEA
+    \xE0\xFF 5 3\xFD\xF2\xE0\xE6\r\n
+    isInNet(clientIP, "172.25.109.0", "255.255.255.0") || // KM \xD1\xE0\xF0\xFB\xE3\xE8\xED\xE0
+     29\r\n
+    isInNet(clientIP, "172.25.63.0", "255.255.255.0") || // KM \xD1\xEA\xEB\xE0\xE4\r\n
+    isInNet(clientIP, "172.25.76.0", "255.255.255.0") || // KR_172.25.76.0/24\r\n
+    isInNet(clientIP, "172.25.77.0", "255.255.255.0") || // KR_172.25.77.0/24\r\n
+    isInNet(clientIP, "172.25.78.0", "255.255.255.0") || // KR_172.25.78.0/24\r\n
+    isInNet(clientIP, "172.25.79.0", "255.255.255.0") || // KR_172.25.79.0/24\r\n
+    isInNet(clientIP, "172.27.199.0", "255.255.255.0") || // KR_172.27.199.0/24\r\n
+    isInNet(clientIP, "172.27.201.0", "255.255.255.0") || // KR_172.27.201.0/24\r\n
+    isInNet(clientIP, "172.27.204.0", "255.255.255.0") || // KR_172.27.204.0/24\r\n
+    isInNet(clientIP, "172.27.205.0", "255.255.255.0") || // KR_172.27.205.0/24\r\n
+    isInNet(clientIP, "172.27.207.0", "255.255.255.0") || // KR_172.27.207.0/24\r\n
+    isInNet(clientIP, "172.27.220.0", "255.255.255.0") || // KR_172.27.220.0/24\r\n
+    isInNet(clientIP, "172.27.221.0", "255.255.255.0") || // KR_172.27.221.0/24\r\n
+    isInNet(clientIP, "172.27.222.0", "255.255.255.0") || // KR_172.27.222.0/24\r\n
+    isInNet(clientIP, "172.27.234.0", "255.255.255.0") || // KR_172.27.234.0/24\r\n
+    isInNet(clientIP, "172.27.235.0", "255.255.255.0") || // KR_172.27.235.0/24\r\n
+    isInNet(clientIP, "172.25.100.0", "255.255.255.0") || // KY_172.25.100.0\r\n
+    isInNet(clientIP, "172.25.101.0", "255.255.255.0") || // KY_172.25.101.0\r\n
+    isInNet(clientIP, "172.27.227.0", "255.255.255.0") || // NK DopOffice\r\n
+    isInNet(clientIP, "172.25.64.0", "255.255.255.0") || // NK Kirova 65\r\n
+    isInNet(clientIP, "172.27.224.0", "255.255.255.0") || // NK Kolkhozniy 20\r\n
+    isInNet(clientIP, "172.25.66.0", "255.255.255.0") || // NK Kurako 33\r\n
+    isInNet(clientIP, "172.25.65.0", "255.255.255.0") || // NK Kutuzova 2\r\n
+    isInNet(clientIP, "172.25.67.0", "255.255.255.0") || // NK skald\r\n
+    isInNet(clientIP, "172.25.84.0", "255.255.255.0") || // Norilsk_172.25.84.0\r\n
+    isInNet(clientIP, "172.25.85.0", "255.255.255.0") || // Norilsk_172.25.85.0\r\n
+    isInNet(clientIP, "172.25.86.0", "255.255.255.0") || // Norilsk_172.25.86.0\r\n
+    isInNet(clientIP, "172.25.87.0", "255.255.255.0") || // Norilsk_172.25.87.0\r\n
+    isInNet(clientIP, "172.21.252.0", "255.255.252.0") || // NS_VDI_1\r\n
+    isInNet(clientIP, "172.27.198.0", "255.255.255.0") || // OM_172.27.198.0 /24\r\n
+    isInNet(clientIP, "172.27.232.0", "255.255.255.0") || // OM_172.27.232.0/24\r\n
+    isInNet(clientIP, "172.27.233.0", "255.255.255.0") || // OM_172.27.233.0/24\r\n
+    isInNet(clientIP, "172.25.71.0", "255.255.255.0") || // OM_Kirova 47a\r\n
+    isInNet(clientIP, "172.25.70.0", "255.255.255.0") || // OM_Marksa 41/40\r\n
+    isInNet(clientIP, "172.25.68.0", "255.255.255.0") || // OM_Marksa, 18/22\r\n
+    isInNet(clientIP, "172.25.83.0", "255.255.255.0") || // TM_172.25.83.0/24\r\n
+    isInNet(clientIP, "172.27.201.0", "255.255.255.0") || // TM_172.27.201.0\r\n
+    isInNet(clientIP, "172.27.236.0", "255.255.255.0") || // TM_172.27.236.0/24\r\n
+    isInNet(clientIP, "172.27.237.0", "255.255.255.0") || // TM_172.27.237.0/24\r\n
+    isInNet(clientIP, "172.25.80.0", "255.255.255.0") || // TM_BO\r\n
+    isInNet(clientIP, "172.25.82.0", "255.255.255.0") || // TM_BO Sovpartshkolniy\r\n
+    isInNet(clientIP, "172.25.81.0", "255.255.255.0") || // TM_FO\r\n
+    isInNet(clientIP, "172.27.230.128", "255.255.255.128") || // WiFi Guest\r\n
+    isInNet(clientIP, "172.27.230.0", "255.255.255.128") || // WiFi LocalNet\r\n
+    isInNet(clientIP, "10.18.235.0", "255.255.255.0") || // \xCF\xF3\xF8\xEA\xE8\xED\xE025\r\n
+    false) return "PROXY ns-proxy.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Tsentral Kaluga\r\n
+    if (\r\n
+    isInNet(clientIP, "10.127.210.0", "255.255.255.0") || // 10.127.210.0\r\n
+    isInNet(clientIP, "172.26.71.0", "255.255.255.0") || // klg_adm_office\r\n
+    isInNet(clientIP, "172.25.3.0", "255.255.255.0") || // klg_DataCenter\r\n
+    isInNet(clientIP, "10.127.204.0", "255.255.255.0") || // klg-cc-1\r\n
+    isInNet(clientIP, "10.127.206.0", "255.255.255.0") || // klg-cc-2\r\n
+    isInNet(clientIP, "10.127.207.0", "255.255.255.0") || // klg-cc-3\r\n
+    isInNet(clientIP, "10.127.213.0", "255.255.255.0") || // klg-cc-4\r\n
+    isInNet(clientIP, "10.127.230.0", "255.255.255.0") || // klg-cc-5\r\n
+    isInNet(clientIP, "10.127.231.0", "255.255.255.0") || // klg-cc-6\r\n
+    isInNet(clientIP, "10.51.25.32", "255.255.255.240") || // klg-esop-Borovsk\r\n
+    isInNet(clientIP, "10.127.205.0", "255.255.255.192") || // klg-fttb_office\r\n
+    isInNet(clientIP, "10.127.228.0", "255.255.255.0") || // klg-gt_cc\r\n
+    isInNet(clientIP, "10.127.205.128", "255.255.255.192") || // klg-management\r\n
+    isInNet(clientIP, "172.25.54.0", "255.255.255.0") || // klg-msc_2g\r\n
+    isInNet(clientIP, "10.127.205.112", "255.255.255.240") || // klg-obn_plaza\r\n
+    isInNet(clientIP, "10.127.205.80", "255.255.255.240") || // klg-obn-sales\r\n
+    isInNet(clientIP, "172.26.6.0", "255.255.255.0") || // klg-sales_ofice\r\n
+    isInNet(clientIP, "10.127.205.96", "255.255.255.240") || // klg-sales-tk\r\n
+    isInNet(clientIP, "10.127.205.192", "255.255.255.224") || // klg-sh_office\r\n
+    isInNet(clientIP, "10.127.205.64", "255.255.255.240") || // klg-so-kirova\r\n
+    isInNet(clientIP, "10.127.205.240", "255.255.255.240") || // klg-so-kr\r\n
+    isInNet(clientIP, "10.22.188.32", "255.255.255.240") || // klg-so-kr20\r\n
+    isInNet(clientIP, "10.127.205.224", "255.255.255.240") || // klg-so-kr26\r\n
+    isInNet(clientIP, "10.22.188.16", "255.255.255.240") || // klg-so-ln\r\n
+    isInNet(clientIP, "10.22.188.0", "255.255.255.240") || // klg-so-my\r\n
+    isInNet(clientIP, "10.127.205.112", "255.255.255.240") || // klg-so-pz\r\n
+    isInNet(clientIP, "172.25.4.0", "255.255.255.0") || // klg-tech_ofice\r\n
+    isInNet(clientIP, "172.25.251.0", "255.255.255.0") || // klg-tp-1\r\n
+    isInNet(clientIP, "172.25.252.0", "255.255.255.0") || // klg-tp-2\r\n
+    false) return "PROXY kl-tmg001.bee.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Tsentral Voronezh\r\n
+    if (\r\n
+    isInNet(clientIP, "10.127.253.0", "255.255.255.0") || // Belgorod BCM&SO\r\n
+    isInNet(clientIP, "10.127.252.0", "255.255.255.0") || // Belgorod BCM0&SO\r\n
+    isInNet(clientIP, "172.26.51.0", "255.255.255.0") || // Belgorod MSC\r\n
+    isInNet(clientIP, "172.25.36.0", "255.255.255.0") || // Belgorod Servers\r\n
+    isInNet(clientIP, "172.25.52.0", "255.255.255.0") || // Belgorod SO BSC\r\n
+    isInNet(clientIP, "172.26.55.0", "255.255.255.0") || // Belgorod SO MSC2\r\n
+    isInNet(clientIP, "172.26.52.0", "255.255.255.0") || // Belgorod SO OO\r\n
+    isInNet(clientIP, "172.25.51.0", "255.255.255.0") || // Belgorod Users\r\n
+    isInNet(clientIP, "172.25.38.160", "255.255.255.248") || // Belgorod_Esenina42\r\n
+    isInNet(clientIP, "10.51.20.0", "255.255.255.0") || // Belgorod_Gubkina\r\n
+    isInNet(clientIP, "10.51.24.32", "255.255.255.240") || // Klintsi, Lenina_21\r\n
+    isInNet(clientIP, "10.22.167.0", "255.255.255.0") || // Kursk CO Users\r\n
+    isInNet(clientIP, "172.25.39.0", "255.255.255.0") || // Kursk Main\r\n
+    isInNet(clientIP, "172.25.253.0", "255.255.255.0") || // Kursk SO 1\r\n
+    isInNet(clientIP, "10.22.166.0", "255.255.255.0") || // Kursk SO 2\r\n
+    isInNet(clientIP, "10.22.168.0", "255.255.255.0") || // Kursk SO 3\r\n
+    isInNet(clientIP, "10.51.21.0", "255.255.255.0") || // Kursk, ESOP\r\n
+    isInNet(clientIP, "172.25.34.0", "255.255.255.0") || // Lipetsk 34\r\n
+    isInNet(clientIP, "172.25.35.0", "255.255.255.0") || // Lipetsk 35\r\n
+    isInNet(clientIP, "172.26.76.0", "255.255.255.0") || // Lipetsk Commutator Net 76\r\n
+    isInNet(clientIP, "172.25.33.0", "255.255.255.0") || // Lipetsk Office Net 33\r\n
+    isInNet(clientIP, "10.127.248.0", "255.255.255.0") || // Lipetsk SO\r\n
+    isInNet(clientIP, "172.26.79.0", "255.255.255.0") || // Lipetsk TechOffice 79\r
+t=2240ms: 12287-byte response body for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    \n
+    isInNet(clientIP, "172.26.77.0", "255.255.255.0") || // Lipetsk Users CO 77\r\n
+    isInNet(clientIP, "172.26.78.0", "255.255.255.0") || // Lipetsk Users Zeg2 78\r\n
+    isInNet(clientIP, "10.51.17.0", "255.255.255.0") || // Lipetsk_Gagarina\r\n
+    isInNet(clientIP, "10.51.18.0", "255.255.255.0") || // Orel\r\n
+    isInNet(clientIP, "172.26.75.0", "255.255.255.0") || // Orel B2B Net\r\n
+    isInNet(clientIP, "10.127.246.0", "255.255.255.0") || // Orel B2C Net 2\r\n
+    isInNet(clientIP, "172.25.44.0", "255.255.255.0") || // Orel Commutator Net\r\n
+    isInNet(clientIP, "10.127.247.0", "255.255.255.0") || // Orel NSN Net\r\n
+    isInNet(clientIP, "172.25.43.0", "255.255.255.0") || // Orel Office Servers Net\r\n
+    isInNet(clientIP, "10.127.245.0", "255.255.255.0") || // Orel Office Users Net\r\n
+    isInNet(clientIP, "10.127.244.0", "255.255.255.0") || // Orel Offices Prodaj Net\r\n
+    isInNet(clientIP, "10.51.22.0", "255.255.255.0") || // Smolensk_25September\r\n
+    isInNet(clientIP, "172.25.48.0", "255.255.255.0") || // Tambov BSC Office\r\n
+    isInNet(clientIP, "172.25.47.0", "255.255.255.0") || // Tambov Central Office\r\n
+    isInNet(clientIP, "10.127.250.0", "255.255.255.0") || // Tambov Central Office WS\r\n
+    isInNet(clientIP, "172.26.9.0", "255.255.255.0") || // Tambov MSC Office\r\n
+    isInNet(clientIP, "10.127.251.0", "255.255.255.0") || // Tambov OO\r\n
+    isInNet(clientIP, "10.51.19.0", "255.255.255.0") || // Tambov_Michurinskaya\r\n
+    isInNet(clientIP, "10.51.23.0", "255.255.255.240") || // Tver\r\n
+    isInNet(clientIP, "10.127.209.0", "255.255.255.0") || // Vladimir, Oktyabrskaya, 7\r\n
+    isInNet(clientIP, "172.26.57.0", "255.255.255.0") || // Voronezh 25\r\n
+    isInNet(clientIP, "10.127.236.0", "255.255.255.0") || // Voronezh 65, 3G\r\n
+    isInNet(clientIP, "172.26.24.0", "255.255.255.0") || // Voronezh 65, 4\r\n
+    isInNet(clientIP, "172.26.28.0", "255.255.255.0") || // Voronezh 65, 5\r\n
+    isInNet(clientIP, "172.26.29.0", "255.255.255.0") || // Voronezh 65, 6\r\n
+    isInNet(clientIP, "172.26.30.0", "255.255.255.0") || // Voronezh 65, 7\r\n
+    isInNet(clientIP, "10.127.232.0", "255.255.255.0") || // Voronezh 65, NSN\r\n
+    isInNet(clientIP, "172.26.58.0", "255.255.255.0") || // Voronezh 65, RCM\r\n
+    isInNet(clientIP, "172.25.30.0", "255.255.255.0") || // Voronezh DataCenter\r\n
+    isInNet(clientIP, "172.26.26.0", "255.255.255.0") || // Voronezh SOP, Studencheskaya, 17\r
+    \n
+    isInNet(clientIP, "10.127.241.0", "255.255.255.0") || // Voronezh, 65A\r\n
+    isInNet(clientIP, "10.127.234.0", "255.255.255.0") || // Voronezh, ATC 77\r\n
+    isInNet(clientIP, "172.26.25.0", "255.255.255.0") || // Voronezh, Komissarzhevskoy, 15b\r\n
+    isInNet(clientIP, "10.127.243.0", "255.255.255.0") || // Voronezh, Krasnoarmeyskaya 54, Ar
+    stel 2 floor\r\n
+    isInNet(clientIP, "10.127.235.0", "255.255.255.0") || // Voronezh, Lenina, 73\r\n
+    isInNet(clientIP, "10.127.233.0", "255.255.255.0") || // Voronezh, Multi\r\n
+    isInNet(clientIP, "10.127.242.0", "255.255.255.0") || // Voronezh, Multi, Arstel\r\n
+    isInNet(clientIP, "10.127.240.0", "255.255.255.0") || // Voronezh, Multi, SOP\r\n
+    isInNet(clientIP, "10.127.238.0", "255.255.255.0") || // Voronezh, Peshe-Streletskaya, 127
+    A\r\n
+    isInNet(clientIP, "10.127.235.0", "255.255.255.0") || // Voronezh, pr-t Revolucii 29v\r\n
+    isInNet(clientIP, "10.51.31.0", "255.255.255.0") || // Voronezh, Sovetskaya\r\n
+    isInNet(clientIP, "172.26.31.0", "255.255.255.0") || // Voronezh, Transport Net\r\n
+    isInNet(clientIP, "10.51.16.0", "255.255.255.0") || // Voronezh_Pridonskiy\r\n
+    false) return "PROXY vr-proxy.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Ural Ekaterinburg\r\n
+    if (\r\n
+    isInNet(clientIP, "10.127.128.0", "255.255.248.0") || // 10.127.128.0/21 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "10.127.136.0", "255.255.252.0") || // 10.127.136.0/22 \xD2\xFE\xEC\xE5\xED
+    \xFC\r\n
+    isInNet(clientIP, "10.127.140.0", "255.255.254.0") || // 10.127.140.0/23 \xC8\xE6\xE5\xE2\xF1
+    \xEA\r\n
+    isInNet(clientIP, "10.127.142.0", "255.255.254.0") || // 10.127.142.0/23 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "10.127.144.0", "255.255.254.0") || // 10.127.144.0/23 \xD1\xF3\xF0\xE3\xF3
+    \xF2\r\n
+    isInNet(clientIP, "10.127.146.0", "255.255.254.0") || // 10.127.146.0/23 \xC8\xE6\xE5\xE2\xF1
+    \xEA\r\n
+    isInNet(clientIP, "10.127.152.0", "255.255.254.0") || // 10.127.152.0/23 \xD1\xF3\xF0\xE3\xF3
+    \xF2\r\n
+    isInNet(clientIP, "10.127.154.0", "255.255.255.0") || // 10.127.154.0/24 \xCA\xE8\xF0\xEE\xE2
+    \r\n
+    isInNet(clientIP, "10.127.160.0", "255.255.240.0") || // 10.127.160.0/20 OO EuroSet\r\n
+    isInNet(clientIP, "172.26.100.0", "255.255.252.0") || // 172.26.100.0/22 \xCD\xE8\xE6\xED\xE5
+    \xE2\xE0\xF0\xF2\xEE\xE2\xF1\xEA\r\n
+    isInNet(clientIP, "172.26.104.0", "255.255.248.0") || // 172.26.104.0/21 \xD1\xFB\xEA\xF2\xFB
+    \xE2\xEA\xE0\xF0+\xD3\xF5\xF2\xE0+\xCD\xE8\xE6\xED\xE5\xE2\xE0\xF0\xF2\xEE\xE2\xF1\xEA\r\n
+    isInNet(clientIP, "172.26.192.0", "255.255.248.0") || // 172.26.192.0/21 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "172.26.200.0", "255.255.248.0") || // 172.26.200.0/21 \xD7\xE5\xEB\xFF\xE1
+    \xE8\xED\xF1\xEA\r\n
+    isInNet(clientIP, "172.26.208.0", "255.255.248.0") || // 172.26.208.0/21 \xD2\xFE\xEC\xE5\xED
+    \xFC\r\n
+    isInNet(clientIP, "172.26.216.0", "255.255.248.0") || // 172.26.216.0/21 \xCA\xF3\xF0\xE3\xE0
+    \xED\r\n
+    isInNet(clientIP, "172.26.232.0", "255.255.252.0") || // 172.26.232.0/22 \xCC\xE0\xE3\xED\xE8
+    \xF2\xEE\xE3\xEE\xF0\xF1\xEA+\xCC\xE8\xE0\xF1\xF1\r\n
+    isInNet(clientIP, "172.26.236.0", "255.255.252.0") || // 172.26.236.0/22 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "172.26.240.0", "255.255.248.0") || // 172.26.240.0/21 \xC8\xE6\xE5\xE2\xF1
+    \xEA\r\n
+    isInNet(clientIP, "172.26.248.0", "255.255.252.0") || // 172.26.248.0/22 \xCD. \xD2\xE0\xE3
+    \xE8\xEB\r\n
+    isInNet(clientIP, "172.26.252.0", "255.255.252.0") || // 172.26.252.0/22 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "172.26.80.0", "255.255.254.0") || // 172.26.80.0/23 \xCA\xE8\xF0\xEE\xE2
+    \r\n
+    isInNet(clientIP, "172.26.82.0", "255.255.254.0") || // 172.26.82.0/23 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "172.26.84.0", "255.255.252.0") || // 172.26.84.0/22 \xCA\xE8\xF0\xEE\xE2
+    \r\n
+    isInNet(clientIP, "172.26.88.0", "255.255.248.0") || // 172.26.88.0/21 \xD1\xF3\xF0\xE3\xF3
+    \xF2\r\n
+    isInNet(clientIP, "172.26.96.0", "255.255.252.0") || // 172.26.96.0/22 \xD5\xE0\xED\xF2\xFB
+    -\xCC\xE0\xED\xF1\xE8\xE9\xF1\xEA\r\n
+    isInNet(clientIP, "172.27.160.0", "255.255.248.0") || // 172.27.160.0/21 \xD7\xE5\xEB\xFF\xE1
+    \xE8\xED\xF1\xEA\r\n
+    isInNet(clientIP, "172.27.168.0", "255.255.254.0") || // 172.27.168.0/23 \xCD\xEE\xE2\xFB\xE9
+     \xD3\xF0\xE5\xED\xE3\xEE\xE9\r\n
+    isInNet(clientIP, "172.27.170.0", "255.255.255.0") || // 172.27.170.0/24 \xD1\xF3\xF0\xE3\xF3
+    \xF2\r\n
+    isInNet(clientIP, "172.27.171.0", "255.255.255.0") || // 172.27.171.0/24 \xCD\xEE\xFF\xE1\xF0
+    \xFC\xF1\xEA\r\n
+    isInNet(clientIP, "172.27.172.0", "255.255.254.0") || // 172.27.172.0/23 \xD1\xE0\xEB\xE5\xF5
+    \xE0\xF0\xE4\r\n
+    isInNet(clientIP, "172.27.176.0", "255.255.254.0") || // 172.27.176.0/23 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "172.27.178.0", "255.255.254.0") || // 172.27.178.0/23 \xC0\xF0\xF2\xE5\xEC
+    \xEE\xE2\xF1\xEA\xE8\xE9\r\n
+    isInNet(clientIP, "172.27.180.0", "255.255.254.0") || // 172.27.180.0/23 \xD1\xE5\xF0\xEE\xE2
+    \r\n
+    isInNet(clientIP, "172.27.182.0", "255.255.254.0") || // 172.27.182.0/23 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "172.27.184.0", "255.255.248.0") || // 172.27.184.0/21 \xC5\xEA\xE0\xF2\xE5
+    \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n
+    isInNet(clientIP, "176.26.93.0", "255.255.255.0") || // 176.26.93.0\r\n
+    false) return "PROXY ek-proxy.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Ural Perm\r\n
+    if (\r\n
+    isInNet(clientIP, "10.127.96.0", "255.255.224.0") || // 10.127.96.0/19 \xCF\xE5\xF0\xEC\xFC
+    \r\n
+    isInNet(clientIP, "172.26.224.0", "255.255.248.0") || // 172.26.224.0/21 \xCF\xE5\xF0\xEC\xFC
+    \r\n
+    isInNet(clientIP, "10.127.175.0", "255.255.255.0") || // Perm_Evroset\r\n
+    isInNet(clientIP, "10.127.160.0", "255.255.255.0") || // Perm_Evroset_160\r\n
+    isInNet(clientIP, "10.127.164.0", "255.255.255.0") || // Perm_Evroset_164\r\n
+    isInNet(clientIP, "10.127.170.0", "255.255.255.0") || // Perm_Evroset_170\r\n
+    false) return "PROXY pm-proxy.vimpelcom.ru:8080";\r\n
+    \r\n
+    // Russia Yuzhnyy Rostov-na-Donu\r\n
+    if (\r\n
+    isInNet(clientIP, "10.19.0.0", "255.255.254.0") || // 10.19.0.0\r\n
+    isInNet(clientIP, "10.51.160.0", "255.255.248.0") || // 10.51.160.0/21\r\n
+    isInNet(clientIP, "10.51.162.0", "255.255.255.0") || // 10.51.162.0\r\n
+    isInNet(clientIP, "10.127.21.0", "255.255.255.0") || // Anapa 0\r\n
+    isInNet(clientIP, "10.127.4.0", "255.255.255.0") || // Armavir 0\r\n
+    isInNet(clientIP, "10.127.35.0", "255.255.255.0") || // Astrakhan 1\r\n
+    isInNet(clientIP, "10.127.34.0", "255.255.255.0") || // Astrakhan 2\r\n
+    isInNet(clientIP, "172.26.8.0", "255.255.255.0") || // Astrakhan 3\r\n
+    isInNet(clientIP, "172.25.215.0", "255.255.255.0") || // Astrakhan 4\r\n
+    isInNet(clientIP, "172.25.248.0", "255.255.255.0") || // Astrakhan 5\r\n
+    isInNet(clientIP, "172.25.217.0", "255.255.255.0") || // Astrakhan 6\r\n
+    isInNet(clientIP, "172.25.214.0", "255.255.255.0") || // Astrakhan 7\r\n
+    isInNet(clientIP, "172.25.18.0", "255.255.255.0") || // Budennovsky\r\n
+    isInNet(clientIP, "172.25.221.0", "255.255.255.0") || // Cherkessk 2\r\n
+    isInNet(clientIP, "10.127.14.0", "255.255.255.0") || // Cherkessk 3\r\n
+    isInNet(clientIP, "10.127.15.0", "255.255.255.0") || // Cherkessk 4\r\n
+    isInNet(clientIP, "172.25.15.0", "255.255.255.0") || // Client Scope 1\r\n
+    isInNet(clientIP, "172.25.16.0", "255.255.255.0") || // Client Scope 2\r\n
+    isInNet(clientIP, "172.25.17.0", "255.255.255.0") || // Client Scope 3\r\n
+    isInNet(clientIP, "10.127.18.0", "255.255.255.0") || // Elista Client Scope 1\r\n
+    isInNet(clientIP, "10.127.19.0", "255.255.255.0") || // Elista Client Scope 2\r\n
+    isInNet(clientIP, "10.127.44.0", "255.255.255.224") || // Elista Client Scope 3\r\n
+    isInNet(clientIP, "172.26.34.0", "255.255.255.0") || // Gorkogo Scope 1\r\n
+    isInNet(clientIP, "10.127.30.0", "255.255.255.0") || // Grozny Client Scope 1\r\n
+    isInNet(clientIP, "10.127.40.0", "255.255.255.0") || // Grozny Client Scope 2\r\n
+    isInNet(clientIP, "10.127.46.0", "255.255.255.0") || // Grozny Client Scope 3\r\n
+    isInNet(clientIP, "175.25.190.0", "255.255.255.0") || // Krasnodar 0\r\n
+    isInNet(clientIP, "172.25.191.0", "255.255.255.0") || // Krasnodar 1\r\n
+    isInNet(clientIP, "10.127.22.0", "255.255.255.0") || // Krasnodar 12\r\n
+    isInNet(clientIP, "10.127.27.0", "255.255.255.0") || // Krasnodar 12-17\r\n
+    isInNet(clientIP, "10.127.48.0", "255.255.255.0") || // Krasnodar 13\r\n
+    isInNet(clientIP, "10.127.49.0", "255.255.255.0") || // Krasnodar 14\r\n
+    isInNet(clientIP, "10.127.50.0", "255.255.255.0") || // Krasnodar 15\r\n
+    isInNet(clientIP, "10.127.51.0", "255.255.255.0") || // Krasnodar 18\r\n
+    isInNet(clientIP, "10.127.52.0", "255.255.255.0") || // Krasnodar 19\r\n
+    isInNet(clientIP, "10.127.53.0", "255.255.255.0") || // Krasnodar 20\r\n
+    isInNet(clientIP, "172.25.192.0", "255.255.255.0") || // Krasnodar 2-3\r\n
+    isInNet(clientIP, "172.25.193.0", "255.255.254.0") || // Krasnodar 4\r\n
+    isInNet(clientIP, "10.127.5.0", "255.255.255.0") || // Krasnodar 5\r\n
+    isInNet(clientIP, "10.127.24.0", "255.255.255.0") || // Krasnodar 6\r\n
+    isInNet(clientIP, "10.127.25.0", "255.255.255.0") || // Krasnodar 7\r\n
+    isInNet(clientIP, "10.127.26.0", "255.255.255.0") || // Krasnodar 8-11\r\n
+    isInNet(clientIP, "10.127.21.0", "255.255.255.0") || // Krasnodar Open Offices\r\n
+    isInNet(clientIP, "10.127.4.0", "255.255.255.0") || // Krasnodar Tikhoretsk 0\r\n
+    isInNet(clientIP, "10.127.6.0", "255.255.255.0") || // Krasnodar, Dalnyaya 39-5, PC\r\n
+    isInNet(clientIP, "172.25.194.0", "255.255.255.0") || // Krasnodar, Dalnyaya 39-5, Voice\r
+    \n
+    isInNet(clientIP, "172.25.229.0", "255.255.255.0") || // Makhachkala 0\r\n
+    isInNet(clientIP, "172.26.48.0", "255.255.255.0") || // Makhachkala 1\r\n
+    isInNet(clientIP, "172.25.230.0", "255.255.255.0") || // Makhachkala 2\r\n
+    isInNet(clientIP, "10.127.12.0", "255.255.255.0") || // Makhachkala Open Offices\r\n
+    isInNet(clientIP, "172.25.202.0", "255.255.255.0") || // Maykop 0\r\n
+    isInNet(clientIP, "172.26.17.0", "255.255.255.0") || // Mechnikova 3\r\n
+    isInNet(clientIP, "172.26.15.0", "255.255.255.0") || // Mechnikova Scope 1\r\n
+    isInNet(clientIP, "172.26.16.0", "255.255.255.0") || // Mechnikova Scope 2\r\n
+    isInNet(clientIP, "172.26.39.0", "255.255.255.0") || // Mechnikova Scope 4\r\n
+    isInNet(clientIP, "10.127.42.0", "255.255.255.0") || // Nalchik Open Offices\r\n
+    isInNet(clientIP, "172.25.227.0", "255.255.255.0") || // Nalchik Scope 1\r\n
+    isInNet(clientIP, "172.25.228.0", "255.255.255.0") || // Nalchik Scope 2\r\n
+    isInNet(clientIP, "10.127.16.0", "255.255.255.0") || // Nalchik Scope 3\r\n
+    isInNet(clientIP, "10.127.17.0", "255.255.255.0") || // Nalchik Scope 4\r\n
+    isInNet(clientIP, "10.127.43.0", "255.255.255.0") || // Nazran Client 1\r\n
+    isInNet(clientIP, "10.127.29.0", "255.255.255.0") || // Nazran Client 2\r\n
+    isInNet(clientIP, "172.25.225.0", "255.255.255.0") || // Nazran Client 3\r\n
+    isInNet(clientIP, "10.51.161.0", "255.255.255.0") || // Novokubansk-Pervomayskaya\r\n
+    isInNet(clientIP, "172.25.196.0", "255.255.255.0") || // Novorossyisk 0\r\n
+    isInNet(clientIP, "172.25.197.0", "255.255.255.0") || // Novorossyisk 1\r\n
+    isInNet(clientIP, "10.127.20.0", "255.255.255.0") || // Novorossyisk 2\r\n
+    isInNet(clientIP, "10.127.21.0", "255.255.255.0") || // Novorossyisk 3\r\n
+    isInNet(clientIP, "10.127.22.0", "255.255.255.0") || // Novorossyisk 4\r\n
+    isInNet(clientIP, "10.127.71.240", "255.255.255.248") || // NSX Red Pool\r\n
+    isInNet(clientIP, "10.127.39.0", "255.255.255.0") || // Open Offices\r\n
+    isInNet(clientIP, "10.127.59.0", "255.255.255.0") || // Open Offic
+t=2247ms: 5391-byte response body for "http://isaweb.vimpelcom.ru/wpad.dat" (RelFrameId=1, Internal ID=1)
+    es 2\r\n
+    isInNet(clientIP, "10.127.60.0", "255.255.255.0") || // Open Offices 3\r\n
+    isInNet(clientIP, "10.127.61.0", "255.255.255.0") || // Open Offices 4\r\n
+    isInNet(clientIP, "10.127.62.0", "255.255.255.0") || // Open Offices 5\r\n
+    isInNet(clientIP, "10.127.79.0", "255.255.255.0") || // Open Offices 6\r\n
+    isInNet(clientIP, "10.127.80.0", "255.255.255.0") || // Open Offices 7\r\n
+    isInNet(clientIP, "10.127.81.0", "255.255.255.0") || // Open Offices 8\r\n
+    isInNet(clientIP, "10.127.82.0", "255.255.255.0") || // Open Offices 9\r\n
+    isInNet(clientIP, "10.127.83.0", "255.255.255.0") || // Open Offices Euro 1\r\n
+    isInNet(clientIP, "10.127.87.0", "255.255.255.0") || // Open Offices Euro 10\r\n
+    isInNet(clientIP, "10.127.92.0", "255.255.255.0") || // Open Offices Euro 11\r\n
+    isInNet(clientIP, "10.127.91.0", "255.255.255.0") || // Open Offices Euro 12\r\n
+    isInNet(clientIP, "10.127.84.0", "255.255.255.0") || // Open Offices Euro 2\r\n
+    isInNet(clientIP, "10.127.85.0", "255.255.255.0") || // Open Offices Euro 3\r\n
+    isInNet(clientIP, "10.127.86.0", "255.255.255.0") || // Open Offices Euro 4\r\n
+    isInNet(clientIP, "10.127.89.0", "255.255.255.0") || // Open Offices Euro 5\r\n
+    isInNet(clientIP, "10.127.90.0", "255.255.255.0") || // Open Offices Euro 6\r\n
+    isInNet(clientIP, "10.127.88.0", "255.255.255.0") || // Open Offices Euro 7\r\n
+    isInNet(clientIP, "10.127.93.0", "255.255.255.0") || // Open Offices Euro 8\r\n
+    isInNet(clientIP, "10.127.78.0", "255.255.255.0") || // Open Offices Euro 9\r\n
+    isInNet(clientIP, "172.24.179.0", "255.255.255.0") || // Pyatigorsk 0\r\n
+    isInNet(clientIP, "172.24.180.0", "255.255.255.0") || // Pyatigorsk 1\r\n
+    isInNet(clientIP, "172.24.181.0", "255.255.255.0") || // Pyatigorsk 2\r\n
+    isInNet(clientIP, "172.24.182.0", "255.255.255.0") || // Pyatigorsk 3\r\n
+    isInNet(clientIP, "172.26.32.0", "255.255.255.0") || // Shaumyana Scope 1\r\n
+    isInNet(clientIP, "172.26.33.0", "255.255.255.0") || // Shaumyana Scope 2\r\n
+    isInNet(clientIP, "10.127.38.0", "255.255.255.0") || // Shaumyana WiFi\r\n
+    isInNet(clientIP, "10.127.8.0", "255.255.255.0") || // Sochi 0\r\n
+    isInNet(clientIP, "172.26.11.0", "255.255.255.0") || // Sochi 1\r\n
+    isInNet(clientIP, "172.25.200.0", "255.255.255.0") || // Sochi 2\r\n
+    isInNet(clientIP, "10.127.10.0", "255.255.255.0") || // Sochi 3\r\n
+    isInNet(clientIP, "10.127.11.0", "255.255.255.0") || // Sochi 4 GT\r\n
+    isInNet(clientIP, "10.127.33.0", "255.255.255.0") || // Sochi 5\r\n
+    isInNet(clientIP, "172.25.199.0", "255.255.255.0") || // Sochi 6 Serv\r\n
+    isInNet(clientIP, "172.26.21.0", "255.255.255.0") || // Socialca\r\n
+    isInNet(clientIP, "172.26.43.0", "255.255.255.0") || // Sovintel\r\n
+    isInNet(clientIP, "172.24.160.0", "255.255.255.0") || // Stavropol 0\r\n
+    isInNet(clientIP, "172.24.161.0", "255.255.255.0") || // Stavropol 1\r\n
+    isInNet(clientIP, "172.24.171.0", "255.255.255.0") || // Stavropol 10\r\n
+    isInNet(clientIP, "172.24.172.0", "255.255.255.0") || // Stavropol 11\r\n
+    isInNet(clientIP, "172.24.173.0", "255.255.255.0") || // Stavropol 12\r\n
+    isInNet(clientIP, "172.24.174.0", "255.255.255.0") || // Stavropol 13\r\n
+    isInNet(clientIP, "172.24.162.0", "255.255.255.0") || // Stavropol 2\r\n
+    isInNet(clientIP, "172.24.163.0", "255.255.255.0") || // Stavropol 3\r\n
+    isInNet(clientIP, "172.24.164.0", "255.255.255.0") || // Stavropol 4\r\n
+    isInNet(clientIP, "172.24.165.0", "255.255.255.0") || // Stavropol 5\r\n
+    isInNet(clientIP, "172.24.168.0", "255.255.255.0") || // Stavropol 6\r\n
+    isInNet(clientIP, "172.24.167.0", "255.255.255.0") || // Stavropol 7\r\n
+    isInNet(clientIP, "172.26.7.0", "255.255.255.0") || // Stavropol 8\r\n
+    isInNet(clientIP, "172.24.170.0", "255.255.255.0") || // Stavropol 9\r\n
+    isInNet(clientIP, "172.26.23.0", "255.255.255.0") || // Temernitsky\r\n
+    isInNet(clientIP, "10.127.74.0", "255.255.255.0") || // VDI - Pool 3\r\n
+    isInNet(clientIP, "10.127.68.0", "255.255.254.0") || // VDI - Rostov-on-Don\r\n
+    isInNet(clientIP, "10.127.41.0", "255.255.255.0") || // Vladikavkaz Client 1\r\n
+    isInNet(clientIP, "172.25.223.0", "255.255.255.0") || // Vladikavkaz Client 2\r\n
+    isInNet(clientIP, "172.25.224.0", "255.255.255.0") || // Vladikavkaz Client 3\r\n
+    isInNet(clientIP, "172.25.226.0", "255.255.255.0") || // Vladikavkaz Client 4\r\n
+    isInNet(clientIP, "10.127.1.0", "255.255.255.0") || // Volgograd_CB_VLZ\r\n
+    isInNet(clientIP, "10.127.3.224", "255.255.255.224") || // Volgograd_min_office_04\r\n
+    isInNet(clientIP, "172.25.209.0", "255.255.255.0") || // Volgograd_mini_office_01\r\n
+    isInNet(clientIP, "10.127.56.0", "255.255.255.0") || // Volgograd_mini_office_02\r\n
+    isInNet(clientIP, "10.127.57.0", "255.255.255.0") || // Volgograd_mini_office_03\r\n
+    isInNet(clientIP, "172.25.205.0", "255.255.255.0") || // Volgograd-00\r\n
+    isInNet(clientIP, "172.25.206.0", "255.255.255.0") || // Volgograd-01\r\n
+    isInNet(clientIP, "172.25.207.0", "255.255.255.0") || // Volgograd-80\r\n
+    isInNet(clientIP, "10.127.2.0", "255.255.255.0") || // Volgograd-ADM\r\n
+    isInNet(clientIP, "172.26.67.0", "255.255.255.0") || // Volgograd-ADM-2\r\n
+    isInNet(clientIP, "172.26.70.0", "255.255.255.240") || // Volgograd-Kamishin\r\n
+    isInNet(clientIP, "172.26.70.32", "255.255.255.240") || // Volgograd-Mikhaylovka\r\n
+    isInNet(clientIP, "10.127.0.0", "255.255.255.0") || // Volgograd-MSC\r\n
+    isInNet(clientIP, "172.25.208.0", "255.255.255.0") || // Volgograd-VLZ\r\n
+    isInNet(clientIP, "10.127.75.0", "255.255.255.0") || // \xD0\xEE\xF1\xF2\xEE\xE2 (VDI); RF
+    C 525890/18\r\n
+    isInNet(clientIP, "10.127.76.0", "255.255.255.0") || // \xD0\xEE\xF1\xF2\xEE\xE2 (VDI); RF
+    C 525890/18 #2\r\n
+    false) return "PROXY rd-proxy.vimpelcom.ru:8080";\r\n
+    \r\n
+    // No proxy for unknown subnet\r\n
+    return "DIRECT";}\r\n
+t=2250ms: Request done "http://isaweb.vimpelcom.ru/wpad.dat"  	[MsgId: MMSG-26000]
+t=2254ms: Closed connection [0] to isaweb.vimpelcom.ru:80 after completing 1 request(s)  	[MsgId: MMSG-26000]
+JavaScript evaluating begins  	[MsgId: MMSG-26298]
+   1: // Vimpelcom proxy auto config file \r\n  	[MsgId: MMSG-26000]
+   2: \r\n  	[MsgId: MMSG-26000]
+   3: function FindProxyForURL(url, host) {\r\n  	[MsgId: MMSG-26000]
+   4: \r\n  	[MsgId: MMSG-26000]
+   5: // No proxy for sites like "intarnet"\r\n  	[MsgId: MMSG-26000]
+   6: if (isPlainHostName(host)) return "DIRECT";\r\n  	[MsgId: MMSG-26000]
+   7: \r\n  	[MsgId: MMSG-26000]
+   8: // No proxy for unresolvable hosts\r\n  	[MsgId: MMSG-26000]
+   9: //if (!(isResolvable(host))) return "DIRECT"; \r\n  	[MsgId: MMSG-26000]
+  10: \r\n  	[MsgId: MMSG-26000]
+  11: // No proxy for sites with private or local address\r\n  	[MsgId: MMSG-26000]
+  12: var hostIP = dnsResolve(host);\r\n  	[MsgId: MMSG-26000]
+  13: if (\r\n  	[MsgId: MMSG-26000]
+  14: isInNet(hostIP, "127.0.0.0",  "255.0.0.0"  ) \t\t||  \r\n  	[MsgId: MMSG-26000]
+  15: isInNet(hostIP, "10.0.0.0",   "255.0.0.0"  ) \t\t||\r\n  	[MsgId: MMSG-26000]
+  16: isInNet(hostIP, "100.88.88.0",   "255.255.255.0"  )\t||\r\n  	[MsgId: MMSG-26000]
+  17: isInNet(hostIP, "172.16.0.0", "255.240.0.0") \t\t||\r\n  	[MsgId: MMSG-26000]
+  18: isInNet(hostIP, "192.168.0.0","255.255.0.0") \t\t||\r\n  	[MsgId: MMSG-26000]
+  19: isInNet(hostIP, "192.0.2.0","255.255.255.0") \t\t||  \r\n  	[MsgId: MMSG-26000]
+  20: isInNet(hostIP, "198.18.0.0","255.254.0.0") \t\t||  \r\n  	[MsgId: MMSG-26000]
+  21: isInNet(hostIP, "198.51.100.0","255.255.255.0") \t||  \r\n  	[MsgId: MMSG-26000]
+  22: isInNet(hostIP, "203.0.113.0","255.255.255.0") \t\t||\r\n  	[MsgId: MMSG-26000]
+  23: //\r\n  	[MsgId: MMSG-26000]
+  24: // IPTV Monitoring RFC \xB9323819/14\r\n  	[MsgId: MMSG-26000]
+  25: isInNet(hostIP, "172.20.38.0","255.255.255.0") \t\t||\r\n  	[MsgId: MMSG-26000]
+  26: isInNet(hostIP, "172.20.39.0","255.255.255.0") \t\t||\r\n  	[MsgId: MMSG-26000]
+  27: // \r\n  	[MsgId: MMSG-26000]
+  28: // Google Tools(Drive)\r\n  	[MsgId: MMSG-26000]
+  29: //isInNet(hostIP, "173.194.71.0","255.255.255.0") \t||   \r\n  	[MsgId: MMSG-26000]
+  30: //isInNet(hostIP, "173.194.32.0","255.255.255.0") \t||   \r\n  	[MsgId: MMSG-26000]
+  31: //isInNet(hostIP, "74.125.143.0","255.255.255.0") \t||   \r\n  	[MsgId: MMSG-26000]
+  32: //\r\n  	[MsgId: MMSG-26000]
+  33: // ITunes\r\n  	[MsgId: MMSG-26000]
+  34: //isInNet(hostIP, "79.140.94.0","255.255.255.0")   \t||\r\n  	[MsgId: MMSG-26000]
+  35: //isInNet(hostIP, "79.140.95.0","255.255.255.0")   \t||\r\n  	[MsgId: MMSG-26000]
+  36: //isInNet(hostIP, "23.32.0.0","255.224.0.0") \t \t||\r\n  	[MsgId: MMSG-26000]
+  37: //isInNet(hostIP, "23.64.0.0","255.252.0.0") \t\t||\r\n  	[MsgId: MMSG-26000]
+  38: //isInNet(hostIP, "17.0.0.0","255.0.0.0")\t\t||\r\n  	[MsgId: MMSG-26000]
+  39: //isInNet(hostIP, "62.115.0.0","255.255.0.0")\t \t||\r\n  	[MsgId: MMSG-26000]
+  40: //isInNet(hostIP, "217.212.224.0","255.255.224.0") \t||\r\n  	[MsgId: MMSG-26000]
+  41: //isInNet(hostIP, "173.245.48.0","255.255.240.0")\t||\r\n  	[MsgId: MMSG-26000]
+  42: //isInNet(hostIP, "173.245.48.0","255.255.240.0")\t||\r\n  	[MsgId: MMSG-26000]
+  43: //isInNet(hostIP, "95.100.0.0","255.255.240.0")\t \t||\r\n  	[MsgId: MMSG-26000]
+  44: //isInNet(hostIP, "199.0.0.0","255.192.0.0")\t\t||\r\n  	[MsgId: MMSG-26000]
+  45: //\r\n  	[MsgId: MMSG-26000]
+  46: isInNet(hostIP, "169.254.0.0","255.255.0.0")) return "DIRECT";\r\n  	[MsgId: MMSG-26000]
+  47: \r\n  	[MsgId: MMSG-26000]
+  48: // Detect nearest proxy for client by IP address\r\n  	[MsgId: MMSG-26000]
+  49: var clientIP = myIpAddress();\r\n  	[MsgId: MMSG-26000]
+  50: \r\n  	[MsgId: MMSG-26000]
+  51: // Automatically created from TMG Server Enterprise configuration\r\n  	[MsgId: MMSG-26000]
+  52: \r\n  	[MsgId: MMSG-26000]
+  53: // Russia Dalnevostochnyy Khabarovsk\r\n  	[MsgId: MMSG-26000]
+  54: if (\r\n  	[MsgId: MMSG-26000]
+  55: isInNet(clientIP, "172.27.104.0", "255.255.255.0") || // Anadyr 0\r\n  	[MsgId: MMSG-26000]
+  56: isInNet(clientIP, "172.27.105.0", "255.255.255.0") || // Anadyr 1\r\n  	[MsgId: MMSG-26000]
+  57: isInNet(clientIP, "172.27.24.0", "255.255.255.0") || // Birobidzhan 0\r\n  	[MsgId: MMSG-26000]
+  58: isInNet(clientIP, "172.27.26.0", "255.255.255.0") || // Birobidzhan 1\r\n  	[MsgId: MMSG-26000]
+  59: isInNet(clientIP, "172.27.16.0", "255.255.255.0") || // Blagoveshchensk_16\r\n  	[MsgId: MMSG-26000]
+  60: isInNet(clientIP, "172.27.17.0", "255.255.255.0") || // Blagoveshchensk_17\r\n  	[MsgId: MMSG-26000]
+  61: isInNet(clientIP, "172.27.18.0", "255.255.255.0") || // Blagoveshchensk_18\r\n  	[MsgId: MMSG-26000]
+  62: isInNet(clientIP, "172.27.19.0", "255.255.255.0") || // Blagoveshchensk_19\r\n  	[MsgId: MMSG-26000]
+  63: isInNet(clientIP, "172.27.20.0", "255.255.255.0") || // Blagoveshchensk_20\r\n  	[MsgId: MMSG-26000]
+  64: isInNet(clientIP, "172.27.88.0", "255.255.255.0") || // Chita 0\r\n  	[MsgId: MMSG-26000]
+  65: isInNet(clientIP, "172.27.90.0", "255.255.255.0") || // Chita 1\r\n  	[MsgId: MMSG-26000]
+  66: isInNet(clientIP, "172.27.89.0", "255.255.255.0") || // Chita 2\r\n  	[MsgId: MMSG-26000]
+  67: isInNet(clientIP, "172.27.69.0", "255.255.255.0") || // Irkutsk 1\r\n  	[MsgId: MMSG-26000]
+  68: isInNet(clientIP, "172.27.67.0", "255.255.255.0") || // Irkutsk 2\r\n  	[MsgId: MMSG-26000]
+  69: isInNet(clientIP, "172.27.66.0", "255.255.255.0") || // Irkutsk 3\r\n  	[MsgId: MMSG-26000]
+  70: isInNet(clientIP, "172.27.64.0", "255.255.255.0") || // Irkutsk 4\r\n  	[MsgId: MMSG-26000]
+  71: isInNet(clientIP, "172.27.128.0", "255.255.255.0") || // Irkutsk 5\r\n  	[MsgId: MMSG-26000]
+  72: isInNet(clientIP, "172.27.129.0", "255.255.255.0") || // Irkutsk 6\r\n  	[MsgId: MMSG-26000]
+  73: isInNet(clientIP, "172.27.65.0", "255.255.255.0") || // Irkutsk 7\r\n  	[MsgId: MMSG-26000]
+  74: isInNet(clientIP, "172.27.68.0", "255.255.255.0") || // Irkutsk 8\r\n  	[MsgId: MMSG-26000]
+  75: isInNet(clientIP, "172.27.48.0", "255.255.255.0") || // Kamchatka 1\r\n  	[MsgId: MMSG-26000]
+  76: isInNet(clientIP, "172.27.49.0", "255.255.255.0") || // Kamchatka 2\r\n  	[MsgId: MMSG-26000]
+  77: isInNet(clientIP, "172.27.50.0", "255.255.255.0") || // Kamchatka 3\r\n  	[MsgId: MMSG-26000]
+  78: isInNet(clientIP, "172.27.0.0", "255.255.255.0") || // Khabarovsk 0\r\n  	[MsgId: MMSG-26000]
+  79: isInNet(clientIP, "172.27.1.0", "255.255.255.0") || // Khabarovsk 1\r\n  	[MsgId: MMSG-26000]
+  80: isInNet(clientIP, "172.27.10.0", "255.255.255.0") || // Khabarovsk 10\r\n  	[MsgId: MMSG-26000]
+  81: isInNet(clientIP, "172.27.2.0", "255.255.255.0") || // Khabarovsk 2\r\n  	[MsgId: MMSG-26000]
+  82: isInNet(clientIP, "172.27.3.0", "255.255.255.0") || // Khabarovsk 3\r\n  	[MsgId: MMSG-26000]
+  83: isInNet(clientIP, "172.27.4.0", "255.255.255.0") || // Khabarovsk 4\r\n  	[MsgId: MMSG-26000]
+  84: isInNet(clientIP, "172.27.5.0", "255.255.255.0") || // Khabarovsk 5\r\n  	[MsgId: MMSG-26000]
+  85: isInNet(clientIP, "172.27.7.0", "255.255.255.0") || // Khabarovsk 7\r\n  	[MsgId: MMSG-26000]
+  86: isInNet(clientIP, "10.51.80.0", "255.255.240.0") || // Khabarovsk Evroset'\r\n  	[MsgId: MMSG-26000]
+  87: isInNet(clientIP, "10.25.0.0", "255.255.255.0") || // Khabarovsk scope 10.25.0\r\n  	[MsgId: MMSG-26000]
+  88: isInNet(clientIP, "172.27.134.0", "255.255.255.0") || // Khabarovsk_VDI_1\r\n  	[MsgId: MMSG-26000]
+  89: isInNet(clientIP, "172.27.135.0", "255.255.255.0") || // Khabarovsk_VDI_2\r\n  	[MsgId: MMSG-26000]
+  90: isInNet(clientIP, "172.27.132.0", "255.255.255.0") || // Khabarovsk_VDI_mgmt+vsan+dmz\r\n  	[MsgId: MMSG-26000]
+  91: isInNet(clientIP, "172.27.35.0", "255.255.255.0") || // Komsomolsk_Communication\r\n  	[MsgId: MMSG-26000]
+  92: isInNet(clientIP, "172.27.33.0", "255.255.255.0") || // Komsomolsk_Pendrie 1\r\n  	[MsgId: MMSG-26000]
+  93: isInNet(clientIP, "172.27.32.0", "255.255.255.0") || // Komsomolsk_Servers\r\n  	[MsgId: MMSG-26000]
+  94: isInNet(clientIP, "172.27.34.0", "255.255.255.0") || // Komsomolsk_Switch\r\n  	[MsgId: MMSG-26000]
+  95: isInNet(clientIP, "172.27.36.0", "255.255.255.0") || // Komsomolsk_Users\r\n  	[MsgId: MMSG-26000]
+  96: isInNet(clientIP, "172.27.80.0", "255.255.255.0") || // Magadan_1\r\n  	[MsgId: MMSG-26000]
+  97: isInNet(clientIP, "172.27.81.0", "255.255.255.0") || // Magadan_2\r\n  	[MsgId: MMSG-26000]
+  98: isInNet(clientIP, "172.27.82.0", "255.255.255.0") || // Magadan_3\r\n  	[MsgId: MMSG-26000]
+  99: isInNet(clientIP, "172.27.72.0", "255.255.255.0") || // Vladivostok 1\r\n  	[MsgId: MMSG-26000]
+ 100: isInNet(clientIP, "172.27.76.0", "255.255.255.0") || // Vladivostok 10\r\n  	[MsgId: MMSG-26000]
+ 101: isInNet(clientIP, "172.27.43.0", "255.255.255.0") || // Vladivostok 11\r\n  	[MsgId: MMSG-26000]
+ 102: isInNet(clientIP, "172.27.45.0", "255.255.255.0") || // Vladivostok 12\r\n  	[MsgId: MMSG-26000]
+ 103: isInNet(clientIP, "172.27.44.0", "255.255.255.0") || // Vladivostok 13\r\n  	[MsgId: MMSG-26000]
+ 104: isInNet(clientIP, "172.27.41.0", "255.255.255.0") || // Vladivostok 14\r\n  	[MsgId: MMSG-26000]
+ 105: isInNet(clientIP, "172.27.78.0", "255.255.255.0") || // Vladivostok 15\r\n  	[MsgId: MMSG-26000]
+ 106: isInNet(clientIP, "172.27.40.0", "255.255.255.0") || // Vladivostok 16\r\n  	[MsgId: MMSG-26000]
+ 107: isInNet(clientIP, "172.27.73.0", "255.255.255.0") || // Vladivostok 2\r\n  	[MsgId: MMSG-26000]
+ 108: isInNet(clientIP, "172.27.42.0", "255.255.255.0") || // Vladivostok 3\r\n  	[MsgId: MMSG-26000]
+ 109: isInNet(clientIP, "172.27.122.0", "255.255.254.0") || // Vladivostok 4\r\n  	[MsgId: MMSG-26000]
+ 110: isInNet(clientIP, "172.27.123.0", "255.255.255.0") || // Vladivostok 5\r\n  	[MsgId: MMSG-26000]
+ 111: isInNet(clientIP, "172.27.123.16", "255.255.255.240") || // Vladivostok 6\r\n  	[MsgId: MMSG-26000]
+ 112: isInNet(clientIP, "172.27.45.32", "255.255.255.224") || // Vladivostok 7\r\n  	[MsgId: MMSG-26000]
+ 113: isInNet(clientIP, "172.27.74.0", "255.255.255.0") || // Vladivostok 8\r\n  	[MsgId: MMSG-26000]
+ 114: isInNet(clientIP, "172.27.75.0", "255.255.255.0") || // Vladivostok 9\r\n  	[MsgId: MMSG-26000]
+ 115: false) return "PROXY kh-tmg002.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 116: \r\n  	[MsgId: MMSG-26000]
+ 117: // Russia Dalnevostochnyy Ulan-Ude\r\n  	[MsgId: MMSG-26000]
+ 118: if (\r\n  	[MsgId: MMSG-26000]
+ 119: isInNet(clientIP, "172.27.114.0", "255.255.255.0") || // Gagarina 16\r\n  	[MsgId: MMSG-26000]
+ 120: isInNet(clientIP, "172.27.113.224", "255.255.255.240") || // PiplsPark\r\n  	[MsgId: MMSG-26000]
+ 121: isInNet(clientIP, "172.27.113.192", "255.255.255.240") || // Tereshkovoy 20B\r\n  	[MsgId: MMSG-26000]
+ 122: isInNet(clientIP, "172.27.112.0", "255.255.255.0") || // Ulan-Ude 1\r\n  	[MsgId: MMSG-26000]
+ 123: isInNet(clientIP, "172.27.113.128", "255.255.255.224") || // Ulan-Ude 2 OpenOffice\r\n  	[MsgId: MMSG-26000]
+ 124: isInNet(clientIP, "172.27.113.177", "255.255.255.248") || // Ulan-Ude 3 Sklad\r\n  	[MsgId: MMSG-26000]
+ 125: false) return "PROXY uu-tmg001.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 126: \r\n  	[MsgId: MMSG-26000]
+ 127: // Russia Dalnevostochnyy Yakutsk\r\n  	[MsgId: MMSG-26000]
+ 128: if (\r\n  	[MsgId: MMSG-26000]
+ 129: isInNet(clientIP, "10.25.12.0", "255.255.255.0") || // Yakutsk 10...\r\n  	[MsgId: MMSG-26000]
+ 130: isInNet(clientIP, "172.27.96.0", "255.255.248.0") || // Yakutsk 172...\r\n  	[MsgId: MMSG-26000]
+ 131: false) return "PROXY yk-tmg001.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 132: \r\n  	[MsgId: MMSG-26000]
+ 133: // Russia Dalnevostochnyy Yuzhno-Sakhalinsk\r\n  	[MsgId: MMSG-26000]
+ 134: if (\r\n  	[MsgId: MMSG-26000]
+ 135: isInNet(clientIP, "172.27.120.0", "255.255.255.0") || // 172.27.120.0/24\r\n  	[MsgId: MMSG-26000]
+ 136: isInNet(clientIP, "172.27.56.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 56\r\n  	[MsgId: MMSG-26000]
+ 137: isInNet(clientIP, "172.27.57.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 57\r\n  	[MsgId: MMSG-26000]
+ 138: isInNet(clientIP, "172.27.58.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 58\r\n  	[MsgId: MMSG-26000]
+ 139: isInNet(clientIP, "172.27.61.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 61\r\n  	[MsgId: MMSG-26000]
+ 140: isInNet(clientIP, "172.27.62.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 62\r\n  	[MsgId: MMSG-26000]
+ 141: isInNet(clientIP, "172.27.63.0", "255.255.255.0") || // Yuzhno-Sakhalinsk Lan 63\r\n  	[MsgId: MMSG-26000]
+ 142: false) return "PROXY us-tmg001.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 143: \r\n  	[MsgId: MMSG-26000]
+ 144: // Russia Moscow\r\n  	[MsgId: MMSG-26000]
+ 145: if (\r\n  	[MsgId: MMSG-26000]
+ 146: isInNet(clientIP, "10.245.245.0", "255.255.255.0") || // 1\r\n  	[MsgId: MMSG-26000]
+ 147: isInNet(clientIP, "172.21.0.0", "255.255.0.0") || // 10\r\n  	[MsgId: MMSG-26000]
+ 148: isInNet(clientIP, "10.50.219.0", "255.255.255.0") || // 10.50.219.0\r\n  	[MsgId: MMSG-26000]
+ 149: isInNet(clientIP, "10.50.223.0", "255.255.255.0") || // 10.50.223.0\r\n  	[MsgId: MMSG-26000]
+ 150: isInNet(clientIP, "10.50.225.0", "255.255.255.0") || // 10.50.225-Hyper-V\r\n  	[MsgId: MMSG-26000]
+ 151: isInNet(clientIP, "10.50.226.0", "255.255.255.0") || // 10.50.226-Hyper-V\r\n  	[MsgId: MMSG-26000]
+ 152: isInNet(clientIP, "10.50.227.0", "255.255.255.0") || // 10.50.227-Hyper-V\r\n  	[MsgId: MMSG-26000]
+ 153: isInNet(clientIP, "10.51.169.0", "255.255.255.0") || // 10.51.169.0\r\n  	[MsgId: MMSG-26000]
+ 154: isInNet(clientIP, "10.51.177.0", "255.255.255.0") || // 10.51.177.0\r\n  	[MsgId: MMSG-26000]
+ 155: isInNet(clientIP, "10.51.178.0", "255.255.255.0") || // 10.51.178.0/24\r\n  	[MsgId: MMSG-26000]
+ 156: isInNet(clientIP, "10.51.180.0", "255.255.255.0") || // 10.51.180.0\r\n  	[MsgId: MMSG-26000]
+ 157: isInNet(clientIP, "10.51.183.0", "255.255.255.0") || // 10.51.183.0/24\r\n  	[MsgId: MMSG-26000]
+ 158: isInNet(clientIP, "10.51.184.0", "255.255.255.0") || // 10.51.184.0/24\r\n  	[MsgId: MMSG-26000]
+ 159: isInNet(clientIP, "10.31.218.0", "255.255.254.0") || // 100 YS\r\n  	[MsgId: MMSG-26000]
+ 160: isInNet(clientIP, "10.31.220.0", "255.255.254.0") || // 101 YS\r\n  	[MsgId: MMSG-26000]
+ 161: isInNet(clientIP, "10.127.201.0", "255.255.255.0") || // 102 TV\r\n  	[MsgId: MMSG-26000]
+ 162: isInNet(clientIP, "10.31.132.0", "255.255.255.0") || // 103 YS\r\n  	[MsgId: MMSG-26000]
+ 163: isInNet(clientIP, "10.31.136.0", "255.255.255.0") || // 104 YD VM\r\n  	[MsgId: MMSG-26000]
+ 164: isInNet(clientIP, "10.22.228.0", "255.255.255.0") || // 104 YS\r\n  	[MsgId: MMSG-26000]
+ 165: isInNet(clientIP, "10.51.23.0", "255.255.255.0") || // 105 TV\r\n  	[MsgId: MMSG-26000]
+ 166: isInNet(clientIP, "192.168.0.0", "255.255.0.0") || // 11\r\n  	[MsgId: MMSG-26000]
+ 167: isInNet(clientIP, "10.112.0.0", "255.248.0.0") || // 12\r\n  	[MsgId: MMSG-26000]
+ 168: isInNet(clientIP, "10.120.0.0", "255.252.0.0") || // 13\r\n  	[MsgId: MMSG-26000]
+ 169: isInNet(clientIP, "10.124.0.0", "255.254.0.0") || // 14\r\n  	[MsgId: MMSG-26000]
+ 170: isInNet(clientIP, "10.126.0.0", "255.255.0.0") || // 15\r\n  	[MsgId: MMSG-26000]
+ 171: isInNet(clientIP, "10.127.218.0", "255.255.255.0") || // 16 YS\r\n  	[MsgId: MMSG-26000]
+ 172: isInNet(clientIP, "10.127.223.0", "255.255.255.0") || // 17 YS\r\n  	[MsgId: MMSG-26000]
+ 173: isInNet(clientIP, "10.127.222.0", "255.255.255.0") || // 18 YS\r\n  	[MsgId: MMSG-26000]
+ 174: isInNet(clientIP, "10.31.160.0", "255.255.255.0") || // 19\r\n  	[MsgId: MMSG-26000]
+ 175: isInNet(clientIP, "10.22.144.0", "255.255.255.0") || // 19 YS\r\n  	[MsgId: MMSG-26000]
+ 176: isInNet(clientIP, "10.64.0.0", "255.224.0.0") || // 2\r\n  	[MsgId: MMSG-26000]
+ 177: isInNet(clientIP, "10.22.138.0", "255.255.255.0") || // 20 YS\r\n  	[MsgId: MMSG-26000]
+ 178: isInNet(clientIP, "10.22.136.0", "255.255.255.0") || // 21 YS\r\n  	[MsgId: MMSG-26000]
+ 179: isInNet(clientIP, "10.22.140.0", "255.255.255.0") || // 22 YS\r\n  	[MsgId: MMSG-26000]
+ 180: isInNet(clientIP, "10.22.142.0", "255.255.255.0") || // 23 YS\r\n  	[MsgId: MMSG-26000]
+ 181: isInNet(clientIP, "172.26.13.0", "255.255.255.0") || // 24 YS\r\n  	[MsgId: MMSG-26000]
+ 182: isInNet(clientIP, "10.127.219.0", "255.255.255.0") || // 25 YS\r\n  	[MsgId: MMSG-26000]
+ 183: isInNet(clientIP, "172.25.14.0", "255.255.255.0") || // 26 YS\r\n  	[MsgId: MMSG-26000]
+ 184: isInNet(clientIP, "10.127.220.0", "255.255.255.0") || // 27 YS\r\n  	[MsgId: MMSG-26000]
+ 185: isInNet(clientIP, "172.25.13.0", "255.255.255.0") || // 28 YS\r\n  	[MsgId: MMSG-26000]
+ 186: isInNet(clientIP, "10.96.0.0", "255.240.0.0") || // 3\r\n  	[MsgId: MMSG-26000]
+ 187: isInNet(clientIP, "10.127.208.0", "255.255.255.0") || // 30 Vladimir\r\n  	[MsgId: MMSG-26000]
+ 188: isInNet(clientIP, "172.25.0.0", "255.255.255.0") || // 31 Vladimir\r\n  	[MsgId: MMSG-26000]
+ 189: isInNet(clientIP, "172.25.1.0", "255.255.255.0") || // 32 Vladimir\r\n  	[MsgId: MMSG-26000]
+ 190: isInNet(clientIP, "172.25.2.0", "255.255.255.0") || // 33 Vladimir\r\n  	[MsgId: MMSG-26000]
+ 191: isInNet(clientIP, "172.26.5.0", "255.255.255.0") || // 34 Vladimir\r\n  	[MsgId: MMSG-26000]
+ 192: isInNet(clientIP, "172.19.128.0", "255.255.224.0") || // 35\r\n  	[MsgId: MMSG-26000]
+ 193: isInNet(clientIP, "172.19.160.0", "255.255.240.0") || // 36\r\n  	[MsgId: MMSG-26000]
+ 194: isInNet(clientIP, "172.24.192.0", "255.255.255.0") || // 37 TV\r\n  	[MsgId: MMSG-26000]
+ 195: isInNet(clientIP, "172.24.195.0", "255.255.255.0") || // 38 TV\r\n  	[MsgId: MMSG-26000]
+ 196: isInNet(clientIP, "172.25.9.0", "255.255.255.0") || // 39 TV\r\n  	[MsgId: MMSG-26000]
+ 197: isInNet(clientIP, "192.0.2.0", "255.255.255.0") || // 4\r\n  	[MsgId: MMSG-26000]
+ 198: isInNet(clientIP, "172.25.10.0", "255.255.255.0") || // 40 TV\r\n  	[MsgId: MMSG-26000]
+ 199: isInNet(clientIP, "172.25.53.0", "255.255.255.0") || // 41 TV\r\n  	[MsgId: MMSG-26000]
+ 200: isInNet(clientIP, "172.26.74.0", "255.255.255.0") || // 42 TV\r\n  	[MsgId: MMSG-26000]
+ 201: isInNet(clientIP, "10.127.200.0", "255.255.255.0") || // 43 TV\r\n  	[MsgId: MMSG-26000]
+ 202: isInNet(clientIP, "10.127.201.0", "255.255.255.0") || // 44 TV\r\n  	[MsgId: MMSG-26000]
+ 203: isInNet(clientIP, "172.24.202.0", "255.255.255.0") || // 45 TV\r\n  	[MsgId: MMSG-26000]
+ 204: isInNet(clientIP, "172.24.203.0", "255.255.255.0") || // 46 TV\r\n  	[MsgId: MMSG-26000]
+ 205: isInNet(clientIP, "172.24.204.0", "255.255.255.0") || // 47 TV\r\n  	[MsgId: MMSG-26000]
+ 206: isInNet(clientIP, "172.24.205.0", "255.255.255.0") || // 48 TV\r\n  	[MsgId: MMSG-26000]
+ 207: isInNet(clientIP, "172.24.206.0", "255.255.255.0") || // 49 TV\r\n  	[MsgId: MMSG-26000]
+ 208: isInNet(clientIP, "198.18.0.0", "255.254.0.0") || // 5\r\n  	[MsgId: MMSG-26000]
+ 209: isInNet(clientIP, "172.24.207.0", "255.255.255.0") || // 50 TV\r\n  	[MsgId: MMSG-26000]
+ 210: isInNet(clientIP, "172.24.208.0", "255.255.255.0") || // 51 TV\r\n  	[MsgId: MMSG-26000]
+ 211: isInNet(clientIP, "172.24.209.0", "255.255.255.0") || // 52 TV\r\n  	[MsgId: MMSG-26000]
+ 212: isInNet(clientIP, "172.19.172.0", "255.255.255.0") || // 53\r\n  	[MsgId: MMSG-26000]
+ 213: isInNet(clientIP, "172.19.173.0", "255.255.255.0") || // 54\r\n  	[MsgId: MMSG-26000]
+ 214: isInNet(clientIP, "10.22.150.0", "255.255.255.0") || // 55 YS\r\n  	[MsgId: MMSG-26000]
+ 215: isInNet(clientIP, "10.22.151.0", "255.255.255.0") || // 56 YS\r\n  	[MsgId: MMSG-26000]
+ 216: isInNet(clientIP, "10.22.152.0", "255.255.255.224") || // 57 YS\r\n  	[MsgId: MMSG-26000]
+ 217: isInNet(clientIP, "10.101.0.0", "255.255.0.0") || // 58 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 218: isInNet(clientIP, "10.24.0.0", "255.255.0.0") || // 59 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 219: isInNet(clientIP, "198.51.100.0", "255.255.255.0") || // 6\r\n  	[MsgId: MMSG-26000]
+ 220: isInNet(clientIP, "10.103.0.0", "255.255.0.0") || // 60 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 221: isInNet(clientIP, "10.104.0.0", "255.255.0.0") || // 61 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 222: isInNet(clientIP, "10.107.0.0", "255.255.0.0") || // 62 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 223: isInNet(clientIP, "10.20.0.0", "255.255.0.0") || // 63 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 224: isInNet(clientIP, "10.8.0.0", "255.255.0.0") || // 64 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 225: isInNet(clientIP, "10.105.0.0", "255.255.0.0") || // 65 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 226: isInNet(clientIP, "10.106.0.0", "255.255.0.0") || // 66 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 227: isInNet(clientIP, "10.111.0.0", "255.255.0.0") || // 67 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 228: isInNet(clientIP, "10.4.0.0", "255.255.0.0") || // 68 Sovintel\r\n  	[MsgId: MMSG-26000]
+ 229: isInNet(clientIP, "172.19.146.0", "255.255.255.224") || // 69\r\n  	[MsgId: MMSG-26000]
+ 230: isInNet(clientIP, "203.0.113.0", "255.255.255.0") || // 7\r\n  	[MsgId: MMSG-26000]
+ 231: isInNet(clientIP, "172.19.177.0", "255.255.255.128") || // 70\r\n  	[MsgId: MMSG-26000]
+ 232: isInNet(clientIP, "10.31.249.0", "255.255.255.0") || // 71 YS\r\n  	[MsgId: MMSG-26000]
+ 233: isInNet(clientIP, "10.31.248.0", "255.255.255.0") || // 72 YS\r\n  	[MsgId: MMSG-26000]
+ 234: isInNet(clientIP, "10.22.153.0", "255.255.255.0") || // 73 YS\r\n  	[MsgId: MMSG-26000]
+ 235: isInNet(clientIP, "10.22.154.0", "255.255.255.0") || // 74 YS\r\n  	[MsgId: MMSG-26000]
+ 236: isInNet(clientIP, "10.31.224.0", "255.255.255.0") || // 75 YS\r\n  	[MsgId: MMSG-26000]
+ 237: isInNet(clientIP, "10.31.232.0", "255.255.255.0") || // 76 YS\r\n  	[MsgId: MMSG-26000]
+ 238: isInNet(clientIP, "172.19.176.128", "255.255.255.240") || // 77\r\n  	[MsgId: MMSG-26000]
+ 239: isInNet(clientIP, "10.31.225.0", "255.255.255.0") || // 78\r\n  	[MsgId: MMSG-26000]
+ 240: isInNet(clientIP, "10.31.233.0", "255.255.255.0") || // 79\r\n  	[MsgId: MMSG-26000]
+ 241: isInNet(clientIP, "172.19.1.0", "255.255.255.0") || // 8\r\n  	[MsgId: MMSG-26000]
+ 242: isInNet(clientIP, "10.22.155.0", "255.255.255.0") || // 80 YS\r\n  	[MsgId: MMSG-26000]
+ 243: isInNet(clientIP, "10.22.156.0", "255.255.255.0") || // 81 YS\r\n  	[MsgId: MMSG-26000]
+ 244: isInNet(clientIP, "10.22.251.0", "255.255.255.0") || // 82 YS\r\n  	[MsgId: MMSG-26000]
+ 245: isInNet(clientIP, "10.22.249.0", "255.255.255.0") || // 83 YS\r\n  	[MsgId: MMSG-26000]
+ 246: isInNet(clientIP, "10.22.232.0", "255.255.255.0") || // 84 YS\r\n  	[MsgId: MMSG-26000]
+ 247: isInNet(clientIP, "10.22.233.0", "255.255.255.0") || // 85 YS\r\n  	[MsgId: MMSG-26000]
+ 248: isInNet(clientIP, "10.22.225.0", "255.255.255.0") || // 86 YS\r\n  	[MsgId: MMSG-26000]
+ 249: isInNet(clientIP, "10.22.224.0", "255.255.255.0") || // 87 YS\r\n  	[MsgId: MMSG-26000]
+ 250: isInNet(clientIP, "10.22.152.32", "255.255.255.224") || // 88 YS\r\n  	[MsgId: MMSG-26000]
+ 251: isInNet(clientIP, "172.20.0.0", "255.255.0.0") || // 9\r\n  	[MsgId: MMSG-26000]
+ 252: isInNet(clientIP, "10.50.0.0", "255.255.255.0") || // 90\r\n  	[MsgId: MMSG-26000]
+ 253: isInNet(clientIP, "10.50.1.0", "255.255.255.0") || // 91\r\n  	[MsgId: MMSG-26000]
+ 254: isInNet(clientIP, "10.50.238.0", "255.255.255.0") || // 92\r\n  	[MsgId: MMSG-26000]
+ 255: isInNet(clientIP, "10.127.133.0", "255.255.255.0") || // 93\r\n  	[MsgId: MMSG-26000]
+ 256: isInNet(clientIP, "10.22.226.0", "255.255.255.0") || // 93 YS\r\n  	[MsgId: MMSG-26000]
+ 257: isInNet(clientIP, "10.22.227.0", "255.255.255.0") || // 94 YS\r\n  	[MsgId: MMSG-26000]
+ 258: isInNet(clientIP, "10.22.231.0", "255.255.255.0") || // 95 YS\r\n  	[MsgId: MMSG-26000]
+ 259: isInNet(clientIP, "10.22.234.0", "255.255.255.0") || // 96 YS\r\n  	[MsgId: MMSG-26000]
+ 260: isInNet(clientIP, "10.22.152.0", "255.255.255.0") || // 97 YS\r\n  	[MsgId: MMSG-26000]
+ 261: isInNet(clientIP, "10.50.65.0", "255.255.255.0") || // 98 YS\r\n  	[MsgId: MMSG-26000]
+ 262: isInNet(clientIP, "10.50.66.0", "255.255.255.0") || // 99 YS\r\n  	[MsgId: MMSG-26000]
+ 263: isInNet(clientIP, "10.22.176.0", "255.255.255.0") || // BN 01\r\n  	[MsgId: MMSG-26000]
+ 264: isInNet(clientIP, "10.127.214.0", "255.255.255.0") || // BN 02\r\n  	[MsgId: MMSG-26000]
+ 265: isInNet(clientIP, "10.127.64.0", "255.255.255.0") || // BN 03\r\n  	[MsgId: MMSG-26000]
+ 266: isInNet(clientIP, "10.127.226.0", "255.255.255.0") || // BN 04\r\n  	[MsgId: MMSG-26000]
+ 267: isInNet(clientIP, "172.25.236.0", "255.255.255.0") || // BN 05\r\n  	[MsgId: MMSG-26000]
+ 268: isInNet(clientIP, "172.25.239.0", "255.255.255.0") || // BN 06\r\n  	[MsgId: MMSG-26000]
+ 269: isInNet(clientIP, "10.51.24.64", "255.255.255.240") || // BN 07\r\n  	[MsgId: MMSG-26000]
+ 270: isInNet(clientIP, "192.168.209.0", "255.255.255.0") || // Cisco ASA Net\r\n  	[MsgId: MMSG-26000]
+ 271: isInNet(clientIP, "10.127.198.0", "255.255.255.0") || // IV 01\r\n  	[MsgId: MMSG-26000]
+ 272: isInNet(clientIP, "172.25.55.0", "255.255.255.0") || // IV 02\r\n  	[MsgId: MMSG-26000]
+ 273: isInNet(clientIP, "172.25.56.0", "255.255.255.0") || // IV 03\r\n  	[MsgId: MMSG-26000]
+ 274: isInNet(clientIP, "172.25.57.0", "255.255.255.0") || // IV 04\r\n  	[MsgId: MMSG-26000]
+ 275: isInNet(clientIP, "172.25.58.0", "255.255.255.0") || // IV 05\r\n  	[MsgId: MMSG-26000]
+ 276: isInNet(clientIP, "172.25.231.0", "255.255.255.0") || // KS 01\r\n  	[MsgId: MMSG-26000]
+ 277: isInNet(clientIP, "172.25.233.0", "255.255.255.0") || // KS 02\r\n  	[MsgId: MMSG-26000]
+ 278: isInNet(clientIP, "10.127.216.0", "255.255.255.0") || // KS 03\r\n  	[MsgId: MMSG-26000]
+ 279: isInNet(clientIP, "10.127.217.0", "255.255.255.0") || // KS 04\r\n  	[MsgId: MMSG-26000]
+ 280: isInNet(clientIP, "10.21.251.0", "255.255.255.0") || // MacOS Catalina\r\n  	[MsgId: MMSG-26000]
+ 281: isInNet(clientIP, "172.21.231.0", "255.255.255.0") || // MS Balance231\r\n  	[MsgId: MMSG-26000]
+ 282: isInNet(clientIP, "172.19.148.0", "255.255.255.0") || // MS MonoBrend1\r\n  	[MsgId: MMSG-26000]
+ 283: isInNet(clientIP, "172.21.149.0", "255.255.255.0") || // MS MonoBrend2\r\n  	[MsgId: MMSG-26000]
+ 284: isInNet(clientIP, "172.19.150.0", "255.255.255.0") || // MS Monobrend3\r\n  	[MsgId: MMSG-26000]
+ 285: isInNet(clientIP, "172.19.234.0", "255.255.255.0") || // MS Monobrend4\r\n  	[MsgId: MMSG-26000]
+ 286: isInNet(clientIP, "172.19.235.0", "255.255.255.0") || // MS Monobrend5\r\n  	[MsgId: MMSG-26000]
+ 287: isInNet(clientIP, "172.19.236.0", "255.255.255.0") || // MS Monobrend6\r\n  	[MsgId: MMSG-26000]
+ 288: isInNet(clientIP, "172.19.237.0", "255.255.255.0") || // MS Monobrend7\r\n  	[MsgId: MMSG-26000]
+ 289: isInNet(clientIP, "10.51.168.0", "255.255.255.0") || // MS Monobrend8\r\n  	[MsgId: MMSG-26000]
+ 290: isInNet(clientIP, "10.128.0.0", "255.252.0.0") || // MS_SRV_subnet\r\n  	[MsgId: MMSG-26000]
+ 291: isInNet(clientIP, "10.128.10.0", "255.255.254.0") || // MS_VPN1\r\n  	[MsgId: MMSG-26000]
+ 292: isInNet(clientIP, "10.188.14.0", "255.255.254.0") || // MS_VPN2\r\n  	[MsgId: MMSG-26000]
+ 293: isInNet(clientIP, "10.31.150.0", "255.255.255.0") || // MSK BigData\r\n  	[MsgId: MMSG-26000]
+ 294: isInNet(clientIP, "10.21.224.0", "255.255.248.0") || // MSK VPN1\r\n  	[MsgId: MMSG-26000]
+ 295: isInNet(clientIP, "10.21.232.0", "255.255.248.0") || // MSK VPN2\r\n  	[MsgId: MMSG-26000]
+ 296: isInNet(clientIP, "172.19.0.0", "255.255.0.0") || // MSK_MONOBREND\r\n  	[MsgId: MMSG-26000]
+ 297: isInNet(clientIP, "10.51.22.0", "255.255.255.0") || // MSK_SM1\r\n  	[MsgId: MMSG-26000]
+ 298: isInNet(clientIP, "10.51.29.0", "255.255.255.0") || // MSK_Subnet\r\n  	[MsgId: MMSG-26000]
+ 299: isInNet(clientIP, "10.51.26.0", "255.255.255.0") || // MSK_Yar_obl_Ribinsk\r\n  	[MsgId: MMSG-26000]
+ 300: isInNet(clientIP, "10.51.28.0", "255.255.255.0") || // MSK1\r\n  	[MsgId: MMSG-26000]
+ 301: isInNet(clientIP, "10.51.25.0", "255.255.255.0") || // MSK2\r\n  	[MsgId: MMSG-26000]
+ 302: isInNet(clientIP, "10.51.30.0", "255.255.255.0") || // MSK3\r\n  	[MsgId: MMSG-26000]
+ 303: isInNet(clientIP, "10.50.98.0", "255.255.254.0") || // MSK4\r\n  	[MsgId: MMSG-26000]
+ 304: isInNet(clientIP, "10.21.194.0", "255.255.255.0") || // MSK5\r\n  	[MsgId: MMSG-26000]
+ 305: isInNet(clientIP, "10.21.195.0", "255.255.255.0") || // MSK6\r\n  	[MsgId: MMSG-26000]
+ 306: isInNet(clientIP, "10.21.196.0", "255.255.255.0") || // MSK7\r\n  	[MsgId: MMSG-26000]
+ 307: isInNet(clientIP, "10.21.197.0", "255.255.255.0") || // MSK8\r\n  	[MsgId: MMSG-26000]
+ 308: isInNet(clientIP, "10.50.76.0", "255.255.255.0") || // MSK9\r\n  	[MsgId: MMSG-26000]
+ 309: isInNet(clientIP, "172.19.225.0", "255.255.255.0") || // MS-Ramenskoe\r\n  	[MsgId: MMSG-26000]
+ 310: isInNet(clientIP, "10.50.67.0", "255.255.255.0") || // NOTFOUND\r\n  	[MsgId: MMSG-26000]
+ 311: isInNet(clientIP, "10.127.199.0", "255.255.255.0") || // RZ 0 (SO_M5Moll)\r\n  	[MsgId: MMSG-26000]
+ 312: isInNet(clientIP, "172.25.5.0", "255.255.255.0") || // RZ 1 (Adm_Office)\r\n  	[MsgId: MMSG-26000]
+ 313: isInNet(clientIP, "172.25.6.0", "255.255.255.0") || // RZ 2 (Commutator)\r\n  	[MsgId: MMSG-26000]
+ 314: isInNet(clientIP, "172.25.250.0", "255.255.255.0") || // RZ 3 (Tech_Office)\r\n  	[MsgId: MMSG-26000]
+ 315: isInNet(clientIP, "172.26.73.0", "255.255.255.0") || // RZ 4\r\n  	[MsgId: MMSG-26000]
+ 316: isInNet(clientIP, "172.25.8.0", "255.255.255.0") || // SL 01\r\n  	[MsgId: MMSG-26000]
+ 317: isInNet(clientIP, "172.25.7.0", "255.255.255.0") || // SL 02\r\n  	[MsgId: MMSG-26000]
+ 318: isInNet(clientIP, "10.127.196.0", "255.255.255.0") || // SL 03\r\n  	[MsgId: MMSG-26000]
+ 319: isInNet(clientIP, "10.127.197.0", "255.255.255.0") || // SL 04\r\n  	[MsgId: MMSG-26000]
+ 320: isInNet(clientIP, "10.51.22.0", "255.255.255.0") || // SL 05\r\n  	[MsgId: MMSG-26000]
+ 321: isInNet(clientIP, "10.51.19.0", "255.255.255.0") || // TB1\r\n  	[MsgId: MMSG-26000]
+ 322: isInNet(clientIP, "10.127.192.0", "255.255.255.0") || // TL 01\r\n  	[MsgId: MMSG-26000]
+ 323: isInNet(clientIP, "10.127.194.0", "255.255.255.0") || // TL 02\r\n  	[MsgId: MMSG-26000]
+ 324: isInNet(clientIP, "10.127.195.0", "255.255.255.0") || // TL 03\r\n  	[MsgId: MMSG-26000]
+ 325: isInNet(clientIP, "172.25.11.0", "255.255.255.0") || // TL 04\r\n  	[MsgId: MMSG-26000]
+ 326: isInNet(clientIP, "172.25.12.0", "255.255.255.0") || // TL 05\r\n  	[MsgId: MMSG-26000]
+ 327: isInNet(clientIP, "172.26.12.0", "255.255.255.0") || // TL 06\r\n  	[MsgId: MMSG-26000]
+ 328: isInNet(clientIP, "172.26.72.0", "255.255.255.0") || // TL 07\r\n  	[MsgId: MMSG-26000]
+ 329: isInNet(clientIP, "10.51.27.0", "255.255.255.0") || // TL 08\r\n  	[MsgId: MMSG-26000]
+ 330: isInNet(clientIP, "10.31.151.0", "255.255.255.0") || // UserSubnet 579424_20\r\n  	[MsgId: MMSG-26000]
+ 331: isInNet(clientIP, "10.50.88.0", "255.255.255.0") || // USSS 1\r\n  	[MsgId: MMSG-26000]
+ 332: isInNet(clientIP, "192.168.163.0", "255.255.255.0") || // USSS 2\r\n  	[MsgId: MMSG-26000]
+ 333: isInNet(clientIP, "172.21.228.0", "255.255.255.0") || // VC_Global_net1\r\n  	[MsgId: MMSG-26000]
+ 334: isInNet(clientIP, "10.50.23.0", "255.255.255.0") || // VDI 10.50.23.0\r\n  	[MsgId: MMSG-26000]
+ 335: isInNet(clientIP, "10.50.24.0", "255.255.255.0") || // VDI 10.50.24.0\r\n  	[MsgId: MMSG-26000]
+ 336: isInNet(clientIP, "10.50.25.0", "255.255.255.0") || // VDI 10.50.25.0\r\n  	[MsgId: MMSG-26000]
+ 337: isInNet(clientIP, "10.50.26.0", "255.255.255.0") || // VDI 10.50.26.0\r\n  	[MsgId: MMSG-26000]
+ 338: isInNet(clientIP, "10.50.8.0", "255.255.255.0") || // VDI MS 1\r\n  	[MsgId: MMSG-26000]
+ 339: isInNet(clientIP, "10.50.44.0", "255.255.252.0") || // VDI MS 10\r\n  	[MsgId: MMSG-26000]
+ 340: isInNet(clientIP, "10.50.10.0", "255.255.255.0") || // VDI MS 10 (vlan 1315)\r\n  	[MsgId: MMSG-26000]
+ 341: isInNet(clientIP, "10.50.11.0", "255.255.255.0") || // VDI MS 11 (vlan 1316)\r\n  	[MsgId: MMSG-26000]
+ 342: isInNet(clientIP, "10.50.12.0", "255.255.255.0") || // VDI MS 12 (vlan 1317)\r\n  	[MsgId: MMSG-26000]
+ 343: isInNet(clientIP, "10.50.13.0", "255.255.255.0") || // VDI MS 13 (vlan 1318)\r\n  	[MsgId: MMSG-26000]
+ 344: isInNet(clientIP, "10.50.14.0", "255.255.255.0") || // VDI MS 14 (vlan 1319)\r\n  	[MsgId: MMSG-26000]
+ 345: isInNet(clientIP, "10.50.16.0", "255.255.255.0") || // VDI MS 16 (vlan 1321)\r\n  	[MsgId: MMSG-26000]
+ 346: isInNet(clientIP, "10.50.17.0", "255.255.255.0") || // VDI MS 17 (vlan 1322)\r\n  	[MsgId: MMSG-26000]
+ 347: isInNet(clientIP, "10.50.18.0", "255.255.255.0") || // VDI MS 18 (vlan 1323)\r\n  	[MsgId: MMSG-26000]
+ 348: isInNet(clientIP, "10.50.19.0", "255.255.255.0") || // VDI MS 19 (vlan 1324)\r\n  	[MsgId: MMSG-26000]
+ 349: isInNet(clientIP, "10.50.9.0", "255.255.255.0") || // VDI MS 2\r\n  	[MsgId: MMSG-26000]
+ 350: isInNet(clientIP, "10.50.20.0", "255.255.255.0") || // VDI MS 20 (vlan 1325)\r\n  	[MsgId: MMSG-26000]
+ 351: isInNet(clientIP, "10.50.21.0", "255.255.255.0") || // VDI MS 21 (vlan 1326)\r\n  	[MsgId: MMSG-26000]
+ 352: isInNet(clientIP, "10.50.28.0", "255.255.255.0") || // VDI MS 21 (vlan 1333)\r\n  	[MsgId: MMSG-26000]
+ 353: isInNet(clientIP, "10.50.22.0", "255.255.255.0") || // VDI MS 22 (vlan 1327)\r\n  	[MsgId: MMSG-26000]
+ 354: isInNet(clientIP, "10.50.33.0", "255.255.255.0") || // VDI MS 23 (VLAN1337)\r\n  	[MsgId: MMSG-26000]
+ 355: isInNet(clientIP, "10.50.63.0", "255.255.255.0") || // VDI MS 3\r\n  	[MsgId: MMSG-26000]
+ 356: isInNet(clientIP, "10.50.2.0", "255.255.255.0") || // VDI MS 4\r\n  	[MsgId: MMSG-26000]
+ 357: isInNet(clientIP, "10.50.4.0", "255.255.255.0") || // VDI MS 5\r\n  	[MsgId: MMSG-26000]
+ 358: isInNet(clientIP, "10.50.19.0", "255.255.255.0") || // VDI MS 6\r\n  	[MsgId: MMSG-26000]
+ 359: isInNet(clientIP, "10.50.20.0", "255.255.255.0") || // VDI MS 7\r\n  	[MsgId: MMSG-26000]
+ 360: isInNet(clientIP, "10.50.36.0", "255.255.252.0") || // VDI MS 8\r\n  	[MsgId: MMSG-26000]
+ 361: isInNet(clientIP, "10.50.40.0", "255.255.252.0") || // VDI MS 9\r\n  	[MsgId: MMSG-26000]
+ 362: isInNet(clientIP, "10.31.137.0", "255.255.255.0") || // VDI YD1 (VLAN3129)\r\n  	[MsgId: MMSG-26000]
+ 363: isInNet(clientIP, "10.31.138.0", "255.255.255.0") || // VDI YD2  (VLAN3130)\r\n  	[MsgId: MMSG-26000]
+ 364: isInNet(clientIP, "10.31.139.0", "255.255.255.0") || // VDI YD3 (VLAN3131)\r\n  	[MsgId: MMSG-26000]
+ 365: isInNet(clientIP, "10.31.147.0", "255.255.255.0") || // VDI YD4 (VLAN3132)\r\n  	[MsgId: MMSG-26000]
+ 366: isInNet(clientIP, "10.31.148.0", "255.255.255.0") || // VDI YD5 (VLAN3133)\r\n  	[MsgId: MMSG-26000]
+ 367: isInNet(clientIP, "10.31.149.0", "255.255.255.0") || // VDI YD6 (VLAN3134)\r\n  	[MsgId: MMSG-26000]
+ 368: isInNet(clientIP, "10.31.151.0", "255.255.255.0") || // Virtual Machines\r\n  	[MsgId: MMSG-26000]
+ 369: isInNet(clientIP, "10.127.209.0", "255.255.255.0") || // VLADIMIR.BeeFree\r\n  	[MsgId: MMSG-26000]
+ 370: isInNet(clientIP, "10.50.254.0", "255.255.255.0") || // VM1\r\n  	[MsgId: MMSG-26000]
+ 371: isInNet(clientIP, "10.50.255.0", "255.255.255.0") || // VM2\r\n  	[MsgId: MMSG-26000]
+ 372: isInNet(clientIP, "10.51.24.0", "255.255.255.0") || // VR24\r\n  	[MsgId: MMSG-26000]
+ 373: isInNet(clientIP, "10.51.31.0", "255.255.255.0") || // VR31\r\n  	[MsgId: MMSG-26000]
+ 374: isInNet(clientIP, "10.22.157.0", "255.255.255.0") || // YS_1\r\n  	[MsgId: MMSG-26000]
+ 375: isInNet(clientIP, "10.22.158.0", "255.255.255.0") || // YS_2\r\n  	[MsgId: MMSG-26000]
+ 376: isInNet(clientIP, "10.31.152.0", "255.255.255.0") || // YTC Unix\r\n  	[MsgId: MMSG-26000]
+ 377: false) return "PROXY ms-proxy.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 378: \r\n  	[MsgId: MMSG-26000]
+ 379: // Russia Moscow Exchange\r\n  	[MsgId: MMSG-26000]
+ 380: if (\r\n  	[MsgId: MMSG-26000]
+ 381: false) return "PROXY owa.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 382: \r\n  	[MsgId: MMSG-26000]
+ 383: // Russia Moscow MAC\r\n  	[MsgId: MMSG-26000]
+ 384: if (\r\n  	[MsgId: MMSG-26000]
+ 385: false) return "PROXY ms-proxy-m.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 386: \r\n  	[MsgId: MMSG-26000]
+ 387: // Russia Povolzhskiy Nizhniy Novgorod\r\n  	[MsgId: MMSG-26000]
+ 388: if (\r\n  	[MsgId: MMSG-26000]
+ 389: isInNet(clientIP, "10.22.25.0", "255.255.255.0") || // 1\r\n  	[MsgId: MMSG-26000]
+ 390: isInNet(clientIP, "172.24.244.0", "255.255.255.0") || // 1 \xFD\xF2\xE0\xE6 \xD0\xD3\r\n  	[MsgId: MMSG-26000]
+ 391: isInNet(clientIP, "172.24.253.0", "255.255.255.0") || // 2 \xFD\xF2\xE0\xE6\r\n  	[MsgId: MMSG-26000]
+ 392: isInNet(clientIP, "172.24.245.0", "255.255.255.0") || // 2 \xFD\xF2\xE0\xE6 \xD0\xD3\r\n  	[MsgId: MMSG-26000]
+ 393: isInNet(clientIP, "172.24.251.0", "255.255.255.0") || // 3 \xFD\xF2\xE0\xE6\r\n  	[MsgId: MMSG-26000]
+ 394: isInNet(clientIP, "172.24.246.0", "255.255.255.0") || // 3 \xFD\xF2\xE0\xE6 \xD0\xD3\r\n  	[MsgId: MMSG-26000]
+ 395: isInNet(clientIP, "172.24.250.0", "255.255.255.0") || // 4 \xFD\xF2\xE0\xE6\r\n  	[MsgId: MMSG-26000]
+ 396: isInNet(clientIP, "10.22.19.0", "255.255.255.0") || // Cheboksary 451983/16 \r\n  	[MsgId: MMSG-26000]
+ 397: isInNet(clientIP, "172.24.52.0", "255.255.255.0") || // Cheboksary-01\r\n  	[MsgId: MMSG-26000]
+ 398: isInNet(clientIP, "172.24.53.0", "255.255.255.0") || // Cheboksary-02\r\n  	[MsgId: MMSG-26000]
+ 399: isInNet(clientIP, "172.25.136.0", "255.255.255.0") || // Cheboksary-03\r\n  	[MsgId: MMSG-26000]
+ 400: isInNet(clientIP, "172.25.137.0", "255.255.255.0") || // Cheboksary-04\r\n  	[MsgId: MMSG-26000]
+ 401: isInNet(clientIP, "172.25.139.0", "255.255.255.0") || // Cheboksary-05\r\n  	[MsgId: MMSG-26000]
+ 402: isInNet(clientIP, "172.25.140.0", "255.255.255.0") || // Cheboksary-06\r\n  	[MsgId: MMSG-26000]
+ 403: isInNet(clientIP, "10.22.0.0", "255.255.255.0") || // Kazan-01\r\n  	[MsgId: MMSG-26000]
+ 404: isInNet(clientIP, "10.22.1.0", "255.255.255.0") || // Kazan-02\r\n  	[MsgId: MMSG-26000]
+ 405: isInNet(clientIP, "10.22.2.0", "255.255.255.0") || // Kazan-03\r\n  	[MsgId: MMSG-26000]
+ 406: isInNet(clientIP, "10.22.14.0", "255.255.255.0") || // Kazan-04\r\n  	[MsgId: MMSG-26000]
+ 407: isInNet(clientIP, "10.22.15.0", "255.255.255.0") || // Kazan-05\r\n  	[MsgId: MMSG-26000]
+ 408: isInNet(clientIP, "10.22.20.0", "255.255.255.0") || // Kazan-06\r\n  	[MsgId: MMSG-26000]
+ 409: isInNet(clientIP, "10.22.21.0", "255.255.255.0") || // Kazan-07\r\n  	[MsgId: MMSG-26000]
+ 410: isInNet(clientIP, "10.22.22.0", "255.255.255.0") || // Kazan-08\r\n  	[MsgId: MMSG-26000]
+ 411: isInNet(clientIP, "172.25.130.0", "255.255.255.0") || // Kazan-09\r\n  	[MsgId: MMSG-26000]
+ 412: isInNet(clientIP, "172.25.131.0", "255.255.255.0") || // Kazan-10\r\n  	[MsgId: MMSG-26000]
+ 413: isInNet(clientIP, "172.25.132.0", "255.255.255.0") || // Kazan-11\r\n  	[MsgId: MMSG-26000]
+ 414: isInNet(clientIP, "172.25.133.0", "255.255.255.0") || // Kazan-12\r\n  	[MsgId: MMSG-26000]
+ 415: isInNet(clientIP, "172.25.134.0", "255.255.255.0") || // Kazan-13\r\n  	[MsgId: MMSG-26000]
+ 416: isInNet(clientIP, "172.26.112.0", "255.255.255.0") || // Kazan-14\r\n  	[MsgId: MMSG-26000]
+ 417: isInNet(clientIP, "172.26.113.0", "255.255.255.0") || // Kazan-15\r\n  	[MsgId: MMSG-26000]
+ 418: isInNet(clientIP, "172.26.114.0", "255.255.255.0") || // Kazan-16\r\n  	[MsgId: MMSG-26000]
+ 419: isInNet(clientIP, "172.26.115.0", "255.255.255.0") || // Kazan-17\r\n  	[MsgId: MMSG-26000]
+ 420: isInNet(clientIP, "172.26.120.0", "255.255.255.0") || // Kazan-18\r\n  	[MsgId: MMSG-26000]
+ 421: isInNet(clientIP, "172.26.121.0", "255.255.255.0") || // Kazan-19\r\n  	[MsgId: MMSG-26000]
+ 422: isInNet(clientIP, "10.22.21.64", "255.255.255.240") || // Kazan-20\r\n  	[MsgId: MMSG-26000]
+ 423: isInNet(clientIP, "10.22.3.204", "255.255.255.252") || // Kazan-21\r\n  	[MsgId: MMSG-26000]
+ 424: isInNet(clientIP, "172.25.128.0", "255.255.255.0") || // MSC1 Tech Net\r\n  	[MsgId: MMSG-26000]
+ 425: isInNet(clientIP, "10.22.4.0", "255.255.255.0") || // Open offices\r\n  	[MsgId: MMSG-26000]
+ 426: isInNet(clientIP, "10.22.5.0", "255.255.255.0") || // Op\xE5n offices 2\r\n  	[MsgId: MMSG-26000]
+ 427: isInNet(clientIP, "10.22.10.0", "255.255.255.0") || // Yoshkar-Ola-1\r\n  	[MsgId: MMSG-26000]
+ 428: isInNet(clientIP, "10.22.11.0", "255.255.255.0") || // Yoshkar-Ola-2\r\n  	[MsgId: MMSG-26000]
+ 429: isInNet(clientIP, "172.25.141.0", "255.255.255.0") || // Yoshkar-Ola-3\r\n  	[MsgId: MMSG-26000]
+ 430: isInNet(clientIP, "172.25.142.0", "255.255.255.0") || // Yoshkar-Ola-4\r\n  	[MsgId: MMSG-26000]
+ 431: isInNet(clientIP, "10.22.10.192", "255.255.255.240") || // Yoshkar-Ola-5\r\n  	[MsgId: MMSG-26000]
+ 432: isInNet(clientIP, "172.25.124.0", "255.255.255.0") || // \xC0\xE2\xF0\xEE\xF0\xE0-1\r\n  	[MsgId: MMSG-26000]
+ 433: isInNet(clientIP, "172.25.120.0", "255.255.255.0") || // \xC0\xC4\xD1, 1-2 \xFD\xF2\xE0\xE6  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 434: isInNet(clientIP, "172.24.62.0", "255.255.255.0") || // \xC0\xC4\xD1, 3-4-5 \xFD\xF2\xE0  	[MsgId: MMSG-26000]
+    : \xE6\r\n  	[MsgId: MMSG-26000]
+ 435: isInNet(clientIP, "172.24.63.0", "255.255.255.0") || // \xC0\xC4\xD1, \xF2\xE5\xEB\xE5\xF4  	[MsgId: MMSG-26000]
+    : \xEE\xED\xE8\xFF\r\n  	[MsgId: MMSG-26000]
+ 436: isInNet(clientIP, "172.25.121.0", "255.255.255.0") || // \xCE\xCE \xCE\xEA\xF2\xFF\xE1\xF0  	[MsgId: MMSG-26000]
+    : \xFC\xF1\xEA\xE0\xFF, 9\xE0\r\n  	[MsgId: MMSG-26000]
+ 437: isInNet(clientIP, "172.25.122.0", "255.255.255.0") || // \xD1\xE0\xF0\xEE\xE2\r\n  	[MsgId: MMSG-26000]
+ 438: isInNet(clientIP, "172.24.249.0", "255.255.255.0") || // \xD1\xE5\xF0\xE2\xE5\xF0\xED\xE0  	[MsgId: MMSG-26000]
+    : \xFF \xF1\xE5\xF2\xFC\r\n  	[MsgId: MMSG-26000]
+ 439: isInNet(clientIP, "172.24.247.0", "255.255.255.0") || // \xD1\xE5\xF2\xFC \xF2\xE5\xEB\xE5  	[MsgId: MMSG-26000]
+    : \xF4\xEE\xED\xE8\xE8\r\n  	[MsgId: MMSG-26000]
+ 440: isInNet(clientIP, "172.24.242.0", "255.255.255.0") || // \xD1\xEA\xEB\xE0\xE4 \xC2\xD2\xD1  	[MsgId: MMSG-26000]
+    :  (\xE4\xE8\xEB\xE5\xF0\xFB)\r\n  	[MsgId: MMSG-26000]
+ 441: isInNet(clientIP, "172.24.254.0", "255.255.255.0") || // \xD2\xE5\xEB\xE5\xF4\xEE\xED\xE8  	[MsgId: MMSG-26000]
+    : \xFF + \xEF\xEE\xEB\xFC\xE7\xEE\xE2\xE0\xF2\xE5\xEB\xE8 1 \xFD\xF2\xE0\xE6\r\n  	[MsgId: MMSG-26000]
+ 442: isInNet(clientIP, "172.24.252.0", "255.255.255.0") || // \xD2\xE5\xEB\xE5\xF4\xEE\xED\xE8  	[MsgId: MMSG-26000]
+    : \xFF 2 \xFD\xF2\xE0\xE6\r\n  	[MsgId: MMSG-26000]
+ 443: isInNet(clientIP, "172.24.243.0", "255.255.255.0") || // \xD2\xE5\xEB\xE5\xF4\xEE\xED\xE8  	[MsgId: MMSG-26000]
+    : \xFF \xD0\xD3\r\n  	[MsgId: MMSG-26000]
+ 444: isInNet(clientIP, "172.24.248.0", "255.255.255.0") || // \xD2\xE5\xF5\xED\xE8\xF7\xE5\xF1  	[MsgId: MMSG-26000]
+    : \xEA\xE0\xFF  \xF1\xE5\xF2\xFC\r\n  	[MsgId: MMSG-26000]
+ 445: isInNet(clientIP, "172.25.123.0", "255.255.255.0") || // \xD2\xD6 "\xD0\xE5\xF1\xEF\xF3\xE1  	[MsgId: MMSG-26000]
+    : \xEB\xE8\xEA\xE0"\r\n  	[MsgId: MMSG-26000]
+ 446: isInNet(clientIP, "10.22.27.1", "255.255.255.128") || // \xD6\xCC\xD2, 7 \xFD\xF2\xE0\xE6  	[MsgId: MMSG-26000]
+    : , WI-FI\r\n  	[MsgId: MMSG-26000]
+ 447: isInNet(clientIP, "10.22.24.0", "255.255.255.0") || // \xD6\xCC\xD2, 7 \xFD\xF2\xE0\xE6,  	[MsgId: MMSG-26000]
+    :  \xEA\xEE\xEC\xEF\xFC\xFE\xF2\xE5\xF0\xFB\r\n  	[MsgId: MMSG-26000]
+ 448: isInNet(clientIP, "10.22.7.0", "255.255.255.0") || // \xD6\xCC\xD2, 7 \xFD\xF2\xE0\xE6,   	[MsgId: MMSG-26000]
+    : \xF2\xE5\xEB\xE5\xF4\xEE\xED\xE8\xFF\r\n  	[MsgId: MMSG-26000]
+ 449: false) return "PROXY nn-proxy.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 450: \r\n  	[MsgId: MMSG-26000]
+ 451: // Russia Povolzhskiy Saratov\r\n  	[MsgId: MMSG-26000]
+ 452: if (\r\n  	[MsgId: MMSG-26000]
+ 453: isInNet(clientIP, "10.22.28.0", "255.255.255.0") || // 10.22.28.1\r\n  	[MsgId: MMSG-26000]
+ 454: isInNet(clientIP, "10.22.29.0", "255.255.255.0") || // 10.22.29.1\r\n  	[MsgId: MMSG-26000]
+ 455: isInNet(clientIP, "10.22.31.0", "255.255.255.0") || // 10.22.31.0\r\n  	[MsgId: MMSG-26000]
+ 456: isInNet(clientIP, "10.22.33.0", "255.255.255.0") || // 10.22.33.0\r\n  	[MsgId: MMSG-26000]
+ 457: isInNet(clientIP, "10.22.36.0", "255.255.255.0") || // 10.22.36.0\r\n  	[MsgId: MMSG-26000]
+ 458: isInNet(clientIP, "10.22.40.0", "255.255.255.0") || // 10.22.40.0\r\n  	[MsgId: MMSG-26000]
+ 459: isInNet(clientIP, "10.22.48.0", "255.255.255.0") || // 10.22.48.0\r\n  	[MsgId: MMSG-26000]
+ 460: isInNet(clientIP, "10.22.49.0", "255.255.255.0") || // 10.22.49.0\r\n  	[MsgId: MMSG-26000]
+ 461: isInNet(clientIP, "10.22.50.0", "255.255.255.0") || // 10.22.50.0\r\n  	[MsgId: MMSG-26000]
+ 462: isInNet(clientIP, "10.22.51.0", "255.255.255.0") || // 10.22.51.0\r\n  	[MsgId: MMSG-26000]
+ 463: isInNet(clientIP, "10.22.52.0", "255.255.255.0") || // 10.22.52.0\r\n  	[MsgId: MMSG-26000]
+ 464: isInNet(clientIP, "10.22.53.0", "255.255.255.0") || // 10.22.53.0\r\n  	[MsgId: MMSG-26000]
+ 465: isInNet(clientIP, "10.22.54.0", "255.255.255.0") || // 10.22.54.0\r\n  	[MsgId: MMSG-26000]
+ 466: isInNet(clientIP, "10.22.55.0", "255.255.255.0") || // 10.22.55.0\r\n  	[MsgId: MMSG-26000]
+ 467: isInNet(clientIP, "10.22.56.0", "255.255.255.0") || // 10.22.56.0\r\n  	[MsgId: MMSG-26000]
+ 468: isInNet(clientIP, "10.22.57.0", "255.255.255.0") || // 10.22.57.0\r\n  	[MsgId: MMSG-26000]
+ 469: isInNet(clientIP, "10.22.58.0", "255.255.255.0") || // 10.22.58.0\r\n  	[MsgId: MMSG-26000]
+ 470: isInNet(clientIP, "10.22.59.0", "255.255.255.0") || // 10.22.59.0\r\n  	[MsgId: MMSG-26000]
+ 471: isInNet(clientIP, "10.22.60.0", "255.255.255.0") || // 10.22.60.0\r\n  	[MsgId: MMSG-26000]
+ 472: isInNet(clientIP, "10.22.61.0", "255.255.255.0") || // 10.22.61.0\r\n  	[MsgId: MMSG-26000]
+ 473: isInNet(clientIP, "10.22.62.0", "255.255.255.0") || // 10.22.62.0\r\n  	[MsgId: MMSG-26000]
+ 474: isInNet(clientIP, "10.22.63.0", "255.255.255.0") || // 10.22.63.0\r\n  	[MsgId: MMSG-26000]
+ 475: isInNet(clientIP, "10.51.123.0", "255.255.255.0") || // 10.51.123.0/24\r\n  	[MsgId: MMSG-26000]
+ 476: isInNet(clientIP, "10.51.124.0", "255.255.255.0") || // 10.51.124.0/24\r\n  	[MsgId: MMSG-26000]
+ 477: isInNet(clientIP, "172.24.58.0", "255.255.255.0") || // 172.24.58.1\r\n  	[MsgId: MMSG-26000]
+ 478: isInNet(clientIP, "172.25.151.0", "255.255.255.0") || // 172.25.151.1\r\n  	[MsgId: MMSG-26000]
+ 479: isInNet(clientIP, "172.25.153.0", "255.255.255.0") || // 172.25.153.1\r\n  	[MsgId: MMSG-26000]
+ 480: isInNet(clientIP, "172.25.154.0", "255.255.255.0") || // 172.25.154.1\r\n  	[MsgId: MMSG-26000]
+ 481: isInNet(clientIP, "172.25.155.0", "255.255.255.0") || // 172.25.155.0\r\n  	[MsgId: MMSG-26000]
+ 482: isInNet(clientIP, "172.25.180.0", "255.255.255.0") || // 172.25.180.1\r\n  	[MsgId: MMSG-26000]
+ 483: isInNet(clientIP, "172.25.181.0", "255.255.255.0") || // 172.25.181.1\r\n  	[MsgId: MMSG-26000]
+ 484: isInNet(clientIP, "172.25.182.0", "255.255.255.0") || // 172.25.182.1\r\n  	[MsgId: MMSG-26000]
+ 485: isInNet(clientIP, "172.25.183.0", "255.255.255.0") || // 172.25.183.1\r\n  	[MsgId: MMSG-26000]
+ 486: isInNet(clientIP, "172.25.184.0", "255.255.255.0") || // 172.25.184.1\r\n  	[MsgId: MMSG-26000]
+ 487: isInNet(clientIP, "172.25.185.0", "255.255.255.0") || // 172.25.185.1\r\n  	[MsgId: MMSG-26000]
+ 488: isInNet(clientIP, "172.25.188.0", "255.255.255.0") || // 172.25.188.1\r\n  	[MsgId: MMSG-26000]
+ 489: isInNet(clientIP, "172.26.117.0", "255.255.255.0") || // 172.26.117.1\r\n  	[MsgId: MMSG-26000]
+ 490: isInNet(clientIP, "172.25.158.0", "255.255.255.0") || // Balakovo Sales Office\r\n  	[MsgId: MMSG-26000]
+ 491: isInNet(clientIP, "172.25.152.0", "255.255.255.0") || // Balashov\r\n  	[MsgId: MMSG-26000]
+ 492: isInNet(clientIP, "172.24.64.0", "255.255.255.0") || // Orenburg-1\r\n  	[MsgId: MMSG-26000]
+ 493: isInNet(clientIP, "172.24.76.0", "255.255.255.0") || // Orenburg-10\r\n  	[MsgId: MMSG-26000]
+ 494: isInNet(clientIP, "172.24.77.0", "255.255.255.0") || // Orenburg-11\r\n  	[MsgId: MMSG-26000]
+ 495: isInNet(clientIP, "172.24.123.0", "255.255.255.0") || // Orenburg-12\r\n  	[MsgId: MMSG-26000]
+ 496: isInNet(clientIP, "172.24.124.0", "255.255.255.0") || // Orenburg-13\r\n  	[MsgId: MMSG-26000]
+ 497: isInNet(clientIP, "172.24.126.0", "255.255.255.0") || // Orenburg-14\r\n  	[MsgId: MMSG-26000]
+ 498: isInNet(clientIP, "172.24.65.0", "255.255.255.0") || // Orenburg-2\r\n  	[MsgId: MMSG-26000]
+ 499: isInNet(clientIP, "172.24.66.0", "255.255.255.0") || // Orenburg-3\r\n  	[MsgId: MMSG-26000]
+ 500: isInNet(clientIP, "172.24.68.0", "255.255.255.0") || // Orenburg-5\r\n  	[MsgId: MMSG-26000]
+ 501: isInNet(clientIP, "172.24.69.0", "255.255.255.0") || // Orenburg-6\r\n  	[MsgId: MMSG-26000]
+ 502: isInNet(clientIP, "172.24.70.0", "255.255.255.0") || // Orenburg-7\r\n  	[MsgId: MMSG-26000]
+ 503: isInNet(clientIP, "172.24.74.0", "255.255.255.0") || // Orenburg-8\r\n  	[MsgId: MMSG-26000]
+ 504: isInNet(clientIP, "172.24.75.0", "255.255.255.0") || // Orenburg-9\r\n  	[MsgId: MMSG-26000]
+ 505: isInNet(clientIP, "10.22.8.0", "255.255.255.0") || // Penza-1\r\n  	[MsgId: MMSG-26000]
+ 506: isInNet(clientIP, "172.25.170.0", "255.255.255.0") || // Penza-2\r\n  	[MsgId: MMSG-26000]
+ 507: isInNet(clientIP, "172.25.171.0", "255.255.255.0") || // Penza-3\r\n  	[MsgId: MMSG-26000]
+ 508: isInNet(clientIP, "172.25.172.0", "255.255.255.0") || // Penza-4\r\n  	[MsgId: MMSG-26000]
+ 509: isInNet(clientIP, "172.25.173.0", "255.255.255.0") || // Penza-5\r\n  	[MsgId: MMSG-26000]
+ 510: isInNet(clientIP, "172.24.32.0", "255.255.255.0") || // Samara-01\r\n  	[MsgId: MMSG-26000]
+ 511: isInNet(clientIP, "172.24.35.0", "255.255.255.0") || // Samara-02\r\n  	[MsgId: MMSG-26000]
+ 512: isInNet(clientIP, "172.24.36.0", "255.255.255.0") || // Samara-03\r\n  	[MsgId: MMSG-26000]
+ 513: isInNet(clientIP, "172.24.38.0", "255.255.255.0") || // Samara-04\r\n  	[MsgId: MMSG-26000]
+ 514: isInNet(clientIP, "172.24.42.0", "255.255.255.0") || // Samara-05\r\n  	[MsgId: MMSG-26000]
+ 515: isInNet(clientIP, "172.24.49.0", "255.255.255.0") || // Samara-06\r\n  	[MsgId: MMSG-26000]
+ 516: isInNet(clientIP, "172.24.50.0", "255.255.255.0") || // Samara-07\r\n  	[MsgId: MMSG-26000]
+ 517: isInNet(clientIP, "172.24.51.0", "255.255.255.0") || // Samara-08\r\n  	[MsgId: MMSG-26000]
+ 518: isInNet(clientIP, "10.22.12.0", "255.255.255.0") || // Saransk-1\r\n  	[MsgId: MMSG-26000]
+ 519: isInNet(clientIP, "172.25.165.0", "255.255.255.0") || // Saransk-2\r\n  	[MsgId: MMSG-26000]
+ 520: isInNet(clientIP, "172.25.166.0", "255.255.255.0") || // Saransk-3\r\n  	[MsgId: MMSG-26000]
+ 521: isInNet(clientIP, "172.25.167.0", "255.255.255.0") || // Saransk-4\r\n  	[MsgId: MMSG-26000]
+ 522: isInNet(clientIP, "172.24.15.0", "255.255.255.0") || // Tolyatti-1\r\n  	[MsgId: MMSG-26000]
+ 523: isInNet(clientIP, "172.24.16.0", "255.255.255.0") || // Tolyatti--2\r\n  	[MsgId: MMSG-26000]
+ 524: isInNet(clientIP, "172.24.17.0", "255.255.255.0") || // Tolyatti-3\r\n  	[MsgId: MMSG-26000]
+ 525: isInNet(clientIP, "172.24.20.0", "255.255.255.0") || // Tolyatti-4\r\n  	[MsgId: MMSG-26000]
+ 526: isInNet(clientIP, "172.24.11.0", "255.255.255.0") || // Tolyatti-5\r\n  	[MsgId: MMSG-26000]
+ 527: isInNet(clientIP, "172.24.6.0", "255.255.255.0") || // Tolyatti-6\r\n  	[MsgId: MMSG-26000]
+ 528: isInNet(clientIP, "172.24.56.0", "255.255.255.0") || // Ufa-01\r\n  	[MsgId: MMSG-26000]
+ 529: isInNet(clientIP, "172.24.57.0", "255.255.255.0") || // Ufa-02\r\n  	[MsgId: MMSG-26000]
+ 530: isInNet(clientIP, "172.24.60.0", "255.255.255.0") || // Ufa-03\r\n  	[MsgId: MMSG-26000]
+ 531: isInNet(clientIP, "172.24.61.0", "255.255.255.0") || // Ufa-04\r\n  	[MsgId: MMSG-26000]
+ 532: isInNet(clientIP, "172.25.138.0", "255.255.255.0") || // Ufa-05\r\n  	[MsgId: MMSG-26000]
+ 533: isInNet(clientIP, "172.25.146.0", "255.255.255.0") || // Ufa-06\r\n  	[MsgId: MMSG-26000]
+ 534: isInNet(clientIP, "172.25.147.0", "255.255.255.0") || // Ufa-07\r\n  	[MsgId: MMSG-26000]
+ 535: isInNet(clientIP, "172.25.148.0", "255.255.255.0") || // Ufa-08\r\n  	[MsgId: MMSG-26000]
+ 536: isInNet(clientIP, "172.25.149.0", "255.255.255.0") || // Ufa-09\r\n  	[MsgId: MMSG-26000]
+ 537: isInNet(clientIP, "172.26.61.0", "255.255.255.0") || // Ufa-10\r\n  	[MsgId: MMSG-26000]
+ 538: isInNet(clientIP, "172.26.62.0", "255.255.255.0") || // Ufa-11\r\n  	[MsgId: MMSG-26000]
+ 539: isInNet(clientIP, "172.26.63.0", "255.255.255.0") || // Ufa-12\r\n  	[MsgId: MMSG-26000]
+ 540: isInNet(clientIP, "10.22.16.0", "255.255.255.0") || // Ulyanovsk-1\r\n  	[MsgId: MMSG-26000]
+ 541: isInNet(clientIP, "172.24.54.0", "255.255.255.0") || // Ulyanovsk-2\r\n  	[MsgId: MMSG-26000]
+ 542: isInNet(clientIP, "172.24.55.0", "255.255.255.0") || // Ulyanovsk-3\r\n  	[MsgId: MMSG-26000]
+ 543: isInNet(clientIP, "172.25.160.0", "255.255.255.0") || // Ulyanovsk-4\r\n  	[MsgId: MMSG-26000]
+ 544: isInNet(clientIP, "172.25.161.0", "255.255.255.0") || // Ulyanovsk-5\r\n  	[MsgId: MMSG-26000]
+ 545: isInNet(clientIP, "172.25.162.0", "255.255.255.0") || // Ulyanovsk-6\r\n  	[MsgId: MMSG-26000]
+ 546: isInNet(clientIP, "172.25.163.0", "255.255.255.0") || // Ulyanovsk-7\r\n  	[MsgId: MMSG-26000]
+ 547: isInNet(clientIP, "172.25.164.0", "255.255.255.0") || // Ulyanovsk-8\r\n  	[MsgId: MMSG-26000]
+ 548: false) return "PROXY sr-proxy.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 549: \r\n  	[MsgId: MMSG-26000]
+ 550: // Russia Sibirskiy Norilsk\r\n  	[MsgId: MMSG-26000]
+ 551: if (\r\n  	[MsgId: MMSG-26000]
+ 552: isInNet(clientIP, "172.25.84.0", "255.255.255.0") || // 172.25.84.0\r\n  	[MsgId: MMSG-26000]
+ 553: isInNet(clientIP, "172.25.85.0", "255.255.255.0") || // 172.25.85.0\r\n  	[MsgId: MMSG-26000]
+ 554: isInNet(clientIP, "172.25.86.0", "255.255.255.0") || // 172.25.86.0\r\n  	[MsgId: MMSG-26000]
+ 555: isInNet(clientIP, "172.25.87.0", "255.255.255.0") || // 172.25.87.0\r\n  	[MsgId: MMSG-26000]
+ 556: false) return "PROXY NI-TMG001.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 557: \r\n  	[MsgId: MMSG-26000]
+ 558: // Russia Sibirskiy Novosibirsk\r\n  	[MsgId: MMSG-26000]
+ 559: if (\r\n  	[MsgId: MMSG-26000]
+ 560: isInNet(clientIP, "10.18.232.0", "255.255.248.0") || // 10.18.232.0/21\r\n  	[MsgId: MMSG-26000]
+ 561: isInNet(clientIP, "10.18.233.0", "255.255.255.0") || // 10.18.233.0\r\n  	[MsgId: MMSG-26000]
+ 562: isInNet(clientIP, "10.18.241.0", "255.255.255.0") || // 10.18.241.0/24\r\n  	[MsgId: MMSG-26000]
+ 563: isInNet(clientIP, "10.18.242.0", "255.255.255.0") || // 10.18.242.0/24\r\n  	[MsgId: MMSG-26000]
+ 564: isInNet(clientIP, "10.18.243.0", "255.255.255.0") || // 10.18.243.0/24\r\n  	[MsgId: MMSG-26000]
+ 565: isInNet(clientIP, "10.18.244.0", "255.255.255.0") || // 10.18.244.0/24\r\n  	[MsgId: MMSG-26000]
+ 566: isInNet(clientIP, "10.18.245.0", "255.255.255.0") || // 10.18.245.0/24\r\n  	[MsgId: MMSG-26000]
+ 567: isInNet(clientIP, "10.18.246.0", "255.255.255.0") || // 10.18.246.0/24\r\n  	[MsgId: MMSG-26000]
+ 568: isInNet(clientIP, "10.18.248.0", "255.255.248.0") || // 10.18.248.0/21\r\n  	[MsgId: MMSG-26000]
+ 569: isInNet(clientIP, "172.25.108.0", "255.255.255.0") || // 172.25.108.0/24\r\n  	[MsgId: MMSG-26000]
+ 570: isInNet(clientIP, "172.25.111.0", "255.255.255.0") || // 172.25.111.0/24\r\n  	[MsgId: MMSG-26000]
+ 571: isInNet(clientIP, "172.25.112.0", "255.255.255.0") || // 172.25.112.0/24\r\n  	[MsgId: MMSG-26000]
+ 572: isInNet(clientIP, "172.25.113.0", "255.255.255.0") || // 172.25.113.0/24\r\n  	[MsgId: MMSG-26000]
+ 573: isInNet(clientIP, "172.25.116.0", "255.255.255.0") || // 172.25.116.0/24\r\n  	[MsgId: MMSG-26000]
+ 574: isInNet(clientIP, "172.25.118.0", "255.255.255.0") || // 172.25.118.0/24\r\n  	[MsgId: MMSG-26000]
+ 575: isInNet(clientIP, "172.25.27.0", "255.255.255.0") || // 172.25.2.0/24\r\n  	[MsgId: MMSG-26000]
+ 576: isInNet(clientIP, "172.25.20.0", "255.255.255.0") || // 172.25.20.0/24\r\n  	[MsgId: MMSG-26000]
+ 577: isInNet(clientIP, "172.25.21.0", "255.255.255.0") || // 172.25.21.0/24\r\n  	[MsgId: MMSG-26000]
+ 578: isInNet(clientIP, "172.25.22.0", "255.255.255.0") || // 172.25.22.0/24\r\n  	[MsgId: MMSG-26000]
+ 579: isInNet(clientIP, "172.25.23.0", "255.255.255.0") || // 172.25.23.0/24\r\n  	[MsgId: MMSG-26000]
+ 580: isInNet(clientIP, "172.25.24.0", "255.255.255.0") || // 172.25.24.0/24\r\n  	[MsgId: MMSG-26000]
+ 581: isInNet(clientIP, "172.25.28.0", "255.255.255.0") || // 172.25.28.0/24\r\n  	[MsgId: MMSG-26000]
+ 582: isInNet(clientIP, "172.25.29.0", "255.255.255.0") || // 172.25.29.0/24\r\n  	[MsgId: MMSG-26000]
+ 583: isInNet(clientIP, "172.27.195.0", "255.255.255.0") || // 172.27.195.0/24\r\n  	[MsgId: MMSG-26000]
+ 584: isInNet(clientIP, "172.27.196.0", "255.255.255.0") || // 172.27.196.0/24\r\n  	[MsgId: MMSG-26000]
+ 585: isInNet(clientIP, "172.27.203.0", "255.255.255.0") || // 172.27.203.0/24\r\n  	[MsgId: MMSG-26000]
+ 586: isInNet(clientIP, "172.27.212.0", "255.255.255.0") || // 172.27.212.0/24\r\n  	[MsgId: MMSG-26000]
+ 587: isInNet(clientIP, "172.27.213.0", "255.255.255.0") || // 172.27.213.0/24\r\n  	[MsgId: MMSG-26000]
+ 588: isInNet(clientIP, "172.27.223.0", "255.255.255.0") || // 172.27.223.0/24\r\n  	[MsgId: MMSG-26000]
+ 589: isInNet(clientIP, "172.27.228.0", "255.255.255.0") || // 172.27.228.0/24\r\n  	[MsgId: MMSG-26000]
+ 590: isInNet(clientIP, "172.27.229.0", "255.255.255.0") || // 172.27.229.0/24\r\n  	[MsgId: MMSG-26000]
+ 591: isInNet(clientIP, "172.27.230.0", "255.255.255.0") || // 172.27.230.0/24\r\n  	[MsgId: MMSG-26000]
+ 592: isInNet(clientIP, "172.27.231.0", "255.255.255.0") || // 172.27.231.0/24\r\n  	[MsgId: MMSG-26000]
+ 593: isInNet(clientIP, "172.27.242.0", "255.255.255.0") || // 172.27.242.0\r\n  	[MsgId: MMSG-26000]
+ 594: isInNet(clientIP, "172.27.243.0", "255.255.255.0") || // 172.27.243.0\r\n  	[MsgId: MMSG-26000]
+ 595: isInNet(clientIP, "172.27.245.0", "255.255.255.0") || // 172.27.245.0/24\r\n  	[MsgId: MMSG-26000]
+ 596: isInNet(clientIP, "172.27.246.0", "255.255.255.0") || // 172.27.246.0/24\r\n  	[MsgId: MMSG-26000]
+ 597: isInNet(clientIP, "172.27.252.0", "255.255.252.0") || // 172.27.252.0/22\r\n  	[MsgId: MMSG-26000]
+ 598: isInNet(clientIP, "172.25.88.0", "255.255.255.0") || // AB_172.25.88.0/24\r\n  	[MsgId: MMSG-26000]
+ 599: isInNet(clientIP, "172.25.89.0", "255.255.255.0") || // AB_172.25.89.0/24\r\n  	[MsgId: MMSG-26000]
+ 600: isInNet(clientIP, "172.25.91.0", "255.255.255.0") || // AB_172.25.91.0/24\r\n  	[MsgId: MMSG-26000]
+ 601: isInNet(clientIP, "172.27.240.0", "255.255.255.0") || // AB_172.27.240.0/24\r\n  	[MsgId: MMSG-26000]
+ 602: isInNet(clientIP, "172.27.241.0", "255.255.255.0") || // AB_172.27.241.0/24\r\n  	[MsgId: MMSG-26000]
+ 603: isInNet(clientIP, "172.27.217.0", "255.255.255.0") || // Barnaul. Office\r\n  	[MsgId: MMSG-26000]
+ 604: isInNet(clientIP, "172.27.216.0", "255.255.255.0") || // Barnaul_172.27.216.0/24\r\n  	[MsgId: MMSG-26000]
+ 605: isInNet(clientIP, "172.27.218.0", "255.255.255.0") || // Barnaul_172.27.218.0/24\r\n  	[MsgId: MMSG-26000]
+ 606: isInNet(clientIP, "172.27.238.0", "255.255.255.0") || // Barnaul_172.27.238.0/24\r\n  	[MsgId: MMSG-26000]
+ 607: isInNet(clientIP, "172.27.239.0", "255.255.255.0") || // Barnaul_172.27.239.0/24\r\n  	[MsgId: MMSG-26000]
+ 608: isInNet(clientIP, "172.25.74.0", "255.255.255.0") || // BarnaulCommuTator_Net\r\n  	[MsgId: MMSG-26000]
+ 609: isInNet(clientIP, "172.25.75.0", "255.255.255.0") || // BarnaulLogisticAndRubcovsk_Net\r  	[MsgId: MMSG-26000]
+    : \n  	[MsgId: MMSG-26000]
+ 610: isInNet(clientIP, "172.25.72.0", "255.255.255.0") || // BarnaulMainOffice_Net\r\n  	[MsgId: MMSG-26000]
+ 611: isInNet(clientIP, "172.25.73.0", "255.255.255.0") || // BarnaulTechnicalOffice_Net\r\n  	[MsgId: MMSG-26000]
+ 612: isInNet(clientIP, "172.27.219.0", "255.255.255.0") || // BarnaulTechnicalOfficeG3_Net\r\n  	[MsgId: MMSG-26000]
+ 613: isInNet(clientIP, "172.25.95.0", "255.255.255.0") || // Biysk_172.25.95.0/24\r\n  	[MsgId: MMSG-26000]
+ 614: isInNet(clientIP, "172.25.92.0", "255.255.255.0") || // Biysk_Net\r\n  	[MsgId: MMSG-26000]
+ 615: isInNet(clientIP, "172.25.93.0", "255.255.255.0") || // Biysk_Net2\r\n  	[MsgId: MMSG-26000]
+ 616: isInNet(clientIP, "172.25.99.64", "255.255.255.224") || // Gorno-Altaysk_172.25.99.64/27  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 617: isInNet(clientIP, "172.25.98.0", "255.255.255.0") || // Gorno-Altaysk_MSC\r\n  	[MsgId: MMSG-26000]
+ 618: isInNet(clientIP, "172.25.96.0", "255.255.255.0") || // Gorno-Altaysk_Net\r\n  	[MsgId: MMSG-26000]
+ 619: isInNet(clientIP, "172.25.97.0", "255.255.255.0") || // Gorno-Altaysk_Net2\r\n  	[MsgId: MMSG-26000]
+ 620: isInNet(clientIP, "172.27.209.0", "255.255.255.0") || // KM DopOffice\r\n  	[MsgId: MMSG-26000]
+ 621: isInNet(clientIP, "172.25.62.0", "255.255.255.0") || // KM Kemerovo_Net\r\n  	[MsgId: MMSG-26000]
+ 622: isInNet(clientIP, "172.27.193.0", "255.255.255.0") || // KM \xC8\xE3\xE0\xF0\xF1\xEA\xE0  	[MsgId: MMSG-26000]
+    : \xFF 2\r\n  	[MsgId: MMSG-26000]
+ 623: isInNet(clientIP, "172.25.60.0", "255.255.255.0") || // KM \xCD\xEE\xE3\xF0\xE0\xE4\xF1\xEA  	[MsgId: MMSG-26000]
+    : \xE0\xFF 5\r\n  	[MsgId: MMSG-26000]
+ 624: isInNet(clientIP, "172.25.61.0", "255.255.255.0") || // KM \xCD\xEE\xE3\xF0\xE0\xE4\xF1\xEA  	[MsgId: MMSG-26000]
+    : \xE0\xFF 5 2\xFD\xF2\xE0\xE6\r\n  	[MsgId: MMSG-26000]
+ 625: isInNet(clientIP, "172.27.197.0", "255.255.255.0") || // KM \xCD\xEE\xE3\xF0\xE0\xE4\xF1  	[MsgId: MMSG-26000]
+    : \xEA\xE0\xFF 5 3\xFD\xF2\xE0\xE6\r\n  	[MsgId: MMSG-26000]
+ 626: isInNet(clientIP, "172.25.109.0", "255.255.255.0") || // KM \xD1\xE0\xF0\xFB\xE3\xE8\xED  	[MsgId: MMSG-26000]
+    : \xE0 29\r\n  	[MsgId: MMSG-26000]
+ 627: isInNet(clientIP, "172.25.63.0", "255.255.255.0") || // KM \xD1\xEA\xEB\xE0\xE4\r\n  	[MsgId: MMSG-26000]
+ 628: isInNet(clientIP, "172.25.76.0", "255.255.255.0") || // KR_172.25.76.0/24\r\n  	[MsgId: MMSG-26000]
+ 629: isInNet(clientIP, "172.25.77.0", "255.255.255.0") || // KR_172.25.77.0/24\r\n  	[MsgId: MMSG-26000]
+ 630: isInNet(clientIP, "172.25.78.0", "255.255.255.0") || // KR_172.25.78.0/24\r\n  	[MsgId: MMSG-26000]
+ 631: isInNet(clientIP, "172.25.79.0", "255.255.255.0") || // KR_172.25.79.0/24\r\n  	[MsgId: MMSG-26000]
+ 632: isInNet(clientIP, "172.27.199.0", "255.255.255.0") || // KR_172.27.199.0/24\r\n  	[MsgId: MMSG-26000]
+ 633: isInNet(clientIP, "172.27.201.0", "255.255.255.0") || // KR_172.27.201.0/24\r\n  	[MsgId: MMSG-26000]
+ 634: isInNet(clientIP, "172.27.204.0", "255.255.255.0") || // KR_172.27.204.0/24\r\n  	[MsgId: MMSG-26000]
+ 635: isInNet(clientIP, "172.27.205.0", "255.255.255.0") || // KR_172.27.205.0/24\r\n  	[MsgId: MMSG-26000]
+ 636: isInNet(clientIP, "172.27.207.0", "255.255.255.0") || // KR_172.27.207.0/24\r\n  	[MsgId: MMSG-26000]
+ 637: isInNet(clientIP, "172.27.220.0", "255.255.255.0") || // KR_172.27.220.0/24\r\n  	[MsgId: MMSG-26000]
+ 638: isInNet(clientIP, "172.27.221.0", "255.255.255.0") || // KR_172.27.221.0/24\r\n  	[MsgId: MMSG-26000]
+ 639: isInNet(clientIP, "172.27.222.0", "255.255.255.0") || // KR_172.27.222.0/24\r\n  	[MsgId: MMSG-26000]
+ 640: isInNet(clientIP, "172.27.234.0", "255.255.255.0") || // KR_172.27.234.0/24\r\n  	[MsgId: MMSG-26000]
+ 641: isInNet(clientIP, "172.27.235.0", "255.255.255.0") || // KR_172.27.235.0/24\r\n  	[MsgId: MMSG-26000]
+ 642: isInNet(clientIP, "172.25.100.0", "255.255.255.0") || // KY_172.25.100.0\r\n  	[MsgId: MMSG-26000]
+ 643: isInNet(clientIP, "172.25.101.0", "255.255.255.0") || // KY_172.25.101.0\r\n  	[MsgId: MMSG-26000]
+ 644: isInNet(clientIP, "172.27.227.0", "255.255.255.0") || // NK DopOffice\r\n  	[MsgId: MMSG-26000]
+ 645: isInNet(clientIP, "172.25.64.0", "255.255.255.0") || // NK Kirova 65\r\n  	[MsgId: MMSG-26000]
+ 646: isInNet(clientIP, "172.27.224.0", "255.255.255.0") || // NK Kolkhozniy 20\r\n  	[MsgId: MMSG-26000]
+ 647: isInNet(clientIP, "172.25.66.0", "255.255.255.0") || // NK Kurako 33\r\n  	[MsgId: MMSG-26000]
+ 648: isInNet(clientIP, "172.25.65.0", "255.255.255.0") || // NK Kutuzova 2\r\n  	[MsgId: MMSG-26000]
+ 649: isInNet(clientIP, "172.25.67.0", "255.255.255.0") || // NK skald\r\n  	[MsgId: MMSG-26000]
+ 650: isInNet(clientIP, "172.25.84.0", "255.255.255.0") || // Norilsk_172.25.84.0\r\n  	[MsgId: MMSG-26000]
+ 651: isInNet(clientIP, "172.25.85.0", "255.255.255.0") || // Norilsk_172.25.85.0\r\n  	[MsgId: MMSG-26000]
+ 652: isInNet(clientIP, "172.25.86.0", "255.255.255.0") || // Norilsk_172.25.86.0\r\n  	[MsgId: MMSG-26000]
+ 653: isInNet(clientIP, "172.25.87.0", "255.255.255.0") || // Norilsk_172.25.87.0\r\n  	[MsgId: MMSG-26000]
+ 654: isInNet(clientIP, "172.21.252.0", "255.255.252.0") || // NS_VDI_1\r\n  	[MsgId: MMSG-26000]
+ 655: isInNet(clientIP, "172.27.198.0", "255.255.255.0") || // OM_172.27.198.0 /24\r\n  	[MsgId: MMSG-26000]
+ 656: isInNet(clientIP, "172.27.232.0", "255.255.255.0") || // OM_172.27.232.0/24\r\n  	[MsgId: MMSG-26000]
+ 657: isInNet(clientIP, "172.27.233.0", "255.255.255.0") || // OM_172.27.233.0/24\r\n  	[MsgId: MMSG-26000]
+ 658: isInNet(clientIP, "172.25.71.0", "255.255.255.0") || // OM_Kirova 47a\r\n  	[MsgId: MMSG-26000]
+ 659: isInNet(clientIP, "172.25.70.0", "255.255.255.0") || // OM_Marksa 41/40\r\n  	[MsgId: MMSG-26000]
+ 660: isInNet(clientIP, "172.25.68.0", "255.255.255.0") || // OM_Marksa, 18/22\r\n  	[MsgId: MMSG-26000]
+ 661: isInNet(clientIP, "172.25.83.0", "255.255.255.0") || // TM_172.25.83.0/24\r\n  	[MsgId: MMSG-26000]
+ 662: isInNet(clientIP, "172.27.201.0", "255.255.255.0") || // TM_172.27.201.0\r\n  	[MsgId: MMSG-26000]
+ 663: isInNet(clientIP, "172.27.236.0", "255.255.255.0") || // TM_172.27.236.0/24\r\n  	[MsgId: MMSG-26000]
+ 664: isInNet(clientIP, "172.27.237.0", "255.255.255.0") || // TM_172.27.237.0/24\r\n  	[MsgId: MMSG-26000]
+ 665: isInNet(clientIP, "172.25.80.0", "255.255.255.0") || // TM_BO\r\n  	[MsgId: MMSG-26000]
+ 666: isInNet(clientIP, "172.25.82.0", "255.255.255.0") || // TM_BO Sovpartshkolniy\r\n  	[MsgId: MMSG-26000]
+ 667: isInNet(clientIP, "172.25.81.0", "255.255.255.0") || // TM_FO\r\n  	[MsgId: MMSG-26000]
+ 668: isInNet(clientIP, "172.27.230.128", "255.255.255.128") || // WiFi Guest\r\n  	[MsgId: MMSG-26000]
+ 669: isInNet(clientIP, "172.27.230.0", "255.255.255.128") || // WiFi LocalNet\r\n  	[MsgId: MMSG-26000]
+ 670: isInNet(clientIP, "10.18.235.0", "255.255.255.0") || // \xCF\xF3\xF8\xEA\xE8\xED\xE025\r  	[MsgId: MMSG-26000]
+    : \n  	[MsgId: MMSG-26000]
+ 671: false) return "PROXY ns-proxy.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 672: \r\n  	[MsgId: MMSG-26000]
+ 673: // Russia Tsentral Kaluga\r\n  	[MsgId: MMSG-26000]
+ 674: if (\r\n  	[MsgId: MMSG-26000]
+ 675: isInNet(clientIP, "10.127.210.0", "255.255.255.0") || // 10.127.210.0\r\n  	[MsgId: MMSG-26000]
+ 676: isInNet(clientIP, "172.26.71.0", "255.255.255.0") || // klg_adm_office\r\n  	[MsgId: MMSG-26000]
+ 677: isInNet(clientIP, "172.25.3.0", "255.255.255.0") || // klg_DataCenter\r\n  	[MsgId: MMSG-26000]
+ 678: isInNet(clientIP, "10.127.204.0", "255.255.255.0") || // klg-cc-1\r\n  	[MsgId: MMSG-26000]
+ 679: isInNet(clientIP, "10.127.206.0", "255.255.255.0") || // klg-cc-2\r\n  	[MsgId: MMSG-26000]
+ 680: isInNet(clientIP, "10.127.207.0", "255.255.255.0") || // klg-cc-3\r\n  	[MsgId: MMSG-26000]
+ 681: isInNet(clientIP, "10.127.213.0", "255.255.255.0") || // klg-cc-4\r\n  	[MsgId: MMSG-26000]
+ 682: isInNet(clientIP, "10.127.230.0", "255.255.255.0") || // klg-cc-5\r\n  	[MsgId: MMSG-26000]
+ 683: isInNet(clientIP, "10.127.231.0", "255.255.255.0") || // klg-cc-6\r\n  	[MsgId: MMSG-26000]
+ 684: isInNet(clientIP, "10.51.25.32", "255.255.255.240") || // klg-esop-Borovsk\r\n  	[MsgId: MMSG-26000]
+ 685: isInNet(clientIP, "10.127.205.0", "255.255.255.192") || // klg-fttb_office\r\n  	[MsgId: MMSG-26000]
+ 686: isInNet(clientIP, "10.127.228.0", "255.255.255.0") || // klg-gt_cc\r\n  	[MsgId: MMSG-26000]
+ 687: isInNet(clientIP, "10.127.205.128", "255.255.255.192") || // klg-management\r\n  	[MsgId: MMSG-26000]
+ 688: isInNet(clientIP, "172.25.54.0", "255.255.255.0") || // klg-msc_2g\r\n  	[MsgId: MMSG-26000]
+ 689: isInNet(clientIP, "10.127.205.112", "255.255.255.240") || // klg-obn_plaza\r\n  	[MsgId: MMSG-26000]
+ 690: isInNet(clientIP, "10.127.205.80", "255.255.255.240") || // klg-obn-sales\r\n  	[MsgId: MMSG-26000]
+ 691: isInNet(clientIP, "172.26.6.0", "255.255.255.0") || // klg-sales_ofice\r\n  	[MsgId: MMSG-26000]
+ 692: isInNet(clientIP, "10.127.205.96", "255.255.255.240") || // klg-sales-tk\r\n  	[MsgId: MMSG-26000]
+ 693: isInNet(clientIP, "10.127.205.192", "255.255.255.224") || // klg-sh_office\r\n  	[MsgId: MMSG-26000]
+ 694: isInNet(clientIP, "10.127.205.64", "255.255.255.240") || // klg-so-kirova\r\n  	[MsgId: MMSG-26000]
+ 695: isInNet(clientIP, "10.127.205.240", "255.255.255.240") || // klg-so-kr\r\n  	[MsgId: MMSG-26000]
+ 696: isInNet(clientIP, "10.22.188.32", "255.255.255.240") || // klg-so-kr20\r\n  	[MsgId: MMSG-26000]
+ 697: isInNet(clientIP, "10.127.205.224", "255.255.255.240") || // klg-so-kr26\r\n  	[MsgId: MMSG-26000]
+ 698: isInNet(clientIP, "10.22.188.16", "255.255.255.240") || // klg-so-ln\r\n  	[MsgId: MMSG-26000]
+ 699: isInNet(clientIP, "10.22.188.0", "255.255.255.240") || // klg-so-my\r\n  	[MsgId: MMSG-26000]
+ 700: isInNet(clientIP, "10.127.205.112", "255.255.255.240") || // klg-so-pz\r\n  	[MsgId: MMSG-26000]
+ 701: isInNet(clientIP, "172.25.4.0", "255.255.255.0") || // klg-tech_ofice\r\n  	[MsgId: MMSG-26000]
+ 702: isInNet(clientIP, "172.25.251.0", "255.255.255.0") || // klg-tp-1\r\n  	[MsgId: MMSG-26000]
+ 703: isInNet(clientIP, "172.25.252.0", "255.255.255.0") || // klg-tp-2\r\n  	[MsgId: MMSG-26000]
+ 704: false) return "PROXY kl-tmg001.bee.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 705: \r\n  	[MsgId: MMSG-26000]
+ 706: // Russia Tsentral Voronezh\r\n  	[MsgId: MMSG-26000]
+ 707: if (\r\n  	[MsgId: MMSG-26000]
+ 708: isInNet(clientIP, "10.127.253.0", "255.255.255.0") || // Belgorod BCM&SO\r\n  	[MsgId: MMSG-26000]
+ 709: isInNet(clientIP, "10.127.252.0", "255.255.255.0") || // Belgorod BCM0&SO\r\n  	[MsgId: MMSG-26000]
+ 710: isInNet(clientIP, "172.26.51.0", "255.255.255.0") || // Belgorod MSC\r\n  	[MsgId: MMSG-26000]
+ 711: isInNet(clientIP, "172.25.36.0", "255.255.255.0") || // Belgorod Servers\r\n  	[MsgId: MMSG-26000]
+ 712: isInNet(clientIP, "172.25.52.0", "255.255.255.0") || // Belgorod SO BSC\r\n  	[MsgId: MMSG-26000]
+ 713: isInNet(clientIP, "172.26.55.0", "255.255.255.0") || // Belgorod SO MSC2\r\n  	[MsgId: MMSG-26000]
+ 714: isInNet(clientIP, "172.26.52.0", "255.255.255.0") || // Belgorod SO OO\r\n  	[MsgId: MMSG-26000]
+ 715: isInNet(clientIP, "172.25.51.0", "255.255.255.0") || // Belgorod Users\r\n  	[MsgId: MMSG-26000]
+ 716: isInNet(clientIP, "172.25.38.160", "255.255.255.248") || // Belgorod_Esenina42\r\n  	[MsgId: MMSG-26000]
+ 717: isInNet(clientIP, "10.51.20.0", "255.255.255.0") || // Belgorod_Gubkina\r\n  	[MsgId: MMSG-26000]
+ 718: isInNet(clientIP, "10.51.24.32", "255.255.255.240") || // Klintsi, Lenina_21\r\n  	[MsgId: MMSG-26000]
+ 719: isInNet(clientIP, "10.22.167.0", "255.255.255.0") || // Kursk CO Users\r\n  	[MsgId: MMSG-26000]
+ 720: isInNet(clientIP, "172.25.39.0", "255.255.255.0") || // Kursk Main\r\n  	[MsgId: MMSG-26000]
+ 721: isInNet(clientIP, "172.25.253.0", "255.255.255.0") || // Kursk SO 1\r\n  	[MsgId: MMSG-26000]
+ 722: isInNet(clientIP, "10.22.166.0", "255.255.255.0") || // Kursk SO 2\r\n  	[MsgId: MMSG-26000]
+ 723: isInNet(clientIP, "10.22.168.0", "255.255.255.0") || // Kursk SO 3\r\n  	[MsgId: MMSG-26000]
+ 724: isInNet(clientIP, "10.51.21.0", "255.255.255.0") || // Kursk, ESOP\r\n  	[MsgId: MMSG-26000]
+ 725: isInNet(clientIP, "172.25.34.0", "255.255.255.0") || // Lipetsk 34\r\n  	[MsgId: MMSG-26000]
+ 726: isInNet(clientIP, "172.25.35.0", "255.255.255.0") || // Lipetsk 35\r\n  	[MsgId: MMSG-26000]
+ 727: isInNet(clientIP, "172.26.76.0", "255.255.255.0") || // Lipetsk Commutator Net 76\r\n  	[MsgId: MMSG-26000]
+ 728: isInNet(clientIP, "172.25.33.0", "255.255.255.0") || // Lipetsk Office Net 33\r\n  	[MsgId: MMSG-26000]
+ 729: isInNet(clientIP, "10.127.248.0", "255.255.255.0") || // Lipetsk SO\r\n  	[MsgId: MMSG-26000]
+ 730: isInNet(clientIP, "172.26.79.0", "255.255.255.0") || // Lipetsk TechOffice 79\r\n  	[MsgId: MMSG-26000]
+ 731: isInNet(clientIP, "172.26.77.0", "255.255.255.0") || // Lipetsk Users CO 77\r\n  	[MsgId: MMSG-26000]
+ 732: isInNet(clientIP, "172.26.78.0", "255.255.255.0") || // Lipetsk Users Zeg2 78\r\n  	[MsgId: MMSG-26000]
+ 733: isInNet(clientIP, "10.51.17.0", "255.255.255.0") || // Lipetsk_Gagarina\r\n  	[MsgId: MMSG-26000]
+ 734: isInNet(clientIP, "10.51.18.0", "255.255.255.0") || // Orel\r\n  	[MsgId: MMSG-26000]
+ 735: isInNet(clientIP, "172.26.75.0", "255.255.255.0") || // Orel B2B Net\r\n  	[MsgId: MMSG-26000]
+ 736: isInNet(clientIP, "10.127.246.0", "255.255.255.0") || // Orel B2C Net 2\r\n  	[MsgId: MMSG-26000]
+ 737: isInNet(clientIP, "172.25.44.0", "255.255.255.0") || // Orel Commutator Net\r\n  	[MsgId: MMSG-26000]
+ 738: isInNet(clientIP, "10.127.247.0", "255.255.255.0") || // Orel NSN Net\r\n  	[MsgId: MMSG-26000]
+ 739: isInNet(clientIP, "172.25.43.0", "255.255.255.0") || // Orel Office Servers Net\r\n  	[MsgId: MMSG-26000]
+ 740: isInNet(clientIP, "10.127.245.0", "255.255.255.0") || // Orel Office Users Net\r\n  	[MsgId: MMSG-26000]
+ 741: isInNet(clientIP, "10.127.244.0", "255.255.255.0") || // Orel Offices Prodaj Net\r\n  	[MsgId: MMSG-26000]
+ 742: isInNet(clientIP, "10.51.22.0", "255.255.255.0") || // Smolensk_25September\r\n  	[MsgId: MMSG-26000]
+ 743: isInNet(clientIP, "172.25.48.0", "255.255.255.0") || // Tambov BSC Office\r\n  	[MsgId: MMSG-26000]
+ 744: isInNet(clientIP, "172.25.47.0", "255.255.255.0") || // Tambov Central Office\r\n  	[MsgId: MMSG-26000]
+ 745: isInNet(clientIP, "10.127.250.0", "255.255.255.0") || // Tambov Central Office WS\r\n  	[MsgId: MMSG-26000]
+ 746: isInNet(clientIP, "172.26.9.0", "255.255.255.0") || // Tambov MSC Office\r\n  	[MsgId: MMSG-26000]
+ 747: isInNet(clientIP, "10.127.251.0", "255.255.255.0") || // Tambov OO\r\n  	[MsgId: MMSG-26000]
+ 748: isInNet(clientIP, "10.51.19.0", "255.255.255.0") || // Tambov_Michurinskaya\r\n  	[MsgId: MMSG-26000]
+ 749: isInNet(clientIP, "10.51.23.0", "255.255.255.240") || // Tver\r\n  	[MsgId: MMSG-26000]
+ 750: isInNet(clientIP, "10.127.209.0", "255.255.255.0") || // Vladimir, Oktyabrskaya, 7\r\n  	[MsgId: MMSG-26000]
+ 751: isInNet(clientIP, "172.26.57.0", "255.255.255.0") || // Voronezh 25\r\n  	[MsgId: MMSG-26000]
+ 752: isInNet(clientIP, "10.127.236.0", "255.255.255.0") || // Voronezh 65, 3G\r\n  	[MsgId: MMSG-26000]
+ 753: isInNet(clientIP, "172.26.24.0", "255.255.255.0") || // Voronezh 65, 4\r\n  	[MsgId: MMSG-26000]
+ 754: isInNet(clientIP, "172.26.28.0", "255.255.255.0") || // Voronezh 65, 5\r\n  	[MsgId: MMSG-26000]
+ 755: isInNet(clientIP, "172.26.29.0", "255.255.255.0") || // Voronezh 65, 6\r\n  	[MsgId: MMSG-26000]
+ 756: isInNet(clientIP, "172.26.30.0", "255.255.255.0") || // Voronezh 65, 7\r\n  	[MsgId: MMSG-26000]
+ 757: isInNet(clientIP, "10.127.232.0", "255.255.255.0") || // Voronezh 65, NSN\r\n  	[MsgId: MMSG-26000]
+ 758: isInNet(clientIP, "172.26.58.0", "255.255.255.0") || // Voronezh 65, RCM\r\n  	[MsgId: MMSG-26000]
+ 759: isInNet(clientIP, "172.25.30.0", "255.255.255.0") || // Voronezh DataCenter\r\n  	[MsgId: MMSG-26000]
+ 760: isInNet(clientIP, "172.26.26.0", "255.255.255.0") || // Voronezh SOP, Studencheskaya, 17  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 761: isInNet(clientIP, "10.127.241.0", "255.255.255.0") || // Voronezh, 65A\r\n  	[MsgId: MMSG-26000]
+ 762: isInNet(clientIP, "10.127.234.0", "255.255.255.0") || // Voronezh, ATC 77\r\n  	[MsgId: MMSG-26000]
+ 763: isInNet(clientIP, "172.26.25.0", "255.255.255.0") || // Voronezh, Komissarzhevskoy, 15b\r  	[MsgId: MMSG-26000]
+    : \n  	[MsgId: MMSG-26000]
+ 764: isInNet(clientIP, "10.127.243.0", "255.255.255.0") || // Voronezh, Krasnoarmeyskaya 54,   	[MsgId: MMSG-26000]
+    : Arstel 2 floor\r\n  	[MsgId: MMSG-26000]
+ 765: isInNet(clientIP, "10.127.235.0", "255.255.255.0") || // Voronezh, Lenina, 73\r\n  	[MsgId: MMSG-26000]
+ 766: isInNet(clientIP, "10.127.233.0", "255.255.255.0") || // Voronezh, Multi\r\n  	[MsgId: MMSG-26000]
+ 767: isInNet(clientIP, "10.127.242.0", "255.255.255.0") || // Voronezh, Multi, Arstel\r\n  	[MsgId: MMSG-26000]
+ 768: isInNet(clientIP, "10.127.240.0", "255.255.255.0") || // Voronezh, Multi, SOP\r\n  	[MsgId: MMSG-26000]
+ 769: isInNet(clientIP, "10.127.238.0", "255.255.255.0") || // Voronezh, Peshe-Streletskaya, 1  	[MsgId: MMSG-26000]
+    : 27A\r\n  	[MsgId: MMSG-26000]
+ 770: isInNet(clientIP, "10.127.235.0", "255.255.255.0") || // Voronezh, pr-t Revolucii 29v\r\n  	[MsgId: MMSG-26000]
+ 771: isInNet(clientIP, "10.51.31.0", "255.255.255.0") || // Voronezh, Sovetskaya\r\n  	[MsgId: MMSG-26000]
+ 772: isInNet(clientIP, "172.26.31.0", "255.255.255.0") || // Voronezh, Transport Net\r\n  	[MsgId: MMSG-26000]
+ 773: isInNet(clientIP, "10.51.16.0", "255.255.255.0") || // Voronezh_Pridonskiy\r\n  	[MsgId: MMSG-26000]
+ 774: false) return "PROXY vr-proxy.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 775: \r\n  	[MsgId: MMSG-26000]
+ 776: // Russia Ural Ekaterinburg\r\n  	[MsgId: MMSG-26000]
+ 777: if (\r\n  	[MsgId: MMSG-26000]
+ 778: isInNet(clientIP, "10.127.128.0", "255.255.248.0") || // 10.127.128.0/21 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 779: isInNet(clientIP, "10.127.136.0", "255.255.252.0") || // 10.127.136.0/22 \xD2\xFE\xEC\xE5  	[MsgId: MMSG-26000]
+    : \xED\xFC\r\n  	[MsgId: MMSG-26000]
+ 780: isInNet(clientIP, "10.127.140.0", "255.255.254.0") || // 10.127.140.0/23 \xC8\xE6\xE5\xE2  	[MsgId: MMSG-26000]
+    : \xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 781: isInNet(clientIP, "10.127.142.0", "255.255.254.0") || // 10.127.142.0/23 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 782: isInNet(clientIP, "10.127.144.0", "255.255.254.0") || // 10.127.144.0/23 \xD1\xF3\xF0\xE3  	[MsgId: MMSG-26000]
+    : \xF3\xF2\r\n  	[MsgId: MMSG-26000]
+ 783: isInNet(clientIP, "10.127.146.0", "255.255.254.0") || // 10.127.146.0/23 \xC8\xE6\xE5\xE2  	[MsgId: MMSG-26000]
+    : \xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 784: isInNet(clientIP, "10.127.152.0", "255.255.254.0") || // 10.127.152.0/23 \xD1\xF3\xF0\xE3  	[MsgId: MMSG-26000]
+    : \xF3\xF2\r\n  	[MsgId: MMSG-26000]
+ 785: isInNet(clientIP, "10.127.154.0", "255.255.255.0") || // 10.127.154.0/24 \xCA\xE8\xF0\xEE  	[MsgId: MMSG-26000]
+    : \xE2\r\n  	[MsgId: MMSG-26000]
+ 786: isInNet(clientIP, "10.127.160.0", "255.255.240.0") || // 10.127.160.0/20 OO EuroSet\r\n  	[MsgId: MMSG-26000]
+ 787: isInNet(clientIP, "172.26.100.0", "255.255.252.0") || // 172.26.100.0/22 \xCD\xE8\xE6\xED  	[MsgId: MMSG-26000]
+    : \xE5\xE2\xE0\xF0\xF2\xEE\xE2\xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 788: isInNet(clientIP, "172.26.104.0", "255.255.248.0") || // 172.26.104.0/21 \xD1\xFB\xEA\xF2  	[MsgId: MMSG-26000]
+    : \xFB\xE2\xEA\xE0\xF0+\xD3\xF5\xF2\xE0+\xCD\xE8\xE6\xED\xE5\xE2\xE0\xF0\xF2\xEE\xE2\xF1\xEA  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 789: isInNet(clientIP, "172.26.192.0", "255.255.248.0") || // 172.26.192.0/21 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 790: isInNet(clientIP, "172.26.200.0", "255.255.248.0") || // 172.26.200.0/21 \xD7\xE5\xEB\xFF  	[MsgId: MMSG-26000]
+    : \xE1\xE8\xED\xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 791: isInNet(clientIP, "172.26.208.0", "255.255.248.0") || // 172.26.208.0/21 \xD2\xFE\xEC\xE5  	[MsgId: MMSG-26000]
+    : \xED\xFC\r\n  	[MsgId: MMSG-26000]
+ 792: isInNet(clientIP, "172.26.216.0", "255.255.248.0") || // 172.26.216.0/21 \xCA\xF3\xF0\xE3  	[MsgId: MMSG-26000]
+    : \xE0\xED\r\n  	[MsgId: MMSG-26000]
+ 793: isInNet(clientIP, "172.26.232.0", "255.255.252.0") || // 172.26.232.0/22 \xCC\xE0\xE3\xED  	[MsgId: MMSG-26000]
+    : \xE8\xF2\xEE\xE3\xEE\xF0\xF1\xEA+\xCC\xE8\xE0\xF1\xF1\r\n  	[MsgId: MMSG-26000]
+ 794: isInNet(clientIP, "172.26.236.0", "255.255.252.0") || // 172.26.236.0/22 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 795: isInNet(clientIP, "172.26.240.0", "255.255.248.0") || // 172.26.240.0/21 \xC8\xE6\xE5\xE2  	[MsgId: MMSG-26000]
+    : \xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 796: isInNet(clientIP, "172.26.248.0", "255.255.252.0") || // 172.26.248.0/22 \xCD. \xD2\xE0\xE3  	[MsgId: MMSG-26000]
+    : \xE8\xEB\r\n  	[MsgId: MMSG-26000]
+ 797: isInNet(clientIP, "172.26.252.0", "255.255.252.0") || // 172.26.252.0/22 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 798: isInNet(clientIP, "172.26.80.0", "255.255.254.0") || // 172.26.80.0/23 \xCA\xE8\xF0\xEE\xE2  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 799: isInNet(clientIP, "172.26.82.0", "255.255.254.0") || // 172.26.82.0/23 \xC5\xEA\xE0\xF2\xE5  	[MsgId: MMSG-26000]
+    : \xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 800: isInNet(clientIP, "172.26.84.0", "255.255.252.0") || // 172.26.84.0/22 \xCA\xE8\xF0\xEE\xE2  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 801: isInNet(clientIP, "172.26.88.0", "255.255.248.0") || // 172.26.88.0/21 \xD1\xF3\xF0\xE3\xF3  	[MsgId: MMSG-26000]
+    : \xF2\r\n  	[MsgId: MMSG-26000]
+ 802: isInNet(clientIP, "172.26.96.0", "255.255.252.0") || // 172.26.96.0/22 \xD5\xE0\xED\xF2\xFB  	[MsgId: MMSG-26000]
+    : -\xCC\xE0\xED\xF1\xE8\xE9\xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 803: isInNet(clientIP, "172.27.160.0", "255.255.248.0") || // 172.27.160.0/21 \xD7\xE5\xEB\xFF  	[MsgId: MMSG-26000]
+    : \xE1\xE8\xED\xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 804: isInNet(clientIP, "172.27.168.0", "255.255.254.0") || // 172.27.168.0/23 \xCD\xEE\xE2\xFB  	[MsgId: MMSG-26000]
+    : \xE9 \xD3\xF0\xE5\xED\xE3\xEE\xE9\r\n  	[MsgId: MMSG-26000]
+ 805: isInNet(clientIP, "172.27.170.0", "255.255.255.0") || // 172.27.170.0/24 \xD1\xF3\xF0\xE3  	[MsgId: MMSG-26000]
+    : \xF3\xF2\r\n  	[MsgId: MMSG-26000]
+ 806: isInNet(clientIP, "172.27.171.0", "255.255.255.0") || // 172.27.171.0/24 \xCD\xEE\xFF\xE1  	[MsgId: MMSG-26000]
+    : \xF0\xFC\xF1\xEA\r\n  	[MsgId: MMSG-26000]
+ 807: isInNet(clientIP, "172.27.172.0", "255.255.254.0") || // 172.27.172.0/23 \xD1\xE0\xEB\xE5  	[MsgId: MMSG-26000]
+    : \xF5\xE0\xF0\xE4\r\n  	[MsgId: MMSG-26000]
+ 808: isInNet(clientIP, "172.27.176.0", "255.255.254.0") || // 172.27.176.0/23 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 809: isInNet(clientIP, "172.27.178.0", "255.255.254.0") || // 172.27.178.0/23 \xC0\xF0\xF2\xE5  	[MsgId: MMSG-26000]
+    : \xEC\xEE\xE2\xF1\xEA\xE8\xE9\r\n  	[MsgId: MMSG-26000]
+ 810: isInNet(clientIP, "172.27.180.0", "255.255.254.0") || // 172.27.180.0/23 \xD1\xE5\xF0\xEE  	[MsgId: MMSG-26000]
+    : \xE2\r\n  	[MsgId: MMSG-26000]
+ 811: isInNet(clientIP, "172.27.182.0", "255.255.254.0") || // 172.27.182.0/23 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 812: isInNet(clientIP, "172.27.184.0", "255.255.248.0") || // 172.27.184.0/21 \xC5\xEA\xE0\xF2  	[MsgId: MMSG-26000]
+    : \xE5\xF0\xE8\xED\xE1\xF3\xF0\xE3\r\n  	[MsgId: MMSG-26000]
+ 813: isInNet(clientIP, "176.26.93.0", "255.255.255.0") || // 176.26.93.0\r\n  	[MsgId: MMSG-26000]
+ 814: false) return "PROXY ek-proxy.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 815: \r\n  	[MsgId: MMSG-26000]
+ 816: // Russia Ural Perm\r\n  	[MsgId: MMSG-26000]
+ 817: if (\r\n  	[MsgId: MMSG-26000]
+ 818: isInNet(clientIP, "10.127.96.0", "255.255.224.0") || // 10.127.96.0/19 \xCF\xE5\xF0\xEC\xFC  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 819: isInNet(clientIP, "172.26.224.0", "255.255.248.0") || // 172.26.224.0/21 \xCF\xE5\xF0\xEC  	[MsgId: MMSG-26000]
+    : \xFC\r\n  	[MsgId: MMSG-26000]
+ 820: isInNet(clientIP, "10.127.175.0", "255.255.255.0") || // Perm_Evroset\r\n  	[MsgId: MMSG-26000]
+ 821: isInNet(clientIP, "10.127.160.0", "255.255.255.0") || // Perm_Evroset_160\r\n  	[MsgId: MMSG-26000]
+ 822: isInNet(clientIP, "10.127.164.0", "255.255.255.0") || // Perm_Evroset_164\r\n  	[MsgId: MMSG-26000]
+ 823: isInNet(clientIP, "10.127.170.0", "255.255.255.0") || // Perm_Evroset_170\r\n  	[MsgId: MMSG-26000]
+ 824: false) return "PROXY pm-proxy.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 825: \r\n  	[MsgId: MMSG-26000]
+ 826: // Russia Yuzhnyy Rostov-na-Donu\r\n  	[MsgId: MMSG-26000]
+ 827: if (\r\n  	[MsgId: MMSG-26000]
+ 828: isInNet(clientIP, "10.19.0.0", "255.255.254.0") || // 10.19.0.0\r\n  	[MsgId: MMSG-26000]
+ 829: isInNet(clientIP, "10.51.160.0", "255.255.248.0") || // 10.51.160.0/21\r\n  	[MsgId: MMSG-26000]
+ 830: isInNet(clientIP, "10.51.162.0", "255.255.255.0") || // 10.51.162.0\r\n  	[MsgId: MMSG-26000]
+ 831: isInNet(clientIP, "10.127.21.0", "255.255.255.0") || // Anapa 0\r\n  	[MsgId: MMSG-26000]
+ 832: isInNet(clientIP, "10.127.4.0", "255.255.255.0") || // Armavir 0\r\n  	[MsgId: MMSG-26000]
+ 833: isInNet(clientIP, "10.127.35.0", "255.255.255.0") || // Astrakhan 1\r\n  	[MsgId: MMSG-26000]
+ 834: isInNet(clientIP, "10.127.34.0", "255.255.255.0") || // Astrakhan 2\r\n  	[MsgId: MMSG-26000]
+ 835: isInNet(clientIP, "172.26.8.0", "255.255.255.0") || // Astrakhan 3\r\n  	[MsgId: MMSG-26000]
+ 836: isInNet(clientIP, "172.25.215.0", "255.255.255.0") || // Astrakhan 4\r\n  	[MsgId: MMSG-26000]
+ 837: isInNet(clientIP, "172.25.248.0", "255.255.255.0") || // Astrakhan 5\r\n  	[MsgId: MMSG-26000]
+ 838: isInNet(clientIP, "172.25.217.0", "255.255.255.0") || // Astrakhan 6\r\n  	[MsgId: MMSG-26000]
+ 839: isInNet(clientIP, "172.25.214.0", "255.255.255.0") || // Astrakhan 7\r\n  	[MsgId: MMSG-26000]
+ 840: isInNet(clientIP, "172.25.18.0", "255.255.255.0") || // Budennovsky\r\n  	[MsgId: MMSG-26000]
+ 841: isInNet(clientIP, "172.25.221.0", "255.255.255.0") || // Cherkessk 2\r\n  	[MsgId: MMSG-26000]
+ 842: isInNet(clientIP, "10.127.14.0", "255.255.255.0") || // Cherkessk 3\r\n  	[MsgId: MMSG-26000]
+ 843: isInNet(clientIP, "10.127.15.0", "255.255.255.0") || // Cherkessk 4\r\n  	[MsgId: MMSG-26000]
+ 844: isInNet(clientIP, "172.25.15.0", "255.255.255.0") || // Client Scope 1\r\n  	[MsgId: MMSG-26000]
+ 845: isInNet(clientIP, "172.25.16.0", "255.255.255.0") || // Client Scope 2\r\n  	[MsgId: MMSG-26000]
+ 846: isInNet(clientIP, "172.25.17.0", "255.255.255.0") || // Client Scope 3\r\n  	[MsgId: MMSG-26000]
+ 847: isInNet(clientIP, "10.127.18.0", "255.255.255.0") || // Elista Client Scope 1\r\n  	[MsgId: MMSG-26000]
+ 848: isInNet(clientIP, "10.127.19.0", "255.255.255.0") || // Elista Client Scope 2\r\n  	[MsgId: MMSG-26000]
+ 849: isInNet(clientIP, "10.127.44.0", "255.255.255.224") || // Elista Client Scope 3\r\n  	[MsgId: MMSG-26000]
+ 850: isInNet(clientIP, "172.26.34.0", "255.255.255.0") || // Gorkogo Scope 1\r\n  	[MsgId: MMSG-26000]
+ 851: isInNet(clientIP, "10.127.30.0", "255.255.255.0") || // Grozny Client Scope 1\r\n  	[MsgId: MMSG-26000]
+ 852: isInNet(clientIP, "10.127.40.0", "255.255.255.0") || // Grozny Client Scope 2\r\n  	[MsgId: MMSG-26000]
+ 853: isInNet(clientIP, "10.127.46.0", "255.255.255.0") || // Grozny Client Scope 3\r\n  	[MsgId: MMSG-26000]
+ 854: isInNet(clientIP, "175.25.190.0", "255.255.255.0") || // Krasnodar 0\r\n  	[MsgId: MMSG-26000]
+ 855: isInNet(clientIP, "172.25.191.0", "255.255.255.0") || // Krasnodar 1\r\n  	[MsgId: MMSG-26000]
+ 856: isInNet(clientIP, "10.127.22.0", "255.255.255.0") || // Krasnodar 12\r\n  	[MsgId: MMSG-26000]
+ 857: isInNet(clientIP, "10.127.27.0", "255.255.255.0") || // Krasnodar 12-17\r\n  	[MsgId: MMSG-26000]
+ 858: isInNet(clientIP, "10.127.48.0", "255.255.255.0") || // Krasnodar 13\r\n  	[MsgId: MMSG-26000]
+ 859: isInNet(clientIP, "10.127.49.0", "255.255.255.0") || // Krasnodar 14\r\n  	[MsgId: MMSG-26000]
+ 860: isInNet(clientIP, "10.127.50.0", "255.255.255.0") || // Krasnodar 15\r\n  	[MsgId: MMSG-26000]
+ 861: isInNet(clientIP, "10.127.51.0", "255.255.255.0") || // Krasnodar 18\r\n  	[MsgId: MMSG-26000]
+ 862: isInNet(clientIP, "10.127.52.0", "255.255.255.0") || // Krasnodar 19\r\n  	[MsgId: MMSG-26000]
+ 863: isInNet(clientIP, "10.127.53.0", "255.255.255.0") || // Krasnodar 20\r\n  	[MsgId: MMSG-26000]
+ 864: isInNet(clientIP, "172.25.192.0", "255.255.255.0") || // Krasnodar 2-3\r\n  	[MsgId: MMSG-26000]
+ 865: isInNet(clientIP, "172.25.193.0", "255.255.254.0") || // Krasnodar 4\r\n  	[MsgId: MMSG-26000]
+ 866: isInNet(clientIP, "10.127.5.0", "255.255.255.0") || // Krasnodar 5\r\n  	[MsgId: MMSG-26000]
+ 867: isInNet(clientIP, "10.127.24.0", "255.255.255.0") || // Krasnodar 6\r\n  	[MsgId: MMSG-26000]
+ 868: isInNet(clientIP, "10.127.25.0", "255.255.255.0") || // Krasnodar 7\r\n  	[MsgId: MMSG-26000]
+ 869: isInNet(clientIP, "10.127.26.0", "255.255.255.0") || // Krasnodar 8-11\r\n  	[MsgId: MMSG-26000]
+ 870: isInNet(clientIP, "10.127.21.0", "255.255.255.0") || // Krasnodar Open Offices\r\n  	[MsgId: MMSG-26000]
+ 871: isInNet(clientIP, "10.127.4.0", "255.255.255.0") || // Krasnodar Tikhoretsk 0\r\n  	[MsgId: MMSG-26000]
+ 872: isInNet(clientIP, "10.127.6.0", "255.255.255.0") || // Krasnodar, Dalnyaya 39-5, PC\r\n  	[MsgId: MMSG-26000]
+ 873: isInNet(clientIP, "172.25.194.0", "255.255.255.0") || // Krasnodar, Dalnyaya 39-5, Voice  	[MsgId: MMSG-26000]
+    : \r\n  	[MsgId: MMSG-26000]
+ 874: isInNet(clientIP, "172.25.229.0", "255.255.255.0") || // Makhachkala 0\r\n  	[MsgId: MMSG-26000]
+ 875: isInNet(clientIP, "172.26.48.0", "255.255.255.0") || // Makhachkala 1\r\n  	[MsgId: MMSG-26000]
+ 876: isInNet(clientIP, "172.25.230.0", "255.255.255.0") || // Makhachkala 2\r\n  	[MsgId: MMSG-26000]
+ 877: isInNet(clientIP, "10.127.12.0", "255.255.255.0") || // Makhachkala Open Offices\r\n  	[MsgId: MMSG-26000]
+ 878: isInNet(clientIP, "172.25.202.0", "255.255.255.0") || // Maykop 0\r\n  	[MsgId: MMSG-26000]
+ 879: isInNet(clientIP, "172.26.17.0", "255.255.255.0") || // Mechnikova 3\r\n  	[MsgId: MMSG-26000]
+ 880: isInNet(clientIP, "172.26.15.0", "255.255.255.0") || // Mechnikova Scope 1\r\n  	[MsgId: MMSG-26000]
+ 881: isInNet(clientIP, "172.26.16.0", "255.255.255.0") || // Mechnikova Scope 2\r\n  	[MsgId: MMSG-26000]
+ 882: isInNet(clientIP, "172.26.39.0", "255.255.255.0") || // Mechnikova Scope 4\r\n  	[MsgId: MMSG-26000]
+ 883: isInNet(clientIP, "10.127.42.0", "255.255.255.0") || // Nalchik Open Offices\r\n  	[MsgId: MMSG-26000]
+ 884: isInNet(clientIP, "172.25.227.0", "255.255.255.0") || // Nalchik Scope 1\r\n  	[MsgId: MMSG-26000]
+ 885: isInNet(clientIP, "172.25.228.0", "255.255.255.0") || // Nalchik Scope 2\r\n  	[MsgId: MMSG-26000]
+ 886: isInNet(clientIP, "10.127.16.0", "255.255.255.0") || // Nalchik Scope 3\r\n  	[MsgId: MMSG-26000]
+ 887: isInNet(clientIP, "10.127.17.0", "255.255.255.0") || // Nalchik Scope 4\r\n  	[MsgId: MMSG-26000]
+ 888: isInNet(clientIP, "10.127.43.0", "255.255.255.0") || // Nazran Client 1\r\n  	[MsgId: MMSG-26000]
+ 889: isInNet(clientIP, "10.127.29.0", "255.255.255.0") || // Nazran Client 2\r\n  	[MsgId: MMSG-26000]
+ 890: isInNet(clientIP, "172.25.225.0", "255.255.255.0") || // Nazran Client 3\r\n  	[MsgId: MMSG-26000]
+ 891: isInNet(clientIP, "10.51.161.0", "255.255.255.0") || // Novokubansk-Pervomayskaya\r\n  	[MsgId: MMSG-26000]
+ 892: isInNet(clientIP, "172.25.196.0", "255.255.255.0") || // Novorossyisk 0\r\n  	[MsgId: MMSG-26000]
+ 893: isInNet(clientIP, "172.25.197.0", "255.255.255.0") || // Novorossyisk 1\r\n  	[MsgId: MMSG-26000]
+ 894: isInNet(clientIP, "10.127.20.0", "255.255.255.0") || // Novorossyisk 2\r\n  	[MsgId: MMSG-26000]
+ 895: isInNet(clientIP, "10.127.21.0", "255.255.255.0") || // Novorossyisk 3\r\n  	[MsgId: MMSG-26000]
+ 896: isInNet(clientIP, "10.127.22.0", "255.255.255.0") || // Novorossyisk 4\r\n  	[MsgId: MMSG-26000]
+ 897: isInNet(clientIP, "10.127.71.240", "255.255.255.248") || // NSX Red Pool\r\n  	[MsgId: MMSG-26000]
+ 898: isInNet(clientIP, "10.127.39.0", "255.255.255.0") || // Open Offices\r\n  	[MsgId: MMSG-26000]
+ 899: isInNet(clientIP, "10.127.59.0", "255.255.255.0") || // Open Offices 2\r\n  	[MsgId: MMSG-26000]
+ 900: isInNet(clientIP, "10.127.60.0", "255.255.255.0") || // Open Offices 3\r\n  	[MsgId: MMSG-26000]
+ 901: isInNet(clientIP, "10.127.61.0", "255.255.255.0") || // Open Offices 4\r\n  	[MsgId: MMSG-26000]
+ 902: isInNet(clientIP, "10.127.62.0", "255.255.255.0") || // Open Offices 5\r\n  	[MsgId: MMSG-26000]
+ 903: isInNet(clientIP, "10.127.79.0", "255.255.255.0") || // Open Offices 6\r\n  	[MsgId: MMSG-26000]
+ 904: isInNet(clientIP, "10.127.80.0", "255.255.255.0") || // Open Offices 7\r\n  	[MsgId: MMSG-26000]
+ 905: isInNet(clientIP, "10.127.81.0", "255.255.255.0") || // Open Offices 8\r\n  	[MsgId: MMSG-26000]
+ 906: isInNet(clientIP, "10.127.82.0", "255.255.255.0") || // Open Offices 9\r\n  	[MsgId: MMSG-26000]
+ 907: isInNet(clientIP, "10.127.83.0", "255.255.255.0") || // Open Offices Euro 1\r\n  	[MsgId: MMSG-26000]
+ 908: isInNet(clientIP, "10.127.87.0", "255.255.255.0") || // Open Offices Euro 10\r\n  	[MsgId: MMSG-26000]
+ 909: isInNet(clientIP, "10.127.92.0", "255.255.255.0") || // Open Offices Euro 11\r\n  	[MsgId: MMSG-26000]
+ 910: isInNet(clientIP, "10.127.91.0", "255.255.255.0") || // Open Offices Euro 12\r\n  	[MsgId: MMSG-26000]
+ 911: isInNet(clientIP, "10.127.84.0", "255.255.255.0") || // Open Offices Euro 2\r\n  	[MsgId: MMSG-26000]
+ 912: isInNet(clientIP, "10.127.85.0", "255.255.255.0") || // Open Offices Euro 3\r\n  	[MsgId: MMSG-26000]
+ 913: isInNet(clientIP, "10.127.86.0", "255.255.255.0") || // Open Offices Euro 4\r\n  	[MsgId: MMSG-26000]
+ 914: isInNet(clientIP, "10.127.89.0", "255.255.255.0") || // Open Offices Euro 5\r\n  	[MsgId: MMSG-26000]
+ 915: isInNet(clientIP, "10.127.90.0", "255.255.255.0") || // Open Offices Euro 6\r\n  	[MsgId: MMSG-26000]
+ 916: isInNet(clientIP, "10.127.88.0", "255.255.255.0") || // Open Offices Euro 7\r\n  	[MsgId: MMSG-26000]
+ 917: isInNet(clientIP, "10.127.93.0", "255.255.255.0") || // Open Offices Euro 8\r\n  	[MsgId: MMSG-26000]
+ 918: isInNet(clientIP, "10.127.78.0", "255.255.255.0") || // Open Offices Euro 9\r\n  	[MsgId: MMSG-26000]
+ 919: isInNet(clientIP, "172.24.179.0", "255.255.255.0") || // Pyatigorsk 0\r\n  	[MsgId: MMSG-26000]
+ 920: isInNet(clientIP, "172.24.180.0", "255.255.255.0") || // Pyatigorsk 1\r\n  	[MsgId: MMSG-26000]
+ 921: isInNet(clientIP, "172.24.181.0", "255.255.255.0") || // Pyatigorsk 2\r\n  	[MsgId: MMSG-26000]
+ 922: isInNet(clientIP, "172.24.182.0", "255.255.255.0") || // Pyatigorsk 3\r\n  	[MsgId: MMSG-26000]
+ 923: isInNet(clientIP, "172.26.32.0", "255.255.255.0") || // Shaumyana Scope 1\r\n  	[MsgId: MMSG-26000]
+ 924: isInNet(clientIP, "172.26.33.0", "255.255.255.0") || // Shaumyana Scope 2\r\n  	[MsgId: MMSG-26000]
+ 925: isInNet(clientIP, "10.127.38.0", "255.255.255.0") || // Shaumyana WiFi\r\n  	[MsgId: MMSG-26000]
+ 926: isInNet(clientIP, "10.127.8.0", "255.255.255.0") || // Sochi 0\r\n  	[MsgId: MMSG-26000]
+ 927: isInNet(clientIP, "172.26.11.0", "255.255.255.0") || // Sochi 1\r\n  	[MsgId: MMSG-26000]
+ 928: isInNet(clientIP, "172.25.200.0", "255.255.255.0") || // Sochi 2\r\n  	[MsgId: MMSG-26000]
+ 929: isInNet(clientIP, "10.127.10.0", "255.255.255.0") || // Sochi 3\r\n  	[MsgId: MMSG-26000]
+ 930: isInNet(clientIP, "10.127.11.0", "255.255.255.0") || // Sochi 4 GT\r\n  	[MsgId: MMSG-26000]
+ 931: isInNet(clientIP, "10.127.33.0", "255.255.255.0") || // Sochi 5\r\n  	[MsgId: MMSG-26000]
+ 932: isInNet(clientIP, "172.25.199.0", "255.255.255.0") || // Sochi 6 Serv\r\n  	[MsgId: MMSG-26000]
+ 933: isInNet(clientIP, "172.26.21.0", "255.255.255.0") || // Socialca\r\n  	[MsgId: MMSG-26000]
+ 934: isInNet(clientIP, "172.26.43.0", "255.255.255.0") || // Sovintel\r\n  	[MsgId: MMSG-26000]
+ 935: isInNet(clientIP, "172.24.160.0", "255.255.255.0") || // Stavropol 0\r\n  	[MsgId: MMSG-26000]
+ 936: isInNet(clientIP, "172.24.161.0", "255.255.255.0") || // Stavropol 1\r\n  	[MsgId: MMSG-26000]
+ 937: isInNet(clientIP, "172.24.171.0", "255.255.255.0") || // Stavropol 10\r\n  	[MsgId: MMSG-26000]
+ 938: isInNet(clientIP, "172.24.172.0", "255.255.255.0") || // Stavropol 11\r\n  	[MsgId: MMSG-26000]
+ 939: isInNet(clientIP, "172.24.173.0", "255.255.255.0") || // Stavropol 12\r\n  	[MsgId: MMSG-26000]
+ 940: isInNet(clientIP, "172.24.174.0", "255.255.255.0") || // Stavropol 13\r\n  	[MsgId: MMSG-26000]
+ 941: isInNet(clientIP, "172.24.162.0", "255.255.255.0") || // Stavropol 2\r\n  	[MsgId: MMSG-26000]
+ 942: isInNet(clientIP, "172.24.163.0", "255.255.255.0") || // Stavropol 3\r\n  	[MsgId: MMSG-26000]
+ 943: isInNet(clientIP, "172.24.164.0", "255.255.255.0") || // Stavropol 4\r\n  	[MsgId: MMSG-26000]
+ 944: isInNet(clientIP, "172.24.165.0", "255.255.255.0") || // Stavropol 5\r\n  	[MsgId: MMSG-26000]
+ 945: isInNet(clientIP, "172.24.168.0", "255.255.255.0") || // Stavropol 6\r\n  	[MsgId: MMSG-26000]
+ 946: isInNet(clientIP, "172.24.167.0", "255.255.255.0") || // Stavropol 7\r\n  	[MsgId: MMSG-26000]
+ 947: isInNet(clientIP, "172.26.7.0", "255.255.255.0") || // Stavropol 8\r\n  	[MsgId: MMSG-26000]
+ 948: isInNet(clientIP, "172.24.170.0", "255.255.255.0") || // Stavropol 9\r\n  	[MsgId: MMSG-26000]
+ 949: isInNet(clientIP, "172.26.23.0", "255.255.255.0") || // Temernitsky\r\n  	[MsgId: MMSG-26000]
+ 950: isInNet(clientIP, "10.127.74.0", "255.255.255.0") || // VDI - Pool 3\r\n  	[MsgId: MMSG-26000]
+ 951: isInNet(clientIP, "10.127.68.0", "255.255.254.0") || // VDI - Rostov-on-Don\r\n  	[MsgId: MMSG-26000]
+ 952: isInNet(clientIP, "10.127.41.0", "255.255.255.0") || // Vladikavkaz Client 1\r\n  	[MsgId: MMSG-26000]
+ 953: isInNet(clientIP, "172.25.223.0", "255.255.255.0") || // Vladikavkaz Client 2\r\n  	[MsgId: MMSG-26000]
+ 954: isInNet(clientIP, "172.25.224.0", "255.255.255.0") || // Vladikavkaz Client 3\r\n  	[MsgId: MMSG-26000]
+ 955: isInNet(clientIP, "172.25.226.0", "255.255.255.0") || // Vladikavkaz Client 4\r\n  	[MsgId: MMSG-26000]
+ 956: isInNet(clientIP, "10.127.1.0", "255.255.255.0") || // Volgograd_CB_VLZ\r\n  	[MsgId: MMSG-26000]
+ 957: isInNet(clientIP, "10.127.3.224", "255.255.255.224") || // Volgograd_min_office_04\r\n  	[MsgId: MMSG-26000]
+ 958: isInNet(clientIP, "172.25.209.0", "255.255.255.0") || // Volgograd_mini_office_01\r\n  	[MsgId: MMSG-26000]
+ 959: isInNet(clientIP, "10.127.56.0", "255.255.255.0") || // Volgograd_mini_office_02\r\n  	[MsgId: MMSG-26000]
+ 960: isInNet(clientIP, "10.127.57.0", "255.255.255.0") || // Volgograd_mini_office_03\r\n  	[MsgId: MMSG-26000]
+ 961: isInNet(clientIP, "172.25.205.0", "255.255.255.0") || // Volgograd-00\r\n  	[MsgId: MMSG-26000]
+ 962: isInNet(clientIP, "172.25.206.0", "255.255.255.0") || // Volgograd-01\r\n  	[MsgId: MMSG-26000]
+ 963: isInNet(clientIP, "172.25.207.0", "255.255.255.0") || // Volgograd-80\r\n  	[MsgId: MMSG-26000]
+ 964: isInNet(clientIP, "10.127.2.0", "255.255.255.0") || // Volgograd-ADM\r\n  	[MsgId: MMSG-26000]
+ 965: isInNet(clientIP, "172.26.67.0", "255.255.255.0") || // Volgograd-ADM-2\r\n  	[MsgId: MMSG-26000]
+ 966: isInNet(clientIP, "172.26.70.0", "255.255.255.240") || // Volgograd-Kamishin\r\n  	[MsgId: MMSG-26000]
+ 967: isInNet(clientIP, "172.26.70.32", "255.255.255.240") || // Volgograd-Mikhaylovka\r\n  	[MsgId: MMSG-26000]
+ 968: isInNet(clientIP, "10.127.0.0", "255.255.255.0") || // Volgograd-MSC\r\n  	[MsgId: MMSG-26000]
+ 969: isInNet(clientIP, "172.25.208.0", "255.255.255.0") || // Volgograd-VLZ\r\n  	[MsgId: MMSG-26000]
+ 970: isInNet(clientIP, "10.127.75.0", "255.255.255.0") || // \xD0\xEE\xF1\xF2\xEE\xE2 (VDI);   	[MsgId: MMSG-26000]
+    : RFC 525890/18\r\n  	[MsgId: MMSG-26000]
+ 971: isInNet(clientIP, "10.127.76.0", "255.255.255.0") || // \xD0\xEE\xF1\xF2\xEE\xE2 (VDI);   	[MsgId: MMSG-26000]
+    : RFC 525890/18 #2\r\n  	[MsgId: MMSG-26000]
+ 972: false) return "PROXY rd-proxy.vimpelcom.ru:8080";\r\n  	[MsgId: MMSG-26000]
+ 973: \r\n  	[MsgId: MMSG-26000]
+ 974: // No proxy for unknown subnet\r\n  	[MsgId: MMSG-26000]
+ 975: return "DIRECT";}\r\n  	[MsgId: MMSG-26000]
+Evaluating JavaScript was completed successfully  	[MsgId: MMSG-26297]
+Proxy automatic configuration script (URL="http://isaweb.vimpelcom.ru/wpad.dat") downloaded and evaluated successfully  	[MsgId: MMSG-27096]
+Web Services replay version 12.53.0 for Windows 2008 R2; Toolkit: "NotDefined"; build 1203
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_constructor_edit\\default.cfg"
+Vuser directory: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_constructor_edit"
+Vuser output directory: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_constructor_edit\"
+LOCAL start date/time : 2021-03-19 14:25:17
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Parameter Substitution: parameter "var_Random1000" =  "43"
+Action.c(13): Notify: Parameter Substitution: parameter "login_0" =  "9683512220"
+Action.c(13): Notify: Saving Parameter "login = 9683512220".
+Action.c(21): Notify: Parameter Substitution: parameter "price_lego" =  "ELEGO2_2"
+Action.c(21): Notify: Saving Parameter "price = ELEGO2_2".
+Action.c(22): Notify: Parameter Substitution: parameter "cid0" =  "2"
+Action.c(22): Notify: Saving Parameter "constructor_id = 2".
+api_1_0_request_constructor.c(3): Notify: Parameter Substitution: parameter "login" =  "9683512220"
+api_1_0_request_constructor.c(3): Notify: Parameter Substitution: parameter "constructor_id" =  "2"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 96835122202".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "concat" =  "96835122202"
+pool_get_hash.c(12): t=2364ms: FindProxyForURL returned "DIRECT" for URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): t=2365ms: Auto-proxy configuration selected a direct connection (ms-loadrtst045:7001) for URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): t=2365ms: Connecting [0] to host 10.50.255.155:7001  	[MsgId: MMSG-26000]
+pool_get_hash.c(12):  Automatic Proxy Result Cache marked direct connection ms-loadrtst045:7001 as "GOOD"  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): Automatic Proxy Result Cache now associates ms-loadrtst045:7001 with proxy / direct connection ms-loadrtst045:7001  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): t=2366ms: Connected socket [0] from 10.50.255.155:27009 to 10.50.255.155:7001 in 1 ms  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): t=2366ms: 300-byte request headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=2)
+pool_get_hash.c(12):     POST /HashGen/HashGenService HTTP/1.1\r\n
+pool_get_hash.c(12):     Content-Type: text/xml; charset=UTF-8\r\n
+pool_get_hash.c(12):     Cache-Control: no-cache\r\n
+pool_get_hash.c(12):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+pool_get_hash.c(12):     Accept-Encoding: gzip, deflate\r\n
+pool_get_hash.c(12):     Accept: */*\r\n
+pool_get_hash.c(12):     Connection: Keep-Alive\r\n
+pool_get_hash.c(12):     Host: ms-loadrtst045:7001\r\n
+pool_get_hash.c(12):     Content-Length: 309\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2367ms: 309-byte request body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=2)
+pool_get_hash.c(12):     <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmls
+pool_get_hash.c(12):     oap.org/soap/envelope/" xmlns:ws="http://ws.hashgen.bellintegrator.ru/"><soapenv:Header/><
+pool_get_hash.c(12):     soapenv:Body>   <ws:getHashByConcat>       <concat>96835122202</concat>   </ws:getHashByCo
+pool_get_hash.c(12):     ncat></soapenv:Body></soapenv:Envelope>
+pool_get_hash.c(12): t=2371ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=2)
+pool_get_hash.c(12):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(12):     Date: Fri, 19 Mar 2021 11:25:18 GMT\r\n
+pool_get_hash.c(12):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(12):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2374ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=2)
+pool_get_hash.c(12):     0183\r\n
+pool_get_hash.c(12): t=2382ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=2)
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12):     0000\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2385ms: 387-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=2)
+pool_get_hash.c(12):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(12):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(12):     or.ru/"><return><concat>96835122202</concat><hmacSha1>1mhz78SPhOJ02KoC4xKwCWAg/j0=</hmacSh
+pool_get_hash.c(12):     a1><urlQuote>1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D</urlQuote></return></ns0:getHashByConcatResp
+pool_get_hash.c(12):     onse></S:Body></S:Envelope>
+pool_get_hash.c(12): Notify: Saving Parameter "hash_qouted = 1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D".
+pool_get_hash.c(12): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(12): t=2390ms: Request done "http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26000]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") was successful, 387 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(29): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,1396 Wasted Time: 0,0922).
+pool_get_hash.c(31): Notify: Parameter Substitution: parameter "hash_qouted" =  "1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D"
+pool_get_hash.c(31): 1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D
+api_1_0_request_constructor.c(5): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_request_constructor.c(5): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_request_constructor.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_request_constructor.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_request_constructor.c(7): web_add_cookie started  	[MsgId: MMSG-26355]
+api_1_0_request_constructor.c(7): Notify: Parameter Substitution: parameter "system_token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_request_constructor.c(7): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+api_1_0_request_constructor.c(7): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_1_0_request_constructor.c(9): Notify: Transaction "api_1_0_request_constructor" started.
+api_1_0_request_constructor.c(11): web_custom_request("api_1_0_request_constructor") started  	[MsgId: MMSG-26355]
+api_1_0_request_constructor.c(11): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_request_constructor.c(11): Notify: Parameter Substitution: parameter "login" =  "9683512220"
+api_1_0_request_constructor.c(11): Notify: Parameter Substitution: parameter "constructor_id" =  "2"
+api_1_0_request_constructor.c(11): Notify: Parameter Substitution: parameter "hash_qouted" =  "1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D"
+api_1_0_request_constructor.c(11): t=2565ms: FindProxyForURL returned "DIRECT" for URL="http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D"  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11): t=2565ms: Auto-proxy configuration selected a direct connection (dr-web01:21001) for URL="http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D"  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11): t=2567ms: Closed connection [0] to ms-loadrtst045:7001 after completing 1 request(s)  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11): t=2567ms: Connecting [0] to host 172.21.225.48:21001  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11):  Automatic Proxy Result Cache marked direct connection dr-web01:21001 as "GOOD"  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11): Automatic Proxy Result Cache now associates dr-web01:21001 with proxy / direct connection dr-web01:21001  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11): t=2569ms: Connected socket [0] from 10.50.255.155:27012 to 172.21.225.48:21001 in 2 ms  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11): t=2569ms: 350-byte request headers for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11):     PUT /api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwC
+api_1_0_request_constructor.c(11):     WAg%2Fj0%3D HTTP/1.1\r\n
+api_1_0_request_constructor.c(11):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+api_1_0_request_constructor.c(11):     Accept-Encoding: gzip, deflate\r\n
+api_1_0_request_constructor.c(11):     Accept: */*\r\n
+api_1_0_request_constructor.c(11):     Connection: Keep-Alive\r\n
+api_1_0_request_constructor.c(11):     Host: dr-web01:21001\r\n
+api_1_0_request_constructor.c(11):     Cookie: token=16A7665A159997FCE95B9D5F9B026EEF\r\n
+api_1_0_request_constructor.c(11):     Content-Length: 0\r\n
+api_1_0_request_constructor.c(11):     \r\n
+api_1_0_request_constructor.c(11): t=2980ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11):     HTTP/1.1 200 OK\r\n
+api_1_0_request_constructor.c(11):     Date: Fri, 19 Mar 2021 11:25:18 GMT\r\n
+api_1_0_request_constructor.c(11):     Transfer-Encoding: chunked\r\n
+api_1_0_request_constructor.c(11):     Content-Type: application/json\r\n
+api_1_0_request_constructor.c(11):     Content-Encoding: gzip\r\n
+api_1_0_request_constructor.c(11):     \r\n
+api_1_0_request_constructor.c(11): t=2982ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11):     000a\r\n
+api_1_0_request_constructor.c(11): t=2982ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11):     \r\n
+api_1_0_request_constructor.c(11): t=2983ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11): t=2983ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11):     0051\r\n
+api_1_0_request_constructor.c(11): t=2983ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11):     \r\n
+api_1_0_request_constructor.c(11):     0000\r\n
+api_1_0_request_constructor.c(11):     \r\n
+api_1_0_request_constructor.c(11): t=2984ms: 81-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11): t=2984ms: 75-byte DECODED response body for "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D" (RelFrameId=1, Internal ID=3)
+api_1_0_request_constructor.c(11):     {"meta":{"status":"OK","code":20000,"message":null},"requestId":3696578483}
+api_1_0_request_constructor.c(11): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_1_0_request_constructor.c(11): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Fri, 19 Mar 2021 11:25:18 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"requestId":3696578483}".
+api_1_0_request_constructor.c(11): t=2985ms: Request done "http://dr-web01:21001/api/1.0/request/constructor?ctn=9683512220&constructorId=2&hash=1mhz78SPhOJ02KoC4xKwCWAg%2Fj0%3D"  	[MsgId: MMSG-26000]
+api_1_0_request_constructor.c(11): web_custom_request("api_1_0_request_constructor") was successful, 91 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_request_constructor.c(22): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_1_0_request_constructor.c(22): Notify: Parameter Substitution: parameter "login" =  "9683512220"
+api_1_0_request_constructor.c(22): Notify: Parameter Substitution: parameter "fullresponse" =  "HTTP/1.1 200 OK\r\nDate: Fri, 19 Mar 2021 11:25:18 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"requestId":3696578483}"
+api_1_0_request_constructor.c(23): Notify: Transaction "api_1_0_request_constructor" ended with a "Pass" status (Duration: 0,4634 Wasted Time: 0,0110).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+t=3028ms: Closed connection [0] to dr-web01:21001 after completing 1 request(s)  	[MsgId: MMSG-26000]

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_request_serviceDeactivate
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ec:\beework\automatedtesting\usss\_scripts\__pl\api\api_request_servicedeactivate\\logfile.log
+c:\beework\automatedtesting\usss\_scripts\__pl\api\api_request_servicedeactivate\\combined_api_request_serviceDeactivate.c
+c:\beework\automatedtesting\usss\_scripts\__pl\api\api_request_servicedeactivate\\pre_cci.c

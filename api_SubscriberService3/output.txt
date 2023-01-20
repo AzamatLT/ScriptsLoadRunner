@@ -1,0 +1,190 @@
+Virtual User Script started at : 31.03.2021 10:21:16
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (мар 31 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_SubscriberService3\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Parameter Substitution: parameter "var_Random100" =  "840217"
+Action.c(41): Notify: Parameter Substitution: parameter "PDRlogin" =  "V399542027"
+Action.c(41): Notify: Saving Parameter "login = V399542027".
+Action.c(42): Notify: Next row for parameter PDRban = 978 [table  = PDRban].
+Action.c(42): Notify: Parameter Substitution: parameter "PDRban" =  "399542027"
+Action.c(42): Notify: Saving Parameter "ban = 399542027".
+Action.c(43): Notify: Next row for parameter PDRctn = 978 [table  = PDRctn].
+Action.c(43): Notify: Parameter Substitution: parameter "PDRctn" =  "9093765222"
+Action.c(43): Notify: Saving Parameter "ctn = 9093765222".
+Action.c(62): Notify: Transaction "TMP_SubscriberService_Multi" started.
+Action.c(98): Notify: Parameter Substitution: parameter "user_id_adddelsoc" =  "StarLine-admin"
+Action.c(98): Notify: Saving Parameter "login = StarLine-admin".
+Action.c(99): Notify: Next row for parameter ban_adddelsoc = 429 [table  = ban_adddelsoc].
+Action.c(99): Notify: Parameter Substitution: parameter "ban_adddelsoc" =  "528877635"
+Action.c(99): Notify: Saving Parameter "ban = 528877635".
+Action.c(100): Notify: Next row for parameter ctn_adddelsoc = 429 [table  = ctn_adddelsoc].
+Action.c(100): Notify: Parameter Substitution: parameter "ctn_adddelsoc" =  "9626947051"
+Action.c(100): Notify: Saving Parameter "ctn = 9626947051".
+AddDelSOCAdd.c(4): Notify: Parameter Substitution: parameter "var_Random1000" =  "838"
+AddDelSOCAdd.c(16): Notify: Next row for parameter SocToAdd = 429 [table  = SocToAdd].
+AddDelSOCAdd.c(16): Notify: Parameter Substitution: parameter "SocToAdd" =  "BBUNBRT1"
+AddDelSOCAdd.c(16): Notify: Saving Parameter "SocToAdd2 = BBUNBRT1".
+AddDelSOCAdd.c(20): Notify: Parameter Substitution: parameter "ctn" =  "9626947051"
+AddDelSOCAdd.c(20): Notify: Parameter Substitution: parameter "SocToAdd2" =  "BBUNBRT1"
+AddDelSOCAdd.c(20): Notify: Parameter Substitution: parameter "expDate0" =  "20210326102115"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 9626947051BBUNBRT1A20210326102115".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "concat" =  "9626947051BBUNBRT1A20210326102115"
+pool_get_hash.c(13): t=2301ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(13):     Date: Wed, 31 Mar 2021 07:21:17 GMT\r\n
+pool_get_hash.c(13):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(13):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2309ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     0197\r\n
+pool_get_hash.c(13): t=2309ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13):     0000\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2311ms: 407-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(13):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(13):     or.ru/"><return><concat>9626947051BBUNBRT1A20210326102115</concat><hmacSha1>wbFpdKcnQ6v07E
+pool_get_hash.c(13):     AWFnPXPLgDNbw=</hmacSha1><urlQuote>wbFpdKcnQ6v07EAWFnPXPLgDNbw%3D</urlQuote></return></ns0
+pool_get_hash.c(13):     :getHashByConcatResponse></S:Body></S:Envelope>
+pool_get_hash.c(13): Notify: Saving Parameter "hmacSha1 = wbFpdKcnQ6v07EAWFnPXPLgDNbw=".
+pool_get_hash.c(13): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") was successful, 407 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(33): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,2002 Wasted Time: 0,1756).
+pool_get_hash.c(35): Notify: Parameter Substitution: parameter "hmacSha1" =  "wbFpdKcnQ6v07EAWFnPXPLgDNbw="
+pool_get_hash.c(35): wbFpdKcnQ6v07EAWFnPXPLgDNbw=
+AddDelSOCAdd.c(22): web_reg_save_param started  	[MsgId: MMSG-26355]
+AddDelSOCAdd.c(22): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+AddDelSOCAdd.c(25): Notify: Transaction "B2B_api_SubscriberService_addSoc" started.
+AddDelSOCAdd.c(27): web_add_header("Client-Type") started  	[MsgId: MMSG-26355]
+AddDelSOCAdd.c(27): web_add_header("Client-Type") was successful  	[MsgId: MMSG-26392]
+AddDelSOCAdd.c(29): web_custom_request("B2B_add_soc") started  	[MsgId: MMSG-26355]
+AddDelSOCAdd.c(29): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+AddDelSOCAdd.c(29): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+AddDelSOCAdd.c(29): Notify: Parameter Substitution: parameter "hmacSha1" =  "wbFpdKcnQ6v07EAWFnPXPLgDNbw="
+AddDelSOCAdd.c(29): Notify: Parameter Substitution: parameter "ctn" =  "9626947051"
+AddDelSOCAdd.c(29): Notify: Parameter Substitution: parameter "SocToAdd2" =  "BBUNBRT1"
+AddDelSOCAdd.c(29): Notify: Parameter Substitution: parameter "expDate" =  "2021-03-26T10:21:15"
+AddDelSOCAdd.c(29): t=2818ms: 123-byte response headers for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=2)
+AddDelSOCAdd.c(29):     HTTP/1.1 200 OK\r\n
+AddDelSOCAdd.c(29):     Date: Wed, 31 Mar 2021 07:21:17 GMT\r\n
+AddDelSOCAdd.c(29):     Transfer-Encoding: chunked\r\n
+AddDelSOCAdd.c(29):     Content-Type: text/xml; charset=utf-8\r\n
+AddDelSOCAdd.c(29):     \r\n
+AddDelSOCAdd.c(29): t=2821ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=2)
+AddDelSOCAdd.c(29):     01ed\r\n
+AddDelSOCAdd.c(29): t=2821ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=2)
+AddDelSOCAdd.c(29):     \r\n
+AddDelSOCAdd.c(29): t=2822ms: 493-byte chunked response body for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=2)
+AddDelSOCAdd.c(29):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+AddDelSOCAdd.c(29):     /envelope/"><S:Header><WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0AB
+AddDelSOCAdd.c(29):     XdUABd3ZWJsb2dpYy5hcHAuRlRUX3Vzc2FwaQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnR
+AddDelSOCAdd.c(29):     leHQADDQ3LjAuMC4zNDgxNgAA</WorkContext></S:Header><S:Body><ns0:addDelSOCResponse xmlns:ns1
+AddDelSOCAdd.c(29):     ="urn:uss-wsapi:Types" xmlns:ns0="urn:uss-wsapi:Subscriber"><return>3696600354</return></n
+AddDelSOCAdd.c(29):     s0:addDelSOCResponse></S:Body></S:Envelope>
+AddDelSOCAdd.c(29): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://dr-web01:21001/api/SubscriberService"  	[MsgId: MMSG-26548]
+AddDelSOCAdd.c(29): t=2823ms: 8-byte chunked response overhead for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=2)
+AddDelSOCAdd.c(29):     0000\r\n
+AddDelSOCAdd.c(29):     \r\n
+AddDelSOCAdd.c(29): Notify: Saving Parameter "response = HTTP/1.1 200 OK\r\nDate: Wed, 31 Mar 2021 07:21:17 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: text/xml; charset=utf-8\r\n\r\n<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Header><WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdUABd3ZWJsb2dpYy5hcHAuRlRUX3Vzc2FwaQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQADDQ3LjAuMC4zNDgxNgAA</WorkContext></S:Header><S:Body><ns0:addDelSOCResponse xmlns:ns1="urn:uss-wsapi:Types" xmlns:ns0="urn:uss-wsapi:Subscriber"><return>3696600354</return></ns0:addDelSOCResponse></S:Body></S:Envelope>".
+AddDelSOCAdd.c(29): web_custom_request("B2B_add_soc") was successful, 493 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+AddDelSOCAdd.c(65): Notify: Transaction "B2B_api_SubscriberService_addSoc" ended with a "Pass" status (Duration: 0,4168 Wasted Time: 0,0025).
+Action.c(104): Notify: Parameter Substitution: parameter "user_id_adddelsoc" =  "StarLine-admin"
+Action.c(104): Notify: Saving Parameter "login = StarLine-admin".
+Action.c(105): Notify: Next row for parameter ban_adddelsoc = 429 [table  = ban_adddelsoc].
+Action.c(105): Notify: Parameter Substitution: parameter "ban_adddelsoc" =  "528877635"
+Action.c(105): Notify: Saving Parameter "ban = 528877635".
+Action.c(106): Notify: Next row for parameter ctn_adddelsoc = 429 [table  = ctn_adddelsoc].
+Action.c(106): Notify: Parameter Substitution: parameter "ctn_adddelsoc" =  "9626947051"
+Action.c(106): Notify: Saving Parameter "ctn = 9626947051".
+AddDelSOCDel.c(3): Notify: Parameter Substitution: parameter "var_Random1000" =  "838"
+AddDelSOCDel.c(14): Notify: Next row for parameter SocToDel = 429 [table  = SocToDel].
+AddDelSOCDel.c(14): Notify: Parameter Substitution: parameter "SocToDel" =  "GPRSDP"
+AddDelSOCDel.c(14): Notify: Saving Parameter "SocToDel2 = GPRSDP".
+AddDelSOCDel.c(18): Notify: Parameter Substitution: parameter "ctn" =  "9626947051"
+AddDelSOCDel.c(18): Notify: Parameter Substitution: parameter "SocToDel2" =  "GPRSDP"
+AddDelSOCDel.c(18): Notify: Parameter Substitution: parameter "expDate0" =  "20210326102115"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 9626947051GPRSDPD20210326102115".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "concat" =  "9626947051GPRSDPD20210326102115"
+pool_get_hash.c(13): t=2852ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(13):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(13):     Date: Wed, 31 Mar 2021 07:21:17 GMT\r\n
+pool_get_hash.c(13):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(13):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2856ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(13):     0195\r\n
+pool_get_hash.c(13): t=2856ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13):     0000\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2858ms: 405-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(13):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(13):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(13):     or.ru/"><return><concat>9626947051GPRSDPD20210326102115</concat><hmacSha1>48qa2sbK6dq3ZTR6
+pool_get_hash.c(13):     QTKVDbk9ms4=</hmacSha1><urlQuote>48qa2sbK6dq3ZTR6QTKVDbk9ms4%3D</urlQuote></return></ns0:g
+pool_get_hash.c(13):     etHashByConcatResponse></S:Body></S:Envelope>
+pool_get_hash.c(13): Notify: Saving Parameter "hmacSha1 = 48qa2sbK6dq3ZTR6QTKVDbk9ms4=".
+pool_get_hash.c(13): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") was successful, 405 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(33): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,0301 Wasted Time: 0,0023).
+pool_get_hash.c(35): Notify: Parameter Substitution: parameter "hmacSha1" =  "48qa2sbK6dq3ZTR6QTKVDbk9ms4="
+pool_get_hash.c(35): 48qa2sbK6dq3ZTR6QTKVDbk9ms4=
+AddDelSOCDel.c(20): web_reg_save_param started  	[MsgId: MMSG-26355]
+AddDelSOCDel.c(20): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+AddDelSOCDel.c(23): Notify: Transaction "B2B_api_SubscriberService_delSoc" started.
+AddDelSOCDel.c(24): web_custom_request("B2B_del_soc") started  	[MsgId: MMSG-26355]
+AddDelSOCDel.c(24): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+AddDelSOCDel.c(24): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+AddDelSOCDel.c(24): Notify: Parameter Substitution: parameter "hmacSha1" =  "48qa2sbK6dq3ZTR6QTKVDbk9ms4="
+AddDelSOCDel.c(24): Notify: Parameter Substitution: parameter "ctn" =  "9626947051"
+AddDelSOCDel.c(24): Notify: Parameter Substitution: parameter "SocToDel2" =  "GPRSDP"
+AddDelSOCDel.c(24): Notify: Parameter Substitution: parameter "expDate" =  "2021-03-26T10:21:15"
+AddDelSOCDel.c(24): t=2990ms: 123-byte response headers for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=4)
+AddDelSOCDel.c(24):     HTTP/1.1 200 OK\r\n
+AddDelSOCDel.c(24):     Date: Wed, 31 Mar 2021 07:21:17 GMT\r\n
+AddDelSOCDel.c(24):     Transfer-Encoding: chunked\r\n
+AddDelSOCDel.c(24):     Content-Type: text/xml; charset=utf-8\r\n
+AddDelSOCDel.c(24):     \r\n
+AddDelSOCDel.c(24): t=2993ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=4)
+AddDelSOCDel.c(24):     01ed\r\n
+AddDelSOCDel.c(24): t=2993ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=4)
+AddDelSOCDel.c(24):     \r\n
+AddDelSOCDel.c(24): t=2994ms: 493-byte chunked response body for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=4)
+AddDelSOCDel.c(24):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+AddDelSOCDel.c(24):     /envelope/"><S:Header><WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0AB
+AddDelSOCDel.c(24):     XdUABd3ZWJsb2dpYy5hcHAuRlRUX3Vzc2FwaQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnR
+AddDelSOCDel.c(24):     leHQADDQ3LjAuMC4zNDgxNgAA</WorkContext></S:Header><S:Body><ns0:addDelSOCResponse xmlns:ns1
+AddDelSOCDel.c(24):     ="urn:uss-wsapi:Types" xmlns:ns0="urn:uss-wsapi:Subscriber"><return>3696600355</return></n
+AddDelSOCDel.c(24):     s0:addDelSOCResponse></S:Body></S:Envelope>
+AddDelSOCDel.c(24): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://dr-web01:21001/api/SubscriberService"  	[MsgId: MMSG-26548]
+AddDelSOCDel.c(24): t=2995ms: 8-byte chunked response overhead for "http://dr-web01:21001/api/SubscriberService" (RelFrameId=1, Internal ID=4)
+AddDelSOCDel.c(24):     0000\r\n
+AddDelSOCDel.c(24):     \r\n
+AddDelSOCDel.c(24): Notify: Saving Parameter "response = HTTP/1.1 200 OK\r\nDate: Wed, 31 Mar 2021 07:21:17 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: text/xml; charset=utf-8\r\n\r\n<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Header><WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdUABd3ZWJsb2dpYy5hcHAuRlRUX3Vzc2FwaQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQADDQ3LjAuMC4zNDgxNgAA</WorkContext></S:Header><S:Body><ns0:addDelSOCResponse xmlns:ns1="urn:uss-wsapi:Types" xmlns:ns0="urn:uss-wsapi:Subscriber"><return>3696600355</return></ns0:addDelSOCResponse></S:Body></S:Envelope>".
+AddDelSOCDel.c(24): web_custom_request("B2B_del_soc") was successful, 493 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+AddDelSOCDel.c(62): Notify: Transaction "B2B_api_SubscriberService_delSoc" ended with a "Pass" status (Duration: 0,1338 Wasted Time: 0,0020).
+Action.c(148): Notify: Transaction "TMP_SubscriberService_Multi" ended with a "Pass" status (Duration: 0,8089 Wasted Time: 0,1824).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

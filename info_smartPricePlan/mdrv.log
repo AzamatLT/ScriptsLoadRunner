@@ -1,0 +1,92 @@
+Virtual User Script started at : 24.03.2021 10:05:19
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (мар 24 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\info_smartPricePlan\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+api_1_0_info_smartPricePlan.c(3): Notify: Parameter Substitution: parameter "ctn_smart" =  "9062749206"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 9062749206".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "concat" =  "9062749206"
+pool_get_hash.c(12): t=2120ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(12):     Date: Wed, 24 Mar 2021 07:05:19 GMT\r\n
+pool_get_hash.c(12):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(12):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2129ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     0180\r\n
+pool_get_hash.c(12): t=2129ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12):     0000\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=2130ms: 384-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(12):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(12):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(12):     or.ru/"><return><concat>9062749206</concat><hmacSha1>y2D2HdWUGqbdpMa8t1uA18qN6RI=</hmacSha
+pool_get_hash.c(12):     1><urlQuote>y2D2HdWUGqbdpMa8t1uA18qN6RI%3D</urlQuote></return></ns0:getHashByConcatRespons
+pool_get_hash.c(12):     e></S:Body></S:Envelope>
+pool_get_hash.c(12): Notify: Saving Parameter "hash_qouted = y2D2HdWUGqbdpMa8t1uA18qN6RI%3D".
+pool_get_hash.c(12): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") was successful, 384 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(29): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,1915 Wasted Time: 0,1678).
+pool_get_hash.c(31): Notify: Parameter Substitution: parameter "hash_qouted" =  "y2D2HdWUGqbdpMa8t1uA18qN6RI%3D"
+pool_get_hash.c(31): y2D2HdWUGqbdpMa8t1uA18qN6RI%3D
+api_1_0_info_smartPricePlan.c(5): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_info_smartPricePlan.c(5): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_info_smartPricePlan.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_info_smartPricePlan.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_info_smartPricePlan.c(7): web_add_cookie started  	[MsgId: MMSG-26355]
+api_1_0_info_smartPricePlan.c(7): Notify: Parameter Substitution: parameter "system_token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_info_smartPricePlan.c(7): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+api_1_0_info_smartPricePlan.c(7): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_1_0_info_smartPricePlan.c(10): Notify: Transaction "info_1_0_smartPricePlan" started.
+api_1_0_info_smartPricePlan.c(11): web_url("smartPricePlan") started  	[MsgId: MMSG-26355]
+api_1_0_info_smartPricePlan.c(11): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_info_smartPricePlan.c(11): Notify: Parameter Substitution: parameter "ctn_smart" =  "9062749206"
+api_1_0_info_smartPricePlan.c(11): Notify: Parameter Substitution: parameter "hash_qouted" =  "y2D2HdWUGqbdpMa8t1uA18qN6RI%3D"
+api_1_0_info_smartPricePlan.c(11): t=2464ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11):     HTTP/1.1 200 OK\r\n
+api_1_0_info_smartPricePlan.c(11):     Date: Wed, 24 Mar 2021 07:05:19 GMT\r\n
+api_1_0_info_smartPricePlan.c(11):     Transfer-Encoding: chunked\r\n
+api_1_0_info_smartPricePlan.c(11):     Content-Type: application/json\r\n
+api_1_0_info_smartPricePlan.c(11):     Content-Encoding: gzip\r\n
+api_1_0_info_smartPricePlan.c(11):     \r\n
+api_1_0_info_smartPricePlan.c(11): t=2466ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11):     000a\r\n
+api_1_0_info_smartPricePlan.c(11): t=2467ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11):     \r\n
+api_1_0_info_smartPricePlan.c(11): t=2467ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11): t=2467ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11):     009a\r\n
+api_1_0_info_smartPricePlan.c(11): t=2467ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11):     \r\n
+api_1_0_info_smartPricePlan.c(11):     0000\r\n
+api_1_0_info_smartPricePlan.c(11):     \r\n
+api_1_0_info_smartPricePlan.c(11): t=2468ms: 154-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11): t=2468ms: 240-byte DECODED response body for "http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D" (RelFrameId=1, Internal ID=2)
+api_1_0_info_smartPricePlan.c(11):     {"meta":{"status":"OK","code":20000,"message":null},"currentCycle":null,"priorityNextBilli
+api_1_0_info_smartPricePlan.c(11):     ngCycle":null,"shortCycleParams":{"period":"fixedDuration","duration":1,"rcRate":0.0},"lon
+api_1_0_info_smartPricePlan.c(11):     gCycleParams":{"period":"month","duration":31,"rcRate":0.0}}
+api_1_0_info_smartPricePlan.c(11): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_1_0_info_smartPricePlan.c(11): HTML parsing not performed for Content-Type "application/json" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://dr-web01:21001/api/1.0/info/smartPricePlan?ctn=9062749206&hash=y2D2HdWUGqbdpMa8t1uA18qN6RI%3D"  	[MsgId: MMSG-26548]
+api_1_0_info_smartPricePlan.c(11): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Wed, 24 Mar 2021 07:05:19 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"currentCycle":null,"priorityNextBillingCycle":null,"shortCycleParams":{"period":"fixedDuration","duration":1,"rcRate":0.0},"longCycleParams":{"period":"month","duration":31,"rcRate":0.0}}".
+api_1_0_info_smartPricePlan.c(11): web_url("smartPricePlan") was successful, 164 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_info_smartPricePlan.c(20): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_1_0_info_smartPricePlan.c(22): Notify: Transaction "info_1_0_smartPricePlan" ended with a "Pass" status (Duration: 0,2492 Wasted Time: 0,0112).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 648800), ended OK."

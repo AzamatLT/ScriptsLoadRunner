@@ -1,0 +1,270 @@
+Virtual User Script started at : 01.04.2021 16:16:54
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (апр 01 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_info\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(3): Notify: Parameter Substitution: parameter "tarif_Random100" =  "40"
+Action.c(4): Notify: Parameter Substitution: parameter "var_random100k" =  "29161"
+Action.c(56): Notify: Parameter Substitution: parameter "smart" =  "9095156265"
+Action.c(56): Notify: Saving Parameter "ctn = 9095156265".
+api_2_0_PricePlanAvailableList.c(3): Notify: Parameter Substitution: parameter "var_random2" =  "2"
+api_2_0_PricePlanAvailableList.c(5): Notify: Transaction "pool_get_hash" started.
+api_2_0_PricePlanAvailableList.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_2_0_PricePlanAvailableList.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_2_0_PricePlanAvailableList.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+api_2_0_PricePlanAvailableList.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+api_2_0_PricePlanAvailableList.c(12): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+api_2_0_PricePlanAvailableList.c(12): t=2141ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+api_2_0_PricePlanAvailableList.c(12):     HTTP/1.1 200 OK\r\n
+api_2_0_PricePlanAvailableList.c(12):     Date: Thu, 01 Apr 2021 13:16:54 GMT\r\n
+api_2_0_PricePlanAvailableList.c(12):     Transfer-Encoding: chunked\r\n
+api_2_0_PricePlanAvailableList.c(12):     Content-Type: text/xml; charset=utf-8\r\n
+api_2_0_PricePlanAvailableList.c(12):     \r\n
+api_2_0_PricePlanAvailableList.c(12): t=2149ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+api_2_0_PricePlanAvailableList.c(12):     0182\r\n
+api_2_0_PricePlanAvailableList.c(12): t=2149ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+api_2_0_PricePlanAvailableList.c(12):     \r\n
+api_2_0_PricePlanAvailableList.c(12):     0000\r\n
+api_2_0_PricePlanAvailableList.c(12):     \r\n
+api_2_0_PricePlanAvailableList.c(12): t=2151ms: 386-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+api_2_0_PricePlanAvailableList.c(12):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+api_2_0_PricePlanAvailableList.c(12):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+api_2_0_PricePlanAvailableList.c(12):     or.ru/"><return><concat>9095156265</concat><hmacSha1>FsDbn/hfkBwq7liOvqmWgu3QFYg=</hmacSha
+api_2_0_PricePlanAvailableList.c(12):     1><urlQuote>FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D</urlQuote></return></ns0:getHashByConcatRespo
+api_2_0_PricePlanAvailableList.c(12):     nse></S:Body></S:Envelope>
+api_2_0_PricePlanAvailableList.c(12): Notify: Saving Parameter "hash_qouted = FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D".
+api_2_0_PricePlanAvailableList.c(12): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+api_2_0_PricePlanAvailableList.c(12): web_custom_request("GetNextMsisdnValue") was successful, 386 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_2_0_PricePlanAvailableList.c(29): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,1993 Wasted Time: 0,1769).
+api_2_0_PricePlanAvailableList.c(31): Notify: Transaction "api_2_0_info_pricePlanAvailableList" started.
+api_2_0_PricePlanAvailableList.c(33): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_2_0_PricePlanAvailableList.c(33): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_2_0_PricePlanAvailableList.c(34): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_2_0_PricePlanAvailableList.c(34): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_2_0_PricePlanAvailableList.c(36): web_add_cookie started  	[MsgId: MMSG-26355]
+api_2_0_PricePlanAvailableList.c(36): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_2_0_PricePlanAvailableList.c(36): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+api_2_0_PricePlanAvailableList.c(36): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_2_0_PricePlanAvailableList.c(37): web_add_header("Usss-Language") started  	[MsgId: MMSG-26355]
+api_2_0_PricePlanAvailableList.c(37): web_add_header("Usss-Language") was successful  	[MsgId: MMSG-26392]
+api_2_0_PricePlanAvailableList.c(50): web_url("api_2_0_info_pricePlanAvailableList") started  	[MsgId: MMSG-26355]
+api_2_0_PricePlanAvailableList.c(50): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_2_0_PricePlanAvailableList.c(50): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+api_2_0_PricePlanAvailableList.c(50): Notify: Parameter Substitution: parameter "hash_qouted" =  "FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D"
+api_2_0_PricePlanAvailableList.c(50): t=2367ms: 140-byte response headers for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50):     HTTP/1.1 200 OK\r\n
+api_2_0_PricePlanAvailableList.c(50):     Date: Thu, 01 Apr 2021 13:16:54 GMT\r\n
+api_2_0_PricePlanAvailableList.c(50):     Transfer-Encoding: chunked\r\n
+api_2_0_PricePlanAvailableList.c(50):     Content-Type: application/json\r\n
+api_2_0_PricePlanAvailableList.c(50):     Content-Encoding: gzip\r\n
+api_2_0_PricePlanAvailableList.c(50):     \r\n
+api_2_0_PricePlanAvailableList.c(50): t=2368ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50):     000a\r\n
+api_2_0_PricePlanAvailableList.c(50): t=2369ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50):     \r\n
+api_2_0_PricePlanAvailableList.c(50): t=2369ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50): t=2369ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50):     01c6\r\n
+api_2_0_PricePlanAvailableList.c(50): t=2369ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50):     \r\n
+api_2_0_PricePlanAvailableList.c(50):     0000\r\n
+api_2_0_PricePlanAvailableList.c(50):     \r\n
+api_2_0_PricePlanAvailableList.c(50): t=2370ms: 454-byte ENCODED response body received for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50): t=2370ms: 747-byte DECODED response body for "http://dr-web01:21001/api/2.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=2)
+api_2_0_PricePlanAvailableList.c(50):     {"meta":{"status":"OK","code":20000,"message":null},"startDateFreeChange":"2016-09-25T00:0
+api_2_0_PricePlanAvailableList.c(50):     0:00.000+0300","availablePricePlans":[{"name":"42SECOND","entityName":"\xD0\xA1\xD0\xB5\xD0
+api_2_0_PricePlanAvailableList.c(50):     \xBA\xD1\x83\xD0\xBD\xD0\xB4\xD0\xB0","entityDesc":"\xD0\x95\xD0\xB4\xD0\xB8\xD0\xBD\xD0\xB0
+api_2_0_PricePlanAvailableList.c(50):     \xD1\x8F \xD1\x86\xD0\xB5\xD0\xBD\xD0\xB0 \xD0\xBD\xD0\xB0 \xD0\xBB\xD1\x8E\xD0\xB1\xD1\x8B
+api_2_0_PricePlanAvailableList.c(50):     \xD0\xB5 \xD0\xBC\xD0\xB5\xD1\x81\xD1\x82\xD0\xBD\xD1\x8B\xD0\xB5 \xD0\xBD\xD0\xBE\xD0\xBC
+api_2_0_PricePlanAvailableList.c(50):     \xD0\xB5\xD1\x80\xD0\xB0: 3 \xD0\xBA\xD0\xBE\xD0\xBF\xD0\xB5\xD0\xB9\xD0\xBA\xD0\xB8 \xD0\xB7
+api_2_0_PricePlanAvailableList.c(50):     \xD0\xB0 \xD1\x81\xD0\xB5\xD0\xBA\xD1\x83\xD0\xBD\xD0\xB4\xD1\x83!","rcRate":0.0,"rcRatePe
+api_2_0_PricePlanAvailableList.c(50):     riod":"webProduct.rentalFee.period.dayly","rcRatePeriodText":"\xD0\xB2\xC2\xA0\xD1\x81\xD1
+api_2_0_PricePlanAvailableList.c(50):     \x83\xD1\x82\xD0\xBA\xD0\xB8","category":"\xD0\x94\xD0\xBB\xD1\x8F \xD0\xB7\xD0\xB2\xD0\xBE
+api_2_0_PricePlanAvailableList.c(50):     \xD0\xBD\xD0\xBA\xD0\xBE\xD0\xB2 \xD0\xBD\xD0\xB0 \xD0\xBB\xD1\x8E\xD0\xB1\xD1\x8B\xD0\xB5
+api_2_0_PricePlanAvailableList.c(50):      \xD0\xBD\xD0\xBE\xD0\xBC\xD0\xB5\xD1\x80\xD0\xB0","baseFeatures":[{"code":"SMS"},{"code":
+api_2_0_PricePlanAvailableList.c(50):     "VOICE"},{"code":"PPCPKG"},{"code":"CW"},{"code":"PPPLAN"},{"code":"CH"},{"code":"PCHGP"},
+api_2_0_PricePlanAvailableList.c(50):     {"code":"U_P"},{"code":"CRP"},{"code":"CR"},{"code":"SMST"}],"chargeAmount":0.0,"nlpAvaila
+api_2_0_PricePlanAvailableList.c(50):     blePricePlan":null,"convergenceInd":false,"constructorInd":false}]}
+api_2_0_PricePlanAvailableList.c(50): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_2_0_PricePlanAvailableList.c(50): Notify: Saving Parameter "pricePlanCode = 42SECOND".
+api_2_0_PricePlanAvailableList.c(50): web_url("api_2_0_info_pricePlanAvailableList") was successful, 464 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_2_0_PricePlanAvailableList.c(60): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_2_0_PricePlanAvailableList.c(60): Warning: The string 'token' with parameter delimiters is not a parameter.
+api_2_0_PricePlanAvailableList.c(60): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+checkResult.c(21): Notify: Transaction "api_2_0_info_pricePlanAvailableList" ended with a "Pass" status (Duration: 0,1404 Wasted Time: 0,0125).
+UpsellPricePlan.c(4): Notify: Transaction "pool_get_hash" started.
+UpsellPricePlan.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+UpsellPricePlan.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+UpsellPricePlan.c(11): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+UpsellPricePlan.c(11): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+UpsellPricePlan.c(11): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+UpsellPricePlan.c(11): Notify: Parameter Substitution: parameter "pricePlanCode" =  "42SECOND"
+UpsellPricePlan.c(11): Notify: Parameter Substitution: parameter "channelType" =  "4"
+UpsellPricePlan.c(11): t=2409ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+UpsellPricePlan.c(11):     HTTP/1.1 200 OK\r\n
+UpsellPricePlan.c(11):     Date: Thu, 01 Apr 2021 13:16:54 GMT\r\n
+UpsellPricePlan.c(11):     Transfer-Encoding: chunked\r\n
+UpsellPricePlan.c(11):     Content-Type: text/xml; charset=utf-8\r\n
+UpsellPricePlan.c(11):     \r\n
+UpsellPricePlan.c(11): t=2412ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+UpsellPricePlan.c(11):     018d\r\n
+UpsellPricePlan.c(11): t=2412ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+UpsellPricePlan.c(11):     \r\n
+UpsellPricePlan.c(11):     0000\r\n
+UpsellPricePlan.c(11):     \r\n
+UpsellPricePlan.c(11): t=2413ms: 397-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+UpsellPricePlan.c(11):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+UpsellPricePlan.c(11):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+UpsellPricePlan.c(11):     or.ru/"><return><concat>909515626542SECOND4</concat><hmacSha1>itndURKdys+h2Q5JziuHSzkNf/o=
+UpsellPricePlan.c(11):     </hmacSha1><urlQuote>itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D</urlQuote></return></ns0:getHashBy
+UpsellPricePlan.c(11):     ConcatResponse></S:Body></S:Envelope>
+UpsellPricePlan.c(11): Notify: Saving Parameter "hash_qouted = itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D".
+UpsellPricePlan.c(11): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+UpsellPricePlan.c(11): web_custom_request("GetNextMsisdnValue") was successful, 397 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+UpsellPricePlan.c(28): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,0284 Wasted Time: 0,0022).
+UpsellPricePlan.c(33): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+UpsellPricePlan.c(33): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+UpsellPricePlan.c(35): web_add_cookie started  	[MsgId: MMSG-26355]
+UpsellPricePlan.c(35): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+UpsellPricePlan.c(35): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+UpsellPricePlan.c(35): web_add_cookie was successful  	[MsgId: MMSG-26392]
+UpsellPricePlan.c(36): web_add_header("Usss-Language") started  	[MsgId: MMSG-26355]
+UpsellPricePlan.c(36): web_add_header("Usss-Language") was successful  	[MsgId: MMSG-26392]
+UpsellPricePlan.c(38): Notify: Transaction "api_1_0_info_upsellPricePlan" started.
+UpsellPricePlan.c(40): web_url("api_1_0_info_payment_history") started  	[MsgId: MMSG-26355]
+UpsellPricePlan.c(40): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+UpsellPricePlan.c(40): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+UpsellPricePlan.c(40): Notify: Parameter Substitution: parameter "hash_qouted" =  "itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D"
+UpsellPricePlan.c(40): Notify: Parameter Substitution: parameter "pricePlanCode" =  "42SECOND"
+UpsellPricePlan.c(40): Notify: Parameter Substitution: parameter "channelType" =  "4"
+UpsellPricePlan.c(40): t=2587ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/info/upsellPricePlan?ctn=9095156265&hash=itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D&pricePlan=42SECOND&channelType=4" (RelFrameId=1, Internal ID=4)
+UpsellPricePlan.c(40):     HTTP/1.1 200 OK\r\n
+UpsellPricePlan.c(40):     Date: Thu, 01 Apr 2021 13:16:55 GMT\r\n
+UpsellPricePlan.c(40):     Transfer-Encoding: chunked\r\n
+UpsellPricePlan.c(40):     Content-Type: application/json\r\n
+UpsellPricePlan.c(40):     Content-Encoding: gzip\r\n
+UpsellPricePlan.c(40):     \r\n
+UpsellPricePlan.c(40): t=2588ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/upsellPricePlan?ctn=9095156265&hash=itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D&pricePlan=42SECOND&channelType=4" (RelFrameId=1, Internal ID=4)
+UpsellPricePlan.c(40):     000a\r\n
+UpsellPricePlan.c(40): t=2589ms: 8-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/upsellPricePlan?ctn=9095156265&hash=itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D&pricePlan=42SECOND&channelType=4" (RelFrameId=1, Internal ID=4)
+UpsellPricePlan.c(40):     \r\n
+UpsellPricePlan.c(40):     00d0\r\n
+UpsellPricePlan.c(40): t=2589ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/upsellPricePlan?ctn=9095156265&hash=itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D&pricePlan=42SECOND&channelType=4" (RelFrameId=1, Internal ID=4)
+UpsellPricePlan.c(40):     \r\n
+UpsellPricePlan.c(40):     0000\r\n
+UpsellPricePlan.c(40):     \r\n
+UpsellPricePlan.c(40): t=2590ms: 218-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/info/upsellPricePlan?ctn=9095156265&hash=itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D&pricePlan=42SECOND&channelType=4" (RelFrameId=1, Internal ID=4)
+UpsellPricePlan.c(40): t=2590ms: 267-byte DECODED response body for "http://dr-web01:21001/api/1.0/info/upsellPricePlan?ctn=9095156265&hash=itndURKdys%2Bh2Q5JziuHSzkNf%2Fo%3D&pricePlan=42SECOND&channelType=4" (RelFrameId=1, Internal ID=4)
+UpsellPricePlan.c(40):     {"meta":{"status":"ERROR","code":49999,"message":"EXT_SYSTEM_ERROR: com.sun.xml.ws.client.
+UpsellPricePlan.c(40):     ClientTransportException: HTTP transport error: java.net.ConnectException: Tried all: '1' 
+UpsellPricePlan.c(40):     addresses, but could not connect over HTTP to server: 'ms-loadrtst003', port: '8089'"}}
+UpsellPricePlan.c(40): Notify: Saving Parameter "response = "status":"ERROR","code":49999,"message":"EXT_SYSTEM_ERROR: com.sun.xml.ws.client.ClientTransportException: HTTP transport error: java.net.ConnectException: Tried all: '1' addresses, but could not connect over HTTP to server: 'ms-loadrtst003', port: '8089'"".
+UpsellPricePlan.c(40): web_url("api_1_0_info_payment_history") was successful, 218 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+UpsellPricePlan.c(48): Notify: Parameter Substitution: parameter "response" =  ""status":"ERROR","code":49999,"message":"EXT_SYSTEM_ERROR: com.sun.xml.ws.client.ClientTransportException: HTTP transport error: java.net.ConnectException: Tried all: '1' addresses, but could not connect over HTTP to server: 'ms-loadrtst003', port: '8089'""
+UpsellPricePlan.c(48): Warning: The string 'token' with parameter delimiters is not a parameter.
+UpsellPricePlan.c(48): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+checkResult.c(8): Warning: The string 'Date' with parameter delimiters is not a parameter.
+checkResult.c(8): Error: 
+Date = {Date} Transaction "api_1_0_info_upsellPricePlan" Login = 9095156265 Token = {token} Response was - 
+checkResult.c(21): Notify: Transaction "api_1_0_info_upsellPricePlan" ended with a "Fail" status (Duration: 0,1711 Wasted Time: 0,0026).
+checkResult.c(21): Notify: Transaction "api_1_0_info_upsellPricePlan" has 1 error message(s).
+checkResult.c(21): Notify: The 1st error message associated with transaction "api_1_0_info_upsellPricePlan" is "Error 0: 
+Date = {Date} Transaction "api_1_0_info_upsellPricePlan" Login = 9095156265 Token = {token} Response was - "
+Ending action Action.
+Starting action api_1_0_PricePlanAvailableList.
+api_1_0_PricePlanAvailableList.c(3): Notify: Parameter Substitution: parameter "var_random2" =  "2"
+api_1_0_PricePlanAvailableList.c(5): Notify: Transaction "pool_get_hash" started.
+api_1_0_PricePlanAvailableList.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_PricePlanAvailableList.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_PricePlanAvailableList.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+api_1_0_PricePlanAvailableList.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+api_1_0_PricePlanAvailableList.c(12): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+api_1_0_PricePlanAvailableList.c(12): t=2636ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=5)
+api_1_0_PricePlanAvailableList.c(12):     HTTP/1.1 200 OK\r\n
+api_1_0_PricePlanAvailableList.c(12):     Date: Thu, 01 Apr 2021 13:16:55 GMT\r\n
+api_1_0_PricePlanAvailableList.c(12):     Transfer-Encoding: chunked\r\n
+api_1_0_PricePlanAvailableList.c(12):     Content-Type: text/xml; charset=utf-8\r\n
+api_1_0_PricePlanAvailableList.c(12):     \r\n
+api_1_0_PricePlanAvailableList.c(12): t=2639ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=5)
+api_1_0_PricePlanAvailableList.c(12):     0182\r\n
+api_1_0_PricePlanAvailableList.c(12): t=2640ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=5)
+api_1_0_PricePlanAvailableList.c(12):     \r\n
+api_1_0_PricePlanAvailableList.c(12):     0000\r\n
+api_1_0_PricePlanAvailableList.c(12):     \r\n
+api_1_0_PricePlanAvailableList.c(12): t=2641ms: 386-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=5)
+api_1_0_PricePlanAvailableList.c(12):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+api_1_0_PricePlanAvailableList.c(12):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+api_1_0_PricePlanAvailableList.c(12):     or.ru/"><return><concat>9095156265</concat><hmacSha1>FsDbn/hfkBwq7liOvqmWgu3QFYg=</hmacSha
+api_1_0_PricePlanAvailableList.c(12):     1><urlQuote>FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D</urlQuote></return></ns0:getHashByConcatRespo
+api_1_0_PricePlanAvailableList.c(12):     nse></S:Body></S:Envelope>
+api_1_0_PricePlanAvailableList.c(12): Notify: Saving Parameter "hash_qouted = FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D".
+api_1_0_PricePlanAvailableList.c(12): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+api_1_0_PricePlanAvailableList.c(12): web_custom_request("GetNextMsisdnValue") was successful, 386 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_PricePlanAvailableList.c(29): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,0186 Wasted Time: 0,0022).
+api_1_0_PricePlanAvailableList.c(31): Notify: Transaction "api_1_0_info_pricePlanAvailableList" started.
+api_1_0_PricePlanAvailableList.c(33): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_PricePlanAvailableList.c(33): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_PricePlanAvailableList.c(34): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_PricePlanAvailableList.c(34): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_PricePlanAvailableList.c(36): web_add_cookie started  	[MsgId: MMSG-26355]
+api_1_0_PricePlanAvailableList.c(36): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_PricePlanAvailableList.c(36): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+api_1_0_PricePlanAvailableList.c(36): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_1_0_PricePlanAvailableList.c(37): web_add_header("Usss-Language") started  	[MsgId: MMSG-26355]
+api_1_0_PricePlanAvailableList.c(37): web_add_header("Usss-Language") was successful  	[MsgId: MMSG-26392]
+api_1_0_PricePlanAvailableList.c(50): web_url("api_1_0_info_pricePlanAvailableList") started  	[MsgId: MMSG-26355]
+api_1_0_PricePlanAvailableList.c(50): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_PricePlanAvailableList.c(50): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+api_1_0_PricePlanAvailableList.c(50): Notify: Parameter Substitution: parameter "hash_qouted" =  "FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D"
+api_1_0_PricePlanAvailableList.c(50): t=2752ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50):     HTTP/1.1 200 OK\r\n
+api_1_0_PricePlanAvailableList.c(50):     Date: Thu, 01 Apr 2021 13:16:55 GMT\r\n
+api_1_0_PricePlanAvailableList.c(50):     Transfer-Encoding: chunked\r\n
+api_1_0_PricePlanAvailableList.c(50):     Content-Type: application/json\r\n
+api_1_0_PricePlanAvailableList.c(50):     Content-Encoding: gzip\r\n
+api_1_0_PricePlanAvailableList.c(50):     \r\n
+api_1_0_PricePlanAvailableList.c(50): t=2753ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50):     000a\r\n
+api_1_0_PricePlanAvailableList.c(50): t=2754ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50):     \r\n
+api_1_0_PricePlanAvailableList.c(50): t=2754ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50): t=2754ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50):     01cf\r\n
+api_1_0_PricePlanAvailableList.c(50): t=2754ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50):     \r\n
+api_1_0_PricePlanAvailableList.c(50):     0000\r\n
+api_1_0_PricePlanAvailableList.c(50):     \r\n
+api_1_0_PricePlanAvailableList.c(50): t=2755ms: 463-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50): t=2755ms: 759-byte DECODED response body for "http://dr-web01:21001/api/1.0/info/pricePlanAvailableList?ctn=9095156265&hash=FsDbn%2FhfkBwq7liOvqmWgu3QFYg%3D" (RelFrameId=1, Internal ID=6)
+api_1_0_PricePlanAvailableList.c(50):     {"meta":{"status":"OK","code":20000,"message":null},"startDateFreeChange":"2016-09-25T00:0
+api_1_0_PricePlanAvailableList.c(50):     0:00.000+0300","availablePricePlans":[{"name":"42SECOND","entityName":"\xD0\xA1\xD0\xB5\xD0
+api_1_0_PricePlanAvailableList.c(50):     \xBA\xD1\x83\xD0\xBD\xD0\xB4\xD0\xB0","entityDesc":"\xD0\x95\xD0\xB4\xD0\xB8\xD0\xBD\xD0\xB0
+api_1_0_PricePlanAvailableList.c(50):     \xD1\x8F \xD1\x86\xD0\xB5\xD0\xBD\xD0\xB0 \xD0\xBD\xD0\xB0 \xD0\xBB\xD1\x8E\xD0\xB1\xD1\x8B
+api_1_0_PricePlanAvailableList.c(50):     \xD0\xB5 \xD0\xBC\xD0\xB5\xD1\x81\xD1\x82\xD0\xBD\xD1\x8B\xD0\xB5 \xD0\xBD\xD0\xBE\xD0\xBC
+api_1_0_PricePlanAvailableList.c(50):     \xD0\xB5\xD1\x80\xD0\xB0: 3 \xD0\xBA\xD0\xBE\xD0\xBF\xD0\xB5\xD0\xB9\xD0\xBA\xD0\xB8 \xD0\xB7
+api_1_0_PricePlanAvailableList.c(50):     \xD0\xB0 \xD1\x81\xD0\xB5\xD0\xBA\xD1\x83\xD0\xBD\xD0\xB4\xD1\x83!","rcRate":0.0,"rcRatePe
+api_1_0_PricePlanAvailableList.c(50):     riod":"webProduct.rentalFee.period.dayly","rcRatePeriodText":"\xD0\xB2\xC2\xA0\xD1\x81\xD1
+api_1_0_PricePlanAvailableList.c(50):     \x83\xD1\x82\xD0\xBA\xD0\xB8","category":"\xD0\x94\xD0\xBB\xD1\x8F \xD0\xB7\xD0\xB2\xD0\xBE
+api_1_0_PricePlanAvailableList.c(50):     \xD0\xBD\xD0\xBA\xD0\xBE\xD0\xB2 \xD0\xBD\xD0\xB0 \xD0\xBB\xD1\x8E\xD0\xB1\xD1\x8B\xD0\xB5
+api_1_0_PricePlanAvailableList.c(50):      \xD0\xBD\xD0\xBE\xD0\xBC\xD0\xB5\xD1\x80\xD0\xB0","sdbSize":0,"baseFeatures":[{"code":"SM
+api_1_0_PricePlanAvailableList.c(50):     S"},{"code":"VOICE"},{"code":"PPCPKG"},{"code":"CW"},{"code":"PPPLAN"},{"code":"CH"},{"cod
+api_1_0_PricePlanAvailableList.c(50):     e":"PCHGP"},{"code":"U_P"},{"code":"CRP"},{"code":"CR"},{"code":"SMST"}],"chargeAmount":0.
+api_1_0_PricePlanAvailableList.c(50):     0,"nlpAvailablePricePlan":null,"convergenceInd":false,"constructorInd":false}]}
+api_1_0_PricePlanAvailableList.c(50): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_1_0_PricePlanAvailableList.c(50): Notify: Saving Parameter "pricePlanCode = 42SECOND".
+api_1_0_PricePlanAvailableList.c(50): web_url("api_1_0_info_pricePlanAvailableList") was successful, 473 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_PricePlanAvailableList.c(60): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_1_0_PricePlanAvailableList.c(60): Warning: The string 'token' with parameter delimiters is not a parameter.
+api_1_0_PricePlanAvailableList.c(60): Notify: Parameter Substitution: parameter "ctn" =  "9095156265"
+checkResult.c(21): Notify: Transaction "api_1_0_info_pricePlanAvailableList" ended with a "Pass" status (Duration: 0,1251 Wasted Time: 0,0028).
+Ending action api_1_0_PricePlanAvailableList.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>39_rp_apitype_151</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="39_rp_apitype_151.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="DfeConfig\" Filter="4" />
+    <FileEntry Name="39_rp_apitype_151.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="23_host_rp.dat" Filter="2" />
+    <FileEntry Name="ctn13.dat" Filter="2" />
+    <FileEntry Name="login_lego.dat" Filter="2" />
+    <FileEntry Name="ctn105.dat" Filter="2" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="2" />
+    <FileEntry Name="Bookmarks.xml" Filter="2" />
+    <FileEntry Name="Breakpoints.xml" Filter="2" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="2" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="2" />
+    <FileEntry Name="UserTasks.xml" Filter="2" />
+    <FileEntry Name="combined_39_rp_apitype_151.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="12502176944.idx" Filter="1" />
+    <FileEntry Name="12968537444.idx" Filter="1" />
+    <FileEntry Name="12979796344.idx" Filter="1" />
+    <FileEntry Name="13214416644.idx" Filter="1" />
+    <FileEntry Name="13626060644.idx" Filter="1" />
+    <FileEntry Name="14437318744.idx" Filter="1" />
+    <FileEntry Name="15859273944.idx" Filter="1" />
+    <FileEntry Name="16328023444.idx" Filter="1" />
+    <FileEntry Name="16354589344.idx" Filter="1" />
+    <FileEntry Name="16544233044.idx" Filter="1" />
+    <FileEntry Name="16620300544.idx" Filter="1" />
+    <FileEntry Name="17408613944.idx" Filter="1" />
+    <FileEntry Name="17834860044.idx" Filter="1" />
+    <FileEntry Name="18395248044.idx" Filter="1" />
+    <FileEntry Name="18918966744.idx" Filter="1" />
+    <FileEntry Name="20326686544.idx" Filter="1" />
+    <FileEntry Name="21038991644.idx" Filter="1" />
+    <FileEntry Name="2216507844.idx" Filter="1" />
+    <FileEntry Name="23473003444.idx" Filter="1" />
+    <FileEntry Name="23546304444.idx" Filter="1" />
+    <FileEntry Name="23982444444.idx" Filter="1" />
+    <FileEntry Name="25352329244.idx" Filter="1" />
+    <FileEntry Name="25826239144.idx" Filter="1" />
+    <FileEntry Name="26559342544.idx" Filter="1" />
+    <FileEntry Name="26668639944.idx" Filter="1" />
+    <FileEntry Name="3089673844.idx" Filter="1" />
+    <FileEntry Name="3684373344.idx" Filter="1" />
+    <FileEntry Name="39_rp_apitype_151.bak" Filter="1" />
+    <FileEntry Name="39_rp_apitype_151.c.pickle" Filter="1" />
+    <FileEntry Name="39_rp_apitype_151.ci" Filter="1" />
+    <FileEntry Name="39_rp_apitype_151.prm.bak" Filter="1" />
+    <FileEntry Name="39_rp_apitype_151.sdf" Filter="1" />
+    <FileEntry Name="5425549844.idx" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="replay.har" Filter="1" />
+    <FileEntry Name="shunra.shunra" Filter="1" />
+    <FileEntry Name="testme.dat" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

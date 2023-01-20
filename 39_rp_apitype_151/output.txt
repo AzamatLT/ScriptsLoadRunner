@@ -1,0 +1,58 @@
+Virtual User Script started at : 01.04.2021 17:16:52
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (��� 01 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\rp\39_rp_apitype_151\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Parameter Substitution: parameter "var_Random100" =  "100"
+Action.c(11): Notify: Parameter Substitution: parameter "ctn105" =  "79036195169"
+Action.c(11): Notify: Saving Parameter "login = 79036195169".
+Action.c(17): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(17): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(18): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(18): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(21): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(21): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(23): Notify: Transaction "USSRP_API_TYPE_151" started.
+Action.c(25): web_url("ivrRequest") started  	[MsgId: MMSG-26355]
+Action.c(25): Notify: Parameter Substitution: parameter "host_rp" =  "my.beelinetst.ru:29003/rp"
+Action.c(25): Notify: Parameter Substitution: parameter "login" =  "79036195169"
+Action.c(25): t=3342ms: 227-byte response headers for "http://my.beelinetst.ru:29003/rp/servlet/ussdHttpServlet?ussd=102&msisdn=79036195169" (RelFrameId=1, Internal ID=1)
+Action.c(25):     HTTP/1.1 200 OK\r\n
+Action.c(25):     Server: nginx/1.10.1\r\n
+Action.c(25):     Date: Thu, 01 Apr 2021 14:16:54 GMT\r\n
+Action.c(25):     Content-Type: text/plain; charset=UTF-8\r\n
+Action.c(25):     Transfer-Encoding: chunked\r\n
+Action.c(25):     Connection: keep-alive\r\n
+Action.c(25):     Set-Cookie: SRV=plRp07; path=/\r\n
+Action.c(25):     Content-Encoding: gzip\r\n
+Action.c(25):     \r\n
+Action.c(25): t=3350ms: 4-byte chunked response overhead for "http://my.beelinetst.ru:29003/rp/servlet/ussdHttpServlet?ussd=102&msisdn=79036195169" (RelFrameId=1, Internal ID=1)
+Action.c(25):     73\r\n
+Action.c(25): t=3350ms: 7-byte chunked response overhead for "http://my.beelinetst.ru:29003/rp/servlet/ussdHttpServlet?ussd=102&msisdn=79036195169" (RelFrameId=1, Internal ID=1)
+Action.c(25):     \r\n
+Action.c(25):     0\r\n
+Action.c(25):     \r\n
+Action.c(25): t=3350ms: 115-byte ENCODED response body received for "http://my.beelinetst.ru:29003/rp/servlet/ussdHttpServlet?ussd=102&msisdn=79036195169" (RelFrameId=1, Internal ID=1)
+Action.c(25): t=3355ms: 123-byte DECODED response body for "http://my.beelinetst.ru:29003/rp/servlet/ussdHttpServlet?ussd=102&msisdn=79036195169" (RelFrameId=1, Internal ID=1)
+Action.c(25):     \xD0\x92\xD0\xB0\xD1\x88\xD0\xB0 \xD0\xB7\xD0\xB0\xD1\x8F\xD0\xB2\xD0\xBA\xD0\xB0 \xD0\xBF
+Action.c(25):     \xD1\x80\xD0\xB8\xD0\xBD\xD1\x8F\xD1\x82\xD0\xB0. \xD0\x94\xD0\xBE\xD0\xB6\xD0\xB4\xD0\xB8
+Action.c(25):     \xD1\x82\xD0\xB5\xD1\x81\xD1\x8C SMS-\xD1\x83\xD0\xB2\xD0\xB5\xD0\xB4\xD0\xBE\xD0\xBC\xD0\xBB
+Action.c(25):     \xD0\xB5\xD0\xBD\xD0\xB8\xD1\x8F \xD0\xBE\xD0\xB1 \xD0\xB8\xD1\x81\xD0\xBF\xD0\xBE\xD0\xBB
+Action.c(25):     \xD0\xBD\xD0\xB5\xD0\xBD\xD0\xB8\xD0\xB8 \xD0\xB7\xD0\xB0\xD1\x8F\xD0\xB2\xD0\xBA\xD0\xB8.
+Action.c(25): Notify: Saving Parameter "var_RESPONSE = HTTP/1.1 200 OK\r\nServer: nginx/1.10.1\r\nDate: Thu, 01 Apr 2021 14:16:54 GMT\r\nContent-Type: text/plain; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nSet-Cookie: SRV=plRp07; path=/\r\nContent-Encoding: gzip\r\n\r\nВа�\x88а заявка принята. Дождитесь SMS-уведомления об исполнении заявки.".
+Action.c(25): Registered web_reg_find successful for "Text=error"  	[MsgId: MMSG-26362]
+Action.c(25): Registered web_reg_find successful for "Text=принята" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("ivrRequest") was successful, 115 body bytes, 227 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(40): Notify: Transaction "USSRP_API_TYPE_151" ended with a "Pass" status (Duration: 1,3577 Wasted Time: 0,1737).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

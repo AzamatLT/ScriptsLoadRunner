@@ -1,0 +1,130 @@
+Virtual User Script started at: 4/5/2021 12:28:22 PM
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (Jan 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\amalikov\Dropbox\QA_Engineer\_GitHub\_ForTraining\api_b2c_multi\\default.cfg"  	[MsgId: MMSG-27141]
+Vuser directory: "C:\Users\amalikov\Dropbox\QA_Engineer\_GitHub\_ForTraining\api_b2c_multi"  	[MsgId: MMSG-27052]
+Vuser output directory: "C:\Users\amalikov\Dropbox\QA_Engineer\_GitHub\_ForTraining\api_b2c_multi"  	[MsgId: MMSG-27050]
+Operating system's current working directory: "c:\users\amalikov\dropbox\qa_engineer\_github\_fortraining\api_b2c_multi"  	[MsgId: MMSG-27048]
+UTC (GMT) start date/time   : 2021-04-05 09:28:22  	[MsgId: MMSG-26992]
+LOCAL start date/time       : 2021-04-05 12:28:22  	[MsgId: MMSG-26991]
+Local daylight-Savings-Time : No  	[MsgId: MMSG-26990]
+Some of the Runtime Settings:  	[MsgId: MMSG-27142]
+    Download non-HTML resources: Yes  	[MsgId: MMSG-27018]
+    Verification checks: No  	[MsgId: MMSG-27017]
+    Convert from/to UTF-8: No  	[MsgId: MMSG-27016]
+    Simulate a new user each iteration: Yes  	[MsgId: MMSG-27009]
+    Non-critical item errors as warnings: Yes  	[MsgId: MMSG-27008]
+    HTTP errors as warnings: No  	[MsgId: MMSG-27007]
+    WinInet replay instead of Sockets: No  	[MsgId: MMSG-27006]
+    HTTP version: 1.1  	[MsgId: MMSG-27005]
+    Keep-Alive HTTP connections: Yes  	[MsgId: MMSG-27004]
+    Max self Meta refresh updates: 2  	[MsgId: MMSG-27003]
+    No proxy is used (direct connection to the Internet)  	[MsgId: MMSG-27171]
+    DNS caching: Yes  	[MsgId: MMSG-27035]
+    Simulate browser cache: Yes  	[MsgId: MMSG-27034]
+        Cache URLs requiring content (e.g., HTMLs): Yes  	[MsgId: MMSG-27033]
+            Additional URLs requiring content: None  	[MsgId: MMSG-27032]
+        Check for newer versions every visit to the page: No  	[MsgId: MMSG-27031]
+    Page download timeout (sec): 120  	[MsgId: MMSG-27030]
+    Resource Page Timeout is a Warning: No  	[MsgId: MMSG-27029]
+    ContentCheck enabled: Yes  	[MsgId: MMSG-27028]
+    ContentCheck script-level file: "C:\Users\amalikov\Dropbox\QA_Engineer\_GitHub\_ForTraining\api_b2c_multi\LrwiAedScript.xml"  	[MsgId: MMSG-27027]
+    Enable Web Page Breakdown: No  	[MsgId: MMSG-27026]
+    Enable connection data points: Yes  	[MsgId: MMSG-27023]
+    Process socket after reschedule: Yes  	[MsgId: MMSG-27022]
+    Snapshot on error: No  	[MsgId: MMSG-27021]
+    Define each step as a transaction: No  	[MsgId: MMSG-27020]
+    Read beyond Content-Length: No  	[MsgId: MMSG-26994]
+    Parse HTML Content-Type: TEXT  	[MsgId: MMSG-26999]
+    Graph hits per second and HTTP status codes: Yes  	[MsgId: MMSG-26998]
+    Graph response bytes per second: Yes  	[MsgId: MMSG-26997]
+    Graph pages per second: No  	[MsgId: MMSG-26996]
+    Web recorder version ID: 8  	[MsgId: MMSG-26995]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Warning: The string 'var_Random100000' with parameter delimiters is not a parameter.
+Action.c(4): Notify: Parameter Substitution: parameter "var_Random100" =  "77"
+Action.c(5): Notify: Parameter Substitution: parameter "tarif_Random100" =  "98"
+Action.c(40): Notify: Transaction "TMP_api_b2c_multi" started.
+Action.c(71): Notify: Parameter Substitution: parameter "login_sys" =  "9637233109"
+Action.c(71): Notify: Saving Parameter "login = 9637233109".
+api_2_0_info_accumulators.c(3): Notify: Parameter Substitution: parameter "login" =  "9637233109"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 9637233109".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "concat" =  "9637233109"
+pool_get_hash.c(12): Continuing after Error -27794: Could not resolve address of host ms-loadrtst045  	[MsgId: MERR-27794]
+pool_get_hash.c(12): Continuing after Error -26377: No match found for the requested parameter "hash_qouted". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+pool_get_hash.c(12): Notify: Saving Parameter "hash_qouted = ".
+pool_get_hash.c(12): Continuing after Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+pool_get_hash.c(12): Continuing after error in Vuser script.
+pool_get_hash.c(29): Notify: Transaction "pool_get_hash" ended with a "Fail" status (Duration: 2.6179 Wasted Time: 0.2852).
+pool_get_hash.c(29): Notify: Transaction "pool_get_hash" has 3 error message(s).
+pool_get_hash.c(29): Notify: The 1st error message associated with transaction "pool_get_hash" is "Error -27794: Could not resolve address of host ms-loadrtst045"
+pool_get_hash.c(29): Notify: The 2nd error message associated with transaction "pool_get_hash" is "Error -26377: No match found for the requested parameter "hash_qouted". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size."
+pool_get_hash.c(29): Notify: The 3rd error message associated with transaction "pool_get_hash" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively."
+pool_get_hash.c(31): Notify: Parameter Substitution: parameter "hash_qouted" =  ""
+pool_get_hash.c(31): 
+api_2_0_info_accumulators.c(5): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_2_0_info_accumulators.c(5): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_2_0_info_accumulators.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_2_0_info_accumulators.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_2_0_info_accumulators.c(7): web_add_cookie started  	[MsgId: MMSG-26355]
+api_2_0_info_accumulators.c(7): Notify: Parameter Substitution: parameter "system_token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_2_0_info_accumulators.c(7): Notify: Parameter Substitution: parameter "endpoint" =  "my.beelinetst.ru"
+api_2_0_info_accumulators.c(7): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_2_0_info_accumulators.c(9): Notify: Transaction "api_2_0_info_accumulators" started.
+api_2_0_info_accumulators.c(10): web_url("accumulators") started  	[MsgId: MMSG-26355]
+api_2_0_info_accumulators.c(10): Notify: Parameter Substitution: parameter "endpoint" =  "my.beelinetst.ru"
+api_2_0_info_accumulators.c(10): Notify: Parameter Substitution: parameter "login" =  "9637233109"
+api_2_0_info_accumulators.c(10): Notify: Parameter Substitution: parameter "hash_qouted" =  ""
+api_2_0_info_accumulators.c(10): Continuing after Error -27794: Could not resolve address of host my.beelinetst.ru  	[MsgId: MERR-27794]
+api_2_0_info_accumulators.c(10): Continuing after Error -26377: No match found for the requested parameter "response". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+api_2_0_info_accumulators.c(10): Notify: Saving Parameter "response = ".
+api_2_0_info_accumulators.c(10): Continuing after Error -26377: No match found for the requested parameter "fullresponse". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MERR-26377]
+api_2_0_info_accumulators.c(10): Notify: Saving Parameter "fullresponse = ".
+api_2_0_info_accumulators.c(10): Continuing after Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+api_2_0_info_accumulators.c(10): web_url("accumulators") highest severity level was "continue on error", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+api_2_0_info_accumulators.c(10): Continuing after error in Vuser script.
+api_2_0_info_accumulators.c(18): Notify: Parameter Substitution: parameter "response" =  ""
+api_2_0_info_accumulators.c(18): Notify: Parameter Substitution: parameter "system_token" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_2_0_info_accumulators.c(18): Notify: Parameter Substitution: parameter "login" =  "9637233109"
+api_2_0_info_accumulators.c(18): Notify: Parameter Substitution: parameter "fullresponse" =  ""
+checkResult.c(5): Notify: Parameter Substitution: parameter "Date" =  "2021-04-05 12:28:26"
+checkResult.c(5): Error: 
+Date = 2021-04-05 12:28:26 Transaction "api_2_0_info_accumulators" Login = 9637233109 Token = 16A7665A159997FCE95B9D5F9B026EEF Response was - 
+api_2_0_info_accumulators.c(19): Notify: Transaction "api_2_0_info_accumulators" ended with a "Fail" status (Duration: 0.7379 Wasted Time: 0.0601).
+api_2_0_info_accumulators.c(19): Notify: Transaction "api_2_0_info_accumulators" has 5 error message(s).
+api_2_0_info_accumulators.c(19): Notify: The 1st error message associated with transaction "api_2_0_info_accumulators" is "Error -27794: Could not resolve address of host my.beelinetst.ru"
+api_2_0_info_accumulators.c(19): Notify: The 2nd error message associated with transaction "api_2_0_info_accumulators" is "Error -26377: No match found for the requested parameter "response". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size."
+api_2_0_info_accumulators.c(19): Notify: The 3rd error message associated with transaction "api_2_0_info_accumulators" is "Error -26377: No match found for the requested parameter "fullresponse". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size."
+api_2_0_info_accumulators.c(19): Notify: The 4th error message associated with transaction "api_2_0_info_accumulators" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively."
+api_2_0_info_accumulators.c(19): Notify: The 5th error message associated with transaction "api_2_0_info_accumulators" is "Error 0: 
+Date = 2021-04-05 12:28:26 Transaction "api_2_0_info_accumulators" Login = 9637233109 Token = 16A7665A159997FCE95B9D5F9B026EEF Response was - "
+Action.c(224): Notify: Transaction "TMP_api_b2c_multi" ended with a "Fail" status (Duration: 3.4432 Wasted Time: 0.3462).
+Action.c(224): Notify: Transaction "TMP_api_b2c_multi" has 8 error message(s).
+Action.c(224): Notify: The 1st error message associated with transaction "TMP_api_b2c_multi" is "Error -27794: Could not resolve address of host ms-loadrtst045"
+Action.c(224): Notify: The 2nd error message associated with transaction "TMP_api_b2c_multi" is "Error -26377: No match found for the requested parameter "hash_qouted". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size."
+Action.c(224): Notify: The 3rd error message associated with transaction "TMP_api_b2c_multi" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively."
+Action.c(224): Notify: The 4th error message associated with transaction "TMP_api_b2c_multi" is "Error -27794: Could not resolve address of host my.beelinetst.ru"
+Action.c(224): Notify: The 5th error message associated with transaction "TMP_api_b2c_multi" is "Error -26377: No match found for the requested parameter "response". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size."
+Action.c(224): Notify: The 6th error message associated with transaction "TMP_api_b2c_multi" is "Error -26377: No match found for the requested parameter "fullresponse". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size."
+Action.c(224): Notify: The 7th error message associated with transaction "TMP_api_b2c_multi" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively."
+Action.c(224): Notify: The 8th error message associated with transaction "TMP_api_b2c_multi" is "Error 0: 
+Date = 2021-04-05 12:28:26 Transaction "api_2_0_info_accumulators" Login = 9637233109 Token = 16A7665A159997FCE95B9D5F9B026EEF Response was - "
+Action.c(226): Notify: Freeing Parameter 'login'.
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

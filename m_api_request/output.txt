@@ -1,0 +1,255 @@
+Virtual User Script started at : 01.04.2021 15:46:30
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (��� 01 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\m_api_request\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(19): Notify: Parameter Substitution: parameter "rnd1000" =  "982"
+Action.c(35): Notify: Parameter Substitution: parameter "login_prep" =  "9061969422"
+Action.c(35): Notify: Saving Parameter "login = 9061969422".
+ServiceAvailableList.c(3): Notify: Transaction "pool_get_hash" started.
+ServiceAvailableList.c(5): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(5): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+ServiceAvailableList.c(10): web_custom_request("GetHashValue") started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(10): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+ServiceAvailableList.c(10): Notify: Parameter Substitution: parameter "login" =  "9061969422"
+ServiceAvailableList.c(10): t=2214ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+ServiceAvailableList.c(10):     HTTP/1.1 200 OK\r\n
+ServiceAvailableList.c(10):     Date: Thu, 01 Apr 2021 12:46:30 GMT\r\n
+ServiceAvailableList.c(10):     Transfer-Encoding: chunked\r\n
+ServiceAvailableList.c(10):     Content-Type: text/xml; charset=utf-8\r\n
+ServiceAvailableList.c(10):     \r\n
+ServiceAvailableList.c(10): t=2231ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+ServiceAvailableList.c(10):     0180\r\n
+ServiceAvailableList.c(10): t=2232ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+ServiceAvailableList.c(10):     \r\n
+ServiceAvailableList.c(10):     0000\r\n
+ServiceAvailableList.c(10):     \r\n
+ServiceAvailableList.c(10): t=2235ms: 384-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+ServiceAvailableList.c(10):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+ServiceAvailableList.c(10):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+ServiceAvailableList.c(10):     or.ru/"><return><concat>9061969422</concat><hmacSha1>0xzZzBT9eVo33B1fdNPQSFCb5gI=</hmacSha
+ServiceAvailableList.c(10):     1><urlQuote>0xzZzBT9eVo33B1fdNPQSFCb5gI%3D</urlQuote></return></ns0:getHashByConcatRespons
+ServiceAvailableList.c(10):     e></S:Body></S:Envelope>
+ServiceAvailableList.c(10): Notify: Saving Parameter "hash_qouted = 0xzZzBT9eVo33B1fdNPQSFCb5gI%3D".
+ServiceAvailableList.c(10): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+ServiceAvailableList.c(10): web_custom_request("GetHashValue") was successful, 384 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+ServiceAvailableList.c(27): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,2140 Wasted Time: 0,1831).
+ServiceAvailableList.c(30): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(30): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+ServiceAvailableList.c(31): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(31): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+ServiceAvailableList.c(32): web_add_cookie started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(32): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+ServiceAvailableList.c(32): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+ServiceAvailableList.c(32): web_add_cookie was successful  	[MsgId: MMSG-26392]
+ServiceAvailableList.c(34): web_reg_save_param started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(34): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+ServiceAvailableList.c(35): web_reg_save_param started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(35): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+ServiceAvailableList.c(37): Notify: Transaction "api_2_0_info_serviceAvailableList" started.
+ServiceAvailableList.c(38): web_url("serviceAvailable") started  	[MsgId: MMSG-26355]
+ServiceAvailableList.c(38): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+ServiceAvailableList.c(38): Notify: Parameter Substitution: parameter "hash_qouted" =  "0xzZzBT9eVo33B1fdNPQSFCb5gI%3D"
+ServiceAvailableList.c(38): Notify: Parameter Substitution: parameter "login" =  "9061969422"
+ServiceAvailableList.c(38): t=3171ms: 140-byte response headers for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38):     HTTP/1.1 200 OK\r\n
+ServiceAvailableList.c(38):     Date: Thu, 01 Apr 2021 12:46:30 GMT\r\n
+ServiceAvailableList.c(38):     Transfer-Encoding: chunked\r\n
+ServiceAvailableList.c(38):     Content-Type: application/json\r\n
+ServiceAvailableList.c(38):     Content-Encoding: gzip\r\n
+ServiceAvailableList.c(38):     \r\n
+ServiceAvailableList.c(38): t=3174ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38):     000a\r\n
+ServiceAvailableList.c(38): t=3174ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38):     \r\n
+ServiceAvailableList.c(38): t=3175ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38): t=3175ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38):     00f5\r\n
+ServiceAvailableList.c(38): t=3175ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38):     \r\n
+ServiceAvailableList.c(38):     0000\r\n
+ServiceAvailableList.c(38):     \r\n
+ServiceAvailableList.c(38): t=3176ms: 245-byte ENCODED response body received for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38): t=3176ms: 1045-byte DECODED response body for "http://dr-web01:21001/api/2.0/info/serviceAvailableList?hash=0xzZzBT9eVo33B1fdNPQSFCb5gI%3D&ctn=9061969422" (RelFrameId=1, Internal ID=2)
+ServiceAvailableList.c(38):     {"meta":{"status":"OK","code":20000,"message":null},"availableServices":[{"name":"HBUNBRT1
+ServiceAvailableList.c(38):     ","entityName":"\xD0\xAF\xD1\x80\xD0\xBA\xD0\xB0\xD1\x8F \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xB0\xD0
+ServiceAvailableList.c(38):     \xBD\xD0\xB4\xD0\xB0 \xD1\x80\xD0\xB0\xD0\xB7\xD0\xBE\xD0\xB2\xD1\x8B\xD0\xB9 \xD0\xBF\xD0
+ServiceAvailableList.c(38):     \xB0\xD0\xBA\xD0\xB5\xD1\x82 1","entityDesc":null,"category":null,"campId":null,"subgroupI
+ServiceAvailableList.c(38):     d":null},{"name":"BR_TEAM1","entityName":"\xD0\xAF\xD1\x80\xD0\xBA\xD0\xB0\xD1\x8F \xD0\xBA
+ServiceAvailableList.c(38):     \xD0\xBE\xD0\xBC\xD0\xB0\xD0\xBD\xD0\xB4\xD0\xB0 2000","entityDesc":null,"category":null,"
+ServiceAvailableList.c(38):     campId":null,"subgroupId":null},{"name":"BR_TEAM3","entityName":"\xD0\xAF\xD1\x80\xD0\xBA\xD0
+ServiceAvailableList.c(38):     \xB0\xD1\x8F \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xB0\xD0\xBD\xD0\xB4\xD0\xB0 6000","entityDesc":n
+ServiceAvailableList.c(38):     ull,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM4","entityName":"\xD0
+ServiceAvailableList.c(38):     \xAF\xD1\x80\xD0\xBA\xD0\xB0\xD1\x8F \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xB0\xD0\xBD\xD0\xB4\xD0\xB0
+ServiceAvailableList.c(38):      8000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM
+ServiceAvailableList.c(38):     5","entityName":"\xD0\xAF\xD1\x80\xD0\xBA\xD0\xB0\xD1\x8F \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xB0
+ServiceAvailableList.c(38):     \xD0\xBD\xD0\xB4\xD0\xB0 10000","entityDesc":null,"category":null,"campId":null,"subgroupI
+ServiceAvailableList.c(38):     d":null},{"name":"BBUNBRT1","entityName":"\xD0\xAF\xD1\x80\xD0\xBA\xD0\xB0\xD1\x8F \xD0\xBA
+ServiceAvailableList.c(38):     \xD0\xBE\xD0\xBC\xD0\xB0\xD0\xBD\xD0\xB4\xD0\xB0 \xD1\x80\xD0\xB0\xD0\xB7\xD0\xBE\xD0\xB2\xD1
+ServiceAvailableList.c(38):     \x8B\xD0\xB9 \xD0\xBF\xD0\xB0\xD0\xBA\xD0\xB5\xD1\x82 1","entityDesc":null,"category":null
+ServiceAvailableList.c(38):     ,"campId":null,"subgroupId":null},{"name":"BR_TEAM2","entityName":"\xD0\xAF\xD1\x80\xD0\xBA
+ServiceAvailableList.c(38):     \xD0\xB0\xD1\x8F \xD0\xBA\xD0\xBE\xD0\xBC\xD0\xB0\xD0\xBD\xD0\xB4\xD0\xB0 4000","entityDes
+ServiceAvailableList.c(38):     c":null,"category":null,"campId":null,"subgroupId":null}]}
+ServiceAvailableList.c(38): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+ServiceAvailableList.c(38): Notify: Saving Parameter "socToAdd = HBUNBRT1".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_1 = HBUNBRT1".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_2 = BR_TEAM1".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_3 = BR_TEAM3".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_4 = BR_TEAM4".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_5 = BR_TEAM5".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_6 = BBUNBRT1".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_7 = BR_TEAM2".
+ServiceAvailableList.c(38): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 12:46:30 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"availableServices":[{"name":"HBUNBRT1","entityName":"Яркая команда разовы�\xb9 пакет 1","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM1","entityName":"Яркая команда 2000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM3","entityName":"Яркая команда 6000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM4","entityName":"Яркая команда 8000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM5","entityName":"Яркая команда 10000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BBUNBRT1","entityName":"Яркая команда разовы�\xb9 пакет 1","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM2","entityName":"Яркая команда 4000","entityDesc":null,"category":null,"campId":null,"subgroupId":null}]}".
+ServiceAvailableList.c(38): Notify: Saving Parameter "AddSOC_count = 7".
+ServiceAvailableList.c(38): web_url("serviceAvailable") was successful, 255 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+ServiceAvailableList.c(45): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+ServiceAvailableList.c(45): Warning: The string 'token' with parameter delimiters is not a parameter.
+ServiceAvailableList.c(45): Notify: Parameter Substitution: parameter "login" =  "9061969422"
+ServiceAvailableList.c(45): Notify: Parameter Substitution: parameter "fullresponse" =  "HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 12:46:30 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"availableServices":[{"name":"HBUNBRT1","entityName":"Яркая команда разовы�\xb9 пакет 1","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM1","entityName":"Яркая команда 2000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM3","entityName":"Яркая команда 6000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM4","entityName":"Яркая команда 8000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM5","entityName":"Яркая команда 10000","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BBUNBRT1","entityName":"Яркая команда разовы�\xb9 пакет 1","entityDesc":null,"category":null,"campId":null,"subgroupId":null},{"name":"BR_TEAM2","entityName":"Яркая команда 4000","entityDesc":null,"category":null,"campId":null,"subgroupId":null}]}"
+checkResult.c(19): Notify: Transaction "api_2_0_info_serviceAvailableList" ended with a "Pass" status (Duration: 0,8504 Wasted Time: 0,0139).
+ServiceActivate.c(13): Notify: Parameter Substitution: parameter "AddSOC_count" =  "7"
+ServiceActivate.c(15): Notify: Parameter Substitution: parameter "AddSOC_count" =  "7"
+ServiceActivate.c(20): Notify: Parameter Substitution: parameter "AddSOC_1" =  "HBUNBRT1"
+ServiceActivate.c(20): Notify: Saving Parameter "SocToAdd = HBUNBRT1".
+ServiceActivate.c(21): Notify: Parameter Substitution: parameter "SocToAdd" =  "HBUNBRT1"
+api_1_0_info_conflict.c(3): Notify: Saving Parameter "CheckingSoc = HBUNBRT1".
+api_1_0_info_conflict.c(5): Notify: Parameter Substitution: parameter "login" =  "9061969422"
+api_1_0_info_conflict.c(5): Notify: Parameter Substitution: parameter "CheckingSoc" =  "HBUNBRT1"
+pool_get_hash.c(3): Notify: Saving Parameter "concat = 9061969422HBUNBRT1".
+pool_get_hash.c(5): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(12): Notify: Parameter Substitution: parameter "concat" =  "9061969422HBUNBRT1"
+pool_get_hash.c(12): t=3233ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(12):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(12):     Date: Thu, 01 Apr 2021 12:46:31 GMT\r\n
+pool_get_hash.c(12):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(12):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=3236ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(12):     018a\r\n
+pool_get_hash.c(12): t=3236ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12):     0000\r\n
+pool_get_hash.c(12):     \r\n
+pool_get_hash.c(12): t=3237ms: 394-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=3)
+pool_get_hash.c(12):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(12):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(12):     or.ru/"><return><concat>9061969422HBUNBRT1</concat><hmacSha1>l2J5YfJPiAP0eW/vY6lxa4Z5PpA=<
+pool_get_hash.c(12):     /hmacSha1><urlQuote>l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D</urlQuote></return></ns0:getHashByCon
+pool_get_hash.c(12):     catResponse></S:Body></S:Envelope>
+pool_get_hash.c(12): Notify: Saving Parameter "hash_qouted = l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D".
+pool_get_hash.c(12): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(12): web_custom_request("GetNextMsisdnValue") was successful, 394 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(29): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,0329 Wasted Time: 0,0039).
+pool_get_hash.c(31): Notify: Parameter Substitution: parameter "hash_qouted" =  "l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D"
+pool_get_hash.c(31): l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D
+api_1_0_info_conflict.c(7): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_info_conflict.c(8): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(8): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_1_0_info_conflict.c(9): web_add_cookie started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(9): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_1_0_info_conflict.c(9): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_info_conflict.c(9): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_1_0_info_conflict.c(10): web_add_header("Usss-Language") started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(10): web_add_header("Usss-Language") was successful  	[MsgId: MMSG-26392]
+api_1_0_info_conflict.c(11): web_reg_find started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(11): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+api_1_0_info_conflict.c(13): Notify: Transaction "api_1_0_info_conflict" started.
+api_1_0_info_conflict.c(15): web_url("api_1_0_info_conflict") started  	[MsgId: MMSG-26355]
+api_1_0_info_conflict.c(15): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+api_1_0_info_conflict.c(15): Notify: Parameter Substitution: parameter "login" =  "9061969422"
+api_1_0_info_conflict.c(15): Notify: Parameter Substitution: parameter "CheckingSoc" =  "HBUNBRT1"
+api_1_0_info_conflict.c(15): Notify: Parameter Substitution: parameter "hash_qouted" =  "l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D"
+api_1_0_info_conflict.c(15): t=3485ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15):     HTTP/1.1 200 OK\r\n
+api_1_0_info_conflict.c(15):     Date: Thu, 01 Apr 2021 12:46:31 GMT\r\n
+api_1_0_info_conflict.c(15):     Transfer-Encoding: chunked\r\n
+api_1_0_info_conflict.c(15):     Content-Type: application/json\r\n
+api_1_0_info_conflict.c(15):     Content-Encoding: gzip\r\n
+api_1_0_info_conflict.c(15):     \r\n
+api_1_0_info_conflict.c(15): t=3486ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15):     000a\r\n
+api_1_0_info_conflict.c(15): t=3486ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15):     \r\n
+api_1_0_info_conflict.c(15): t=3486ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15): t=3487ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15):     006e\r\n
+api_1_0_info_conflict.c(15): t=3487ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15):     \r\n
+api_1_0_info_conflict.c(15):     0000\r\n
+api_1_0_info_conflict.c(15):     \r\n
+api_1_0_info_conflict.c(15): t=3487ms: 110-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15): t=3488ms: 116-byte DECODED response body for "http://dr-web01:21001/api/1.0/info/conflict?ctn=9061969422&soc=HBUNBRT1&hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D" (RelFrameId=1, Internal ID=4)
+api_1_0_info_conflict.c(15):     {"meta":{"status":"OK","code":20000,"message":null},"conflictList":[],"totalAmount":null,"
+api_1_0_info_conflict.c(15):     balanceIncludePcl":1000.0}
+api_1_0_info_conflict.c(15): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_1_0_info_conflict.c(15): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 12:46:31 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"conflictList":[],"totalAmount":null,"balanceIncludePcl":1000.0}".
+api_1_0_info_conflict.c(15): Registered web_reg_find successful for "Text="conflictList":[]" (count=1)  	[MsgId: MMSG-26364]
+api_1_0_info_conflict.c(15): Notify: Saving Parameter "EmptyConflictList_count = 1".
+api_1_0_info_conflict.c(15): web_url("api_1_0_info_conflict") was successful, 120 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_1_0_info_conflict.c(24): Notify: Transaction "api_1_0_info_conflict" ended with a "Pass" status (Duration: 0,2225 Wasted Time: 0,0022).
+api_1_0_info_conflict.c(26): Notify: Parameter Substitution: parameter "EmptyConflictList_count" =  "1"
+ServiceActivate.c(30): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+ServiceActivate.c(30): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+ServiceActivate.c(31): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+ServiceActivate.c(31): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+ServiceActivate.c(32): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+ServiceActivate.c(32): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+ServiceActivate.c(34): web_add_cookie started  	[MsgId: MMSG-26355]
+ServiceActivate.c(34): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+ServiceActivate.c(34): Notify: Parameter Substitution: parameter "endpoin" =  "dr-web01"
+ServiceActivate.c(34): web_add_cookie was successful  	[MsgId: MMSG-26392]
+ServiceActivate.c(35): web_add_header("Content-Type") started  	[MsgId: MMSG-26355]
+ServiceActivate.c(35): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+ServiceActivate.c(35): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
+ServiceActivate.c(38): Notify: Transaction "api_1_0_request_serviceActivate_PUT" started.
+ServiceActivate.c(39): web_custom_request("api_1_0_request_serviceActivate_PUT") started  	[MsgId: MMSG-26355]
+ServiceActivate.c(39): Notify: Parameter Substitution: parameter "endpoint" =  "dr-web01:21001"
+ServiceActivate.c(39): Notify: Parameter Substitution: parameter "hash_qouted" =  "l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D"
+ServiceActivate.c(39): Notify: Parameter Substitution: parameter "SocToAdd" =  "HBUNBRT1"
+ServiceActivate.c(39): Notify: Parameter Substitution: parameter "login" =  "9061969422"
+ServiceActivate.c(39): t=3947ms: 140-byte response headers for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39):     HTTP/1.1 200 OK\r\n
+ServiceActivate.c(39):     Date: Thu, 01 Apr 2021 12:46:31 GMT\r\n
+ServiceActivate.c(39):     Transfer-Encoding: chunked\r\n
+ServiceActivate.c(39):     Content-Type: application/json\r\n
+ServiceActivate.c(39):     Content-Encoding: gzip\r\n
+ServiceActivate.c(39):     \r\n
+ServiceActivate.c(39): t=3950ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39):     000a\r\n
+ServiceActivate.c(39): t=3950ms: 2-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39):     \r\n
+ServiceActivate.c(39): t=3950ms: 10-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39): t=3951ms: 6-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39):     0051\r\n
+ServiceActivate.c(39): t=3951ms: 10-byte chunked response overhead for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39):     \r\n
+ServiceActivate.c(39):     0000\r\n
+ServiceActivate.c(39):     \r\n
+ServiceActivate.c(39): t=3951ms: 81-byte ENCODED response body received for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39): t=3952ms: 75-byte DECODED response body for "http://dr-web01:21001/api/1.0/request/serviceActivate?hash=l2J5YfJPiAP0eW%2FvY6lxa4Z5PpA%3D&serviceName=HBUNBRT1&ctn=9061969422" (RelFrameId=1, Internal ID=5)
+ServiceActivate.c(39):     {"meta":{"status":"OK","code":20000,"message":null},"requestId":3696600382}
+ServiceActivate.c(39): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+ServiceActivate.c(39): Notify: Saving Parameter "reqid_serviceActivate = 3696600382".
+ServiceActivate.c(39): Notify: Saving Parameter "fullresponse = HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 12:46:31 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"requestId":3696600382}".
+ServiceActivate.c(39): web_custom_request("api_1_0_request_serviceActivate_PUT") was successful, 91 body bytes, 140 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+ServiceActivate.c(50): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+ServiceActivate.c(50): Warning: The string 'token' with parameter delimiters is not a parameter.
+ServiceActivate.c(50): Notify: Parameter Substitution: parameter "login" =  "9061969422"
+ServiceActivate.c(50): Notify: Parameter Substitution: parameter "fullresponse" =  "HTTP/1.1 200 OK\r\nDate: Thu, 01 Apr 2021 12:46:31 GMT\r\nTransfer-Encoding: chunked\r\nContent-Type: application/json\r\nContent-Encoding: gzip\r\n\r\n{"meta":{"status":"OK","code":20000,"message":null},"requestId":3696600382}"
+checkResult.c(19): Notify: Transaction "api_1_0_request_serviceActivate_PUT" ended with a "Pass" status (Duration: 0,4445 Wasted Time: 0,0022).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

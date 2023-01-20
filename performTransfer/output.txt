@@ -1,0 +1,148 @@
+Virtual User Script started at : 2016-05-30 10:20:23
+Starting action vuser_init.
+vuser_init.c(13): lrd.c/fjInitDB: Using the "30" entry in section [ODBC_WINNT] in the "lrd.ini" file ("C:\Program Files (x86)\HP\LoadRunner\bin\lrdb32.dll")
+vuser_init.c(13): Module 'mmdrv.exe' has '11.0.0.1002' version
+vuser_init.c(13): Module 'ntdll.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'kernel32.dll' has '6.1.7601.18015 (win7sp1_gdr.121129-1432)' version
+vuser_init.c(13): Module 'KERNELBASE.dll' has '6.1.7601.18015 (win7sp1_gdr.121129-1432)' version
+vuser_init.c(13): Module 'mmalloc_logic.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'mmalloc.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'CrtInitiator.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'CrtLoader_VS6.dll' has '9.20.0.0' version
+vuser_init.c(13): Module 'MSVCRT.dll' has '7.0.7601.17744 (win7sp1_gdr.111215-1535)' version
+vuser_init.c(13): Module 'CrtLoader_VS8_0_50727_1433.dll' has '9.20.0.0' version
+vuser_init.c(13): Module 'MSVCR80.dll' has '8.00.50727.4940' version
+vuser_init.c(13): Module 'CrtLoader_VS9_0_21022_8.dll' has '9.20.0.0' version
+vuser_init.c(13): Unable to obtain version information for 'MSVCR90.dll' module, last error: 2
+vuser_init.c(13): Module 'USER32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+vuser_init.c(13): Module 'GDI32.dll' has '6.1.7601.18778 (win7sp1_gdr.150304-1507)' version
+vuser_init.c(13): Module 'LPK.dll' has '6.1.7601.18923 (win7sp1_gdr.150714-1514)' version
+vuser_init.c(13): Module 'USP10.dll' has '1.0626.7601.18454 (win7sp1_gdr.140424-1533)' version
+vuser_init.c(13): Module 'ADVAPI32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'sechost.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'RPCRT4.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'SspiCli.dll' has '6.1.7601.23002 (win7sp1_ldr.150316-1651)' version
+vuser_init.c(13): Module 'CRYPTBASE.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'driver.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'lr_exp.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'mosifs32.dll' has '11.0.1426.0' version
+vuser_init.c(13): Module 'thrdutil.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'SHELL32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+vuser_init.c(13): Module 'SHLWAPI.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'cyclic_ds.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'libxdrutil.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'xdr.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'MLIB_DS.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'libmemmap.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'libresponse.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'WS2_32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'NSI.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Unable to obtain version information for 'std-vc-mt.dll' module, last error: 1813
+vuser_init.c(13): Module 'MSVCP80.dll' has '8.00.50727.4940' version
+vuser_init.c(13): Module 'mchan.dll' has '11.0.1426.0' version
+vuser_init.c(13): Module 'config.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'merc_uuid.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'ole32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'msg_handler.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'launcher.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'comm_util.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'libgd.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'libpvc.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'leader_election.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'mlogger.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'mictime.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'libtpq.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'key_storage.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'USERENV.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'profapi.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'two_way_comm.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'security_protocols.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'security_encryption.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'lwc_cryptolib.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'key_handler.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'key_repository.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'apphelp.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'AcLayers.DLL' has '6.1.7601.17974 (win7sp1_gdr.121015-1833)' version
+vuser_init.c(13): Module 'OLEAUT32.dll' has '6.1.7601.18679' version
+vuser_init.c(13): Module 'WINSPOOL.DRV' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'MPR.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'IMM32.DLL' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+vuser_init.c(13): Module 'MSCTF.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'bugslayerutil.dll' has '4.50.000' version
+vuser_init.c(13): Module 'dbghelp.dll' has '6.1.0017.2 (DbgBuild.030121-2003)' version
+vuser_init.c(13): Module 'VERSION.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'psapi.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'crash_handler_dlg.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'MFC80U.DLL' has '8.00.50727.762' version
+vuser_init.c(13): Unable to obtain version information for 'MFC80ENU.DLL' module, last error: 2
+vuser_init.c(13): Module 'CLBCatQ.DLL' has '2001.12.8530.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'LRCrashHandler.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'ATL80.DLL' has '8.00.50727.762' version
+vuser_init.c(13): Unable to obtain version information for 'run_time_context.dll' module, last error: 1813
+vuser_init.c(13): Unable to obtain version information for 'rtc_protocol.dll' module, last error: 1813
+vuser_init.c(13): Module 'cciext.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'runint32.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'inifil32.dll' has '11.0.0.1002' version
+vuser_init.c(13): Unable to obtain version information for 'vm.dll' module, last error: 1813
+vuser_init.c(13): Module 'parameng.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'faserver.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'vusr_log.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'trans.dll' has '11.0.1426.0' version
+vuser_init.c(13): Module 'trans_server.dll' has '11.0.1426.0' version
+vuser_init.c(13): Module 'timediff_ext.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'wrapzlib.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'libdatatypes.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'data_types_ifs.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'jrequestor_srv.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'dc_requests.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'lrun50.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'WSOCK32.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'runlogic.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'wrapicu.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'icuuc36.dll' has '3, 6, 0, 0' version
+vuser_init.c(13): Module 'icudt36.dll' has '3, 6, 0, 0' version
+vuser_init.c(13): Module 'rtc_client.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'vugdbg_x.dll' has '11.0.0.8859' version
+vuser_init.c(13): Module 'ce_client.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'lrd32.dll' has '11.0.9409.0' version
+vuser_init.c(13): Module 'infra_wc.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'wildcard.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'paramtbl.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'mmdtable.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'mmdbigtable.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'paramvar.dll' has '11.0.0.1002' version
+vuser_init.c(13): Module 'NLAapi.dll' has '6.1.7601.22893 (win7sp1_ldr.141205-1618)' version
+vuser_init.c(13): Module 'napinsp.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'mswsock.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'DNSAPI.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'winrnr.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'vvuser50.dll' has '11.0.0.8859' version
+vuser_init.c(13): Module 'MFC80.DLL' has '8.00.50727.762' version
+vuser_init.c(13): Module 'IPHLPAPI.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'WINNSI.DLL' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'fwpuclnt.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'rasadhlp.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(13): Module 'lrdb32.dll' has '11.0.0.8859' version
+vuser_init.c(13): Module 'ODBC32.dll' has '6.1.7601.17514 (win7sp1_rtm.101119-1850)' version
+vuser_init.c(13): Module 'odbcint.dll' has '6.1.7600.16385 (win7_rtm.090713-1255)' version
+vuser_init.c(15): lrdb_open_connection:  "SQLConnect", return-code=1, native-error-code=5701, SQLState=01000, SQLError=[Microsoft][ODBC SQL Server Driver][SQL Server]Changed database context to 'MAINDB'. Processing continues normally
+vuser_init.c(15): lrdb_open_connection:  "SQLConnect", return-code=1, native-error-code=5703, SQLState=01000, SQLError=[Microsoft][ODBC SQL Server Driver][SQL Server]Changed language setting to us_english. Processing continues normally
+vuser_init.c(15): lrd_open_connection: User="UMCS_APP", Server="ms-mcomdb001" 
+vuser_init.c(18): Warning: The string '?=call dbo.PerformTransfer(?, ?, ? )' with parameter delimiters is not a parameter.
+vuser_init.c(18): lrd_stmt: {?=call dbo.PerformTransfer(?, ?, ? )} 
+vuser_init.c(20): lrd_bind_placeholder: Placeholder "1" 
+vuser_init.c(23): lrd_bind_placeholder: Placeholder "2" 
+vuser_init.c(25): Notify: Parameter Substitution: parameter "ctn" =  "7770076000"
+vuser_init.c(26): lrd_bind_placeholder: Placeholder "3" 
+vuser_init.c(29): lrd_bind_placeholder: Placeholder "4" 
+vuser_init.c(49): lrdb_exec:  "SQLExecute", return-code=1, native-error-code=0, SQLState=01000, SQLError=[Microsoft][ODBC SQL Server Driver][SQL Server]229    The EXECUTE permission was denied on the object 'sp_OACreate', database 'mssqlsystemresource', schema 'sys'.14 5  ExecuteHttpRequest Processing continues normally
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

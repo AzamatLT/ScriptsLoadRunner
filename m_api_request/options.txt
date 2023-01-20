@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\beework\AutomatedTesting\USSS\_scripts\__PL\api\m_api_request
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ec:\beework\automatedtesting\usss\_scripts\__pl\api\m_api_request\\logfile.log
+c:\beework\automatedtesting\usss\_scripts\__pl\api\m_api_request\\combined_m_api_request.c
+c:\beework\automatedtesting\usss\_scripts\__pl\api\m_api_request\\pre_cci.c

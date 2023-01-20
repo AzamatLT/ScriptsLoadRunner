@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>info_smartPricePlan</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="pool_get_hash.c" Filter="2" />
+    <FileEntry Name="api_1_0_info_smartPricePlan.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="info_smartPricePlan.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="DfeConfig\" Filter="4" />
+    <FileEntry Name="info_smartPricePlan.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="2" />
+    <FileEntry Name="Bookmarks.xml" Filter="2" />
+    <FileEntry Name="Breakpoints.xml" Filter="2" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="2" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="2" />
+    <FileEntry Name="UserTasks.xml" Filter="2" />
+    <FileEntry Name="combined_info_smartPricePlan.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="10205248144.idx" Filter="1" />
+    <FileEntry Name="10749164944.idx" Filter="1" />
+    <FileEntry Name="10749164944_19o.579.idx" Filter="1" />
+    <FileEntry Name="10749164944_4ZZ.359.idx" Filter="1" />
+    <FileEntry Name="10749164944_73Q.905.idx" Filter="1" />
+    <FileEntry Name="10749164944_9SZ.437.idx" Filter="1" />
+    <FileEntry Name="10749164944_Afe.255.idx" Filter="1" />
+    <FileEntry Name="10749164944_bG8.801.idx" Filter="1" />
+    <FileEntry Name="10749164944_JZh.983.idx" Filter="1" />
+    <FileEntry Name="10749164944_lHK.419.idx" Filter="1" />
+    <FileEntry Name="10749164944_NnB.911.idx" Filter="1" />
+    <FileEntry Name="10749164944_YB5.943.idx" Filter="1" />
+    <FileEntry Name="10749164944_Z8y.401.idx" Filter="1" />
+    <FileEntry Name="10749164944_Z9P.115.idx" Filter="1" />
+    <FileEntry Name="11342124044.idx" Filter="1" />
+    <FileEntry Name="12581318344.idx" Filter="1" />
+    <FileEntry Name="13273077544.idx" Filter="1" />
+    <FileEntry Name="14047661244.idx" Filter="1" />
+    <FileEntry Name="15106876744.idx" Filter="1" />
+    <FileEntry Name="16085677844.idx" Filter="1" />
+    <FileEntry Name="16099061344.idx" Filter="1" />
+    <FileEntry Name="1640292844.idx" Filter="1" />
+    <FileEntry Name="16774736444.idx" Filter="1" />
+    <FileEntry Name="18313624844.idx" Filter="1" />
+    <FileEntry Name="20316845744.idx" Filter="1" />
+    <FileEntry Name="21403589444.idx" Filter="1" />
+    <FileEntry Name="2235032544.idx" Filter="1" />
+    <FileEntry Name="22848623944.idx" Filter="1" />
+    <FileEntry Name="22878828144.idx" Filter="1" />
+    <FileEntry Name="24045324244.idx" Filter="1" />
+    <FileEntry Name="4555891644.idx" Filter="1" />
+    <FileEntry Name="4674330144.idx" Filter="1" />
+    <FileEntry Name="8281168944.idx" Filter="1" />
+    <FileEntry Name="8633267644.idx" Filter="1" />
+    <FileEntry Name="8926804844.idx" Filter="1" />
+    <FileEntry Name="endpoint.dat" Filter="1" />
+    <FileEntry Name="info_smartPricePlan.bak" Filter="1" />
+    <FileEntry Name="info_smartPricePlan.c.pickle" Filter="1" />
+    <FileEntry Name="info_smartPricePlan.ci" Filter="1" />
+    <FileEntry Name="info_smartPricePlan.prm.bak" Filter="1" />
+    <FileEntry Name="info_smartPricePlan.sdf" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="replay.har" Filter="1" />
+    <FileEntry Name="shunra.shunra" Filter="1" />
+    <FileEntry Name="system_token.dat" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

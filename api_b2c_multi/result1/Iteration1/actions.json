@@ -1,0 +1,42 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Custom Request: GetNextMsisdnValue",
+                "infFile": "t1.inf",
+                "time": 1617614905327
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: accumulators",
+                "infFile": "t2.inf",
+                "time": 1617614906105
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "pool_get_hash",
+                "rawStartTime": 1617614902710,
+                "rawEndTime": 1617614905328,
+                "thinkTime": 0.0,
+                "wastedTime": 0.2852354049682617
+            },
+            {
+                "transactionName": "api_2_0_info_accumulators",
+                "rawStartTime": 1617614905372,
+                "rawEndTime": 1617614906110,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06012129783630371
+            },
+            {
+                "transactionName": "TMP_api_b2c_multi",
+                "rawStartTime": 1617614902672,
+                "rawEndTime": 1617614906116,
+                "thinkTime": 0.0,
+                "wastedTime": 0.3462221622467041
+            }
+        ]
+    }
+]

@@ -1,0 +1,4 @@
+CallForward()
+{
+	return 0;
+}

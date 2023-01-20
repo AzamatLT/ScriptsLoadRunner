@@ -1,0 +1,33 @@
+Warning: Failed to post to 'http://127.0.0.1:8182/shunra/api/emulation/packetCaptureOnly', retcode=7.
+Warning: Failed to start NV emulation. Perhaps the NV server is not working, and therefore a NV report will not be generated.
+Virtual User Script started at : 18.03.2021 14:33:17
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 7; build 1203 (��� 18 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\Users\AIMalikov\Documents\USSS\__PL\rp\rp_apitype_0\\default.cfg"  	[MsgId: MMSG-27141]
+Starting to download the proxy automatic configuration script, URL="http://isaweb.vimpelcom.ru/mwg.dat"  	[MsgId: MMSG-27097]
+Proxy automatic configuration script (URL="http://isaweb.vimpelcom.ru/mwg.dat") downloaded and evaluated successfully  	[MsgId: MMSG-27096]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): Notify: Transaction "USSRP_API_TYPE_0" started.
+Action.c(7): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(7): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_url("ivrRequest") started  	[MsgId: MMSG-26355]
+Action.c(11): Registered web_reg_find successful for "Text=error"  	[MsgId: MMSG-26362]
+Action.c(11): Registered web_reg_find successful for "Text=принята" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_url("ivrRequest") was successful, 115 body bytes, 227 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(26): Notify: Transaction "USSRP_API_TYPE_0" ended with a "Pass" status (Duration: 0,1737 Wasted Time: 0,0728).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

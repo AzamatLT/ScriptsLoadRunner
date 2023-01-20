@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\beework\AutomatedTesting\USSS\_scripts\__PL\rp\39_rp_apitype_151
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ec:\beework\automatedtesting\usss\_scripts\__pl\rp\39_rp_apitype_151\\logfile.log
+c:\beework\automatedtesting\usss\_scripts\__pl\rp\39_rp_apitype_151\\combined_39_rp_apitype_151.c
+c:\beework\automatedtesting\usss\_scripts\__pl\rp\39_rp_apitype_151\\pre_cci.c

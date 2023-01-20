@@ -1,0 +1,173 @@
+Virtual User Script started at : 01.04.2021 14:32:28
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 2008 R2; build 1203 (апр 01 2021 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_request_serviceDeactivate\\default.cfg"  	[MsgId: MMSG-27141]
+Vuser directory: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_request_serviceDeactivate"  	[MsgId: MMSG-27052]
+Vuser output directory: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_request_serviceDeactivate"  	[MsgId: MMSG-27050]
+Operating system's current working directory: "c:\beework\automatedtesting\usss\_scripts\__pl\api\api_request_servicedeactivate"  	[MsgId: MMSG-27048]
+UTC (GMT) start date/time   : 2021-04-01 11:32:28  	[MsgId: MMSG-26992]
+LOCAL start date/time       : 2021-04-01 14:32:28  	[MsgId: MMSG-26991]
+Local daylight-Savings-Time : No  	[MsgId: MMSG-26990]
+Some of the Run-Time Settings:  	[MsgId: MMSG-27142]
+    Download non-HTML resources: Yes  	[MsgId: MMSG-27018]
+    Verification checks: No  	[MsgId: MMSG-27017]
+    Convert from/to UTF-8: No  	[MsgId: MMSG-27016]
+    Simulate a new user each iteration: Yes  	[MsgId: MMSG-27009]
+    Non-critical item errors as warnings: Yes  	[MsgId: MMSG-27008]
+    HTTP errors as warnings: No  	[MsgId: MMSG-27007]
+    WinInet replay instead of Sockets: No  	[MsgId: MMSG-27006]
+    HTTP version: 1.1  	[MsgId: MMSG-27005]
+    Keep-Alive HTTP connections: Yes  	[MsgId: MMSG-27004]
+    Max self Meta refresh updates: 2  	[MsgId: MMSG-27003]
+    No proxy is used (direct connection to the Internet)  	[MsgId: MMSG-27171]
+    DNS caching: Yes  	[MsgId: MMSG-27035]
+    Simulate browser cache: Yes  	[MsgId: MMSG-27034]
+        Cache URLs requiring content (e.g., HTMLs): Yes  	[MsgId: MMSG-27033]
+            Additional URLs requiring content: None  	[MsgId: MMSG-27032]
+        Check for newer versions every visit to the page: No  	[MsgId: MMSG-27031]
+    Page download timeout (sec): 120  	[MsgId: MMSG-27030]
+    Resource Page Timeout is a Warning: No  	[MsgId: MMSG-27029]
+    ContentCheck enabled: Yes  	[MsgId: MMSG-27028]
+    ContentCheck script-level file: "C:\beework\AutomatedTesting\USSS\_scripts\__PL\api\api_request_serviceDeactivate\LrwiAedScript.xml"  	[MsgId: MMSG-27027]
+    Enable Web Page Breakdown: Yes  	[MsgId: MMSG-27026]
+    Enable connection data points: Yes  	[MsgId: MMSG-27023]
+    Process socket after reschedule: Yes  	[MsgId: MMSG-27022]
+    Snapshot on error: No  	[MsgId: MMSG-27021]
+    Define each step as a transaction: No  	[MsgId: MMSG-27020]
+    Read beyond Content-Length: No  	[MsgId: MMSG-26994]
+    Parse HTML Content-Type: TEXT  	[MsgId: MMSG-26999]
+    Graph hits per second and HTTP status codes: Yes  	[MsgId: MMSG-26998]
+    Graph response bytes per second: Yes  	[MsgId: MMSG-26997]
+    Graph pages per second: No  	[MsgId: MMSG-26996]
+    Web recorder version ID: 8  	[MsgId: MMSG-26995]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 2  	[MsgId: MMSG-26989]
+Starting action Action.
+api_request_serviceDeactivate.c(5): Notify: Parameter Substitution: parameter "rnd1000" =  "828"
+api_request_serviceDeactivate.c(14): Notify: Next row for parameter serviceName = 60 [table  = serviceName].
+api_request_serviceDeactivate.c(14): Notify: Parameter Substitution: parameter "serviceName" =  "GPRSDP"
+api_request_serviceDeactivate.c(14): Notify: Saving Parameter "serviceName2 = GPRSDP".
+api_request_serviceDeactivate.c(15): Notify: Parameter Substitution: parameter "ctn" =  "9605307890"
+api_request_serviceDeactivate.c(15): Notify: Saving Parameter "ctn2 = 9605307890".
+api_request_serviceDeactivate.c(19): Notify: Parameter Substitution: parameter "ctn2" =  "9605307890"
+api_request_serviceDeactivate.c(19): Notify: Parameter Substitution: parameter "serviceName2" =  "GPRSDP"
+pool_get_hash.c(4): Notify: Saving Parameter "concat = 9605307890GPRSDP".
+pool_get_hash.c(6): Notify: Transaction "pool_get_hash" started.
+pool_get_hash.c(8): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+pool_get_hash.c(8): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") started  	[MsgId: MMSG-26355]
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "HashGen_ServerPath" =  "http://ms-loadrtst045:7001/HashGen/HashGenService"
+pool_get_hash.c(13): Notify: Parameter Substitution: parameter "concat" =  "9605307890GPRSDP"
+pool_get_hash.c(13): t=2129ms: Connecting [0] to host 10.50.255.155:7001  	[MsgId: MMSG-26000]
+pool_get_hash.c(13): t=2139ms: Connected socket [0] from 10.50.255.155:51870 to 10.50.255.155:7001 in 10 ms  	[MsgId: MMSG-26000]
+pool_get_hash.c(13): t=2139ms: 300-byte request headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     POST /HashGen/HashGenService HTTP/1.1\r\n
+pool_get_hash.c(13):     Content-Type: text/xml; charset=UTF-8\r\n
+pool_get_hash.c(13):     Cache-Control: no-cache\r\n
+pool_get_hash.c(13):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+pool_get_hash.c(13):     Accept-Encoding: gzip, deflate\r\n
+pool_get_hash.c(13):     Accept: */*\r\n
+pool_get_hash.c(13):     Connection: Keep-Alive\r\n
+pool_get_hash.c(13):     Host: ms-loadrtst045:7001\r\n
+pool_get_hash.c(13):     Content-Length: 314\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2145ms: 314-byte request body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmls
+pool_get_hash.c(13):     oap.org/soap/envelope/" xmlns:ws="http://ws.hashgen.bellintegrator.ru/"><soapenv:Header/><
+pool_get_hash.c(13):     soapenv:Body>   <ws:getHashByConcat>       <concat>9605307890GPRSDP</concat>   </ws:getHas
+pool_get_hash.c(13):     hByConcat></soapenv:Body></soapenv:Envelope>
+pool_get_hash.c(13): t=2154ms: 123-byte response headers for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     HTTP/1.1 200 OK\r\n
+pool_get_hash.c(13):     Date: Thu, 01 Apr 2021 11:32:28 GMT\r\n
+pool_get_hash.c(13):     Transfer-Encoding: chunked\r\n
+pool_get_hash.c(13):     Content-Type: text/xml; charset=utf-8\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2163ms: 6-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     0186\r\n
+pool_get_hash.c(13): t=2163ms: 10-byte chunked response overhead for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13):     0000\r\n
+pool_get_hash.c(13):     \r\n
+pool_get_hash.c(13): t=2165ms: 390-byte chunked response body for "http://ms-loadrtst045:7001/HashGen/HashGenService" (RelFrameId=1, Internal ID=1)
+pool_get_hash.c(13):     <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap
+pool_get_hash.c(13):     /envelope/"><S:Body><ns0:getHashByConcatResponse xmlns:ns0="http://ws.hashgen.bellintegrat
+pool_get_hash.c(13):     or.ru/"><return><concat>9605307890GPRSDP</concat><hmacSha1>XbZR8QI6wPOw5hIEvYQenYHW1Wg=</h
+pool_get_hash.c(13):     macSha1><urlQuote>XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D</urlQuote></return></ns0:getHashByConcatR
+pool_get_hash.c(13):     esponse></S:Body></S:Envelope>
+pool_get_hash.c(13): Notify: Saving Parameter "hash_qouted = XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D".
+pool_get_hash.c(13): HTML parsing not performed for Content-Type "text/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26548]
+pool_get_hash.c(13): t=2166ms: Request done "http://ms-loadrtst045:7001/HashGen/HashGenService"  	[MsgId: MMSG-26000]
+pool_get_hash.c(13): web_custom_request("GetNextMsisdnValue") was successful, 390 body bytes, 123 header bytes, 16 chunking overhead bytes  	[MsgId: MMSG-26385]
+pool_get_hash.c(30): Notify: Transaction "pool_get_hash" ended with a "Pass" status (Duration: 0,2101 Wasted Time: 0,1741).
+api_request_serviceDeactivate.c(22): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+api_request_serviceDeactivate.c(22): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+api_request_serviceDeactivate.c(23): web_add_cookie started  	[MsgId: MMSG-26355]
+api_request_serviceDeactivate.c(23): Notify: Parameter Substitution: parameter "systoken" =  "16A7665A159997FCE95B9D5F9B026EEF"
+api_request_serviceDeactivate.c(23): Notify: Parameter Substitution: parameter "endpoint" =  "my.beelinetst.ru"
+api_request_serviceDeactivate.c(23): web_add_cookie was successful  	[MsgId: MMSG-26392]
+api_request_serviceDeactivate.c(24): web_add_header("Usss-Language") started  	[MsgId: MMSG-26355]
+api_request_serviceDeactivate.c(24): An unrecognized header ("Usss-Language") is being added  	[MsgId: MMSG-26595]
+api_request_serviceDeactivate.c(24): "Usss-Language: ru_RU" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+api_request_serviceDeactivate.c(24): web_add_header("Usss-Language") was successful  	[MsgId: MMSG-26392]
+api_request_serviceDeactivate.c(25): web_add_header("Content-Type") started  	[MsgId: MMSG-26355]
+api_request_serviceDeactivate.c(25): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+api_request_serviceDeactivate.c(25): "Content-Type: application/json" header registered for adding to requests from the immediately following Action function  	[MsgId: MMSG-26506]
+api_request_serviceDeactivate.c(25): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
+api_request_serviceDeactivate.c(28): Notify: Transaction "api_request_serviceDeactivate" started.
+api_request_serviceDeactivate.c(30): web_custom_request("api_request_serviceDeactivate") started  	[MsgId: MMSG-26355]
+api_request_serviceDeactivate.c(30): Notify: Parameter Substitution: parameter "endpoint" =  "my.beelinetst.ru"
+api_request_serviceDeactivate.c(30): Notify: Parameter Substitution: parameter "ctn2" =  "9605307890"
+api_request_serviceDeactivate.c(30): Notify: Parameter Substitution: parameter "serviceName2" =  "GPRSDP"
+api_request_serviceDeactivate.c(30): Notify: Parameter Substitution: parameter "hash_qouted" =  "XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D"
+api_request_serviceDeactivate.c(30): t=2283ms: Closed connection [0] to ms-loadrtst045:7001 after completing 1 request(s)  	[MsgId: MMSG-26000]
+api_request_serviceDeactivate.c(30): t=2283ms: Connecting [0] to host 172.21.225.251:80  	[MsgId: MMSG-26000]
+api_request_serviceDeactivate.c(30): t=2284ms: Connected socket [0] from 10.50.255.155:51873 to 172.21.225.251:80 in 1 ms  	[MsgId: MMSG-26000]
+api_request_serviceDeactivate.c(30): t=2284ms: 390-byte request headers for "http://my.beelinetst.ru/api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D" (RelFrameId=1, Internal ID=2)
+api_request_serviceDeactivate.c(30):     GET /api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIE
+api_request_serviceDeactivate.c(30):     vYQenYHW1Wg%3D HTTP/1.1\r\n
+api_request_serviceDeactivate.c(30):     Content-Type: application/json\r\n
+api_request_serviceDeactivate.c(30):     Usss-Language: ru_RU\r\n
+api_request_serviceDeactivate.c(30):     User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)\r\n
+api_request_serviceDeactivate.c(30):     Accept-Encoding: gzip, deflate\r\n
+api_request_serviceDeactivate.c(30):     Accept: */*\r\n
+api_request_serviceDeactivate.c(30):     Connection: Keep-Alive\r\n
+api_request_serviceDeactivate.c(30):     Host: my.beelinetst.ru\r\n
+api_request_serviceDeactivate.c(30):     Cookie: token=16A7665A159997FCE95B9D5F9B026EEF\r\n
+api_request_serviceDeactivate.c(30):     \r\n
+api_request_serviceDeactivate.c(30): t=8516ms: 297-byte response headers for "http://my.beelinetst.ru/api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D" (RelFrameId=1, Internal ID=2)
+api_request_serviceDeactivate.c(30):     HTTP/1.1 200 OK\r\n
+api_request_serviceDeactivate.c(30):     Server: nginx/1.10.1\r\n
+api_request_serviceDeactivate.c(30):     Date: Thu, 01 Apr 2021 11:32:34 GMT\r\n
+api_request_serviceDeactivate.c(30):     Content-Type: application/json\r\n
+api_request_serviceDeactivate.c(30):     Transfer-Encoding: chunked\r\n
+api_request_serviceDeactivate.c(30):     Connection: keep-alive\r\n
+api_request_serviceDeactivate.c(30):     Content-Encoding: gzip\r\n
+api_request_serviceDeactivate.c(30):     Set-Cookie: API_SRV=plApi45; path=/\r\n
+api_request_serviceDeactivate.c(30):     Access-Control-Allow-Origin: *\r\n
+api_request_serviceDeactivate.c(30):     Access-Control-Allow-Headers: usss-token\r\n
+api_request_serviceDeactivate.c(30):     \r\n
+api_request_serviceDeactivate.c(30): t=8518ms: 4-byte chunked response overhead for "http://my.beelinetst.ru/api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D" (RelFrameId=1, Internal ID=2)
+api_request_serviceDeactivate.c(30):     5b\r\n
+api_request_serviceDeactivate.c(30): t=8518ms: 7-byte chunked response overhead for "http://my.beelinetst.ru/api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D" (RelFrameId=1, Internal ID=2)
+api_request_serviceDeactivate.c(30):     \r\n
+api_request_serviceDeactivate.c(30):     0\r\n
+api_request_serviceDeactivate.c(30):     \r\n
+api_request_serviceDeactivate.c(30): t=8518ms: 91-byte ENCODED response body received for "http://my.beelinetst.ru/api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D" (RelFrameId=1, Internal ID=2)
+api_request_serviceDeactivate.c(30): t=8519ms: 75-byte DECODED response body for "http://my.beelinetst.ru/api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D" (RelFrameId=1, Internal ID=2)
+api_request_serviceDeactivate.c(30):     {"meta":{"status":"OK","code":20000,"message":null},"requestId":3696600359}
+api_request_serviceDeactivate.c(30): Notify: Saving Parameter "response = "status":"OK","code":20000,"message":null".
+api_request_serviceDeactivate.c(30): t=8520ms: Request done "http://my.beelinetst.ru/api/request/serviceDeactivate?ctn=9605307890&serviceName=GPRSDP&hash=XbZR8QI6wPOw5hIEvYQenYHW1Wg%3D"  	[MsgId: MMSG-26000]
+api_request_serviceDeactivate.c(30): web_custom_request("api_request_serviceDeactivate") was successful, 91 body bytes, 297 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+api_request_serviceDeactivate.c(39): Notify: Parameter Substitution: parameter "response" =  ""status":"OK","code":20000,"message":null"
+api_request_serviceDeactivate.c(50): Notify: Transaction "api_request_serviceDeactivate" ended with a "Pass" status (Duration: 6,2603 Wasted Time: 0,0107).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+t=8550ms: Closed connection [0] to my.beelinetst.ru:80 after completing 1 request(s)  	[MsgId: MMSG-26000]
